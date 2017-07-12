@@ -1,0 +1,23 @@
+.container
+  .row
+    .card.col.s12
+      .h1
+        Accounts
+      .input-field
+        %input{"type": "text", "ng-model": "$ctrl.new_account_name", "id": "new_account_name"}
+        %label{"for": "new_account_name"}Account Name
+        %button.right{"ng-click": "$ctrl.add_account()"} Add Account
+      .ul.list-unstyled
+        .li{"ng-repeat": "account in $ctrl.accounts track by $index"}
+          %span
+            = "{{ account.name }}"
+
+  .row
+    .card.col.s12
+      .h1
+        Database
+      %button.right{"ng-click": "$ctrl.nuke_all_tags()"} nuke all tags
+      %button.right{"ng-click": "$ctrl.nuke_all_entries()"} nuke all entries
+      %button.right{"ng-click": "$ctrl.nuke_all_accounts()"} nuke all accounts
+      %button.right{"ng-click": "$ctrl.nuke_all_account_entries()"} nuke all account entries
+

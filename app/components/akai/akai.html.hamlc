@@ -1,0 +1,103 @@
+.container
+  .row
+    .card.col.s12.yellow
+      yellow
+  .row
+    .card.col.s12.yellow.lighten-3
+      yellow.lighten-3
+  .row
+    .card.col.s12.yellow.lighten-5
+      yellow.lighten-5
+
+  .row
+    .card.col.s12.orange
+      orange
+  .row
+    .card.col.s12.orange.lighten-3
+      orange.lighten-3
+  .row
+    .card.col.s12.orange.lighten-5
+      orange.lighten-5
+
+  .row
+    .card.col.s12.red
+      red
+  .row
+    .card.col.s12.red.lighten-3
+      red.lighten-3
+  .row
+    .card.col.s12.red.lighten-5
+      red.lighten-5
+
+  .row
+    .card.col.s12.purple
+      purple
+  .row
+    .card.col.s12.purple.lighten-3
+      purple.lighten-3
+  .row
+    .card.col.s12.purple.lighten-5
+      purple.lighten-5
+
+  .row
+    .card.col.s12.blue
+      blue
+  .row
+    .card.col.s12.blue.lighten-3
+      blue.lighten-3
+  .row
+    .card.col.s12.blue.lighten-5
+      blue.lighten-5
+
+  .row
+    .card.col.s12.green
+      green
+  .row
+    .card.col.s12.green.lighten-3
+      green.lighten-3
+  .row
+    .card.col.s12.green.lighten-5
+      green.lighten-5
+
+  .row
+    .card.col.s6.black
+
+  .row
+    .card.col.s12
+      %span.right
+        Burn Rate:
+        %price{"amount": "$ctrl.burn_rate"}
+      %br
+      %span{"ng-repeat": "tag in $ctrl.tags track by $index"}
+        %span.chip.grey{"ng-if": "!$ctrl.entry.tags[tag.name]", "ng-click": "$ctrl.toggle_tag(tag)"}
+          = "{{ tag.name }}"
+        %span.chip.green{"ng-if": "$ctrl.entry.tags[tag.name]", "ng-click": "$ctrl.toggle_tag(tag)"}
+          = "{{ tag.name }}"
+      %br
+
+      Create a new AXE entry
+      .input-field
+        %input{"type": "number", "ng-model": "$ctrl.new_entry_amount", "id": "new_entry_amount", "autofocus": true}
+        %label{"for": "new_entry_amount"}Amount in Pennies
+      .input-field
+        %i.material-icons.prefix="&#xE0CD;"
+        %input{"type": "text", "ng-model": "$ctrl.new_entry_comment", "id": "new_entry_comment"}
+        %label{"for": "new_entry_comment"}Comment
+      %button.right{"ng-click": "$ctrl.add_entry()"} Add New
+      %br{clear: 'both'}
+.spacer{"height": "50px"}
+.container
+  .row
+    .ul.list-unstyled
+      .li{"ng-repeat": "entry in $ctrl.entries track by $index"}
+        .card
+          %span.left
+            = "{{ entry.comment }}"
+          %span.right
+            %price{"amount": "entry.pennies"}
+          %br
+          %span.right
+            %span.chip.blue{"ng-repeat": "tag in $ctrl.entry_tags(entry) track by $index"}
+              = "{{ tag.name }}"
+          %br{clear: 'both'}
+    = "# Cat picture"

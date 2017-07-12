@@ -1,0 +1,4 @@
+.panel
+  this is main
+  = "{{ value }}"
+  and there was a value.
