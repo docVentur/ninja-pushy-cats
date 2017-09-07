@@ -1,6 +1,31 @@
 .container
   .row
     .card.col.s12.yellow
+      .ul
+        .li bG
+        .li gC
+        .li uL
+        .li uH
+        .li pp
+        .li bup
+        .li alb
+        .li ste
+        .li ftr
+        .li bt
+        .li clar
+        .li km
+      fields are abbreviation based, so we should store abbreviation and description and color
+      .h2
+        types of fields:
+      .ul
+        .li free form numerical entry
+        .li small number dropdown, default driven (pills count)
+        .li done / not done (checkbox or a button that goes away when pressed)
+        .li midnight reset
+        .li all fields should work via log entry
+
+  .row
+    .card.col.s12.yellow
       yellow
   .row
     .card.col.s12.yellow.lighten-3
