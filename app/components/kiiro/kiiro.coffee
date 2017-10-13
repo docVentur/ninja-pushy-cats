@@ -11,11 +11,7 @@ app.component 'kiiro', {
 
     @tags = []
     @entries = []
-
-    AXEdb.tags()
-      .then (results) ->
-        vm.tags = _.map results.rows, (v, i, r) -> v.doc
-
+    @recent_log_entries = []
 
     @new_entry = ->
       return {
@@ -48,14 +44,20 @@ app.component 'kiiro', {
       vm.new_entry_amount = undefined
       vm.new_entry_comment = ""
 
+    @add_log_entry = (event_type) ->
+      entry = { "$ref": "http://axe.gdkp.org/log#", "entered_at": moment().format(), "event_type": event_type }
+      Materialize.toast "ah ah", 4000
+      AXEdb.post entry
+        .then ->
+          vm.update()
+
     @entry_tags = (entry) ->
       return _.filter @tags, (v,k,c) -> entry.tags[v.name]
 
     @update = ->
       AXEdb.recent_entries()
         .then (results) ->
-          vm.entries = _.map results.rows, (v, i, r) -> v.doc
-          vm.update_burn_rate()
+          vm.recent_log_entries = _.map results.rows, (v, i, r) -> v.doc.entered_at = moment(v.doc.entered_at).fromNow() ; v.doc
 
     @update()
 

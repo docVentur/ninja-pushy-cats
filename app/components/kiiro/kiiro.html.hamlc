@@ -1,5 +1,16 @@
 .container
   .row
+    .card.col.s12
+      %button.right{"ng-click": "$ctrl.add_log_entry('lipschitz')"} lipschitz
+.container
+  .row
+    .ul.list-unstyled
+      .li{"ng-repeat": "entry in $ctrl.recent_log_entries track by $index"}
+        .card
+          = "{{ entry.event_type }}"
+          = "{{ entry.entered_at }}"
+.container
+  .row
     .card.col.s12.yellow
       .ul
         .li bG

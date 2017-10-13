@@ -45,14 +45,14 @@
     "angular-animate": "^1.6.1",
     "angular-materialize": "^0.2.2",
     "angular-moment": "^1.0.1",
-    "angular-pouchdb": "^5.0.0",
-    "expose-loader": "^0.7.1",
+    "angular-pouchdb": "5.0.0",
+    "expose-loader": "^0.7.3",
     "lodash": "^4.17.2",
     "machina": "^2.0.0",
     "materialize-css": "^0.98.2",
     "moment": "^2.18.1",
     "moment-timezone": "^0.5.13",
-    "pouchdb": "^6.1.1",
+    "pouchdb": "6.2.0",
     "webpack-angular-injector-plugin": "^1.0.0",
     "webpack-css-loaders": "^0.1.5"
   }

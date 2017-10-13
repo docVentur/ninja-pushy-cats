@@ -6,6 +6,9 @@ app = angular.module 'AXE'
 app.service 'AXEdb', (pouchDB, moment) ->
   @db = pouchDB 'AXEdb'
 
+  remotedb = new PouchDB 'http://clu:5984/axe'
+  @db.sync remotedb
+
   create_index = (db, index_name, emitter, doc_validity) ->
     ddoc = { _id: "_design/#{index_name}", views: { by_name: { map: "function (doc) {if (#{doc_validity}) {emit(#{ emitter });}}" }}}
     success = -> console.log "Created view: #{index_name}"
@@ -13,10 +16,10 @@ app.service 'AXEdb', (pouchDB, moment) ->
     db.put(ddoc).then success, failure
 
   create_index @db, "tags",    "doc.name",    "doc.record_type == 'tag'"
-  create_index @db, "entries", "doc.comment", "doc.record_type == 'entry'"
+  create_index @db, "entries", "doc.comment", "doc.$ref == 'http://axe.gdkp.org/log#'"
   create_index @db, "accounts", "doc.name", "doc.record_type == 'account'"
   create_index @db, "account_entries", "doc.name", "doc.record_type == 'account_entry'"
-  create_index @db, "entry_entered_at", "doc.entered_at, 1", "doc.record_type == 'entry'"
+  create_index @db, "entry_entered_at", "doc.entered_at, 1", "doc.$ref == 'http://axe.gdkp.org/log#'"
   create_index @db, "account_entry_entered_at", "doc.entered_at, 1", "doc.record_type == 'account_entry'"
 
   @accounts = ->
