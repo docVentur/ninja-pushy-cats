@@ -1,7 +1,25 @@
 .container
   .row
     .card.col.s12
-      %button.right{"ng-click": "$ctrl.add_log_entry('lipschitz')"} lipschitz
+      %button.right{"ng-click": "$ctrl.add_log_entry('lipschitz')"}
+        lipschitz
+    .card.col.s12
+      %button.right{"ng-click": "$ctrl.add_log_entry('cock')"}
+        the rooster
+    .card.col.s12
+      %button.right{"ng-click": "$ctrl.add_log_entry('Lunch, Lovingly Prepared')"}
+        Sammich
+      %button.right{"ng-click": "$ctrl.add_log_entry('Prepared, not Sowed')"}
+        OATS
+    .card.col.s12
+      %button.right{"ng-click": "$ctrl.add_log_entry('Spirit Highlands')"}
+        Spirit Highlands
+    .card.col.s12
+      %a{href: "https://wow.gameinfo.io/invasions"} Invasion Timers
+      %button.right{"ng-click": "$ctrl.add_log_entry('Invasion: group1')"}
+        Invasion: Group1
+      %button.right{"ng-click": "$ctrl.add_log_entry('Invasion: Red Team')"}
+        Invasion: Red Team
 .container
   .row
     .ul.list-unstyled

@@ -46,7 +46,7 @@ app.component 'kiiro', {
 
     @add_log_entry = (event_type) ->
       entry = { "$ref": "http://axe.gdkp.org/log#", "entered_at": moment().format(), "event_type": event_type }
-      Materialize.toast "ah ah", 4000
+      Materialize.toast "<a href='https://www.youtube.com/watch?v=qrrz54UtkCc'>ah ah</a> - #{ event_type }", 4000
       AXEdb.post entry
         .then ->
           vm.update()
