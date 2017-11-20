@@ -27,6 +27,102 @@
         .card
           = "{{ entry.event_type }}"
           = "{{ entry.entered_at }}"
+
+.container
+  .row
+    %form.col.s12
+      .row
+        .input-field.col.s6
+          %i.material-icons.prefix.pink blur_circular
+          %input.validate{"id": "icon_prefix", "type": "text" }
+          %label{"for": "icon_prefix"} BG
+        .li (VBG - VBG.constant1)/VBG.constant2=suggested adjustment
+        .input-field.col.s6
+          %i.material-icons.prefix disc_full
+          %output.validate{"id": "icon_telephone", "type": "tel" }
+          %label{"for": "icon_telephone"} suggested adjustment
+        .li
+        .input-field.col.s6
+          %i.material-icons.prefix border_bottom
+          %input.validate{"id": "border_color", "type": "text" }
+          %label{"for": "border_bottom"} lows are comment worthy
+
+      .row
+        .input-field.col.s6
+          %i.material-icons.prefix.yellow border_inner
+          %input.validate{"id": "icon_prefix", "type": "text" }
+          %label{"for": "icon_prefix"} gC
+        .li (VgC/VgC.constant1)=suggest uH
+        .input-field.col.s6
+          %i.material-icons.prefix album
+          %input.validate{"id": "icon_telephone", "type": "tel" }
+          %label{"for": "icon_telephone"} suggested uH
+      .row
+        %i.material-icons.prefix adjust
+        %i.material-icons.prefix border_outer
+        %i.material-icons.prefix blur_circular
+        .li show suggested adjustment plus suggested uH =
+        compare
+
+      .row
+        %i.material-icons.prefix border_style
+        %i.material-icons.prefix border_left
+        %i.material-icons.prefix border_vertical
+        %i.material-icons.prefix border_right
+
+
+        %i.material-icons.prefix flight_land
+        %i.material-icons.prefix flight_takeoff
+
+        %i.material-icons.prefix mood
+        %i.material-icons.prefix mood_bad
+
+        %i.material-icons.prefix sentiment_very_dissatisfied
+        %i.material-icons.prefix sentiment_dissatisfied
+        %i.material-icons.prefix sentiment_neutral
+        %i.material-icons.prefix sentiment_satisfied
+        %i.material-icons.prefix sentiment_very_satisfied
+
+        %i.material-icons.prefix share
+        %i.material-icons.prefix timeline
+        %i.material-icons.prefix timer_3s
+        %i.material-icons.prefix tonality
+        %i.material-icons.prefix
+
+
+
+      .row
+        .input-field.col.s6
+          %i.material-icons.prefix.red border_top
+          %input.validate{"id": "icon_prefix", "type": "text" }
+          %label{"for": "icon_prefix"} uH
+        .li show math
+        .input-field.col.s6
+          %i.material-icons.prefix blur_on
+          %input.validate{"id": "icon_telephone", "type": "tel" }
+          %label{"for": "icon_telephone"} suggested gC
+
+      .row
+        %i.material-icons.prefix compare_arrows
+
+      .row
+        .input-field.col.s6
+          %i.material-icons.prefix.blue border_horizontal
+          %input.validate{"id": "icon_prefix", "type": "text" }
+          %label{"for": "icon_prefix"} uL
+        .li show math
+        .input-field.col.s6
+          %i.material-icons.prefix directions_walk
+          %input.validate{"id": "icon_telephone", "type": "tel" }
+          %label{"for": "icon_telephone"} msg?
+
+      .row
+        %i.material-icons.prefix compare
+
+      .row
+        %i.material-icons.prefix border_all
+
+
 .container
   .row
     .card.col.s12.yellow
