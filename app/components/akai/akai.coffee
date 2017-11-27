@@ -5,59 +5,16 @@ app = angular.module 'AXE'
 
 app.component 'akai', {
   template: require('./akai.html.hamlc'),
-  controller: (AXEdb, $stateParams, moment) ->
+  controller: (AXEdb, $stateParams, moment, $interval) ->
     vm = @
-    db = AXEdb.db
 
-    @tags = []
-    @entries = []
+    @number = 100
 
-    AXEdb.tags()
-      .then (results) ->
-        vm.tags = _.map results.rows, (v, i, r) -> v.doc
+    @add_number = ->
+      @number = @number + 15
 
-
-    @new_entry = ->
-      return {
-        pennies: 0,
-        tags: {},
-        comment: '',
-        entered_at: false,
-        record_type: 'entry',
-      }
-
-    @entry = @new_entry()
-
-    @toggle_tag = (tag) ->
-      vm.entry.tags[tag.name] = !vm.entry.tags[tag.name]
-
-    @update_burn_rate = ->
-      sum = 0
-      for entry in vm.entries
-        sum = sum + entry.pennies
-      vm.burn_rate = sum
-
-    @add_entry = ->
-      vm.entry.pennies = parseInt vm.new_entry_amount
-      vm.entry.comment = vm.new_entry_comment
-      vm.entry.entered_at = moment().format()
-      AXEdb.post @entry
-        .then ->
-          vm.update()
-      vm.entry = @new_entry()
-      vm.new_entry_amount = undefined
-      vm.new_entry_comment = ""
-
-    @entry_tags = (entry) ->
-      return _.filter @tags, (v,k,c) -> entry.tags[v.name]
-
-    @update = ->
-      AXEdb.recent_entries()
-        .then (results) ->
-          vm.entries = _.map results.rows, (v, i, r) -> v.doc
-          vm.update_burn_rate()
-
-    @update()
-
+    $interval ->
+      vm.number = vm.number - 1
+    , 1000
     @
 }
