@@ -1,2 +1,9 @@
 .container
-  %button.right{"ng-click": "$ctrl.add_number()"} Number: {{$ctrl.number}}
+  %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
+  %button.right{"ng-click": "$ctrl.add_weight()"} Weight: {{$ctrl.weight | number:1}}
+  %input{"type": "number", "ng-model": "$ctrl.new_entry_amount", "id": "new_entry_amount", "autofocus": true}
+
+%ul
+  %li{"ng-repeat": "log_entry in $ctrl.log track by $index"}
+    ="{{log_entry.when.format('MMM Do YY')}}"
+    =" {{ log_entry.value }}"

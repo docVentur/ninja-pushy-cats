@@ -32,7 +32,10 @@ app.component 'akai', {
     @weight = 120
 
     @add_weight = ->
-      @weight = @weight + 2
+      @weight = @weight + @new_entry_amount
+      @log_value "added 2"
+      @log_value "value #{@new_entry_amount}"
+
 
     $interval ->
       vm.weight = vm.weight - .1
