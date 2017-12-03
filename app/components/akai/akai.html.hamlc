@@ -1,7 +1,35 @@
 .container
-  %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
-  %button.right{"ng-click": "$ctrl.add_weight()"} Weight: {{$ctrl.weight | number:1}}
-  %input{"type": "number", "ng-model": "$ctrl.new_entry_amount", "id": "new_entry_amount", "autofocus": true}
+  .row
+    .col.s4
+      Dont Kill Daegory Jean
+      %br Finite State Machine: Ichi. Feed Daegory.
+      %br Button Added: Feed Daegory Jean +15gC.
+    .col.s4
+      %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
+    .col.s4
+      %button.right{"ng-click": "$ctrl.add_weight()"} Weight: {{$ctrl.weight | number:1}}
+
+.container
+  .row
+    .col.s4
+      ***Dont Kill Daegory Jean***
+      %br Finite State Machine: Ni. Symptomatic Daegory Jean.
+      %br Added: (visible but not selectable) BG.
+    .col.s4
+      %input{"type": "number", "ng-model": "$ctrl.new_entry_amount", "id": "new_entry_amount", "autofocus": true}
+    .col.s4
+      content
+
+.container
+  .row
+    .col.s4
+      ***Dont Kill Daegory Jean***
+      %br Finite State Machine: San. Diabetic Daegory Jean
+      %br Added: (visible but not selectable) BG.
+    .col.s4
+      %input{"type": "number", "ng-model": "$ctrl.new_entry_amount", "id": "new_entry_amount", "autofocus": true}
+    .col.s4
+      content
 
 %ul
   %li{"ng-repeat": "log_entry in $ctrl.log track by $index"}
