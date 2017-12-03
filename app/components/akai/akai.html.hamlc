@@ -47,18 +47,21 @@
 .container
   .row
     .col.s12
-      %blockquote.pink.accent-3 Attention Seeking :: credits
+      %blockquote.pink.accent-3{style: "color: white"} Dont
+        %blockquote.pink.accent-3{style: "color: white"} Dont Kill
+          %blockquote.pink.accent-3{style: "color: white"} Dont Kill Daegoryjean
   .row
     .col.s6
-      %blockquote.white DaegoryJean is ... :: ggrulz: white :: all light :: white text/icon :: truth :: qualitative.
+      %blockquote.white DaegoryJean is a normal kid.
     .col.s6
-      %blockquote.black DaegoryJean looks like ... :: ggrulz: black :: all color :: white text/icon :: snapshot. log. recordable value. :: quantitative.
+      %blockquote.black{style: "color: white"} DaegoryJean is about to experience Bad Stuff.
   .row
     .col.s4
-      %blockquote.yellow Y
-        %i.material-icons.prefix.yellow border_inner
+      %blockquote.brown.lighten-2{style: "color: yellow"} Y :: Feed DaegoryJean :: +mass
+        %i.material-icons.prefix.yellow{style: "color: black"} border_inner
     .col.s4
-      %blockquote.red R
+      %blockquote.brown.lighten-1{style: "color: red"} R :: Watch DaegoryJean :: +feelings
+        %br.white{style: "color: black"}
         %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
         %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
@@ -68,23 +71,39 @@
         %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
     .col.s4
-      %blockquote.blue B
+      %blockquote.brown.lighten-2{style: "color: blue"} B :: Help DaegoryJean :: +pplz
         %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
         %i.material-icons.prefix.blue share
   .row
     .col.s2
-      %blockquote.yellow Y
+      %blockquote.brown.lighten-2 yellow Y
+      %br
+      %i.material-icons.prefix timer_3s
     .col.s2
-      %blockquote.orange O
+      %blockquote.brown.lighten-1 orange O
+      %br
+      %i.material-icons.prefix tonality
     .col.s2
-      %blockquote.red R
+      %blockquote.brown red R
+      %br
+      %i.material-icons.prefix flight_land
+      %i.material-icons.prefix flight_takeoff
     .col.s2
-      %blockquote.purple P
+      %blockquote.brown.darken-1 purple P
+      %br
+      %i.material-icons.prefix timeline
     .col.s2
-      %blockquote.blue B
+      %blockquote.brown.darken-2 blue B
+      %br
+      %i.material-icons.prefix compare_arrows
     .col.s2
-      %blockquote.green G
+      %blockquote.brown.darken-3 green G
+      %br
+      %i.material-icons.prefix compare
 
+  .row
+    .col.s12
+      %blockquote.brown.darken-4{style: "color: white"} game proper.
 
 %ul
   %li{"ng-repeat": "log_entry in $ctrl.log track by $index"}

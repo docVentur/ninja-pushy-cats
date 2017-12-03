@@ -1,0 +1,8 @@
+blockquote:before {
+  color: brown;
+  content: open-quote;
+  font-size: 8em;
+  line-height: .1 em;
+  margin-right: -.1 em;
+  vertical-align: -0.0 em;
+}

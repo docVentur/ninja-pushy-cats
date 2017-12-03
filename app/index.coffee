@@ -11,6 +11,7 @@ require 'angular-moment'
 require('materialize-css/bin/materialize.css')
 require('materialize-css/bin/materialize.js')
 #require "style-loader!css-loader!./mobile-angular-ui-base.css"
+require('./DKD.css')
 
 app = angular.module 'AXE', [
   'ui.router',
