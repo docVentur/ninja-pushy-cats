@@ -70,6 +70,12 @@
         %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
         %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+
+        <smilemeter value="10" />
+        <smilemeter value="20" />
+        <smilemeter value="30" />
+        AND NOW, FOR MY FINAL TRICK
+        <smilemeter value="$ctrl.mass" />
     .col.s4
       %blockquote.brown.lighten-2{style: "color: blue"} B :: Help DaegoryJean :: +pplz
         %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
