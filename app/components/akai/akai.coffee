@@ -20,6 +20,7 @@ app.component 'akai', {
 
     @add_mass = ->
       @mass = @mass + 1
+      Materialize.toast 'Fed!!!', 4000
 
 #gC
     @gC = 100
