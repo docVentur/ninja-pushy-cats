@@ -10,24 +10,34 @@ app.component 'akai', {
     @log = []
     @log_value = (value) ->
       @log.push {when: moment(), value: value}
-      console.log "Survay SAYS"
+      console.log "Survey SAYS"
       console.log @log
 
     @log_value "logstarted"
 
-    @gC = 100
+#mass
+    @mass = 100
+
+    @add_mass = ->
+      @mass = @mass + 1
+
 #gC
+    @gC = 100
+
     @add_gC = ->
       @gC = @gC + 15
-#uL
+
+#uL shouldn't apply to mass, right?
     $interval ->
-      vm.gC = vm.gC - 1
+      vm.mass = vm.mass - 1
     , 1000
+
 #uH
     $interval ->
       vm.gC = vm.gC - 25
     , 120000
 
+#getting replaced by #mass
 #weight
     @weight = 120
 
