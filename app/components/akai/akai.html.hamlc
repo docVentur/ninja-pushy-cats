@@ -7,7 +7,6 @@
       %br show weight at 100% +/- 1%
     .col.s4
       %button.right{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
-      %a.btn{onclick: "Materialize.toast('Fed!!!', 4000)"} Feed DaegoryJean
     .col.s4
       %i.material-icons.prefix.yellow border_inner
 
