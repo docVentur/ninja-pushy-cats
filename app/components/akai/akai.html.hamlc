@@ -1,20 +1,22 @@
+-# this is a HAML comment
 .container
   .row
     .col.s4
-      %blockquote.yellow Dont Kill DaegoryJean
-      %blockquote Finite State Machine: 1. Feed DaegoryJean
-      %br Button Added: Feed DaegoryJean
+      %blockquote.yellow Dont Kill DaegoryGene
+      %blockquote Finite State Machine: 1. Feed DaegoryGene
+      %br Button Added: Feed DaegoryGene
       %br show weight at 100% +/- 1%
     .col.s4
-      %button.right{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
+      %button.waves-effect.waves-light.btn.right{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
+        <smilemeter value="$ctrl.mass" />
     .col.s4
       %i.material-icons.prefix.yellow border_inner
 
 .container
   .row
     .col.s4
-      %blockquote.red Dont Kill Daegory Jean
-      %blockquote Finite State Machine: 2. Symptomatic DaegoryJean
+      %blockquote.red Dont Kill DaegoryGene
+      %blockquote Finite State Machine: 2. Symptomatic DaegoryGene
       %br Added: (visible but not selectable) BG.
       %blockquote.brown{style: "color: white"} ggrulz: white :: all light :: white text/icon :: truth :: qualitative.
       %blockquote.brown{style: "color: white"} ggrulz: black :: all color :: white text/icon :: snapshot. log. recordable value. :: quantitative.
@@ -35,8 +37,8 @@
 .container
   .row
     .col.s4
-      %blockquote.blue Dont Kill DaegoryJean
-      %blockquote Finite State Machine: 3. Diabetic DaegoryJean
+      %blockquote.blue Dont Kill DaegoryGene
+      %blockquote Finite State Machine: 3. Diabetic DaegoryGene
       %br Added: (visible but not selectable) BG.
     .col.s4
       %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
@@ -49,18 +51,18 @@
     .col.s12
       %blockquote.pink.accent-3{style: "color: white"} Dont
         %blockquote.pink.accent-3{style: "color: white"} Dont Kill
-          %blockquote.pink.accent-3{style: "color: white"} Dont Kill Daegoryjean
+          %blockquote.pink.accent-3{style: "color: white"} Dont Kill DaegoryGene
   .row
     .col.s6
-      %blockquote.white DaegoryJean is a normal kid.
+      %blockquote.white DaegoryGene is a normal kid.
     .col.s6
-      %blockquote.black{style: "color: white"} DaegoryJean is about to experience Bad Stuff.
+      %blockquote.black{style: "color: white"} DaegoryGene is about to experience Bad Stuff.
   .row
     .col.s4
-      %blockquote.brown.lighten-2{style: "color: yellow"} Y :: Feed DaegoryJean :: +mass
+      %blockquote.brown.lighten-2{style: "color: yellow"} Y :: Feed DaegoryGene :: +mass
         %i.material-icons.prefix.yellow{style: "color: black"} border_inner
     .col.s4
-      %blockquote.brown.lighten-1{style: "color: red"} R :: Watch DaegoryJean :: +feelings
+      %blockquote.brown.lighten-1{style: "color: red"} R :: Watch DaegoryGene :: +feelings
         %br.white{style: "color: black"}
         %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
@@ -77,7 +79,7 @@
         AND NOW, FOR MY FINAL TRICK
         <smilemeter value="$ctrl.mass" />
     .col.s4
-      %blockquote.brown.lighten-2{style: "color: blue"} B :: Help DaegoryJean :: +pplz
+      %blockquote.brown.lighten-2{style: "color: blue"} B :: Help DaegoryGene :: +pplz
         %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
         %i.material-icons.prefix.blue share
   .row
