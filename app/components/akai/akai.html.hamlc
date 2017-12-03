@@ -1,12 +1,13 @@
 .container
   .row
     .col.s4
-      %blockquote.yellow Dont Kill Daegory Jean
-      %blockquote Finite State Machine: 1. Feed Daegory
-      %br Button Added: Feed Daegory Jean +15gC.
+      %blockquote.yellow Dont Kill DaegoryJean
+      %blockquote Finite State Machine: 1. Feed DaegoryJean
+      %br Button Added: Feed DaegoryJean
       %br show weight at 100% +/- 1%
     .col.s4
       %button.right{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
+      %a.btn{onclick: "Materialize.toast('Fed!!!', 4000)"} Feed DaegoryJean
     .col.s4
       %i.material-icons.prefix.yellow border_inner
 
@@ -14,43 +15,86 @@
   .row
     .col.s4
       %blockquote.red Dont Kill Daegory Jean
-      %blockquote Finite State Machine: 2. Symptomatic Daegory Jean
+      %blockquote Finite State Machine: 2. Symptomatic DaegoryJean
       %br Added: (visible but not selectable) BG.
-      %br white text/icon equals truth. qualitative. rulz
-      %br black text/icon equals snapshot. log. recordable value. quantitative. rulz
+      %blockquote.brown{style: "color: white"} ggrulz: white :: all light :: white text/icon :: truth :: qualitative.
+      %blockquote.brown{style: "color: white"} ggrulz: black :: all color :: white text/icon :: snapshot. log. recordable value. :: quantitative.
+      %br as BG rises comments about how consuming sugar is the fastest way to get it into your blood, the liver is also changing protein and fat into sugar
     .col.s4
-      %input{"type": "number", "ng-model": "$ctrl.new_entry_amount", "id": "new_entry_amount", "autofocus": true}
+      need to add interval to decrease in FSM2 :: % of healthy weight: {{$ctrl.mass | number}}
+      %button.right{"ng-click": "$ctrl.add_gC()"} white text pink-3 bg BG rising: {{$ctrl.gC | number}}
     .col.s4
-      %i.material-icons.prefix sentiment_very_dissatisfied
-      %i.material-icons.prefix mood_bad
-      %i.material-icons.prefix sentiment_dissatisfied
-      %i.material-icons.prefix sentiment_neutral
-      %i.material-icons.prefix sentiment_satisfied
-      %i.material-icons.prefix mood
-      %i.material-icons.prefix sentiment_very_satisfied
-
-
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
+      %i.material-icons.prefix.black{style: "color: white"} sentiment_neutral
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
 
 .container
   .row
     .col.s4
-      %blockquote.blue Dont Kill Daegory Jean
-      %blockquote Finite State Machine: 3. Diabetic Daegory Jean
+      %blockquote.blue Dont Kill DaegoryJean
+      %blockquote Finite State Machine: 3. Diabetic DaegoryJean
       %br Added: (visible but not selectable) BG.
     .col.s4
       %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
     .col.s4
-      %i.material-icons.prefix.red.lighten-1 border_top
-      %button.right{"ng-click": "$ctrl.add_gC()"} zzzgC: {{$ctrl.gC | number}}
-      %button.right{"ng-click": "$ctrl.add_weight()"} Weight: {{$ctrl.weight | number:1}}
+      %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+      %i.material-icons.prefix.blue share
+
+.container
+  .row
+    .col.s12
+      %blockquote.pink.accent-3 Attention Seeking :: credits
+  .row
+    .col.s6
+      %blockquote.white DaegoryJean is ... :: ggrulz: white :: all light :: white text/icon :: truth :: qualitative.
+    .col.s6
+      %blockquote.black DaegoryJean looks like ... :: ggrulz: black :: all color :: white text/icon :: snapshot. log. recordable value. :: quantitative.
+  .row
+    .col.s4
+      %blockquote.yellow Y
+        %i.material-icons.prefix.yellow border_inner
+    .col.s4
+      %blockquote.red R
+        %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+        %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+        %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+        %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
+        %i.material-icons.prefix.black{style: "color: white"} sentiment_neutral
+        %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
+        %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
+        %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+    .col.s4
+      %blockquote.blue B
+        %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+        %i.material-icons.prefix.blue share
+  .row
+    .col.s2
+      %blockquote.yellow Y
+    .col.s2
+      %blockquote.orange O
+    .col.s2
+      %blockquote.red R
+    .col.s2
+      %blockquote.purple P
+    .col.s2
+      %blockquote.blue B
+    .col.s2
+      %blockquote.green G
 
 
 %ul
   %li{"ng-repeat": "log_entry in $ctrl.log track by $index"}
     ="{{log_entry.when.format('MMM Do YY')}}"
     =" {{ log_entry.value }}"
-
+  %input{"type": "number", "ng-model": "$ctrl.new_entry_amount", "id": "new_entry_amount", "autofocus": true}
   %i.material-icons.prefix.pink.lighten-4{style: "color: white"} blur_circular
+  %i.material-icons.prefix.red.lighten-1 border_top
+  %button.right{"ng-click": "$ctrl.add_weight()"} Weight: {{$ctrl.weight | number:1}}
 
 
 
