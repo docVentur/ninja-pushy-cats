@@ -6,8 +6,7 @@
       %br Button Added: Feed Daegory Jean +15gC.
       %br show weight at 100% +/- 1%
     .col.s4
-      %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
-      #%button.right{"ng-click": "$ctrl.add_weight()"} Weight: {{$ctrl.weight | number:1}}
+      %button.right{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
     .col.s4
       %i.material-icons.prefix.yellow border_inner
 
@@ -42,6 +41,9 @@
       %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
     .col.s4
       %i.material-icons.prefix.red.lighten-1 border_top
+      %button.right{"ng-click": "$ctrl.add_gC()"} zzzgC: {{$ctrl.gC | number}}
+      %button.right{"ng-click": "$ctrl.add_weight()"} Weight: {{$ctrl.weight | number:1}}
+
 
 %ul
   %li{"ng-repeat": "log_entry in $ctrl.log track by $index"}
@@ -49,6 +51,7 @@
     =" {{ log_entry.value }}"
 
   %i.material-icons.prefix.pink.lighten-4{style: "color: white"} blur_circular
+
 
 
 
