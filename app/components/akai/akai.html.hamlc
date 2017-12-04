@@ -84,77 +84,83 @@
         %i.material-icons.prefix.blue share
   .row
     .col.s2
-      %blockquote.brown.lighten-2 yellow Y
-      %br
-      %i.material-icons.prefix timer_3s
+      %i.material-icons.prefix.yellow{style: "black"} timer_3s
     .col.s2
-      %blockquote.brown.lighten-1 orange O
-      %br
-      %i.material-icons.prefix tonality
+      %i.material-icons.prefix.orange{style: "black"} tonality
     .col.s2
-      %blockquote.brown red R
-      %br
-      %i.material-icons.prefix flight_land
-      %i.material-icons.prefix flight_takeoff
+      %i.material-icons.prefix.red{style: "black"} flight_land
+      %i.material-icons.prefix.red{style: "black"} flight_takeoff
     .col.s2
-      %blockquote.brown.darken-1 purple P
-      %br
-      %i.material-icons.prefix timeline
+      %i.material-icons.prefix.purple{style: "black"} timeline
     .col.s2
-      %blockquote.brown.darken-2 blue B
-      %br
-      %i.material-icons.prefix compare_arrows
+      %i.material-icons.prefix.blue{style: "black"} compare_arrows
     .col.s2
-      %blockquote.brown.darken-3 green G
-      %br
-      %i.material-icons.prefix compare
+      %i.material-icons.prefix.green{style: "black"} compare
   .row
     .col.s1
-      %blockquote.brown.lighten-2 yellow Y
-      %br
-      %i.material-icons.prefix timer_3s
+      %i.material-icons.prefix.yellow.accent-4{style: "color: white"} 3d_rotation
     .col.s1
-      %blockquote.brown.lighten-1 orange O
-      %br
-      %i.material-icons.prefix tonality
+      %i.material-icons.prefix.orange{style: "color: white"} wb_sunny
     .col.s1
-      %blockquote.brown red R
-      %br
-      %i.material-icons.prefix flight_land
-      %i.material-icons.prefix flight_takeoff
+      %i.material-icons.prefix.red{style: "color: white"} flare
     .col.s1
-      %blockquote.brown.darken-1 purple P
-      %br
-      %i.material-icons.prefix timeline
+      %i.material-icons.prefix.purple{style: "color: white"} linear_scale
     .col.s1
-      %blockquote.brown.darken-2 blue B
-      %br
-      %i.material-icons.prefix compare_arrows
+      %i.material-icons.prefix.blue{style: "color: white"} polymer
     .col.s1
-      %blockquote.brown.darken-3 green G
-      %br
-      %i.material-icons.prefix compare
+      %i.material-icons.prefix.green{style: "color: white"} color_lens
+      %i.material-icons.prefix.green{style: "color: white"} crop_rotate
+      %i.material-icons.prefix.green{style: "color: white"} exposure
+      %i.material-icons.prefix.green{style: "color: white"} public
+      %i.material-icons.prefix.green{style: "color: white"} wallpaper
+      %i.material-icons.prefix.green{style: "color: white"} panorama
+
     .col.s2
-      %blockquote.brown.darken-3 white G
-      %br
-      %i.material-icons.prefix compare
+      %i.material-icons.prefix.white{style: "color: black"} all_inclusive
+      %i.material-icons.prefix.white{style: "color: black"} invert_colors
+      %i.material-icons.prefix.white{style: "color: black"} palette
+      %i.material-icons.prefix.white{style: "color: black"} public
     .col.s2
-      %blockquote.brown.darken-3 black G
-      %br
-      %i.material-icons.prefix compare
+      %i.material-icons.prefix.black{style: "color: white"} copyright
+      %i.material-icons.prefix.black{style: "color: white"} check_box
+      %i.material-icons.prefix.black{style: "color: white"} check_circle
+      %i.material-icons.prefix.black{style: "color: white"} done_all
+      %i.material-icons.prefix.black{style: "color: white"} looks
+      %i.material-icons.prefix.black{style: "color: white"} monetization_on
+      %i.material-icons.prefix.black{style: "color: white"} multiline_chart
+      %i.material-icons.prefix.black{style: "color: white"} pie_chart
+      %i.material-icons.prefix.black{style: "color: white"} pie_chart_outlined
+
     .col.s2
-      %blockquote.brown.darken-3 grey G
-      %br
-      %i.material-icons.prefix compare
+      %i.material-icons.prefix.grey{style: "color: white"} visibility
+      %i.material-icons.prefix.grey{style: "color: white"} face
+      %i.material-icons.prefix.grey{style: "color: white"} local_dining
+      %i.material-icons.prefix.grey{style: "color: white"} grain
+      %i.material-icons.prefix.grey{style: "color: white"} kitchen
+      %i.material-icons.prefix.grey{style: "color: white"} remove_red_eye
+
   .row
     .col.s6
-      %blockquote.brown.darken-3 pink
-      %br
-      %i.material-icons.prefix compare
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} cake
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} fingerprint
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} filter vintage
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} attach_file
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} flag
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} room_service
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star_border
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star_half
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} stars
     .col.s6
-      %blockquote.brown.darken-3 cyan/aqua
-      %br
-      %i.material-icons.prefix compare
+      %i.material-icons.prefix.cyan{style: "color: white"} cached
+      %i.material-icons.prefix.cyan{style: "color: white"} widgets
+      %i.material-icons.prefix.cyan{style: "color: white"} games
+      %i.material-icons.prefix.cyan{style: "color: white"} watch
+      %i.material-icons.prefix.cyan{style: "color: white"} spa
+      %i.material-icons.prefix.cyan{style: "color: white"} forward_5
+      %i.material-icons.prefix.cyan{style: "color: white"} forward_10
+      %i.material-icons.prefix.cyan{style: "color: white"} developer_board
+      %i.material-icons.prefix.cyan{style: "color: white"} ac_unit
 
   .row
     .col.s12
