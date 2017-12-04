@@ -1,4 +1,8 @@
 .container
   .row
     .col.s12
+      = "{{ $ctrl.daegory.__machina__.daegory.state }}"
       = "{{ $ctrl.daegory }}"
+<bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='bliss'" daegory="$ctrl.daegory" />
+<symptomaticdiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='symptomatic_diabetic'" daegory="$ctrl.daegory" />
+<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='discovered_diabetic'" daegory="$ctrl.daegory" />

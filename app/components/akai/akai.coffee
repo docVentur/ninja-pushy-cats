@@ -15,6 +15,8 @@ app.component 'akai', {
 
     @log_value "logstarted"
 
+
+#"variables we are trackign that have information attached to them = json"
 #mass
     @mass = 100
 

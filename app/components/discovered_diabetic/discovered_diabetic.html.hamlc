@@ -1,0 +1,11 @@
+.container
+  .row
+    .col.s4
+      %blockquote.blue Dont Kill DaegoryGene
+      %blockquote Finite State Machine: 3. Discovered Diabetic DaegoryGene
+      %br Added: (visible but not selectable) BG.
+    .col.s4
+      %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
+    .col.s4
+      %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+      %i.material-icons.prefix.blue share 

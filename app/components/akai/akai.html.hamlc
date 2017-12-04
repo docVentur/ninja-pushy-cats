@@ -3,7 +3,7 @@
   .row
     .col.s4
       %blockquote.yellow Dont Kill DaegoryGene
-      %blockquote Finite State Machine: 1. Feed DaegoryGene
+      %blockquote Finite State Machine: 1. Blissful DaegoryGene
       %br Button Added: Feed DaegoryGene
       %br show weight at 100% +/- 1%
     .col.s4
@@ -38,7 +38,7 @@
   .row
     .col.s4
       %blockquote.blue Dont Kill DaegoryGene
-      %blockquote Finite State Machine: 3. Diabetic DaegoryGene
+      %blockquote Finite State Machine: 3. Discovered Diabetic DaegoryGene
       %br Added: (visible but not selectable) BG.
     .col.s4
       %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}

@@ -1,0 +1,12 @@
+.container
+  .row
+    .col.s4
+      %blockquote.yellow Dont Kill DaegoryGene
+      %blockquote Finite State Machine: 1. Blissful DaegoryGene
+      %br Button Added: Feed DaegoryGene
+      %br show weight at 100% +/- 1%
+    .col.s4
+      %button.waves-effect.waves-light.btn.right.large{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
+      <smilemeter value="$ctrl.daegory.number" />
+    .col.s4
+      %i.material-icons.prefix.yellow border_inner

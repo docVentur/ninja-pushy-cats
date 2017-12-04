@@ -1,0 +1,21 @@
+.container
+  .row
+    .col.s4
+      %blockquote.red Dont Kill DaegoryGene
+      %blockquote Finite State Machine: 2. Symptomatic DaegoryGene
+      %br Added: (visible but not selectable) BG.
+      %blockquote.brown{style: "color: white"} ggrulz: white :: all light :: white text/icon :: truth :: qualitative.
+      %blockquote.brown{style: "color: white"} ggrulz: black :: all color :: white text/icon :: snapshot. log. recordable value. :: quantitative.
+      %br as BG rises comments about how consuming sugar is the fastest way to get it into your blood, the liver is also changing protein and fat into sugar
+    .col.s4
+      need to add interval to decrease in FSM2 :: % of healthy weight: {{$ctrl.mass | number}}
+      %button.right{"ng-click": "$ctrl.add_gC()"} white text pink-3 bg BG rising: {{$ctrl.gC | number}}
+    .col.s4
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
+      %i.material-icons.prefix.black{style: "color: white"} sentiment_neutral
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied

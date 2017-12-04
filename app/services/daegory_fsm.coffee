@@ -11,11 +11,23 @@ daegory_fsm = {
         console.log "Entered the blissful state"
       'tick': (stats) ->
         console.log "Handle a blissful tick()"
-        @transition stats, 'diabetic'
+        stats.number = stats.number + 25
+        if stats.number > 100
+          @transition stats, 'symptomatic_diabetic'
     },
-    diabetic: {
+    symptomatic_diabetic: {
       _onEnter: (stats) ->
-        console.log "Entered the diabetic state"
+        console.log "Entered the symptomatic_diabetic state"
+      'tick': (stats) ->
+        console.log "Handle a diabetic tick()"
+        stats.number = stats.number + 25
+        if stats.number > 200
+          @transition stats, 'discovered_diabetic'
+
+    },
+    discovered_diabetic: {
+      _onEnter: (stats) ->
+        console.log "Entered the discovered_diabetic state"
       'tick': (stats) ->
         console.log "Handle a diabetic tick()"
     }
@@ -23,7 +35,7 @@ daegory_fsm = {
 
   init_daegory: () ->
     console.log "Making a new daegory"
-    daegory = {}
+    daegory = {number: 50}
     @handle daegory, 'tick'
     return daegory
 
