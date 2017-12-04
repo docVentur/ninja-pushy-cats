@@ -60,45 +60,98 @@
     .col.s6
       %cell.grey.lighten-1{style: "color: white"} Daegory Gene is a normal kid.
         %br
-        %i.material-icons.prefix.white{style: "color: black"} gesture
+      %cell.white{style: "color: black"}
         %i.material-icons.prefix.white{style: "color: black"} child_care
-        %i.material-icons.prefix.white{style: "color: black"} perm_identity
-        %i.material-icons.prefix.white{style: "color: black"} accessibility
-        %i.material-icons.prefix.white{style: "color: black"} person
-        %i.material-icons.prefix.white{style: "color: black"} person_outline
         %br
     .col.s6
       %cell.grey.lighten-3{style: "color: black"} Daegory Gene is about to experience Bad Stuff
         %br
-        %i.material-icons.prefix.white{style: "color: black"} error
         %i.material-icons.prefix.white{style: "color: black"} new_releases
   .row
     .col.s4
-      %cell.grey{style: "color: yellow"} FSM1: Blissful Daegory Gene :: +mass button & Body icon
-        %i.material-icons.prefix.yellow{style: "color: black"} border_inner
-        %i.material-icons.prefix.white{style: "color: black"} accessibility
-      %cell.grey{style: "color: yellow"} init Daegory + add "Feed Daegory" button + black on yellow accessibility tracking/tag/icon
-    .col.s4
-      %cell.grey{style: "color: red"} FSM2: Symptomatic Daegory :: +smilemeter & white icon blur_circular
+      %cell.grey{style: "color: yellow"} FSM1: Blissful Daegory Gene
         %br
-      %cell.grey{style: "color: red"} add smilemeter + white blur_circular tag/icon + start clock
-        %br.white{style: "color: black"}
+      %hr
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.yellow{style: "color: black"} child_care
+        %br
+      %cell.white{style: "color: black"} init variable: "daegory"
+        %br
+      %hr
+      %cell.white
+        %i.material-icons.prefix.yellow{style: "color: black"} border_inner
+        %br
+      %cell.white{style: "color: black"} ADD BUTTON w toast: Feed Daegory
+        %br
+      %hr
+
+    .col.s4
+      %cell.grey{style: "color: red"} FSM2: Symptomatic Daegory
+        %br
+      %hr
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.pink.lighten-3{style: "color: black"} child_care
+        %br
+      %cell.white{style: "color: black"} init variable: "daegory"
+        %br
+      %hr
+      %cell.white
         %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+        %br
+      %cell start rng clock
+        %br
+      %hr
+      %cell +smilemeter
+        %br
+      %cell.white{style: "color: red"}
+        %br
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
         %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
         %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
-        %i.material-icons.prefix.black{style: "color: white"} sentiment_neutral
+        %i.material-icons.prefix.pink{style: "color: white"} sentiment_neutral
         %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
         %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+        %br
+      %hr
+      %cell  'better' = have blur go from white on white to white on hotpink w smilemeter
     .col.s4
-      %cell.grey{style: "color: blue"} FSM3: Disocvered Diabetic Daeg :: +911 & +411 buttons & share icon
-      %br
-      %cell.grey.lighten-3{style: "color: black"} add 411 then 911 buttons + share tag/icon + pause clock
-      %br
-      %cell.white{style: "color: blue"} 
-        %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
-        %i.material-icons.prefix.blue share
+      %cell.grey{style: "color: blue"} FSM3: Disocvered Diabetic Daeg ::
+        %br
+      %hr
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.blue.lighten-3{style: "color: black"} child_care
+        %br
+      %cell.white{style: "color: black"} init variable: "daegory"
+        %br
+      %hr
+      %cell
+        %i.material-icons.prefix.blue{style: "color: white"} share
+        %br
+      %cell.white{style: "color: black"} 411 button available @
+        %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+        %br
+        %hr
+      %cell
+        %i.material-icons.prefix.blue.lighten-2{style: "color: red"} whatshot
+        %br
+      %cell.white{style: "color: black"} 911 button available @
+        %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+        %br
+        %hr
+      %cell
+        %i.material-icons.prefix.blue.lighten-4 airline_seat_flat
+      %cell.white{style: "color: black"} COMA event
+        %br
+        %hr
+      %cell.white{style: "color: black"} better: rng GAME OVER @ coma
+        %br
+        %hr
+      %cell.gre + pause clock
+        %br
+        %hr
+      %cell.white{style: "color: blue"}
+
   .row
     .col.12
       %cell.grey{style: "color: yellow.darken-3"} FSM4: New Diabetic Huni :: +pplz
@@ -192,6 +245,14 @@
   .row
     .col.s12
       %cell.brown.darken-4{style: "color: white"} game proper.
+        %i.material-icons.prefix.white{style: "color: black"} gesture
+        %i.material-icons.prefix.white{style: "color: black"} child_care
+        %i.material-icons.prefix.white{style: "color: black"} perm_identity
+        %i.material-icons.prefix.white{style: "color: black"} accessibility
+        %i.material-icons.prefix.white{style: "color: black"} person
+        %i.material-icons.prefix.white{style: "color: black"} person_outline
+        %i.material-icons.prefix.white{style: "color: black"} error
+        %br
 
 %ul
   %li{"ng-repeat": "log_entry in $ctrl.log track by $index"}
@@ -201,7 +262,8 @@
   %i.material-icons.prefix.pink.lighten-4{style: "color: white"} blur_circular
   %i.material-icons.prefix.red.lighten-1 border_top
   %button.right{"ng-click": "$ctrl.add_weight()"} Weight: {{$ctrl.weight | number:1}}
-
+  %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+  %i.material-icons.prefix.blue share
 
 
 
