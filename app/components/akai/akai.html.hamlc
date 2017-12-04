@@ -7,8 +7,8 @@
       %br Button Added: Feed DaegoryGene
       %br show weight at 100% +/- 1%
     .col.s4
-      %button.waves-effect.waves-light.btn.right{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
-        <smilemeter value="$ctrl.mass" />
+      %button.waves-effect.waves-light.btn.right.large{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
+      <smilemeter value="$ctrl.mass" />
     .col.s4
       %i.material-icons.prefix.yellow border_inner
 
