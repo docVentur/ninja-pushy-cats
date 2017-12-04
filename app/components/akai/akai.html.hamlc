@@ -49,20 +49,39 @@
 .container
   .row
     .col.s12
-      %blockquote.pink.accent-3{style: "color: white"} Dont
-        %blockquote.pink.accent-3{style: "color: white"} Dont Kill
-          %blockquote.pink.accent-3{style: "color: white"} Dont Kill DaegoryGene
+      %cell.pink.accent-1{style: "color: white"} ... Dont...
+      %br
+      %cell.pink.accent-2{style: "color: white"} ... ... Dont Kill...
+      %br
+      %cell.pink.accent-3{style: "color: white"} ... ... ... Dont Kill Daegory...
+      %br
+      %cell.grey{style: "color: pink"} ... ... ... ... Dont Kill Daegory Gene !!!
   .row
     .col.s6
-      %blockquote.white DaegoryGene is a normal kid.
+      %cell.grey.lighten-1{style: "color: white"} Daegory Gene is a normal kid.
+        %br
+        %i.material-icons.prefix.white{style: "color: black"} gesture
+        %i.material-icons.prefix.white{style: "color: black"} child_care
+        %i.material-icons.prefix.white{style: "color: black"} perm_identity
+        %i.material-icons.prefix.white{style: "color: black"} accessibility
+        %i.material-icons.prefix.white{style: "color: black"} person
+        %i.material-icons.prefix.white{style: "color: black"} person_outline
+        %br
     .col.s6
-      %blockquote.black{style: "color: white"} DaegoryGene is about to experience Bad Stuff.
+      %cell.grey.lighten-3{style: "color: black"} Daegory Gene is about to experience Bad Stuff
+        %br
+        %i.material-icons.prefix.white{style: "color: black"} error
+        %i.material-icons.prefix.white{style: "color: black"} new_releases
   .row
     .col.s4
-      %blockquote.brown.lighten-2{style: "color: yellow"} Y :: Feed DaegoryGene :: +mass
+      %cell.grey{style: "color: yellow"} FSM1: Blissful Daegory Gene :: +mass button & Body icon
         %i.material-icons.prefix.yellow{style: "color: black"} border_inner
+        %i.material-icons.prefix.white{style: "color: black"} accessibility
+      %cell.grey{style: "color: yellow"} init Daegory + add "Feed Daegory" button + black on yellow accessibility tracking/tag/icon
     .col.s4
-      %blockquote.brown.lighten-1{style: "color: red"} R :: Watch DaegoryGene :: +feelings
+      %cell.grey{style: "color: red"} FSM2: Symptomatic Daegory :: +smilemeter & white icon blur_circular
+        %br
+      %cell.grey{style: "color: red"} add smilemeter + white blur_circular tag/icon + start clock
         %br.white{style: "color: black"}
         %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
@@ -72,16 +91,19 @@
         %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
         %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
-
-        <smilemeter value="10" />
-        <smilemeter value="20" />
-        <smilemeter value="30" />
-        AND NOW, FOR MY FINAL TRICK
-        <smilemeter value="$ctrl.mass" />
     .col.s4
-      %blockquote.brown.lighten-2{style: "color: blue"} B :: Help DaegoryGene :: +pplz
+      %cell.grey{style: "color: blue"} FSM3: Disocvered Diabetic Daeg :: +911 & +411 buttons & share icon
+      %br
+      %cell.grey.lighten-3{style: "color: black"} add 411 then 911 buttons + share tag/icon + pause clock
+      %br
+      %cell.white{style: "color: blue"} 
         %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
         %i.material-icons.prefix.blue share
+  .row
+    .col.12
+      %cell.grey{style: "color: yellow.darken-3"} FSM4: New Diabetic Huni :: +pplz
+      %cell.grey{style: "color: yellow.darken-3"} restart clock + add insulin (days)
+      %cell.grey{style: "color: yellow.darken-3"} FSM4: New Diabetic Huni :: +pplz
   .row
     .col.s2
       %i.material-icons.prefix.yellow{style: "black"} timer_3s
@@ -96,6 +118,9 @@
       %i.material-icons.prefix.blue{style: "black"} compare_arrows
     .col.s2
       %i.material-icons.prefix.green{style: "black"} compare
+  .row
+    .col.12
+      %cell.grey{style: "color: red.lighten-3"} FSM5: At Home Diabetic Daeg
   .row
     .col.s1
       %i.material-icons.prefix.yellow.accent-4{style: "color: white"} 3d_rotation
@@ -114,7 +139,6 @@
       %i.material-icons.prefix.green{style: "color: white"} public
       %i.material-icons.prefix.green{style: "color: white"} wallpaper
       %i.material-icons.prefix.green{style: "color: white"} panorama
-
     .col.s2
       %i.material-icons.prefix.white{style: "color: black"} all_inclusive
       %i.material-icons.prefix.white{style: "color: black"} invert_colors
@@ -130,7 +154,6 @@
       %i.material-icons.prefix.black{style: "color: white"} multiline_chart
       %i.material-icons.prefix.black{style: "color: white"} pie_chart
       %i.material-icons.prefix.black{style: "color: white"} pie_chart_outlined
-
     .col.s2
       %i.material-icons.prefix.grey{style: "color: white"} visibility
       %i.material-icons.prefix.grey{style: "color: white"} face
@@ -138,7 +161,9 @@
       %i.material-icons.prefix.grey{style: "color: white"} grain
       %i.material-icons.prefix.grey{style: "color: white"} kitchen
       %i.material-icons.prefix.grey{style: "color: white"} remove_red_eye
-
+  .row
+    .col.12
+      %cell.grey{style: "color: red.lighten-3"} FSM6
   .row
     .col.s6
       %i.material-icons.prefix.pink.lighten-3{style: "color: white"} cake
@@ -161,10 +186,12 @@
       %i.material-icons.prefix.cyan{style: "color: white"} forward_10
       %i.material-icons.prefix.cyan{style: "color: white"} developer_board
       %i.material-icons.prefix.cyan{style: "color: white"} ac_unit
-
+  .row
+    .col.12
+      %cell.grey{style: "color: grey"} FSM7
   .row
     .col.s12
-      %blockquote.brown.darken-4{style: "color: white"} game proper.
+      %cell.brown.darken-4{style: "color: white"} game proper.
 
 %ul
   %li{"ng-repeat": "log_entry in $ctrl.log track by $index"}
