@@ -84,6 +84,12 @@
       %cell.white{style: "color: black"} ADD BUTTON w toast: Feed Daegory
         %br
       %hr
+      %cell.grey{style: "color: white"} add greyscale iceberg
+        %br
+      %hr
+      %cell.grey{style: "color: black"} add greyscale hammer
+        %br
+      %hr
 
     .col.s4
       %cell.grey{style: "color: red"} FSM2: Symptomatic Daegory
@@ -92,29 +98,34 @@
       %cell.white{style: "color: black"}
         %i.material-icons.prefix.pink.lighten-3{style: "color: black"} child_care
         %br
-      %cell.white{style: "color: black"} init variable: "daegory"
-        %br
+      %cell.white{style: "color: black"} variable: "daegory" @ > 100
       %hr
       %cell.white
         %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
         %br
       %cell start rng clock
-        %br
       %hr
       %cell +smilemeter
-        %br
-      %cell.white{style: "color: red"}
+        %cell.white{style: "color: red"}
         %br
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
         %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
         %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
-        %i.material-icons.prefix.pink{style: "color: white"} sentiment_neutral
+        %i.material-icons.prefix.pink.lighten-3{style: "color: white"} sentiment_neutral
         %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
         %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
-        %br
       %hr
       %cell  'better' = have blur go from white on white to white on hotpink w smilemeter
+      %br
+      %hr
+      %cell.grey{style: "color: white"} add greyscale match
+        %br
+      %hr
+      %cell.grey{style: "color: black"} add greyscale bell
+        %br
+      %hr
+
     .col.s4
       %cell.grey{style: "color: blue"} FSM3: Disocvered Diabetic Daeg ::
         %br
@@ -122,7 +133,13 @@
       %cell.white{style: "color: black"}
         %i.material-icons.prefix.blue.lighten-3{style: "color: black"} child_care
         %br
-      %cell.white{style: "color: black"} init variable: "daegory"
+      %cell.white{style: "color: black"} init variable: "daegory" @ > 200
+        %br
+      %hr
+      %cell.white
+        %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+        %br
+      %cell start rng clock
         %br
       %hr
       %cell
@@ -131,26 +148,31 @@
       %cell.white{style: "color: black"} 411 button available @
         %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
         %br
-        %hr
+      %hr
       %cell
         %i.material-icons.prefix.blue.lighten-2{style: "color: red"} whatshot
         %br
       %cell.white{style: "color: black"} 911 button available @
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
         %br
-        %hr
+      %hr
       %cell
         %i.material-icons.prefix.blue.lighten-4 airline_seat_flat
       %cell.white{style: "color: black"} COMA event
         %br
-        %hr
+      %hr
       %cell.white{style: "color: black"} better: rng GAME OVER @ coma
         %br
-        %hr
-      %cell.gre + pause clock
+      %hr
+      %cell + pause clock
         %br
-        %hr
-      %cell.white{style: "color: blue"}
+      %hr
+      %cell.grey{style: "color: white"} add greyscale holding_hands
+        %br
+      %hr
+      %cell.grey{style: "color: black"} add greyscale song
+        %br
+      %hr
 
   .row
     .col.12
@@ -245,6 +267,8 @@
   .row
     .col.s12
       %cell.brown.darken-4{style: "color: white"} game proper.
+        %br
+      %cell
         %i.material-icons.prefix.white{style: "color: black"} gesture
         %i.material-icons.prefix.white{style: "color: black"} child_care
         %i.material-icons.prefix.white{style: "color: black"} perm_identity
@@ -253,7 +277,8 @@
         %i.material-icons.prefix.white{style: "color: black"} person_outline
         %i.material-icons.prefix.white{style: "color: black"} error
         %br
-
+      %cell track age and xp separately
+      %cell track quality of life dependent on quality of organs but recoverable at loss of potential
 %ul
   %li{"ng-repeat": "log_entry in $ctrl.log track by $index"}
     ="{{log_entry.when.format('MMM Do YY')}}"
