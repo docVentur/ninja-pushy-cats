@@ -11,7 +11,7 @@ daegory_fsm = {
         console.log "Entered the blissful state"
       'tick': (stats) ->
         console.log "Handle a blissful tick()"
-        stats.number = stats.number + 25
+        stats.number = stats.number + 1
         if stats.number > 100
           @transition stats, 'symptomatic_diabetic'
     },
@@ -20,7 +20,7 @@ daegory_fsm = {
         console.log "Entered the symptomatic_diabetic state"
       'tick': (stats) ->
         console.log "Handle a diabetic tick()"
-        stats.number = stats.number + 25
+        stats.number = stats.number + 1
         if stats.number > 200
           @transition stats, 'discovered_diabetic'
 
