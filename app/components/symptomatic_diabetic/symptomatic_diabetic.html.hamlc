@@ -19,3 +19,6 @@
       %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
       %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
       %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+  .row
+    .col.s4
+      %img{"ng-src": "{{$ctrl.loadMatch()}}", style: "width: 120px" }    
