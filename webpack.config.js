@@ -1,6 +1,6 @@
 'use strict';
 
-var webpack = require('webpack'); 
+var webpack = require('webpack');
 var cleanPlugin = require('clean-webpack-plugin');
 var ngInjectorPlugin = require('webpack-angular-injector-plugin');
 const path = require('path');
@@ -11,6 +11,7 @@ var module_loaders = [
   { test: /\.html\.hamlc$/, loader: "haml-loader" },
   { test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'url-loader?limit=10000&mimetype=application/font-woff'},
   { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url-loader?limit=10000&mimetype=application/octet-stream'},
+  { test: /\.jpg(\?v=\d+\.\d+\.\d+)?$/, loaders: ['url-loader', 'img-loader']},
   { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader'},
   { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url-loader?limit=10000&mimetype=image/svg+xml'},
   { test: /\.css$/, loaders: ["style-loader","css-loader"] }
@@ -26,8 +27,8 @@ var config = module.exports = {
     }
 };
 
-// this tells Webpack where to put its output, which will 
-// be a compiled JavaScript file 
+// this tells Webpack where to put its output, which will
+// be a compiled JavaScript file
 
 config.output = { filename: './dist/[name].js' }
 
@@ -49,4 +50,3 @@ config.plugins = [
 //      }
 //  })
 ];
-

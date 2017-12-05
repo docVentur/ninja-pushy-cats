@@ -13,5 +13,11 @@ app.component 'bliss', {
     @add_mass = ->
       console.log "some message"
       DaegoryFSM.tick(vm.daegory)
+    @loadIceberg = ->
+      require "./greyscale_iceberg.jpg"
+
+
     @
+
+
 }

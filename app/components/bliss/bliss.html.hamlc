@@ -11,4 +11,4 @@
         <i class="material-icons prefix yellow">border_inner</i>
       </button>
     .col.s4
-      %img{src: "greyscale_iceberg.jpg"}
+      %img{"ng-src": "{{$ctrl.loadIceberg()}}" }
