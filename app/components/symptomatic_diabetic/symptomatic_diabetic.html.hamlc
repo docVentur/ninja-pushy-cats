@@ -1,5 +1,57 @@
 .container
   .row
+    .col.s12
+      %p
+      %img{"ng-src": "{{$ctrl.loadMatch()}}", style: "width: 333px" }
+      %p.pink.lighten-3{style: "align: right"}{style: "color: white"} text
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: pink"} blur_on
+      %h1 blur_on
+      %h2 blur_on
+      %h3 blur_on
+      %h4 blur_on
+      %h5 blur_on
+      %h6 blur_on
+      
+  .row
+    %col.s12
+      %i.material-icons.prefix.black.large{style: "color: white"} airline_seat_flat
+      %br
+      %i.material-icons.prefix.grey.darken-3.large{style: "color: grey"} warning
+      %br
+      %i.material-icons.prefix.grey.large{style: "color: grey"} error
+      %br
+      %i.material-icons.prefix.white.large{style: "color: grey"} error_outline
+      %br
+      %i.material-icons.prefix.grey.large{style: "color: white"} sentiment_very_dissatisfied
+      %br
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: white"} mood_bad
+      %br
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: white"} sentiment_dissatisfied
+      %br
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: white"} sentiment_neutral
+      %br
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: white"} blur_on
+      %br
+      %i.material-icons.prefix.pink.accent-3.large{style: "color: pink"} blur_circular
+      %br
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: white"} blur_on
+      %br
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: white"} sentiment_neutral
+      %br
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: white"} sentiment_satisfied
+      %br
+      %i.material-icons.prefix.grey.large{style: "color: white"} sentiment_very_satisfied
+      %br
+      %i.material-icons.prefix.white.large{style: "color: grey"} error_outline
+      %br
+      %i.material-icons.prefix.grey.large{style: "color: grey"} error
+      %br
+      %i.material-icons.prefix.grey.darken-3.large{style: "color: grey"} warning
+      %br
+      %i.material-icons.prefix.black.large{style: "color: white"} airline_seat_flat
+      %br
+
+  .row
     .col.s4
       %blockquote.red Dont Kill DaegoryGene
       %blockquote Finite State Machine: 2. Symptomatic DaegoryGene
@@ -19,6 +71,9 @@
       %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
       %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
       %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+      %i.material-icons.prefix.white{style: "color: black"} error_outline
+      %i.material-icons.prefix.white{style: "color: black"} error
+      %i.material-icons.prefix.white{style: "color: black"} warning
   .row
     .col.s4
-      %img{"ng-src": "{{$ctrl.loadMatch()}}", style: "width: 120px" }    
+      %img{"ng-src": "{{$ctrl.loadMatch()}}", style: "width: 120px" }
