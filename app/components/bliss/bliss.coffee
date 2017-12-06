@@ -10,6 +10,7 @@ app.component 'bliss', {
   }
   controller: (DaegoryFSM) ->
     vm = @
+    @r = Math.random()
     @add_mass = ->
       console.log "some message"
       DaegoryFSM.tick(vm.daegory)

@@ -1,9 +1,9 @@
 .container
   .row
     .col.s4
-      %cell Blissful DaegoryGene
-      %br Button Added: Feed DaegoryGene
-      %br show weight at 100% +/- 1%
+      %h1 Blissful DaegoryGene
+      %h2 Button Added: Feed DaegoryGene
+      %h2 show weight at 100% +/- 1%
     .col.s4
       %button.waves-effect.waves-light.btn.right.large{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
       <smilemeter value="$ctrl.daegory.number" />
@@ -13,3 +13,6 @@
   .row
     .col.s12
       %img{"ng-src": "{{$ctrl.loadIceberg()}}" }
+  .row
+    .col.s12
+      ="my number is {{$ctrl.r}}"
