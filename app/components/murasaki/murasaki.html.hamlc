@@ -1,9 +1,10 @@
 .container
   .row
     .col.s12
-      <widget_feeding />
-      <widget_feeling />
-      <widget_fellowshipping />
+      LOOK HERE
+      <widget-feeding />
+      <widget-feeling />
+      <widget-fellowshipping />
 .container
   .row
     .col.s12

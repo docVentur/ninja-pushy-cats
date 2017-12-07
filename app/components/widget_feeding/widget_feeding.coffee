@@ -3,7 +3,7 @@ _ = require 'lodash'
 
 app = angular.module 'AXE'
 
-app.component 'widget_feeding', {
+app.component 'widgetFeeding', {
   template: require('./widget_feeding.html.hamlc'),
   bindings: {
     value: '<'
