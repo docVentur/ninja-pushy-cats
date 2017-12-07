@@ -1,6 +1,12 @@
 .container
   .row
     .col.s12
+      <widget_feeding />
+      <widget_feeling />
+      <widget_fellowshipping />
+.container
+  .row
+    .col.s12
       = "{{ $ctrl.daegory.__machina__.daegory.state }}"
       = "{{ $ctrl.daegory }}"
 <bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='bliss'" daegory="$ctrl.daegory" />

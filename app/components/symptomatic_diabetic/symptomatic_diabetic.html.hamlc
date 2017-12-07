@@ -2,16 +2,15 @@
   .row
     .col.s12
       %p
-      %img{"ng-src": "{{$ctrl.loadMatch()}}", style: "width: 333px" }
+      %img.circle.responsive-img.pulse{"ng-src": "{{$ctrl.loadMatch()}}", style: "width: 333px" }
       %p.pink.lighten-3{style: "align: right"}{style: "color: white"} text
-      %i.material-icons.prefix.pink.lighten-3.large{style: "color: pink"} blur_on
+      %i.material-icons.prefix.pink.lighten-3.large.circle.responsive-img.pulse{style: "color: pink"; "class: circle"} blur_on
       %h1 blur_on
       %h2 blur_on
       %h3 blur_on
       %h4 blur_on
       %h5 blur_on
       %h6 blur_on
-
 
   .row
     %col.s1
