@@ -1,10 +1,10 @@
 angular = require 'angular'
 _ = require 'lodash'
 
-app = angular.module 'AXE'
+app = angular.module 'GG'
 
-app.component 'murasaki', {
-  template: require('./murasaki.html.hamlc'),
+app.component 'screenDaegoryBliss', {
+  template: require('./screenDaegoryBliss.html.hamlc'),
   controller: (DaegoryFSM, $stateParams, moment, $interval) ->
     vm = @
 

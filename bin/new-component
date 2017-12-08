@@ -15,8 +15,8 @@ class ComponentTemplate
     @name = name
     @singular = ActiveSupport::Inflector.singularize name
     @plural = ActiveSupport::Inflector.pluralize name
-    @modulename = "AXE"
-    @dbname = "AXEdb"
+    @modulename = "GG"
+    @dbname = "GGdb"
   end
 
   def dump

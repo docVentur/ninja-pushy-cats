@@ -1,8 +1,0 @@
-%i.material-icons.prefix.pink.lighten-3.large{style: "color: white"} blur_circular
-%i.material-icons.prefix.white.large{"ng-if": "$ctrl.value < 15", style: "color: black"} sentiment_very_dissatisfied
-%i.material-icons.prefix.grey.lighten-2.large{"ng-if": "($ctrl.value > 15) && ($ctrl.value < 35)", style: "color: black"} mood_bad
-%i.material-icons.prefix.grey.large{"ng-if": "($ctrl.value > 35) && ($ctrl.value < 65)", style: "color: white"} sentiment_dissatisfied
-%i.material-icons.prefix.black.large{"ng-if": "($ctrl.value > 65) && ($ctrl.value < 85)", style: "color: white"} sentiment_neutral
-%i.material-icons.prefix.grey.large{"ng-if": "($ctrl.value > 85) && ($ctrl.value < 100)", style: "color: white"} sentiment_satisfied
-%i.material-icons.prefix.grey.lighten-2.large{"ng-if": "($ctrl.value > 100) && ($ctrl.value < 135)", style: "color: black"} mood
-%i.material-icons.prefix.white.large{"ng-if": "($ctrl.value > 135)", style: "color: black"} sentiment_very_satisfied

@@ -1,0 +1,5 @@
+.container
+  .row
+    .col.s12
+      = "{{ $ctrl.daegory.__machina__.daegory.state }}"
+      = "{{ $ctrl.daegory }}"
