@@ -1,8 +1,98 @@
 .container
   .row
+    .col.s12
+      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_feeling()"} {{$ctrl.feeling | number}}
+      <feelingsIndicater value="$ctrl.feeling" /> FEED DAEGORY GENE
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+    .col.s12
+      %button.waves-effect.waves-light.btn.right.large{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
+      <smilemeter value="$ctrl.mass" />
+  .row
     .col.s12.pink.lighten-3 Feed Daegory Gene
   .row
     .col.s11.pink.lighten-3
-      %button.btn.yellow{style: "color: black", "ng-click": "$ctrl.add_feelings(-4)"} Feed
+      %button.btn.yellow.Materialize.toast('Daegory Gene fed!', 4000){style: "color: black", "ng-click": "$ctrl.add_feelings(-4)"} Feed Daegory Gene
     .col.s1.pink.lighten-3
-      <feelings-indicator value="$ctrl.feelings" />
+      <feelings-indicator value="$ctrl.mass" />
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+  .row
+    .col.s12
+      %button.waves-effect.waves-light.btn.right.large{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
+      <smilemeter value="$ctrl.mass" />

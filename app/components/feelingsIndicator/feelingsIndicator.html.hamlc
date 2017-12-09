@@ -1,3 +1,4 @@
+
 %i.material-icons.prefix.black.large{"ng-if": "($ctrl.value < -84) && ($ctrl.value > -100)", style: "color: white"} airline_seat_flat
 %i.material-icons.prefix.grey.large{"ng-if": "($ctrl.value < -67) && ($ctrl.value > -85)", style: "color: grey"} error
 %i.material-icons.prefix.grey.large{"ng-if": "($ctrl.value < -50) && ($ctrl.value > -68)", style: "color: white"} sentiment_very_dissatisfied
