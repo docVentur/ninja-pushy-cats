@@ -50,5 +50,5 @@ daegory_fsm = {
 
 app = angular.module 'GG'
 
-app.service 'DaegoryFSM', (pouchDB, moment) ->
+app.service 'DaegoryFSM', (moment) ->
   return new machina.BehavioralFsm daegory_fsm

@@ -26,4 +26,4 @@ require './services/services.coffee'
 require './components/components.coffee'
 
 app.config ($stateProvider) ->
-  $stateProvider.state = {name: 'main', url: '/main', template: require('./main.html.hamlc')}
+  $stateProvider.state = {name: 'screenDaegoryBliss', url: '/screenDaegoryBliss', component: "screenDaegoryBliss"}
