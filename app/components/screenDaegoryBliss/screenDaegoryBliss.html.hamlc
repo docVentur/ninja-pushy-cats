@@ -1,5 +1,45 @@
 .container
   .row
+    .col.s12.pink.lighten-3 Feed Daegory Gene
+  .row
     .col.s12
       = "{{ $ctrl.daegory.__machina__.daegory.state }}"
       = "{{ $ctrl.daegory }}"
+      <feelings-indicator value="1" />
+  .row
+    .col.s1
+      <feelings-indicator value="-90" />
+        %br
+    .col.s1
+      <feelings-indicator value="-68" />
+        %br
+    .col.s1
+      <feelings-indicator value="-57" />
+        %br
+    .col.s1
+      <feelings-indicator value="-37" />
+        %br
+    .col.s1
+      <feelings-indicator value="-20" />
+        %br
+    .col.s1
+      <feelings-indicator value="-1" />
+        %br
+    .col.s1
+      <feelings-indicator value="1" />
+        %br
+    .col.s1
+      <feelings-indicator value="19" />
+        %br
+    .col.s1
+      <feelings-indicator value="35" />
+        %br
+    .col.s1
+      <feelings-indicator value="57" />
+        %br
+    .col.s1
+      <feelings-indicator value="69" />
+        %br
+    .col.s1
+      <feelings-indicator value="95" />
+        %br
