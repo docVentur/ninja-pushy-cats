@@ -8,8 +8,8 @@ app.component 'screenDaegorysWorld', {
   controller: (DaegoryFSM, $stateParams, moment, $interval) ->
     vm = @
     @daegory = DaegoryFSM.init_daegory()
-    @mass = 1
-    @feeling = -1
+    @mass = 100
+    @feeling = 0
     @minion = 1
 
     @add_mass = (amount) ->
@@ -17,14 +17,6 @@ app.component 'screenDaegorysWorld', {
       vm.feeling = vm.feeling + amount
       vm.minion = vm.minion + amount
       Materialize.toast 'Fed!!!', 3333
-
-    @add_feeling = (amount) ->
-      vm.feeling = vm.feeling + amount
-      Materialize.toast 'Daegory loses mass and feels bad.', 3333
-
-    @add_minion = (amount) ->
-      vm.minion = vm.minion + amount
-      Materialize.toast 'Daegory gets to live!!!', 3333
 
     @
 

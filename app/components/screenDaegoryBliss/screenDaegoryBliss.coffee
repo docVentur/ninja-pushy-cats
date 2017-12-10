@@ -7,10 +7,6 @@ app.component 'screenDaegoryBliss', {
   template: require('./screenDaegoryBliss.html.hamlc'),
   controller: (DaegoryFSM, $stateParams, moment, $interval) ->
     vm = @
-    @daegory = DaegoryFSM.init_daegory()
-    @mass = 1
-    @feeling = -1
-    @minion = 1
 
     @add_mass = (amount) ->
       vm.mass = vm.mass + amount

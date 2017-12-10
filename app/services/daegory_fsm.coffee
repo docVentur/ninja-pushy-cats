@@ -4,13 +4,22 @@ _ = require 'lodash'
 
 daegory_fsm = {
   namespace: "daegory",
-  initialState: "bliss",
+  initialState: "daegorys_world",
   states: {
+    daegorys_world: {
+      _onEnter: (stats) ->
+        console.log "Entered Daegory Gene's World"
+      'tick': (stats) ->
+        console.log "Handle Daegory's tick()"
+        stats.number = stats.number + 1
+        if stats.number > 1
+          @transition stats, 'bliss'
+    },
     bliss: {
       _onEnter: (stats) ->
         console.log "Entered a state of bliss. *Think greyscale_iceberg. Use widget_feeding*."
       'tick': (stats) ->
-        console.log "Handle a blissful tick()"
+        console.log "Handle a bliss tick()"
         stats.number = stats.number + 1
         if stats.number > 100
           @transition stats, 'symptomatic_diabetic'
@@ -55,7 +64,7 @@ daegory_fsm = {
   },
 
   init_daegory: () ->
-    console.log "Making a new Daegory Gene"
+    console.log "Atarashii Daegory Gene"
     daegory = {number: 0}
     @handle daegory, 'tick'
     return daegory

@@ -1,55 +1,17 @@
 %h1 screenDeagorysWorld
-.container
-  .row
-    .col.s12.brown{style: "height: 120px"}
-      %h1 screenDaegoryBliss
-  .row
-    .col.s12.brown{style: "height: 60px"}
-      %h6 workspace
-  .row
-    .col.s12.brown{style: "height: 25px"}
-      ="{{$ctrl.daegory.number}} :: daegory"
-.container
-  .row
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      <feedingsIndicater value="$ctrl.mass" />
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      <feelingsIndicater value="$ctrl.feeling" />
-      %button.waves-effect.waves-light.btn.right.red.large{style: "color: pink", "ng-click": "$ctrl.add_feeling()"}
-        %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_on
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      <fellowshippingIndicator value="$ctrl.minion" />
-      %button.waves-effect.waves-light.btn.right.blue.large{style: "color: blue", "ng-click": "$ctrl.add_minion()"}
-        %i.material-icons.prefix.blue.large.pulse{style: "color: pink"} share
+%button.waves-effect.waves-light.btn.right.yellow.large{style: "color: red", "ng-click": "$ctrl.add_mass()"}
+  %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
 
-%hr
 .container
   .row
-    .col.s12.brown{style: "height: 60px; color: white"}
-      %h6 current status of variables
+    .col.s12
+      {{$ctrl.daegory}} = daegory
   .row
-    .col.s4.pink.lighten-3{style: "height: 20px"}
-      {{$ctrl.mass}} :: mass
-    .col.s4.pink.lighten-3{style: "height: 20px"}
-      {{$ctrl.feeling}} :: feeling
-    .col.s4.pink.lighten-3{style: "height: 20px"}
-      {{$ctrl.minion}} :: minion
-
+    .col.s12.yellow
+      {{$ctrl.mass}} = mass (+/- % of healthy mass)
   .row
-    .col.s12.brown{style: "height: 60px; color: white"}
-      %h6 template
+    .col.s12.red.lighten-1
+      {{$ctrl.feeling}} = feeling (-100 - +100)
   .row
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_feeding()"}
-        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-      %h6 feedingIndicator
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.red.large{style: "color: pink", "ng-click": "$ctrl.add_feeling()"}
-        %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_on
-      %h6 feelingsIndicater
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.blue.large{style: "color: blue", "ng-click": "$ctrl.add_fellowshipping()"}
-        %i.material-icons.prefix.blue.large.pulse{style: "color: pink"} share
-      %h6 fellowshippingIndicator
+    .col.s12.blue.lighten-1
+      {{$ctrl.minion}} = minion (quantity)
