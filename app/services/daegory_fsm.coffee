@@ -12,7 +12,7 @@ daegory_fsm = {
       'tick': (stats) ->
         console.log "Handle Daegory's tick()"
         stats.number = stats.number + 1
-        if stats.number > 1
+        if stats.number > 5
           @transition stats, 'bliss'
     },
     bliss: {

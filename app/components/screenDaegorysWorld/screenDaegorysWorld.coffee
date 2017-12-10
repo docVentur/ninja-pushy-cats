@@ -13,10 +13,10 @@ app.component 'screenDaegorysWorld', {
     @minion = 1
 
     @add_mass = (amount) ->
+      DaegoryFSM.tick(vm.daegory)
       vm.mass = vm.mass + amount
       vm.feeling = vm.feeling + amount
-      vm.minion = vm.minion + amount
-      Materialize.toast 'Fed!!!', 3333
+      Materialize.toast 'Entered Daegory Genes World!', 3333
 
     @
 

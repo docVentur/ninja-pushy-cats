@@ -1,6 +1,6 @@
 %h1 screenDeagorysWorld
-%button.waves-effect.waves-light.btn.right.yellow.large{style: "color: red", "ng-click": "$ctrl.add_mass()"}
-  %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
+  %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: red", "ng-click": "$ctrl.add_mass()"}
+    %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
 
 .container
   .row

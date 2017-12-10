@@ -7,7 +7,7 @@ require './screenDaegorySymptomatic/screenDaegorySymptomatic.coffee'
 require './feelingsIndicator/feelingsIndicator.coffee'
 
 require './screenDaegoryDiscovered/screenDaegoryDiscovered.coffee'
-require './fellowshippingIndicator/fellowshippingIndicator.coffee'
+
 
 require './screenDaegoryTreated/screenDaegoryTreated.coffee'
 require './treatmentIndicator/treatmentIndicator.coffee'
