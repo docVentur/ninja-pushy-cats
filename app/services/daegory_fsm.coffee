@@ -4,11 +4,11 @@ _ = require 'lodash'
 
 daegory_fsm = {
   namespace: "daegory",
-  initialState: "symptomatic_diabetic",
+  initialState: "bliss",
   states: {
     bliss: {
       _onEnter: (stats) ->
-        console.log "Entered the bliss state. Think greyscale_iceberg. Use widget_feeding."
+        console.log "Entered a state of bliss. *Think greyscale_iceberg. Use widget_feeding*."
       'tick': (stats) ->
         console.log "Handle a blissful tick()"
         stats.number = stats.number + 1
@@ -17,22 +17,39 @@ daegory_fsm = {
     },
     symptomatic_diabetic: {
       _onEnter: (stats) ->
-        console.log "Entered the symptomatic_diabetic state. Think greyscale_match. Use widget_feeling."
+        console.log "Entered the symptomatic_diabetic state. *Think greyscale_match. Use widget_feeling.*"
       'tick': (stats) ->
-        console.log "Handle a diabetic tick()"
+        console.log "Handle a symptomatic_diabetic tick()"
         stats.number = stats.number + 1
         if stats.number > 200
           @transition stats, 'discovered_diabetic'
     },
     discovered_diabetic: {
       _onEnter: (stats) ->
-        console.log "Entered the discovered_diabetic state. Think greyscale_hands. Use widget_fellowshipping."
+        console.log "Entered the discovered_diabetic state. *Think greyscale_hands. Use widget_fellowshipping.*"
       'tick': (stats) ->
-        console.log "Handle a diabetic tick()"
+        console.log "Handle a discovered_diabetic tick()"
+        stats.number = stats.number + 1
+        if stats.number > 300
+          @transition stats, 'treated_diabetic'
     }
     treated_diabetic: {
       _onEnter: (stats) ->
-        console.log "Entered the treated_diabetic state. Think yellow_fairygodmother. Use widget_fairy_gawdhordes"
+        console.log "Entered the treated_diabetic state. *Think yellow_fairygodmother. Use widget_fairy_gawdhordes.*"
+      'tick': (stats) ->
+        console.log "Handle a treated_diabetic tick()"
+        stats.number = stats.number + 1
+        if stats.number > 900
+          @transition stats, 'genki_diabetic'
+    }
+    genki_diabetic: {
+      _onEnter: (stats) ->
+        console.log "Entered the genki_diabetic state. *Think 2020-30.*"
+      'tick': (stats) ->
+        console.log "Handle a genki_diabetic tick()"
+        stats.number = stats.number + 1
+        if stats.number > 1000
+          @transition stats, 'RIP.DaegoryGene'
     }
 
   },
