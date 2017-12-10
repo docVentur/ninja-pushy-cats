@@ -7,26 +7,26 @@ app.component 'screenDaegoryBliss', {
   template: require('./screenDaegoryBliss.html.hamlc'),
   controller: (DaegoryFSM, $stateParams, moment, $interval) ->
     vm = @
+    @daegory = DaegoryFSM.init_daegory()
+    @mass = 1
     @feeling = -1
+    @minion = 1
+
+    @add_mass = (amount) ->
+      vm.mass = vm.mass + amount
+      vm.feeling = vm.feeling + amount
+      vm.minion = vm.minion + amount
+      Materialize.toast 'Fed!!!', 3333
+
     @add_feeling = (amount) ->
       vm.feeling = vm.feeling + amount
-      Materialize.toast 'Fed!!!', 4000
-    @daegory = DaegoryFSM.init_daegory()
-    vm.state = vm.daegory.__machina__.daegory.state
+      Materialize.toast 'Daegory loses mass and feels bad.', 3333
 
-
-# probably unused
-    @mass = 100
-
-    @add_mass = ->
-      @mass = @mass + 1
-      Materialize.toast 'Fed!!!', 4000
-
-
-#    $interval ->
-#      DaegoryFSM.tick(vm.daegory)
-#      vm.state = vm.daegory.__machina__.daegory.state
-#    , 1000
+    @add_minion = (amount) ->
+      vm.minion = vm.minion + amount
+      Materialize.toast 'Daegory gets to live!!!', 3333
 
     @
+
+
 }
