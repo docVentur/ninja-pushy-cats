@@ -1,17 +1,37 @@
+%hr
 %h1 screenDeagorysWorld
   %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: red", "ng-click": "$ctrl.add_mass()"}
     %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
+%hr
+%h1 FSM daegorys_world
+<bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='daegorys_world'" daegory="$ctrl.daegory" />
+%h1 FSM bliss
+<bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='bliss'" daegory="$ctrl.daegory" />
+%h1 FSM symptomatic_diabetic
+<symptomaticdiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='symptomatic_diabetic'" daegory="$ctrl.daegory" />
+%h1 FSM discovered_diabetic
+<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='discovered_diabetic'" daegory="$ctrl.daegory" />
+%h1 FSM treated_diabetic
+<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='treated_diabetic'" daegory="$ctrl.daegory" />
+%h1 FSM genki_diabetic
+<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='genki_diabetic'" daegory="$ctrl.daegory" />
+%h1 FSM RIP_diabetic
+<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='RIP_diabetic'" daegory="$ctrl.daegory" />
+%h1 FSM daegorys_world 2.0
+<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='daegorys_world_2.0'" daegory="$ctrl.daegory" />
+
+%hr
+%hr
+%hr
 
 .container
   .row
-    .col.s12
+    .col.s12.pink.lighten-3{style: "color: white"}
       {{$ctrl.daegory}} = daegory
   .row
-    .col.s12.yellow
+    .col.s4.yellow
       {{$ctrl.mass}} = mass (+/- % of healthy mass)
-  .row
-    .col.s12.red.lighten-1
+    .col.s4.red.lighten-1
       {{$ctrl.feeling}} = feeling (-100 - +100)
-  .row
-    .col.s12.blue.lighten-1
+    .col.s4.blue.lighten-1
       {{$ctrl.minion}} = minion (quantity)
