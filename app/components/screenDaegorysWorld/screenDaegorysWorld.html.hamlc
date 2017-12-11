@@ -6,13 +6,13 @@
 
 <screen-daegory-bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='bliss'" daegory="$ctrl.daegory" />
 
-<screen-symptomatic-diabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='symptomatic_diabetic'" daegory="$ctrl.daegory" />
+<screen-daegory-symptomatic ng-if="$ctrl.daegory.__machina__.daegory.state=='symptomatic_diabetic'" daegory="$ctrl.daegory" />
 
-<screen-discovered-diabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='discovered_diabetic'" daegory="$ctrl.daegory" />
+<screen-daegory-discovered ng-if="$ctrl.daegory.__machina__.daegory.state=='discovered_diabetic'" daegory="$ctrl.daegory" />
 
-<screen-treated-diabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='treated_diabetic'" daegory="$ctrl.daegory" />
+<screen-daegory-treated ng-if="$ctrl.daegory.__machina__.daegory.state=='treated_diabetic'" daegory="$ctrl.daegory" />
 
-<screen-genki-diabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='genki_diabetic'" daegory="$ctrl.daegory" />
+<screen-daegory-genki ng-if="$ctrl.daegory.__machina__.daegory.state=='genki_diabetic'" daegory="$ctrl.daegory" />
 
 <screen-rip ng-if="$ctrl.daegory.__machina__.daegory.state=='rip'" daegory="$ctrl.daegory" />
 

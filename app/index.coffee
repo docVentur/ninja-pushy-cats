@@ -26,4 +26,5 @@ require './services/services.coffee'
 require './components/components.coffee'
 
 app.config ($stateProvider) ->
-  $stateProvider.state = {name: 'screenDaegoryBliss', url: '/screenDaegoryBliss', component: "screenDaegoryBliss"}
+  $stateProvider.state = {name: 'bliss', url: '/screenDaegoryBliss', component: "screenDaegoryBliss"}
+  $stateProvider.state = {name: 'symptomatic_diabetic', url: '/screenDaegorySymptomatic', component: "screenDaegorySymptomatic"}

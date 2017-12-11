@@ -10,7 +10,7 @@ daegory_fsm = {
       _onEnter: (stats) ->
         console.log "Entered Daegory Gene's World"
       'tick': (stats) ->
-        console.log "Handle Daegory's tick()"
+        console.log "Handle Daegory's first tick()"
         stats.number = stats.number + 1
         if stats.number > 1
           @transition stats, 'bliss'
@@ -21,7 +21,7 @@ daegory_fsm = {
       'tick': (stats) ->
         console.log "Handle a bliss tick()"
         stats.number = stats.number + 1
-        if stats.number > 100
+        if stats.number > 10
           @transition stats, 'symptomatic_diabetic'
     },
     symptomatic_diabetic: {
@@ -30,7 +30,7 @@ daegory_fsm = {
       'tick': (stats) ->
         console.log "Handle a symptomatic_diabetic tick()"
         stats.number = stats.number + 1
-        if stats.number > 200
+        if stats.number > 20
           @transition stats, 'discovered_diabetic'
     },
     discovered_diabetic: {
@@ -39,7 +39,7 @@ daegory_fsm = {
       'tick': (stats) ->
         console.log "Handle a discovered_diabetic tick()"
         stats.number = stats.number + 1
-        if stats.number > 300
+        if stats.number > 30
           @transition stats, 'treated_diabetic'
     }
     treated_diabetic: {
@@ -48,7 +48,7 @@ daegory_fsm = {
       'tick': (stats) ->
         console.log "Handle a treated_diabetic tick()"
         stats.number = stats.number + 1
-        if stats.number > 900
+        if stats.number > 90
           @transition stats, 'genki_diabetic'
     }
     genki_diabetic: {
@@ -57,7 +57,7 @@ daegory_fsm = {
       'tick': (stats) ->
         console.log "Handle a genki_diabetic tick()"
         stats.number = stats.number + 1
-        if stats.number > 1000
+        if stats.number > 100
           @transition stats, 'RIP.DaegoryGene'
     }
 

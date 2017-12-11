@@ -1,8 +1,7 @@
 .container
   .row
     .col.s4.pink.lighten-3{style: "height: 120px"}
-      <feedingsIndicater value="$ctrl.mass" />
       %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
         %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
     .col.s4.pink.lighten-3{style: "height: 120px"}
-      Feed Daegory Gene
+      %p Feed Daegory Gene
