@@ -1,197 +1,192 @@
+-# this is a HAML comment
 .container
   .row
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %p screenDaegorySymptomatic
-
-.container
+    .col.s12.pink.lighten-3{style: "color: white"}
+      %h1 Dont Kill Daegory Gene!
   .row
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %p <feedingsIndicater value="$ctrl.mass" />
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %p <feelingsIndicater value="$ctrl.feeling" />
-      %button.waves-effect.waves-light.btn.right.red.large{style: "color: pink", "ng-click": "$ctrl.add_feeling()"}
-        %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_on
-
-%h1 screenDaegoryGenki
-
-angular = require 'angular'
-_ = require 'lodash'
-
-app = angular.module 'GG'
-
-app.component 'screenDaegoryBliss', {
-  template: require('./screenDaegoryBliss.html.hamlc'),
-  controller: (DaegoryFSM, $stateParams, moment, $interval) ->
-    vm = @
-
-    @add_mass = (amount) ->
-      vm.mass = vm.mass + amount
-      vm.feeling = vm.feeling + amount
-      vm.minion = vm.minion + amount
-      Materialize.toast 'Fed!!!', 3333
-
-    @add_feeling = (amount) ->
-      vm.feeling = vm.feeling + amount
-      Materialize.toast 'Daegory loses mass and feels bad.', 3333
-
-    @add_minion = (amount) ->
-      vm.minion = vm.minion + amount
-      Materialize.toast 'Daegory gets to live!!!', 3333
-
-    @
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container
+    .col.s6.grey.lighten-1{style: "color: white"} Daegory Gene is a normal kid.
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.white{style: "color: black"} child_care
+    .col.s6.grey.lighten-3{style: "color: black"} Daegory Gene is about to experience Bad Stuff
+        %i.material-icons.prefix.white{style: "color: black"} new_releases
   .row
-    .col.s12.brown{style: "height: 120px"}
-      %h1 screenDaegoryBliss
+    .col.6.grey{style: "color: yellow"}
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.yellow{style: "color: black"} child_care
+        %i.material-icons.prefix.yellow{style: "color: black"} border_inner
   .row
-    .col.s12.brown{style: "height: 60px"}
-      %h6 workspace
+    .col.12.yellow{style: "color: black"}
+      %button.waves-effect.waves-light.btn.right.large{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
+      <smilemeter value="$ctrl.mass" />
+      %i.material-icons.prefix.yellow border_inner
+      %button.right{"ng-click": "$ctrl.add_gC()"} white text pink-3 bg BG rising: {{$ctrl.gC | number}}
+      %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
   .row
-    .col.s12.brown{style: "height: 25px"}
-      ="{{$ctrl.daegory.number}} :: daegory"
-.container
+    .col.s12.orange
   .row
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      <feedingsIndicater value="$ctrl.mass" />
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      <feelingsIndicater value="$ctrl.feeling" />
-      %button.waves-effect.waves-light.btn.right.red.large{style: "color: pink", "ng-click": "$ctrl.add_feeling()"}
-        %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_on
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      <fellowshippingIndicator value="$ctrl.minion" />
-      %button.waves-effect.waves-light.btn.right.blue.large{style: "color: blue", "ng-click": "$ctrl.add_minion()"}
-        %i.material-icons.prefix.blue.large.pulse{style: "color: pink"} share
+    .col.s12.red
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
+      %i.material-icons.prefix.black{style: "color: white"} sentiment_neutral
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+  .row
+      %cell.grey{style: "color: red"} FSM2: Symptomatic Daegory
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.pink.lighten-3{style: "color: black"} child_care
+      %cell.white{style: "color: black"} variable: "daegory" @ > 100
+      %cell.white
+        %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+        %cell.white{style: "color: red"}
+        %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+        %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+        %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
+        %i.material-icons.prefix.pink.lighten-3{style: "color: white"} sentiment_neutral
+        %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
+        %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
+        %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+  .row
+    .col.s12.purple
+  .row
+    .col.s12.blue
+      %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+      %i.material-icons.prefix.blue share
 
-%hr
-.container
-  .row
-    .col.s12.brown{style: "height: 60px; color: white"}
-      %h6 current status of variables
-  .row
-    .col.s4.pink.lighten-3{style: "height: 20px"}
-      {{$ctrl.mass}} :: mass
-    .col.s4.pink.lighten-3{style: "height: 20px"}
-      {{$ctrl.feeling}} :: feeling
-    .col.s4.pink.lighten-3{style: "height: 20px"}
-      {{$ctrl.minion}} :: minion
+    .col.s4
+      %cell.grey{style: "color: blue"} FSM3: Disocvered Diabetic Daeg ::
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.blue.lighten-3{style: "color: black"} child_care
+      %cell.white{style: "color: black"} init variable: "daegory" @ > 200
+      %cell.white
+        %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+      %cell
+        %i.material-icons.prefix.blue{style: "color: white"} share
+      %cell.white{style: "color: black"} 411 button available @
+        %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %cell
+        %i.material-icons.prefix.blue.lighten-2{style: "color: red"} whatshot
+        %br
+      %cell.white{style: "color: black"} 911 button available @
+        %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %cell
+        %i.material-icons.prefix.blue.lighten-4 airline_seat_flat
+      %cell.white{style: "color: black"} COMA event
+      %cell.white{style: "color: black"} better: rng GAME OVER @ coma
 
   .row
-    .col.s12.brown{style: "height: 60px; color: white"}
-      %h6 template
+    .col.s12.green
   .row
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_feeding()"}
-        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-      %h6 feedingIndicator
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.red.large{style: "color: pink", "ng-click": "$ctrl.add_feeling()"}
-        %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_on
-      %h6 feelingsIndicater
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.blue.large{style: "color: blue", "ng-click": "$ctrl.add_fellowshipping()"}
-        %i.material-icons.prefix.blue.large.pulse{style: "color: pink"} share
-      %h6 fellowshippingIndicator
+    .col.s12.white
+  .row
+    .col.s12.black
+    .col.s2
+      %i.material-icons.prefix.yellow{style: "black"} timer_3s
+    .col.s2
+      %i.material-icons.prefix.orange{style: "black"} tonality
+    .col.s2
+      %i.material-icons.prefix.red{style: "black"} flight_land
+      %i.material-icons.prefix.red{style: "black"} flight_takeoff
+    .col.s2
+      %i.material-icons.prefix.purple{style: "black"} timeline
+    .col.s2
+      %i.material-icons.prefix.blue{style: "black"} compare_arrows
+    .col.s2
+      %i.material-icons.prefix.green{style: "black"} compare
+  .row
+    .col.s12.grey
+    .col.12
+      %cell.grey{style: "color: yellow.darken-3"} FSM4: New Diabetic Huni :: +pplz
+      %cell.grey{style: "color: yellow.darken-3"} restart clock + add insulin (days)
+      %cell.grey{style: "color: yellow.darken-3"} FSM4: New Diabetic Huni :: +pplz
 
-
-%h1 screenDaegorySymptomatic
-<feelings-indicator value="0"/>
-.container
+    .col.12
+      %cell.grey{style: "color: red.lighten-3"} FSM5: At Home Diabetic Daeg
   .row
-    .col.s12.pink.lighten-3
+    .col.s12.pink
   .row
-    .col.s4.pink.lighten-3
--# This will be the feeding widget
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_feeling()"} aicon
-      Feed Daegory
-      %p
-      %p
-    .col.s4.pink.lighten-3
--# This feelingsIndicater should display only the icon appropriate for the feeling variable
-      %button.waves-effect.waves-light.btn.right.red.lighten-3.large{style: "color: black", "ng-click": "$ctrl.add_feeling()"} aicon
-      <feelingsIndicater value="$ctrl.feeling" />
-    .col.s4.pink.lighten-3
--# This will end the current game with either help or a hearse and a link to ... somewhere.
-      %button.waves-effect.waves-light.btn.right.blue.large{style: "color: black", "ng-click": "$ctrl.add_feeling()"} aicon
-      %p
-      %p fellowshippingIndicator
+    .col.s12.cyan
+  .row
+    .col.s12.brown
+  .row
+    .col.s1
+      %i.material-icons.prefix.yellow.accent-4{style: "color: white"} 3d_rotation
+    .col.s1
+      %i.material-icons.prefix.orange{style: "color: white"} wb_sunny
+    .col.s1
+      %i.material-icons.prefix.red{style: "color: white"} flare
+    .col.s1
+      %i.material-icons.prefix.purple{style: "color: white"} linear_scale
+    .col.s1
+      %i.material-icons.prefix.blue{style: "color: white"} polymer
+    .col.s1
+      %i.material-icons.prefix.green{style: "color: white"} color_lens
+      %i.material-icons.prefix.green{style: "color: white"} crop_rotate
+      %i.material-icons.prefix.green{style: "color: white"} exposure
+      %i.material-icons.prefix.green{style: "color: white"} public
+      %i.material-icons.prefix.green{style: "color: white"} wallpaper
+      %i.material-icons.prefix.green{style: "color: white"} panorama
+    .col.s2
+      %i.material-icons.prefix.white{style: "color: black"} all_inclusive
+      %i.material-icons.prefix.white{style: "color: black"} invert_colors
+      %i.material-icons.prefix.white{style: "color: black"} palette
+      %i.material-icons.prefix.white{style: "color: black"} public
+    .col.s2
+      %i.material-icons.prefix.black{style: "color: white"} copyright
+      %i.material-icons.prefix.black{style: "color: white"} check_box
+      %i.material-icons.prefix.black{style: "color: white"} check_circle
+      %i.material-icons.prefix.black{style: "color: white"} done_all
+      %i.material-icons.prefix.black{style: "color: white"} looks
+      %i.material-icons.prefix.black{style: "color: white"} monetization_on
+      %i.material-icons.prefix.black{style: "color: white"} multiline_chart
+      %i.material-icons.prefix.black{style: "color: white"} pie_chart
+      %i.material-icons.prefix.black{style: "color: white"} pie_chart_outlined
+    .col.s2
+      %i.material-icons.prefix.grey{style: "color: white"} visibility
+      %i.material-icons.prefix.grey{style: "color: white"} face
+      %i.material-icons.prefix.grey{style: "color: white"} local_dining
+      %i.material-icons.prefix.grey{style: "color: white"} grain
+      %i.material-icons.prefix.grey{style: "color: white"} kitchen
+      %i.material-icons.prefix.grey{style: "color: white"} remove_red_eye
+  .row
+    .col.12
+      %cell.grey{style: "color: red.lighten-3"} FSM6
+  .row
+    .col.s6
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} cake
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} fingerprint
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} filter vintage
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} attach_file
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} flag
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} room_service
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star_border
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star_half
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} stars
+    .col.s6
+      %i.material-icons.prefix.cyan{style: "color: white"} cached
+      %i.material-icons.prefix.cyan{style: "color: white"} widgets
+      %i.material-icons.prefix.cyan{style: "color: white"} games
+      %i.material-icons.prefix.cyan{style: "color: white"} watch
+      %i.material-icons.prefix.cyan{style: "color: white"} spa
+      %i.material-icons.prefix.cyan{style: "color: white"} forward_5
+      %i.material-icons.prefix.cyan{style: "color: white"} forward_10
+      %i.material-icons.prefix.cyan{style: "color: white"} developer_board
+      %i.material-icons.prefix.cyan{style: "color: white"} ac_unit
+  .row
+    .col.12
+      %cell.grey{style: "color: grey"} FSM7
   .row
     .col.s12
-      %p **********************************************************************************************************************************************************************
-
-.container
-  .row
-    .col.s12.brown{style: "height: 120px"}
-      %h1 screenDaegoryBliss
-  .row
-    .col.s12.brown{style: "height: 60px"}
-      %h6 workspace
-  .row
-    .col.s12.brown{style: "height: 25px"}
-      ="{{$ctrl.daegory.number}} :: daegory"
-.container
-  .row
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      <feedingsIndicater value="$ctrl.mass" />
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      <feelingsIndicater value="$ctrl.feeling" />
-      %button.waves-effect.waves-light.btn.right.red.large{style: "color: pink", "ng-click": "$ctrl.add_feeling()"}
-        %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_on
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      <fellowshippingIndicator value="$ctrl.minion" />
-      %button.waves-effect.waves-light.btn.right.blue.large{style: "color: blue", "ng-click": "$ctrl.add_minion()"}
-        %i.material-icons.prefix.blue.large.pulse{style: "color: pink"} share
-
-%hr
-.container
-  .row
-    .col.s12.brown{style: "height: 60px; color: white"}
-      %h6 current status of variables
-  .row
-    .col.s4.pink.lighten-3{style: "height: 20px"}
-      {{$ctrl.mass}} :: mass
-    .col.s4.pink.lighten-3{style: "height: 20px"}
-      {{$ctrl.feeling}} :: feeling
-    .col.s4.pink.lighten-3{style: "height: 20px"}
-      {{$ctrl.minion}} :: minion
-
-  .row
-    .col.s12.brown{style: "height: 60px; color: white"}
-      %h6 template
-  .row
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_feeding()"}
-        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-      %h6 feedingIndicator
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.red.large{style: "color: pink", "ng-click": "$ctrl.add_feeling()"}
-        %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_on
-      %h6 feelingsIndicater
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.blue.large{style: "color: blue", "ng-click": "$ctrl.add_fellowshipping()"}
-        %i.material-icons.prefix.blue.large.pulse{style: "color: pink"} share
-      %h6 fellowshippingIndicator
+      %cell.brown.darken-4{style: "color: white"} game proper.
+        %br
+      %cell
+        %i.material-icons.prefix.white{style: "color: black"} gesture
+        %i.material-icons.prefix.white{style: "color: black"} child_care
+        %i.material-icons.prefix.white{style: "color: black"} perm_identity
+        %i.material-icons.prefix.white{style: "color: black"} accessibility
+        %i.material-icons.prefix.white{style: "color: black"} person
+        %i.material-icons.prefix.white{style: "color: black"} person_outline
+        %i.material-icons.prefix.white{style: "color: black"} error
