@@ -19,11 +19,11 @@
 .container
   .row
     .col.s12.pink.lighten-3{style: "color: white"}
-      {{$ctrl.daegory}} = daegory
+      ="{{$ctrl.daegory}} = daegory"
   .row
     .col.s4.yellow
-      {{$ctrl.mass}} = mass (+/- % of healthy mass)
+      ="{{$ctrl.mass}} = mass (+/- % of healthy mass)"
     .col.s4.red.lighten-1
-      {{$ctrl.feeling}} = feeling (-100 - +100)
+      ="{{$ctrl.feeling}} = feeling (-100 - +100)"
     .col.s4.blue.lighten-1
-      {{$ctrl.minion}} = minion (quantity)
+      ="{{$ctrl.minion}} = minion (quantity)"
