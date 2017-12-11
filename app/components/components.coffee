@@ -15,4 +15,4 @@ require './treatmentIndicator/treatmentIndicator.coffee'
 require './screenDaegoryGenki/screenDaegoryGenki.coffee'
 require './genkinessIndicator/genkinessIndicator.coffee'
 
-require './screen.RIP.DaegoryGene/screen.RIP.DaegoryGene.coffee'
+require './RIP/RIP.coffee'

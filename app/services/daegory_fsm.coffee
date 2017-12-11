@@ -4,23 +4,14 @@ _ = require 'lodash'
 
 daegory_fsm = {
   namespace: "daegory",
-  initialState: "daegorys_world",
+  initialState: "bliss",
   states: {
-    daegorys_world: {
-      _onEnter: (stats) ->
-        console.log "Entered Daegory Gene's World"
-      'tick': (stats) ->
-        console.log "Handle Daegory's first tick()"
-        stats.number = stats.number + 1
-        if stats.number > 1
-          @transition stats, 'bliss'
-    },
     bliss: {
       _onEnter: (stats) ->
         console.log "Entered a state of bliss. *Think greyscale_iceberg. Use widget_feeding*."
       'tick': (stats) ->
         console.log "Handle a bliss tick()"
-        stats.number = stats.number + 1
+        stats.number = stats.number + 2
         if stats.number > 10
           @transition stats, 'symptomatic_diabetic'
     },
@@ -29,7 +20,7 @@ daegory_fsm = {
         console.log "Entered the symptomatic_diabetic state. *Think greyscale_match. Use widget_feeling.*"
       'tick': (stats) ->
         console.log "Handle a symptomatic_diabetic tick()"
-        stats.number = stats.number + 1
+        stats.number = stats.number + 3
         if stats.number > 20
           @transition stats, 'discovered_diabetic'
     },
@@ -38,7 +29,7 @@ daegory_fsm = {
         console.log "Entered the discovered_diabetic state. *Think greyscale_hands. Use widget_fellowshipping.*"
       'tick': (stats) ->
         console.log "Handle a discovered_diabetic tick()"
-        stats.number = stats.number + 1
+        stats.number = stats.number + 4
         if stats.number > 30
           @transition stats, 'treated_diabetic'
     }
@@ -48,7 +39,7 @@ daegory_fsm = {
       'tick': (stats) ->
         console.log "Handle a treated_diabetic tick()"
         stats.number = stats.number + 1
-        if stats.number > 90
+        if stats.number > 80
           @transition stats, 'genki_diabetic'
     }
     genki_diabetic: {
@@ -57,10 +48,18 @@ daegory_fsm = {
       'tick': (stats) ->
         console.log "Handle a genki_diabetic tick()"
         stats.number = stats.number + 1
-        if stats.number > 100
-          @transition stats, 'RIP.DaegoryGene'
+        if stats.number > 90
+          @transition stats, 'RIP'
     }
-
+    RIP: {
+      _onEnter: (stats) ->
+        console.log "RIP DAEGORY GENE"
+      'tick': (stats) ->
+        console.log "Handle a RIP tick()... creepy"
+        stats.number = stats.number + 1
+        if stats.number > 100
+          @transition stats, 'tsugu'
+    }
   },
 
   init_daegory: () ->

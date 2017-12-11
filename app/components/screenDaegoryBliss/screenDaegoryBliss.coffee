@@ -15,8 +15,9 @@ app.component 'screenDaegoryBliss', {
 
     @add_mass = (amount) ->
       DaegoryFSM.tick(vm.daegory)
-      vm.mass = vm.mass + (amount)
-      vm.feeling = vm.feeling + (amount)
+      DaegoryFSM.tick(vm.daegory)
+      vm.mass = vm.mass + amount
+      vm.feeling = vm.feeling + amount
       Materialize.toast 'Fed!!!', 3333
 
     @

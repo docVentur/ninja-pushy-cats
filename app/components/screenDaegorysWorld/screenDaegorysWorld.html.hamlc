@@ -1,9 +1,3 @@
-%hr
-%h1 Daegory's World
-  %button.waves-effect.waves-light.btn.right.pink.lighten-3.large{style: "color: white", "ng-click": "$ctrl.add_mass()"}
-    %i.material-icons.prefix.pink.lighten-3.large.pulse{style: "color: red"} accessibility
-%hr
-
 <screen-daegory-bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='bliss'" daegory="$ctrl.daegory" />
 
 <screen-daegory-symptomatic ng-if="$ctrl.daegory.__machina__.daegory.state=='symptomatic_diabetic'" daegory="$ctrl.daegory" />
