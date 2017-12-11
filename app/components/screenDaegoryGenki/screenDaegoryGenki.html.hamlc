@@ -4,18 +4,20 @@
     .col.s12.pink.lighten-3{style: "color: white"}
       %h1 Dont Kill Daegory Gene!
   .row
-    .col.s6.grey.lighten-1{style: "color: white"} Daegory Gene is a normal kid.
+    .col.s6.grey.lighten-1{style: "color: white"}
+      Daegory Gene is a normal kid.
       %cell.white{style: "color: black"}
         %i.material-icons.prefix.white{style: "color: black"} child_care
-    .col.s6.grey.lighten-3{style: "color: black"} Daegory Gene is about to experience Bad Stuff
-        %i.material-icons.prefix.white{style: "color: black"} new_releases
+    .col.s6.grey.lighten-3{style: "color: black"}
+      Daegory Gene is about to experience Bad Stuff
+      %i.material-icons.prefix.white{style: "color: black"} new_releases
   .row
-    .col.6.grey{style: "color: yellow"}
+    .col.s6.grey{style: "color: yellow"}
       %cell.white{style: "color: black"}
         %i.material-icons.prefix.yellow{style: "color: black"} child_care
         %i.material-icons.prefix.yellow{style: "color: black"} border_inner
   .row
-    .col.12.yellow{style: "color: black"}
+    .col.s12.yellow{style: "color: black"}
       %button.waves-effect.waves-light.btn.right.large{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
       <smilemeter value="$ctrl.mass" />
       %i.material-icons.prefix.yellow border_inner
@@ -34,20 +36,20 @@
       %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
       %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
   .row
-      %cell.grey{style: "color: red"} FSM2: Symptomatic Daegory
-      %cell.white{style: "color: black"}
-        %i.material-icons.prefix.pink.lighten-3{style: "color: black"} child_care
-      %cell.white{style: "color: black"} variable: "daegory" @ > 100
-      %cell.white
-        %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
-        %cell.white{style: "color: red"}
-        %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
-        %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
-        %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
-        %i.material-icons.prefix.pink.lighten-3{style: "color: white"} sentiment_neutral
-        %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
-        %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
-        %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+    %cell.grey{style: "color: red"} FSM2: Symptomatic Daegory
+    %cell.white{style: "color: black"}
+      %i.material-icons.prefix.pink.lighten-3{style: "color: black"} child_care
+    %cell.white{style: "color: black"} variable: "daegory" @ > 100
+    %cell.white
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+      %cell.white{style: "color: red"}
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} sentiment_neutral
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
   .row
     .col.s12.purple
   .row
@@ -64,15 +66,18 @@
         %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
       %cell
         %i.material-icons.prefix.blue{style: "color: white"} share
-      %cell.white{style: "color: black"} 411 button available @
+      %cell.white{style: "color: black"}
+        411 button available @
         %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
       %cell
         %i.material-icons.prefix.blue.lighten-2{style: "color: red"} whatshot
         %br
-      %cell.white{style: "color: black"} 911 button available @
+      %cell.white{style: "color: black"}
+        911 button available @
         %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
       %cell
-        %i.material-icons.prefix.blue.lighten-4 airline_seat_flat
+        %i.material-icons.prefix.blue.lighten-4
+        airline_seat_flat
       %cell.white{style: "color: black"} COMA event
       %cell.white{style: "color: black"} better: rng GAME OVER @ coma
 
@@ -180,7 +185,8 @@
       %cell.grey{style: "color: grey"} FSM7
   .row
     .col.s12
-      %cell.brown.darken-4{style: "color: white"} game proper.
+      %cell.brown.darken-4{style: "color: white"}
+        game proper.
         %br
       %cell
         %i.material-icons.prefix.white{style: "color: black"} gesture
