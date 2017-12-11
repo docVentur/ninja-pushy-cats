@@ -17,7 +17,7 @@ app.component 'screenDaegorysWorld', {
       DaegoryFSM.tick(vm.daegory)
       vm.mass = vm.mass + amount
       vm.feeling = vm.feeling + amount
-      Materialize.toast 'Entered Daegory Genes World!', 3333
+      Materialize.toast 'I love Daegory Gene!!!', 3333
 
     @
 

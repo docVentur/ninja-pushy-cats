@@ -1,24 +1,22 @@
 %hr
-%h1 screenDeagorysWorld
-  %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: red", "ng-click": "$ctrl.add_mass()"}
-    %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
+%h1 Daegory's World
+  %button.waves-effect.waves-light.btn.right.pink.lighten-3.large{style: "color: white", "ng-click": "$ctrl.add_mass()"}
+    %i.material-icons.prefix.pink.lighten-3.large.pulse{style: "color: red"} accessibility
 %hr
-%h1 FSM daegorys_world
-<bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='daegorys_world'" daegory="$ctrl.daegory" />
-%h1 FSM bliss
-<bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='bliss'" daegory="$ctrl.daegory" />
-%h1 FSM symptomatic_diabetic
-<symptomaticdiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='symptomatic_diabetic'" daegory="$ctrl.daegory" />
-%h1 FSM discovered_diabetic
-<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='discovered_diabetic'" daegory="$ctrl.daegory" />
-%h1 FSM treated_diabetic
-<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='treated_diabetic'" daegory="$ctrl.daegory" />
-%h1 FSM genki_diabetic
-<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='genki_diabetic'" daegory="$ctrl.daegory" />
-%h1 FSM RIP_diabetic
-<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='RIP_diabetic'" daegory="$ctrl.daegory" />
-%h1 FSM daegorys_world 2.0
-<discovereddiabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='daegorys_world_2.0'" daegory="$ctrl.daegory" />
+
+<screen-daegory-bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='bliss'" daegory="$ctrl.daegory" />
+
+<screen-symptomatic-diabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='symptomatic_diabetic'" daegory="$ctrl.daegory" />
+
+<screen-discovered-diabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='discovered_diabetic'" daegory="$ctrl.daegory" />
+
+<screen-treated-diabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='treated_diabetic'" daegory="$ctrl.daegory" />
+
+<screen-genki-diabetic ng-if="$ctrl.daegory.__machina__.daegory.state=='genki_diabetic'" daegory="$ctrl.daegory" />
+
+<screen-rip ng-if="$ctrl.daegory.__machina__.daegory.state=='rip'" daegory="$ctrl.daegory" />
+
+<screen-daegorys-world-2 ng-if="$ctrl.daegory.__machina__.daegory.state=='daegorys_world_2'" daegory="$ctrl.daegory" />
 
 %hr
 %hr

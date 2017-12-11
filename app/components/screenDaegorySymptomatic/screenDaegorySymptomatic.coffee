@@ -28,5 +28,8 @@ app.component 'screenDaegorySymptomatic', {
 #      vm.state = vm.daegory.__machina__.daegory.state
 #    , 1000
 
+
+
+
     @
 }

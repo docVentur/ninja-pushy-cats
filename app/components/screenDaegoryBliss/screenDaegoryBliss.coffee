@@ -10,17 +10,8 @@ app.component 'screenDaegoryBliss', {
 
     @add_mass = (amount) ->
       vm.mass = vm.mass + amount
-      vm.feeling = vm.feeling + amount
-      vm.minion = vm.minion + amount
-      Materialize.toast 'Fed!!!', 3333
-
-    @add_feeling = (amount) ->
-      vm.feeling = vm.feeling + amount
-      Materialize.toast 'Daegory loses mass and feels bad.', 3333
-
-    @add_minion = (amount) ->
-      vm.minion = vm.minion + amount
-      Materialize.toast 'Daegory gets to live!!!', 3333
+      vm.state = vm.daegory.__machina__.daegory.state
+      Materialize.toast 'Well Fed!!!', 3333
 
     @
 
