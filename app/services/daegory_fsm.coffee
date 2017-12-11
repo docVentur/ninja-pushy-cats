@@ -11,7 +11,7 @@ daegory_fsm = {
         console.log "Entered a state of bliss. *Think greyscale_iceberg. Use widget_feeding*."
       'tick': (stats) ->
         console.log "Handle a bliss tick()"
-        stats.number = stats.number + 2
+        stats.number = stats.number + 1
         if stats.number > 10
           @transition stats, 'symptomatic_diabetic'
     },
@@ -20,7 +20,7 @@ daegory_fsm = {
         console.log "Entered the symptomatic_diabetic state. *Think greyscale_match. Use widget_feeling.*"
       'tick': (stats) ->
         console.log "Handle a symptomatic_diabetic tick()"
-        stats.number = stats.number + 3
+        stats.number = stats.number + 1
         if stats.number > 20
           @transition stats, 'discovered_diabetic'
     },
@@ -29,7 +29,7 @@ daegory_fsm = {
         console.log "Entered the discovered_diabetic state. *Think greyscale_hands. Use widget_fellowshipping.*"
       'tick': (stats) ->
         console.log "Handle a discovered_diabetic tick()"
-        stats.number = stats.number + 4
+        stats.number = stats.number + 1
         if stats.number > 30
           @transition stats, 'treated_diabetic'
     }

@@ -8,7 +8,7 @@
 
 <screen-daegory-genki ng-if="$ctrl.daegory.__machina__.daegory.state=='genki_diabetic'" daegory="$ctrl.daegory" />
 
-<screen-rip ng-if="$ctrl.daegory.__machina__.daegory.state=='rip'" daegory="$ctrl.daegory" />
+<rip ng-if="$ctrl.daegory.__machina__.daegory.state=='rip'" daegory="$ctrl.daegory" />
 
 <screen-daegorys-world-2 ng-if="$ctrl.daegory.__machina__.daegory.state=='daegorys_world_2'" daegory="$ctrl.daegory" />
 

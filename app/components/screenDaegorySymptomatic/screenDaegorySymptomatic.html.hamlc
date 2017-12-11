@@ -1,9 +1,10 @@
 .container
   .row
     .col.s4.pink.lighten-3{style: "height: 120px"}
+      %p <feedingsIndicater value="$ctrl.mass" />
       %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
         %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
     .col.s4.pink.lighten-3{style: "height: 120px"}
-      %p <feelingsIndicater value="$ctrl.mass" />
+      %p <feelingsIndicater value="$ctrl.feeling" />
       %button.waves-effect.waves-light.btn.right.red.large{style: "color: pink", "ng-click": "$ctrl.add_mass()"}
         %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_on
