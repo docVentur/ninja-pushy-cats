@@ -1,6 +1,38 @@
+.container{id: "daegorys_feelings"}
+  .row
+    .col.s2
+      .button.btn{"ng-click": "$ctrl.tick_it()"}
+  .row
+    .col.s12
+      %h1 I.AM Daegory Gene
+        %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"} accessibility
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .row
+    .col.s12.grey
+    .col.s10.pink{"ng-class": "{ 'lighten-2': $ctrl.daegory.number > 5 }"}
+      some thing {{ $ctrl.daegory.number }}
+
+  .row
+    .col.s12
+      %h1 I.AM Daegory Gene
+        %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "{ 'lighten-4': $ctrl.daegory.number > 10 }"} accessibility
+
 .container
   .row
-    .col.s10.pink{"ng-class": "{ 'lighten-2': $ctrl.daegory.number > 5 }"}
+    .col.s10.green{"ng-class": "{ 'lighten-2': $ctrl.daegory.number > 5 }"}
       some thing {{ $ctrl.daegory.number }}
     .col.s2
       .button.btn{"ng-click": "$ctrl.tick_it()"}

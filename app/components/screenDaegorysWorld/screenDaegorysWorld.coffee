@@ -14,6 +14,16 @@ app.component 'screenDaegorysWorld', {
 
     @tick_it = () ->
       DaegoryFSM.tick(vm.daegory)
+    @class_for_state = () ->
+      return 'accent-3 black-text' if @daegory.__machina__.daegory.state=='bliss'
+      return 'accent-2' if @daegory.__machina__.daegory.state=='symptomatic_diabetic'
+      return 'accent-1' if @daegory.__machina__.daegory.state=='discovered_diabetic'
+      return '' if @daegory.__machina__.daegory.state=='treated_diabetic'
+      return 'lighten-2' if @daegory.__machina__.daegory.state=='genki_diabetic'
+      return 'lighten-5' if @daegory.__machina__.daegory.state=='rip'
+      return '' if @daegory.__machina__.daegory.state=='daegorys_world_2'
+    @class_for_
+
     @
 
 }
