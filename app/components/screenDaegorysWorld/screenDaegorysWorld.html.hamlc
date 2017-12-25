@@ -4,26 +4,15 @@
       .button.btn{"ng-click": "$ctrl.tick_it()"}
   .row
     .col.s12
-      %h1 I.AM Daegory Gene
-        %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"} accessibility
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
+        accessibility
   .row
-    .col.s12.grey
-    .col.s10.pink{"ng-class": "{ 'lighten-2': $ctrl.daegory.number > 5 }"}
-      some thing {{ $ctrl.daegory.number }}
+    .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
+      I.AM Daegory Gene in {{$ctrl.daegory.__machina__.daegory.state}}
+  .row
+    .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
+      %div.pink{"ng-class": "$ctrl.class_for_state()"}
+        some thing {{ $ctrl.daegory.number }}
 
   .row
     .col.s12

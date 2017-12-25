@@ -49,15 +49,24 @@ daegory_fsm = {
         console.log "Handle a genki_diabetic tick()"
         stats.number = stats.number + 1
         if stats.number > 90
-          @transition stats, 'RIP'
+          @transition stats, 'rip'
     }
-    RIP: {
+    rip: {
       _onEnter: (stats) ->
         console.log "RIP DAEGORY GENE"
       'tick': (stats) ->
         console.log "Handle a RIP tick()... creepy"
         stats.number = stats.number + 1
         if stats.number > 100
+          @transition stats, 'tsugu'
+    }
+    tsugu: {
+      _onEnter: (stats) ->
+        console.log "tsugu"
+      'tick': (stats) ->
+        console.log "tsugu()... ... ..."
+        stats.number = stats.number + 1
+        if stats.number > 101
           @transition stats, 'tsugu'
     }
   },
