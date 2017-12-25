@@ -1,3 +1,11 @@
+.container
+  .row
+    .col.s10.pink{"ng-class": "{ 'lighten-2': $ctrl.daegory.number > 5 }"}
+      some thing {{ $ctrl.daegory.number }}
+    .col.s2
+      .button.btn{"ng-click": "$ctrl.tick_it()"}
+
+
 <screen-daegory-bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='bliss'" daegory="$ctrl.daegory" />
 
 <screen-daegory-symptomatic ng-if="$ctrl.daegory.__machina__.daegory.state=='symptomatic_diabetic'" daegory="$ctrl.daegory" />

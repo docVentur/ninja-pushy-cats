@@ -20,5 +20,6 @@ app.component 'screenDaegoryGenki', {
       vm.feeling = vm.feeling + amount
       Materialize.toast 'Daeg is GENKI!!!', 3333
 
+    
     @
 }

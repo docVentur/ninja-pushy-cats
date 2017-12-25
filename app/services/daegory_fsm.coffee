@@ -4,7 +4,7 @@ _ = require 'lodash'
 
 daegory_fsm = {
   namespace: "daegory",
-  initialState: "genki_diabetic",
+  initialState: "bliss",
   states: {
     bliss: {
       _onEnter: (stats) ->

@@ -12,6 +12,8 @@ app.component 'screenDaegorysWorld', {
     @feeling = 0
     @minion = 1
 
+    @tick_it = () ->
+      DaegoryFSM.tick(vm.daegory)
     @
 
 }
