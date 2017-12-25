@@ -1,3 +1,8 @@
+body {
+  background-color: grey
+
+}
+
 blockquote:before {
   color: brown;
   content: open-quote;
@@ -5,4 +10,48 @@ blockquote:before {
   line-height: .1 em;
   margin-right: -.1 em;
   vertical-align: -0.0 em;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Concert+One);
+@import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+@import url(https://fonts.googleapis.com/css?family=Bellefair);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+@import url(https://fonts.googleapis.com/css?family=Bilbo);
+@import url(https://fonts.googleapis.com/css?family=Mrs+Sheppards);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+h1 {
+  font-family: 'Concert One';
+
+}
+
+h2 {
+  font-family: 'Permanent Marker';
+
+}
+
+h3 {
+  font-family: 'Mrs Sheppards';
+
+}
+
+h4 {
+  font-family: 'Bellefair';
+
+}
+
+h5 {
+  font-family: 'Calligraffitti';
+
+}
+
+h6 {
+  font-family: 'Abel';
+
+}
+
+p {
+  font-family: 'Bilbo';
+
 }
