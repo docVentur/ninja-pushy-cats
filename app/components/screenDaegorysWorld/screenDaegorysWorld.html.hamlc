@@ -57,11 +57,11 @@
 
   .row
     .col.s2
-      .button.btn.white{"ng-click": "$ctrl.tick_it()"} <3
+      .button.btn.white{"ng-click": "$ctrl.tick_it()"} &gt;3
   .row
     .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
       %div.pink{"ng-class": "$ctrl.class_for_state()"}
-        daegory.number = {{ $ctrl.daegory.number }}
+        ="daegory.number = {{ $ctrl.daegory.number }}"
 
 
 
