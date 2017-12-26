@@ -7,7 +7,7 @@
         %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
     .col.s2{style: "height: 100px"}
       <feelingsIndicater value="$ctrl.feeling" />
-      %i.material-icons.prefix.pink.pulse{style: "color: pink", "ng-click": "$ctrl.add_feeling()"} blur_circular
+      %i.material-icons.prefix.large.pink.pulse{style: "color: pink", "ng-click": "$ctrl.add_feeling()"} blur_circular
     .col.s2{style: "height: 100px"}
       <fellowshippingIndicator value="$ctrl.minion" />
       %button.waves-effect.waves-light.btn.blue{style: "color: blue", "ng-click": "$ctrl.add_minion()"}

@@ -2,8 +2,7 @@
 .container
   .row
     .col.s3{style: "height: 100px"}
-      %button.waves-effect.waves-light.btn.yellow{style: "color: black","ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.pulse{style: "color: red"} border_inner
+      %i.material-icons.prefix.yellow.large{style: "color: red","ng-click": "$ctrl.add_mass()"} border_inner
     .col.s3{style: "height: 100px"}
       %i.material-icons.prefix.pink.tiny.pulse{style: "color: pink"} blur_on
     .col.s6{style: "height: 100px"}

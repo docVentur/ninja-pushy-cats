@@ -6,6 +6,7 @@
         %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
     .col.s3{style: "height: 100px"}
       %i.material-icons.prefix.pink.small.center.pulse{style: "color: pink", "ng-click": "$ctrl.add_feeling()"} blur_circular
+      <feelings-indicater value="$ctrl.feeling"></feelings-indicater>
     .col.s6{style: "height: 100px"}
       .symptomatic-diabetic-font Daegory starts to feel wonkie
 .symptomatic-diabetic-font symptomatic_diabetic

@@ -4,14 +4,14 @@
     .col.s3{style: "height: 100px"}
       <feedingsIndicater value="$ctrl.mass" />
       %button.waves-effect.waves-light.btn.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
+        %i.material-icons.prefix.yellow.medium.pulse{style: "color: red"} border_inner
     .col.s3{style: "height: 100px"}
       <feelingsIndicater value="$ctrl.feeling" />
-      %i.material-icons.prefix.pink.large.center.pulse{style: "color: pink", "ng-click": "$ctrl.add_feeling()"} blur_circular
+      %i.material-icons.prefix.pink.medium.center.pulse{style: "color: pink", "ng-click": "$ctrl.add_feeling()"} blur_circular
     .col.s3{style: "height: 100px"}
       <fellowshippingIndicator value="$ctrl.minion" />
       %button.waves-effect.waves-light.btn.right.blue.large{style: "color: blue", "ng-click": "$ctrl.add_minion()"}
-        %i.material-icons.prefix.blue.large.pulse{style: "color: pink"} share
+        %i.material-icons.prefix.blue.medium.pulse{style: "color: pink"} share
     .col.s3{style: "height: 100px"}
       .discovered-diabetic-font Help Daeg!
 .discovered-diabetic-font discovered_diabetic
