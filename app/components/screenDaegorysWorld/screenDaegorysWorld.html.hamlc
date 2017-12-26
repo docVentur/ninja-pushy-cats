@@ -1,7 +1,10 @@
 .container{id: "daegorys_feelings"}
   .row
+    .col.s12
+      %h1 I.AM Daegory Gene
+  .row
     .col.s2
-      .button.btn{"ng-click": "$ctrl.tick_it()"}
+      .button.btn.white{"ng-click": "$ctrl.tick_it()"} <3
   .row
     .col.s12
       %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
@@ -12,20 +15,7 @@
   .row
     .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
       %div.pink{"ng-class": "$ctrl.class_for_state()"}
-        some thing {{ $ctrl.daegory.number }}
-
-  .row
-    .col.s12
-      %h1 I.AM Daegory Gene
-        %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "{ 'lighten-4': $ctrl.daegory.number > 10 }"} accessibility
-
-.container
-  .row
-    .col.s10.green{"ng-class": "{ 'lighten-2': $ctrl.daegory.number > 5 }"}
-      some thing {{ $ctrl.daegory.number }}
-    .col.s2
-      .button.btn{"ng-click": "$ctrl.tick_it()"}
-
+        daegory.number = {{ $ctrl.daegory.number }}
 
 <screen-daegory-bliss ng-if="$ctrl.daegory.__machina__.daegory.state=='bliss'" daegory="$ctrl.daegory" />
 
@@ -39,11 +29,38 @@
 
 <rip ng-if="$ctrl.daegory.__machina__.daegory.state=='rip'" daegory="$ctrl.daegory" />
 
-<screen-daegorys-world-2 ng-if="$ctrl.daegory.__machina__.daegory.state=='daegorys_world_2'" daegory="$ctrl.daegory" />
+<screen-tsugu ng-if="$ctrl.daegory.__machina__.daegory.state=='tsugu'" daegory="$ctrl.daegory" />
 
 %hr
 %hr
 %hr
+
+.container
+  .row
+    .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
+      THE END
+  .row
+    .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
+      THE END
+  .row
+    .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
+      THE END
+
+
+.container
+  .row
+    .col.s12
+      %i.material-icons.prefix.pink.small{style: "color: white", "ng-class": "{ 'lighten-4': $ctrl.daegory.number > 10 }"} accessibility
+
+.container
+  .row
+    .col.s10.green{"ng-class": "{ 'lighten-2': $ctrl.daegory.number > 5 }"}
+      some thing {{ $ctrl.daegory.number }}
+    .col.s2
+      .button.btn{"ng-click": "$ctrl.tick_it()"}
+
+
+
 
 .container
   .row

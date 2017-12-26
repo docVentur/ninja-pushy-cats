@@ -1,3 +1,4 @@
+.treated-diabetic-font treated_diabetic
 .container
   .row
     .col.s4.pink.blue-3{style: "height: 120px"}

@@ -10,5 +10,5 @@ require './screenDaegoryDiscovered/screenDaegoryDiscovered.coffee'
 require './screenDaegoryTreated/screenDaegoryTreated.coffee'
 
 require './screenDaegoryGenki/screenDaegoryGenki.coffee'
-
+require './screenTsugu/screenTsugu.coffee'
 require './RIP/RIP.coffee'

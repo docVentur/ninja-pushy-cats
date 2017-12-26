@@ -1,4 +1,4 @@
-%h1 BLISS
+.bliss-font BLISS
 .container
   .row
     .col.s4.pink.lighten-3{style: "height: 120px"}
