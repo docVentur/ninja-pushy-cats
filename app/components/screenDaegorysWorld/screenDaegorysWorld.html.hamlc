@@ -1,4 +1,29 @@
-<feelings-indicater value="4"></feelings-indicater>
+.container
+  .row
+    .col.s1
+      %i.material-icons.prefix.black.medium{style: "color: white"} airline_seat_flat
+    .col.s1
+      %i.material-icons.prefix.grey.medium{style: "color: grey"} error
+    .col.s1
+      %i.material-icons.prefix.grey.medium{style: "color: white"} sentiment_very_dissatisfied
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: grey"} sentiment_dissatisfied
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: grey"} sentiment_neutral
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: grey"} blur_on
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: pink"} blur_on
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: pink"} sentiment_neutral
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: pink"} sentiment_satisfied
+    .col.s1
+      %i.material-icons.prefix.grey.medium{style: "color: white"} sentiment_very_satisfied
+    .col.s1
+      %i.material-icons.prefix.grey.medium{style: "color: grey"} error
+    .col.s1
+      %i.material-icons.prefix.black.medium{style: "color: white"} airline_seat_flat
 
 .container{id: "daegorys_feelings"}
   .row
@@ -8,6 +33,10 @@
     .col.s12
       %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
         accessibility
+
+
+<feelings-indicater value="4"></feelings-indicater>
+
   .row
     .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
       I.AM Daegory Gene in {{$ctrl.daegory.__machina__.daegory.state}}
