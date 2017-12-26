@@ -1,12 +1,13 @@
 .symptomatic-diabetic-font symptomatic_diabetic
-
 .container
   .row
-    .col.s4.pink.lighten-3{style: "height: 120px"}
-      %p <feedingsIndicater value="$ctrl.mass" />
+    .col.s3{style: "height: 120px"}
       %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
         %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-    .col.s4.pink.lighten-3{style: "height: 120px"}
       %p <feelingsIndicater value="$ctrl.feeling" />
+    .col.s3{style: "height: 10px"}
       %button.waves-effect.waves-light.btn.right.red.large{style: "color: pink", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_on
+        %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_circular
+    .col.s6{style: "height: 10px"}
+      .symptomatic-diabetic-font.pink.lighten-3 Daegory starts to feel wonkie
+.symptomatic-diabetic-font symptomatic_diabetic

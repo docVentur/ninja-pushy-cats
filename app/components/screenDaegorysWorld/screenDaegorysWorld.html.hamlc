@@ -37,6 +37,53 @@
 
 .container
   .row
+    <screen-daegory-bliss daegory="$ctrl.daegory" />
+  .row
+    <screen-daegory-symptomatic daegory="$ctrl.daegory" />
+  .row
+    <screen-daegory-discovered daegory="$ctrl.daegory" />
+  .row
+    <screen-daegory-treated daegory="$ctrl.daegory" />
+  .row
+    <screen-daegory-genki daegory="$ctrl.daegory" />
+  .row
+    <rip daegory="$ctrl.daegory" />
+  .row
+    <screen-tsugu daegory="$ctrl.daegory" />
+
+
+
+
+
+
+.container
+  .row
+    .col.s4
+      <screen-daegory-bliss daegory="$ctrl.daegory" />
+    .col.s4
+      <screen-daegory-symptomatic daegory="$ctrl.daegory" />
+    .col.s4
+      <screen-daegory-discovered daegory="$ctrl.daegory" />
+  .row
+    .col.s4
+      <screen-daegory-treated daegory="$ctrl.daegory" />
+    .col.s4
+    .col.s4
+      <rip daegory="$ctrl.daegory" />
+  .row
+    .col.s4
+      <screen-tsugu daegory="$ctrl.daegory" />
+    .col.s8
+      no content here
+<screen-daegory-genki daegory="$ctrl.daegory" />
+
+%hr
+%hr
+%hr
+
+
+.container
+  .row
     .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
       THE END
   .row

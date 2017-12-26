@@ -1,1 +1,9 @@
 .tsugu-font Tsugu
+.container
+  .row
+    .col.s2
+    .col.s2
+    .col.s2
+    .col.s2
+    .col.s2
+    .col.s2
