@@ -9,11 +9,14 @@ daegory_fsm = {
     bliss: {
       _onEnter: (stats) ->
         console.log "Entered a state of bliss. *Think greyscale_iceberg. Use widget_feeding*."
+        stats.required_clicks = 3 + (_.floor Math.random()*4)
       'tick': (stats) ->
         console.log "Handle a bliss tick()"
         stats.number = stats.number + 1
-        if stats.number > 10
+        if stats.number > stats.required_clicks
           @transition stats, 'symptomatic_diabetic'
+      _onExit: (stats) ->
+        delete stats.required_clicks
     },
     symptomatic_diabetic: {
       _onEnter: (stats) ->
