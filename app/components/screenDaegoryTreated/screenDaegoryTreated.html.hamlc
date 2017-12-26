@@ -1,116 +1,86 @@
 .treated-diabetic-font treated_diabetic
 .container
   .row
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.white.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.button{style: "color: white"} 3d_rotation
+    .col.s2{style: "height: 100px"}
+      <feedingsIndicater value="$ctrl.mass" />
+      %button.waves-effect.waves-light.btn.yellow{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
+    .col.s2{style: "height: 100px"}
+      <feelingsIndicater value="$ctrl.feeling" />
+      %i.material-icons.prefix.pink.pulse{style: "color: pink", "ng-click": "$ctrl.add_feeling()"} blur_circular
+    .col.s2{style: "height: 100px"}
+      <fellowshippingIndicator value="$ctrl.minion" />
+      %button.waves-effect.waves-light.btn.blue{style: "color: blue", "ng-click": "$ctrl.add_minion()"}
+        %i.material-icons.prefix.blue{style: "color: pink"} group_work
+    .col.s6{style: "height: 100px"}
+      .treated-diabetic-font Helping Daeg!
+  .row
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.button{style: "color: white"} 3d_rotation
       3d_rotation
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.white.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.orange.large.button{style: "color: white"} texture
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.medium.button{style: "color: white"} texture
       texture
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.white.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.red.large.button{style: "color: white"} surround_sound
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.medium.button{style: "color: white"} surround_sound
       surround_sound
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.white.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.purple.large.button{style: "color: white"} toc
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.medium.button{style: "color: white"} toc
       toc
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.white.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.blue.large.button{style: "color: white"} group_work
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.medium.button{style: "color: white"} group_work
       group_work
-    .col.s2{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.white.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.green.large.button{style: "color: white"} find_replace
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.medium.button{style: "color: white"} find_replace
       find_replace
-.container
   .row
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.black.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.button{style: "color: black"} timer_3
-      timer_3
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.black.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.button{style: "color: black"} timer_3
-      timer_3
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.black.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.button{style: "color: black"} timer_3
-      timer_3
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.black.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.button{style: "color: black"} timer_3
-      timer_3
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.black.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.button{style: "color: black"} timer_3
-      timer_3
-    .col.s2{style: "height: 10px"}
-      %button.waves-effect.waves-light.btn.right.black.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.button{style: "color: black"} timer_3
-      timer_3
-
-
-
-.container
-  .row
-    .col.s2
-      %i.material-icons.prefix.yellow.large.button{style: "color: white"} 3d_rotation
-      %i.material-icons.prefix.yellow.lighten-1.large.button{style: "color: black"} timer_3
-      %i.material-icons.prefix.yellow.lighten-2.large.button{style: "color: pink"} local_dining
-      %i.material-icons.prefix.pink.lighten-4.large.button{style: "color: yellow"} local_dining
-      %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: yellow"} local_dining
-      %i.material-icons.prefix.pink.lighten-2.large.button{style: "color: yellow"} local_dining
-    .col.s2
-      %i.material-icons.prefix.orange.large.button{style: "color: white"} texture
-      %i.material-icons.prefix.orange.lighten-1.large.button{style: "color: black"} straighten
-      %i.material-icons.prefix.orange.lighten-2.large.button{style: "color: pink"} style
-      %i.material-icons.prefix.pink.lighten-4.large.button{style: "color: orange"} style
-      %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: orange"} style
-      %i.material-icons.prefix.pink.lighten-2.large.button{style: "color: orange"} style
-    .col.s2
-      %i.material-icons.prefix.red.large.button{style: "color: white"} surround_sound
-      %i.material-icons.prefix.red.lighten-1.large.button{style: "color: black"} settings_brightness
-      %i.material-icons.prefix.red.lighten-2.large.button{style: "color: pink"} satellite
-      %i.material-icons.prefix.pink.lighten-4.large.button{style: "color: red"} satellite
-      %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: red"} satellite
-      %i.material-icons.prefix.pink.lighten-2.large.button{style: "color: red"} satellite
-    .col.s2
-      %i.material-icons.prefix.purple.large.button{style: "color: white"} toc
-      %i.material-icons.prefix.purple.lighten-1.large.button{style: "color: black"} devices_other
-      %i.material-icons.prefix.purple.lighten-2.large.button{style: "color: pink"} language
-      %i.material-icons.prefix.pink.lighten-4.large.button{style: "color: purple"} language
-      %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: purple"} language
-      %i.material-icons.prefix.pink.lighten-2.large.button{style: "color: purple"} language
-    .col.s2
-      %i.material-icons.prefix.blue.large.button{style: "color: white"} group_work
-      %i.material-icons.prefix.blue.lighten-1.large.button{style: "color: black"} library_music
-      %i.material-icons.prefix.blue.lighten-2.large.button{style: "color: pink"} polymer
-      %i.material-icons.prefix.pink.lighten-4.large.button{style: "color: blue"} polymer
-      %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: blue"} polymer
-      %i.material-icons.prefix.pink.lighten-2.large.button{style: "color: blue"} polymer
-    .col.s2
-      %i.material-icons.prefix.green.large.button{style: "color: white"} find_replace
-      %i.material-icons.prefix.green.lighten-1.large.button{style: "color: black"} tonality
-      %i.material-icons.prefix.green.lighten-2.large.button{style: "color: pink"} local_florist
-      %i.material-icons.prefix.pink.lighten-4.large.button{style: "color: green"} local_florist
-      %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: green"} local_florist
-      %i.material-icons.prefix.pink.lighten-2.large.button{style: "color: green"} local_florist
-.treated-diabetic-font treated_diabetic
-.container
-  .row
-    .col.s12
-      %i.material-icons.prefix.medium.button{style: "color: white"} invert_colors
+    .col.s12{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white
+        %i.material-icons.prefix.medium.button{style: "color: black"} invert_colors
       invert_colors
   .row
-    .col.s12
-      %i.material-icons.prefix.grey.medium.button{style: "color: pink"} playlist_add
-      playlist_add
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.button{style: "color: black"} timer_3
+      timer_3
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.button{style: "color: black"} straighten
+      straighten
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.button{style: "color: black"} settings_brightness
+      settings_brightness
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.button{style: "color: black"} devices_other
+      devices_other
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.button{style: "color: black"} library_music
+      library_music
+    .col.s2{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.button{style: "color: black"} tonality
+      tonality
+
+.container
   .row
     .col.s12
-      %i.material-icons.prefix.medium.button{style: "color: black"} open_with
+      %button.waves-effect.waves-light.btn.grey.small
+        %i.material-icons.prefix.grey.medium.button{style: "color: pink"} playlist_add
+      playlist_add
+.container
+  .row
+    .col.s12
+      %button.waves-effect.waves-light.btn.black.small
+        %i.material-icons.prefix.black.medium.button{style: "color: white"} open_with
       open_with
 .container
   .row
@@ -132,4 +102,93 @@
       play_for_work
     .col.s4
       %i.material-icons.prefix.medium.button{style: "color: black"} gavel
+      gavel
+
+
+
+.container
+  .row
+    .col.s2
+      %i.material-icons.prefix.yellow.small.button{style: "color: white"} 3d_rotation
+      %i.material-icons.prefix.yellow.lighten-1.small.button{style: "color: black"} timer_3
+      %i.material-icons.prefix.yellow.lighten-2.small.button{style: "color: pink"} local_dining
+    .col.s2
+      %i.material-icons.prefix.orange.small.button{style: "color: white"} texture
+      %i.material-icons.prefix.orange.lighten-1.small.button{style: "color: black"} straighten
+      %i.material-icons.prefix.orange.lighten-2.small.button{style: "color: pink"} style
+    .col.s2
+      %i.material-icons.prefix.red.small.button{style: "color: white"} surround_sound
+      %i.material-icons.prefix.red.lighten-1.small.button{style: "color: black"} settings_brightness
+      %i.material-icons.prefix.red.lighten-2.small.button{style: "color: pink"} satellite
+    .col.s2
+      %i.material-icons.prefix.purple.small.button{style: "color: white"} toc
+      %i.material-icons.prefix.purple.lighten-1.small.button{style: "color: black"} devices_other
+      %i.material-icons.prefix.purple.lighten-2.small.button{style: "color: pink"} language
+    .col.s2
+      %i.material-icons.prefix.blue.small.button{style: "color: white"} group_work
+      %i.material-icons.prefix.blue.lighten-1.small.button{style: "color: black"} library_music
+      %i.material-icons.prefix.blue.lighten-2.small.button{style: "color: pink"} polymer
+    .col.s2
+      %i.material-icons.prefix.green.small.button{style: "color: white"} find_replace
+      %i.material-icons.prefix.green.lighten-1.small.button{style: "color: black"} tonality
+      %i.material-icons.prefix.green.lighten-2.small.button{style: "color: pink"} local_florist
+  .row
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: yellow"} local_dining
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: yellow"} local_dining
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: yellow"} local_dining
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: orange"} style
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: orange"} style
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: orange"} style
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: red"} satellite
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: red"} satellite
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: red"} satellite
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: purple"} language
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: purple"} language
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: purple"} language
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: blue"} polymer
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: blue"} polymer
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: blue"} polymer
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: green"} local_florist
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: green"} local_florist
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: green"} local_florist
+.treated-diabetic-font treated_diabetic
+.container
+  .row
+    .col.s12
+      %i.material-icons.prefix.tiny.button{style: "color: white"} invert_colors
+      invert_colors
+  .row
+    .col.s12
+      %i.material-icons.prefix.grey.tiny.button{style: "color: pink"} playlist_add
+      playlist_add
+  .row
+    .col.s12
+      %i.material-icons.prefix.tiny.button{style: "color: black"} open_with
+      open_with
+.container
+  .row
+    .col.s4
+      %i.material-icons.prefix.tiny.button{style: "color: white"} opacity
+      opacity
+    .col.s4
+      %i.material-icons.prefix.grey.tiny.button{style: "color: pink"} line_style
+      line_style
+    .col.s4
+      %i.material-icons.prefix.tiny.button{style: "color: black"} line_weight
+      line_weight
+  .row
+    .col.s4
+      %i.material-icons.prefix.tiny.button{style: "color: white"} question_answer
+      question_answer
+    .col.s4
+      %i.material-icons.prefix.grey.tiny.button{style: "color: pink"} play_for_work
+      play_for_work
+    .col.s4
+      %i.material-icons.prefix.tiny.button{style: "color: black"} gavel
       gavel

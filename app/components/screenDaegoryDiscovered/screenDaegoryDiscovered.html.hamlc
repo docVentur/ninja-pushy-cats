@@ -1,16 +1,17 @@
 .discovered-diabetic-font discovered_diabetic
 .container
   .row
-    .col.s4{style: "height: 120px"}
+    .col.s3{style: "height: 100px"}
       <feedingsIndicater value="$ctrl.mass" />
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+      %button.waves-effect.waves-light.btn.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
         %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-    .col.s4{style: "height: 10px"}
+    .col.s3{style: "height: 100px"}
       <feelingsIndicater value="$ctrl.feeling" />
-      %button.waves-effect.waves-light.btn.right.red.large{style: "color: pink", "ng-click": "$ctrl.add_feeling()"}
-        %i.material-icons.prefix.red.large.pulse{style: "color: pink"} blur_on
-    .col.s4{style: "height: 10px"}
+      %i.material-icons.prefix.pink.large.center.pulse{style: "color: pink", "ng-click": "$ctrl.add_feeling()"} blur_circular
+    .col.s3{style: "height: 100px"}
       <fellowshippingIndicator value="$ctrl.minion" />
       %button.waves-effect.waves-light.btn.right.blue.large{style: "color: blue", "ng-click": "$ctrl.add_minion()"}
         %i.material-icons.prefix.blue.large.pulse{style: "color: pink"} share
+    .col.s3{style: "height: 100px"}
+      .discovered-diabetic-font Help Daeg!
 .discovered-diabetic-font discovered_diabetic

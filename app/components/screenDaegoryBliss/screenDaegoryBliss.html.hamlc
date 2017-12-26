@@ -1,9 +1,11 @@
 .bliss-font BLISS
 .container
   .row
-    .col.s6{style: "height: 120px"}
-      %button.waves-effect.waves-light.btn.right.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
-    .col.s6.pink.lighten-3{style: "height: 10px"}
-      %p Feed Daegory Gene
+    .col.s3{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.yellow{style: "color: black","ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.pulse{style: "color: red"} border_inner
+    .col.s3{style: "height: 100px"}
+      %i.material-icons.prefix.pink.tiny.pulse{style: "color: pink"} blur_on
+    .col.s6{style: "height: 100px"}
+      .bliss-font Feed Daegory Gene
 .bliss-font BLISS
