@@ -7,3 +7,1085 @@
     .col.s2
     .col.s2
     .col.s2
+
+
+
+
+.container
+  .row
+    .col.s12
+      %h1.yellow Dont Kill Daegory Gene!!!
+      %h2.orange Dont Kill Daegory Gene!!!
+      %h3.red Dont Kill Daegory Gene!!!
+      %h4.purple Dont Kill Daegory Gene!!!
+      %h5.blue Dont Kill Daegory Gene!!!
+      %h6.green Dont Kill Daegory Gene!!!
+      %p.white Dont Kill Daegory Gene!!!
+  .row
+    .col.s12.white{style: "color: grey"}
+      %h1 I.AM
+        %i.material-icons.prefix.pink.large{style: "color: white"} accessibility
+  .row
+    .col.s12.black{style: "color: grey"}
+      %h2 B.ad S.tuff
+        %i.material-icons.prefix.black.large{style: "color: white"} new_releases
+  .row
+    .col.s4.grey.lighten-3
+      %h3 iceberg
+      %p warning
+      %i.material-icons.prefix.grey.large{style: "color: black"} warning
+    .col.s4.grey
+      %h4 match
+      %p flash
+      %i.material-icons.prefix.grey.large{style: "color: white"} flare
+    .col.s4.grey.darken-3
+      %h5 hands
+      %p face
+      %i.material-icons.prefix.grey.large{style: "color: pink"} face
+  .row
+    .col.s4
+      %h6.yellow Feed
+      %p Daegory Gene
+      %i.material-icons.prefix.yellow.large{style: "color: black"} border_inner
+      %i.material-icons.prefix.pink.large{style: "color: white"} accessibility
+    .col.s4
+      %h6.red Watch
+      %p Daegory
+      %i.material-icons.prefix.pink.large.pulse{style: "color: pink"} blur_on
+      %i.material-icons.prefix.pink.large{style: "color: white"} accessibility
+    .col.s4
+      %h6.blue Help
+      %p Daeg
+      %i.material-icons.prefix.blue.large{style: "color: white"} share
+      %i.material-icons.prefix.pink.large{style: "color: white"} accessibility
+  .row
+    .col.s2
+      %i.material-icons.prefix.yellow.large.button{style: "color: white"} 3d_rotation
+      %i.material-icons.prefix.yellow.lighten-1.large.button{style: "color: black"} timer_3
+      %i.material-icons.prefix.yellow.lighten-2.large.button{style: "color: pink"} local_dining
+    .col.s2
+      %i.material-icons.prefix.orange.large.button{style: "color: white"} texture
+      %i.material-icons.prefix.orange.lighten-1.large.button{style: "color: black"} straighten
+      %i.material-icons.prefix.orange.lighten-2.large.button{style: "color: pink"} style
+    .col.s2
+      %i.material-icons.prefix.red.large.button{style: "color: white"} surround_sound
+      %i.material-icons.prefix.red.lighten-1.large.button{style: "color: black"} settings_brightness
+      %i.material-icons.prefix.red.lighten-2.large.button{style: "color: pink"} satellite
+    .col.s2
+      %i.material-icons.prefix.purple.large.button{style: "color: white"} toc
+      %i.material-icons.prefix.purple.lighten-1.large.button{style: "color: black"} devices_other
+      %i.material-icons.prefix.purple.lighten-2.large.button{style: "color: pink"} language
+    .col.s2
+      %i.material-icons.prefix.blue.large.button{style: "color: white"} group_work
+      %i.material-icons.prefix.blue.lighten-1.large.button{style: "color: black"} library_music
+      %i.material-icons.prefix.blue.lighten-2.large.button{style: "color: pink"} polymer
+    .col.s2
+      %i.material-icons.prefix.green.large.button{style: "color: white"} find_replace
+      %i.material-icons.prefix.green.lighten-1.large.button{style: "color: black"} tonality
+      %i.material-icons.prefix.green.lighten-2.large.button{style: "color: pink"} local_florist
+  .row
+    .col.s3
+      %ol
+        %li
+          %i.material-icons.prefix.yellow.large.button{style: "color: white"} 3d_rotation
+          3d_rotation
+        %li
+          %i.material-icons.prefix.orange.large.button{style: "color: white"} texture
+          texture
+        %li
+          %i.material-icons.prefix.red.large.button{style: "color: white"} surround_sound
+          surround_sound
+        %li
+          %i.material-icons.prefix.purple.large.button{style: "color: white"} toc
+          toc
+        %li
+          %i.material-icons.prefix.blue.large.button{style: "color: white"} group_work
+          group_work
+        %li
+          %i.material-icons.prefix.green.large.button{style: "color: white"} find_replace
+          find_replace
+    .col.s3
+      %ol
+        %li
+          %i.material-icons.prefix.yellow.lighten-2.large.button{style: "color: black"} timer_3
+          timer_3
+        %li
+          %i.material-icons.prefix.orange.lighten-2.large.button{style: "color: black"} straighten
+          straighten
+        %li
+          %i.material-icons.prefix.red.lighten-2.large.button{style: "color: black"} settings_brightness
+          settings_brightness
+        %li
+          %i.material-icons.prefix.purple.lighten-2.large.button{style: "color: black"} devices_other
+          devices_other
+        %li
+          %i.material-icons.prefix.blue.lighten-2.large.button{style: "color: black"} library_music
+          library_music
+        %li
+          %i.material-icons.prefix.green.lighten-2.large.button{style: "color: black"} tonality
+          tonality
+
+    .col.s6
+      %ol
+        %li
+          %i.material-icons.prefix.yellow.lighten-3.large.button{style: "color: pink"} local_dining
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: yellow"} local_dining
+          local_dining
+        %li
+          %i.material-icons.prefix.orange.lighten-3.large.button{style: "color: pink"} style
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: orange"} style
+          style
+        %li
+          %i.material-icons.prefix.red.lighten-3.large.button{style: "color: pink"} satellite
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: red"} satellite
+          satellite
+        %li
+          %i.material-icons.prefix.purple.lighten-3.large.button{style: "color: pink"} language
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: purple"} language
+          language
+        %li
+          %i.material-icons.prefix.blue.lighten-3.large.button{style: "color: pink"} polymer
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: blue"} polymer
+          polymer
+        %li
+          %i.material-icons.prefix.green.lighten-3.large.button{style: "color: pink"} local_florist
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: green"} local_florist
+          local_florist
+
+  .row
+    .col.s12
+      %i.material-icons.prefix.medium.button{style: "color: white"} invert_colors
+      %h2 invert_colors
+  .row
+    .col.s12
+      %i.material-icons.prefix.grey.medium.button{style: "color: pink"} playlist_add
+      %h2 playlist_add
+  .row
+    .col.s12
+      %i.material-icons.prefix.medium.button{style: "color: black"} open_with
+      %h2 open_with
+  .row
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} opacity
+      %h3 opacity
+    .col.s4
+      %i.material-icons.prefix.grey.medium.button{style: "color: pink"} line_style
+      %h3 line_style
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: black"} line_weight
+      %h3 line_weight
+  .row
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} question_answer
+      %h4 question_answer
+    .col.s4
+      %i.material-icons.prefix.grey.medium.button{style: "color: pink"} play_for_work
+      %h4 play_for_work
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: black"} gavel
+      %h4 gavel
+
+  .row
+    .col.s6
+      %i.material-icons.prefix.pink.medium.button{style: "color: pink"} fingerprint
+      %h5 fingerprint
+      %i.material-icons.prefix.pink.medium.button{style: "color: pink"} picture_in_picture
+      %h5 picture_in_picture
+      %i.material-icons.prefix.pink.medium.button{style: "color: pink"} picture_in_picture_alt
+      %h5 picture_in_picture_alt
+    .col.s6
+      %i.material-icons.prefix.cyan.medium.button{style: "color: pink"} settings
+      %h5 settings
+      %i.material-icons.prefix.cyan.medium.button{style: "color: pink"} schedule
+      %h5 schedule
+      %i.material-icons.prefix.cyan.medium.button{style: "color: pink"} queue
+      %h5 queue
+  .row
+    .col.s12
+      %i.material-icons.prefix.brown.medium.button{style: "color: pink"} portrait
+      %h6 portrait
+      %i.material-icons.prefix.brown.medium.button{style: "color: pink"} print
+      %h6 print
+      %i.material-icons.prefix.brown.medium.button{style: "color: pink"} publish
+      %h6 publish
+
+
+
+
+
+
+
+
+
+
+  .row
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} invert_colors
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} invert_colors
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} invert_colors
+      invert_colors
+      %h3 invert_colors
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} playlist_add
+      %i.material-icons.prefix.medium.button{style: "color: black"} playlist_add
+      %i.material-icons.prefix.medium.button{style: "color: grey"} playlist_add
+      %h3 playlist_add
+    .col.s4
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} open_with
+      %i.material-icons.prefix.white.medium.button{style: "color: black"} open_with
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} open_with
+      %h3 open_with
+  .row
+    .col.s4
+      %i.material-icons.prefix.white.medium.button{style: "color: black"} opacity
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} opacity
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} opacity
+      %h3 opacity
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} line_style
+      %i.material-icons.prefix.medium.button{style: "color: black"} line_style
+      %i.material-icons.prefix.medium.button{style: "color: grey"} line_style
+      %h3 line_style
+    .col.s4
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} line_weight
+      %i.material-icons.prefix.white.medium.button{style: "color: black"} line_weight
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} line_weight
+      %h3 line_weight
+  .row
+    .col.s4
+      %i.material-icons.prefix.white.medium.button{style: "color: black"} question_answer
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} question_answer
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} question_answer
+      %h3 question_answer
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} play_for_work
+      %i.material-icons.prefix.medium.button{style: "color: black"} play_for_work
+      %i.material-icons.prefix.medium.button{style: "color: pink"} play_for_work
+      %h3 play_for_work
+    .col.s4
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} gavel
+      %i.material-icons.prefix.white.medium.button{style: "color: black"} gavel
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} gavel
+      %h3 gavel
+
+
+
+
+  .row
+    .col.s4.white{style: "color: black"}
+      %h3 opacity
+    .col.s4.grey{style: "color: black"}
+      %h3 line_style
+    .col.s4.black{style: "color: pink"}
+      %h3 line_weight
+  .row
+    .col.s4.white{style: "color: grey"}
+      %h3 question_answer
+    .col.s4.grey{style: "color: pink"}
+      %h3 play_for_work
+    .col.s4.black{style: "color: grey"}
+      %h3 gavel
+  .row
+    .col.s6.pink{style: "color: grey"}
+      %h3 fingerprint
+      %h3 picture_in_picture
+      %h3 picture_in_picture_alt
+    .col.s6.cyan{style: "color: grey"}
+      %h3 settings
+      %h3 schedule
+      %h3 queue
+  .row
+    .col.s12.brown{style: "color: grey"}
+      %h3 portrait
+      %h3 print
+      %h3 publish
+  .row
+    .col.s12.grey
+      %h1 tsugu
+
+
+-# this is a HAML comment
+.hr
+.hr
+.hr
+.container
+  .row
+    .col.s12.pink.lighten-3{style: "color: white"}
+      %h1 Dont Kill Daegory Gene!
+  .row
+    .col.s6.grey.lighten-1{style: "color: white"}
+      Daegory Gene is a normal kid.
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.white{style: "color: black"} child_care
+    .col.s6.grey.lighten-3{style: "color: black"}
+      Daegory Gene is about to experience Bad Stuff
+      %i.material-icons.prefix.white{style: "color: black"} new_releases
+  .row
+    .col.s6.grey{style: "color: yellow"}
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.yellow{style: "color: black"} child_care
+        %i.material-icons.prefix.yellow{style: "color: black"} border_inner
+  .row
+    .col.s12.yellow{style: "color: black"}
+      %button.waves-effect.waves-light.btn.right.large{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
+      <smilemeter value="$ctrl.mass" />
+      %i.material-icons.prefix.yellow border_inner
+      %button.right{"ng-click": "$ctrl.add_gC()"} white text pink-3 bg BG rising: {{$ctrl.gC | number}}
+      %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
+  .row
+    .col.s12.orange
+  .row
+    .col.s12.red
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
+      %i.material-icons.prefix.black{style: "color: white"} sentiment_neutral
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+  .row
+    %cell.grey{style: "color: red"} FSM2: Symptomatic Daegory
+    %cell.white{style: "color: black"}
+      %i.material-icons.prefix.pink.lighten-3{style: "color: black"} child_care
+    %cell.white{style: "color: black"} variable: "daegory" @ > 100
+    %cell.white
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+      %cell.white{style: "color: red"}
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} sentiment_neutral
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+  .row
+    .col.s12.purple
+  .row
+    .col.s12.blue
+      %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+      %i.material-icons.prefix.blue share
+
+    .col.s4
+      %cell.grey{style: "color: blue"} FSM3: Disocvered Diabetic Daeg ::
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.blue.lighten-3{style: "color: black"} child_care
+      %cell.white{style: "color: black"} init variable: "daegory" @ > 200
+      %cell.white
+        %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+      %cell
+        %i.material-icons.prefix.blue{style: "color: white"} share
+      %cell.white{style: "color: black"}
+        411 button available @
+        %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %cell
+        %i.material-icons.prefix.blue.lighten-2{style: "color: red"} whatshot
+        %br
+      %cell.white{style: "color: black"}
+        911 button available @
+        %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %cell
+        %i.material-icons.prefix.blue.lighten-4
+        airline_seat_flat
+      %cell.white{style: "color: black"} COMA event
+      %cell.white{style: "color: black"} better: rng GAME OVER @ coma
+
+  .row
+    .col.s12.green
+  .row
+    .col.s12.white
+  .row
+    .col.s12.black
+    .col.s2
+      %i.material-icons.prefix.yellow{style: "black"} timer_3s
+    .col.s2
+      %i.material-icons.prefix.orange{style: "black"} tonality
+    .col.s2
+      %i.material-icons.prefix.red{style: "black"} flight_land
+      %i.material-icons.prefix.red{style: "black"} flight_takeoff
+    .col.s2
+      %i.material-icons.prefix.purple{style: "black"} timeline
+    .col.s2
+      %i.material-icons.prefix.blue{style: "black"} compare_arrows
+    .col.s2
+      %i.material-icons.prefix.green{style: "black"} compare
+  .row
+    .col.s12.grey
+    .col.12
+      %cell.grey{style: "color: yellow.darken-3"} FSM4: New Diabetic Huni :: +pplz
+      %cell.grey{style: "color: yellow.darken-3"} restart clock + add insulin (days)
+      %cell.grey{style: "color: yellow.darken-3"} FSM4: New Diabetic Huni :: +pplz
+
+    .col.12
+      %cell.grey{style: "color: red.lighten-3"} FSM5: At Home Diabetic Daeg
+  .row
+    .col.s12.pink
+  .row
+    .col.s12.cyan
+  .row
+    .col.s12.brown
+  .row
+    .col.s1
+      %i.material-icons.prefix.yellow.accent-4{style: "color: white"} 3d_rotation
+    .col.s1
+      %i.material-icons.prefix.orange{style: "color: white"} wb_sunny
+    .col.s1
+      %i.material-icons.prefix.red{style: "color: white"} flare
+    .col.s1
+      %i.material-icons.prefix.purple{style: "color: white"} linear_scale
+    .col.s1
+      %i.material-icons.prefix.blue{style: "color: white"} polymer
+    .col.s1
+      %i.material-icons.prefix.green{style: "color: white"} color_lens
+      %i.material-icons.prefix.green{style: "color: white"} crop_rotate
+      %i.material-icons.prefix.green{style: "color: white"} exposure
+      %i.material-icons.prefix.green{style: "color: white"} public
+      %i.material-icons.prefix.green{style: "color: white"} wallpaper
+      %i.material-icons.prefix.green{style: "color: white"} panorama
+    .col.s2
+      %i.material-icons.prefix.white{style: "color: black"} all_inclusive
+      %i.material-icons.prefix.white{style: "color: black"} invert_colors
+      %i.material-icons.prefix.white{style: "color: black"} palette
+      %i.material-icons.prefix.white{style: "color: black"} public
+    .col.s2
+      %i.material-icons.prefix.black{style: "color: white"} copyright
+      %i.material-icons.prefix.black{style: "color: white"} check_box
+      %i.material-icons.prefix.black{style: "color: white"} check_circle
+      %i.material-icons.prefix.black{style: "color: white"} done_all
+      %i.material-icons.prefix.black{style: "color: white"} looks
+      %i.material-icons.prefix.black{style: "color: white"} monetization_on
+      %i.material-icons.prefix.black{style: "color: white"} multiline_chart
+      %i.material-icons.prefix.black{style: "color: white"} pie_chart
+      %i.material-icons.prefix.black{style: "color: white"} pie_chart_outlined
+    .col.s2
+      %i.material-icons.prefix.grey{style: "color: white"} visibility
+      %i.material-icons.prefix.grey{style: "color: white"} face
+      %i.material-icons.prefix.grey{style: "color: white"} local_dining
+      %i.material-icons.prefix.grey{style: "color: white"} grain
+      %i.material-icons.prefix.grey{style: "color: white"} kitchen
+      %i.material-icons.prefix.grey{style: "color: white"} remove_red_eye
+  .row
+    .col.12
+      %cell.grey{style: "color: red.lighten-3"} FSM6
+  .row
+    .col.s6
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} cake
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} fingerprint
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} filter_vintage
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} attach_file
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} flag
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} room_service
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star_border
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star_half
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} stars
+    .col.s6
+      %i.material-icons.prefix.cyan{style: "color: white"} cached
+      %i.material-icons.prefix.cyan{style: "color: white"} widgets
+      %i.material-icons.prefix.cyan{style: "color: white"} games
+      %i.material-icons.prefix.cyan{style: "color: white"} watch
+      %i.material-icons.prefix.cyan{style: "color: white"} spa
+      %i.material-icons.prefix.cyan{style: "color: white"} forward_5
+      %i.material-icons.prefix.cyan{style: "color: white"} forward_10
+      %i.material-icons.prefix.cyan{style: "color: white"} developer_board
+      %i.material-icons.prefix.cyan{style: "color: white"} ac_unit
+  .row
+    .col.12
+      %cell.grey{style: "color: grey"} FSM7
+  .row
+    .col.s12
+      %cell.brown.darken-4{style: "color: white"}
+        game proper.
+        %br
+      %cell
+        %i.material-icons.prefix.white{style: "color: black"} gesture
+        %i.material-icons.prefix.white{style: "color: black"} child_care
+        %i.material-icons.prefix.white{style: "color: black"} perm_identity
+        %i.material-icons.prefix.white{style: "color: black"} accessibility
+        %i.material-icons.prefix.white{style: "color: black"} person
+        %i.material-icons.prefix.white{style: "color: black"} person_outline
+        %i.material-icons.prefix.white{style: "color: black"} error
+
+
+.container
+  .row
+    .col.s2
+      %i.material-icons.prefix.yellow.small.button{style: "color: white"} 3d_rotation
+      %i.material-icons.prefix.yellow.lighten-1.small.button{style: "color: black"} timer_3
+      %i.material-icons.prefix.yellow.lighten-2.small.button{style: "color: pink"} local_dining
+    .col.s2
+      %i.material-icons.prefix.orange.small.button{style: "color: white"} texture
+      %i.material-icons.prefix.orange.lighten-1.small.button{style: "color: black"} straighten
+      %i.material-icons.prefix.orange.lighten-2.small.button{style: "color: pink"} style
+    .col.s2
+      %i.material-icons.prefix.red.small.button{style: "color: white"} surround_sound
+      %i.material-icons.prefix.red.lighten-1.small.button{style: "color: black"} settings_brightness
+      %i.material-icons.prefix.red.lighten-2.small.button{style: "color: pink"} satellite
+    .col.s2
+      %i.material-icons.prefix.purple.small.button{style: "color: white"} toc
+      %i.material-icons.prefix.purple.lighten-1.small.button{style: "color: black"} devices_other
+      %i.material-icons.prefix.purple.lighten-2.small.button{style: "color: pink"} language
+    .col.s2
+      %i.material-icons.prefix.blue.small.button{style: "color: white"} group_work
+      %i.material-icons.prefix.blue.lighten-1.small.button{style: "color: black"} library_music
+      %i.material-icons.prefix.blue.lighten-2.small.button{style: "color: pink"} polymer
+    .col.s2
+      %i.material-icons.prefix.green.small.button{style: "color: white"} find_replace
+      %i.material-icons.prefix.green.lighten-1.small.button{style: "color: black"} tonality
+      %i.material-icons.prefix.green.lighten-2.small.button{style: "color: pink"} local_florist
+  .row
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: yellow"} local_dining
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: yellow"} local_dining
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: yellow"} local_dining
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: orange"} style
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: orange"} style
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: orange"} style
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: red"} satellite
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: red"} satellite
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: red"} satellite
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: purple"} language
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: purple"} language
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: purple"} language
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: blue"} polymer
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: blue"} polymer
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: blue"} polymer
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-4.small.button{style: "color: green"} local_florist
+      %i.material-icons.prefix.pink.lighten-3.small.button{style: "color: green"} local_florist
+      %i.material-icons.prefix.pink.lighten-2.small.button{style: "color: green"} local_florist
+
+.container
+  .row
+    .col.s12
+      %i.material-icons.prefix.tiny.button{style: "color: white"} invert_colors
+      invert_colors
+  .row
+    .col.s12
+      %i.material-icons.prefix.grey.tiny.button{style: "color: pink"} playlist_add
+      playlist_add
+  .row
+    .col.s12
+      %i.material-icons.prefix.tiny.button{style: "color: black"} open_with
+      open_with
+.container
+  .row
+    .col.s4
+      %i.material-icons.prefix.tiny.button{style: "color: white"} opacity
+      opacity
+    .col.s4
+      %i.material-icons.prefix.grey.tiny.button{style: "color: pink"} line_style
+      line_style
+    .col.s4
+      %i.material-icons.prefix.tiny.button{style: "color: black"} line_weight
+      line_weight
+  .row
+    .col.s4
+      %i.material-icons.prefix.tiny.button{style: "color: white"} question_answer
+      question_answer
+    .col.s4
+      %i.material-icons.prefix.grey.tiny.button{style: "color: pink"} play_for_work
+      play_for_work
+    .col.s4
+      %i.material-icons.prefix.tiny.button{style: "color: black"} gavel
+      gavel
+
+
+.container
+  .row
+    .col.s12
+      %h1.yellow Dont Kill Daegory Gene!!!
+      %h2.orange Dont Kill Daegory Gene!!!
+      %h3.red Dont Kill Daegory Gene!!!
+      %h4.purple Dont Kill Daegory Gene!!!
+      %h5.blue Dont Kill Daegory Gene!!!
+      %h6.green Dont Kill Daegory Gene!!!
+      %p.white Dont Kill Daegory Gene!!!
+  .row
+    .col.s12.white{style: "color: grey"}
+      %h1 I.AM
+        %i.material-icons.prefix.pink.large{style: "color: white"} accessibility
+  .row
+    .col.s12.black{style: "color: grey"}
+      %h2 B.ad S.tuff
+        %i.material-icons.prefix.black.large{style: "color: white"} new_releases
+  .row
+    .col.s4.grey.lighten-3
+      %h3 iceberg
+      %p warning
+      %i.material-icons.prefix.grey.large{style: "color: black"} warning
+    .col.s4.grey
+      %h4 match
+      %p flash
+      %i.material-icons.prefix.grey.large{style: "color: white"} flare
+    .col.s4.grey.darken-3
+      %h5 hands
+      %p face
+      %i.material-icons.prefix.grey.large{style: "color: pink"} face
+  .row
+    .col.s4
+      %h6.yellow Feed
+      %p Daegory Gene
+      %i.material-icons.prefix.yellow.large{style: "color: black"} border_inner
+      %i.material-icons.prefix.pink.large{style: "color: white"} accessibility
+    .col.s4
+      %h6.red Watch
+      %p Daegory
+      %i.material-icons.prefix.pink.large.pulse{style: "color: pink"} blur_on
+      %i.material-icons.prefix.pink.large{style: "color: white"} accessibility
+    .col.s4
+      %h6.blue Help
+      %p Daeg
+      %i.material-icons.prefix.blue.large{style: "color: white"} share
+      %i.material-icons.prefix.pink.large{style: "color: white"} accessibility
+  .row
+    .col.s2
+      %i.material-icons.prefix.yellow.large.button{style: "color: white"} 3d_rotation
+      %i.material-icons.prefix.yellow.lighten-1.large.button{style: "color: black"} timer_3
+      %i.material-icons.prefix.yellow.lighten-2.large.button{style: "color: pink"} local_dining
+    .col.s2
+      %i.material-icons.prefix.orange.large.button{style: "color: white"} texture
+      %i.material-icons.prefix.orange.lighten-1.large.button{style: "color: black"} straighten
+      %i.material-icons.prefix.orange.lighten-2.large.button{style: "color: pink"} style
+    .col.s2
+      %i.material-icons.prefix.red.large.button{style: "color: white"} surround_sound
+      %i.material-icons.prefix.red.lighten-1.large.button{style: "color: black"} settings_brightness
+      %i.material-icons.prefix.red.lighten-2.large.button{style: "color: pink"} satellite
+    .col.s2
+      %i.material-icons.prefix.purple.large.button{style: "color: white"} toc
+      %i.material-icons.prefix.purple.lighten-1.large.button{style: "color: black"} devices_other
+      %i.material-icons.prefix.purple.lighten-2.large.button{style: "color: pink"} language
+    .col.s2
+      %i.material-icons.prefix.blue.large.button{style: "color: white"} group_work
+      %i.material-icons.prefix.blue.lighten-1.large.button{style: "color: black"} library_music
+      %i.material-icons.prefix.blue.lighten-2.large.button{style: "color: pink"} polymer
+    .col.s2
+      %i.material-icons.prefix.green.large.button{style: "color: white"} find_replace
+      %i.material-icons.prefix.green.lighten-1.large.button{style: "color: black"} tonality
+      %i.material-icons.prefix.green.lighten-2.large.button{style: "color: pink"} local_florist
+  .row
+    .col.s3
+      %ol
+        %li
+          %i.material-icons.prefix.yellow.large.button{style: "color: white"} 3d_rotation
+          3d_rotation
+        %li
+          %i.material-icons.prefix.orange.large.button{style: "color: white"} texture
+          texture
+        %li
+          %i.material-icons.prefix.red.large.button{style: "color: white"} surround_sound
+          surround_sound
+        %li
+          %i.material-icons.prefix.purple.large.button{style: "color: white"} toc
+          toc
+        %li
+          %i.material-icons.prefix.blue.large.button{style: "color: white"} group_work
+          group_work
+        %li
+          %i.material-icons.prefix.green.large.button{style: "color: white"} find_replace
+          find_replace
+    .col.s3
+      %ol
+        %li
+          %i.material-icons.prefix.yellow.lighten-2.large.button{style: "color: black"} timer_3
+          timer_3
+        %li
+          %i.material-icons.prefix.orange.lighten-2.large.button{style: "color: black"} straighten
+          straighten
+        %li
+          %i.material-icons.prefix.red.lighten-2.large.button{style: "color: black"} settings_brightness
+          settings_brightness
+        %li
+          %i.material-icons.prefix.purple.lighten-2.large.button{style: "color: black"} devices_other
+          devices_other
+        %li
+          %i.material-icons.prefix.blue.lighten-2.large.button{style: "color: black"} library_music
+          library_music
+        %li
+          %i.material-icons.prefix.green.lighten-2.large.button{style: "color: black"} tonality
+          tonality
+
+    .col.s6
+      %ol
+        %li
+          %i.material-icons.prefix.yellow.lighten-3.large.button{style: "color: pink"} local_dining
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: yellow"} local_dining
+          local_dining
+        %li
+          %i.material-icons.prefix.orange.lighten-3.large.button{style: "color: pink"} style
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: orange"} style
+          style
+        %li
+          %i.material-icons.prefix.red.lighten-3.large.button{style: "color: pink"} satellite
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: red"} satellite
+          satellite
+        %li
+          %i.material-icons.prefix.purple.lighten-3.large.button{style: "color: pink"} language
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: purple"} language
+          language
+        %li
+          %i.material-icons.prefix.blue.lighten-3.large.button{style: "color: pink"} polymer
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: blue"} polymer
+          polymer
+        %li
+          %i.material-icons.prefix.green.lighten-3.large.button{style: "color: pink"} local_florist
+          %i.material-icons.prefix.pink.lighten-3.large.button{style: "color: green"} local_florist
+          local_florist
+
+  .row
+    .col.s12
+      %i.material-icons.prefix.medium.button{style: "color: white"} invert_colors
+      %h2 invert_colors
+  .row
+    .col.s12
+      %i.material-icons.prefix.grey.medium.button{style: "color: pink"} playlist_add
+      %h2 playlist_add
+  .row
+    .col.s12
+      %i.material-icons.prefix.medium.button{style: "color: black"} open_with
+      %h2 open_with
+  .row
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} opacity
+      %h3 opacity
+    .col.s4
+      %i.material-icons.prefix.grey.medium.button{style: "color: pink"} line_style
+      %h3 line_style
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: black"} line_weight
+      %h3 line_weight
+  .row
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} question_answer
+      %h4 question_answer
+    .col.s4
+      %i.material-icons.prefix.grey.medium.button{style: "color: pink"} play_for_work
+      %h4 play_for_work
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: black"} gavel
+      %h4 gavel
+
+  .row
+    .col.s6
+      %i.material-icons.prefix.pink.medium.button{style: "color: pink"} fingerprint
+      %h5 fingerprint
+      %i.material-icons.prefix.pink.medium.button{style: "color: pink"} picture_in_picture
+      %h5 picture_in_picture
+      %i.material-icons.prefix.pink.medium.button{style: "color: pink"} picture_in_picture_alt
+      %h5 picture_in_picture_alt
+    .col.s6
+      %i.material-icons.prefix.cyan.medium.button{style: "color: pink"} settings
+      %h5 settings
+      %i.material-icons.prefix.cyan.medium.button{style: "color: pink"} schedule
+      %h5 schedule
+      %i.material-icons.prefix.cyan.medium.button{style: "color: pink"} queue
+      %h5 queue
+  .row
+    .col.s12
+      %i.material-icons.prefix.brown.medium.button{style: "color: pink"} portrait
+      %h6 portrait
+      %i.material-icons.prefix.brown.medium.button{style: "color: pink"} print
+      %h6 print
+      %i.material-icons.prefix.brown.medium.button{style: "color: pink"} publish
+      %h6 publish
+
+
+
+
+
+
+
+
+
+
+  .row
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} invert_colors
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} invert_colors
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} invert_colors
+      invert_colors
+      %h3 invert_colors
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} playlist_add
+      %i.material-icons.prefix.medium.button{style: "color: black"} playlist_add
+      %i.material-icons.prefix.medium.button{style: "color: grey"} playlist_add
+      %h3 playlist_add
+    .col.s4
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} open_with
+      %i.material-icons.prefix.white.medium.button{style: "color: black"} open_with
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} open_with
+      %h3 open_with
+  .row
+    .col.s4
+      %i.material-icons.prefix.white.medium.button{style: "color: black"} opacity
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} opacity
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} opacity
+      %h3 opacity
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} line_style
+      %i.material-icons.prefix.medium.button{style: "color: black"} line_style
+      %i.material-icons.prefix.medium.button{style: "color: grey"} line_style
+      %h3 line_style
+    .col.s4
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} line_weight
+      %i.material-icons.prefix.white.medium.button{style: "color: black"} line_weight
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} line_weight
+      %h3 line_weight
+  .row
+    .col.s4
+      %i.material-icons.prefix.white.medium.button{style: "color: black"} question_answer
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} question_answer
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} question_answer
+      %h3 question_answer
+    .col.s4
+      %i.material-icons.prefix.medium.button{style: "color: white"} play_for_work
+      %i.material-icons.prefix.medium.button{style: "color: black"} play_for_work
+      %i.material-icons.prefix.medium.button{style: "color: pink"} play_for_work
+      %h3 play_for_work
+    .col.s4
+      %i.material-icons.prefix.black.medium.button{style: "color: white"} gavel
+      %i.material-icons.prefix.white.medium.button{style: "color: black"} gavel
+      %i.material-icons.prefix.grey.medium.button{style: "color: grey"} gavel
+      %h3 gavel
+
+
+
+
+  .row
+    .col.s4.white{style: "color: black"}
+      %h3 opacity
+    .col.s4.grey{style: "color: black"}
+      %h3 line_style
+    .col.s4.black{style: "color: pink"}
+      %h3 line_weight
+  .row
+    .col.s4.white{style: "color: grey"}
+      %h3 question_answer
+    .col.s4.grey{style: "color: pink"}
+      %h3 play_for_work
+    .col.s4.black{style: "color: grey"}
+      %h3 gavel
+  .row
+    .col.s6.pink{style: "color: grey"}
+      %h3 fingerprint
+      %h3 picture_in_picture
+      %h3 picture_in_picture_alt
+    .col.s6.cyan{style: "color: grey"}
+      %h3 settings
+      %h3 schedule
+      %h3 queue
+  .row
+    .col.s12.brown{style: "color: grey"}
+      %h3 portrait
+      %h3 print
+      %h3 publish
+  .row
+    .col.s12.grey
+      %h1 tsugu
+
+
+-# this is a HAML comment
+.hr
+.hr
+.hr
+.container
+  .row
+    .col.s12.pink.lighten-3{style: "color: white"}
+      %h1 Dont Kill Daegory Gene!
+  .row
+    .col.s6.grey.lighten-1{style: "color: white"}
+      Daegory Gene is a normal kid.
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.white{style: "color: black"} child_care
+    .col.s6.grey.lighten-3{style: "color: black"}
+      Daegory Gene is about to experience Bad Stuff
+      %i.material-icons.prefix.white{style: "color: black"} new_releases
+  .row
+    .col.s6.grey{style: "color: yellow"}
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.yellow{style: "color: black"} child_care
+        %i.material-icons.prefix.yellow{style: "color: black"} border_inner
+  .row
+    .col.s12.yellow{style: "color: black"}
+      %button.waves-effect.waves-light.btn.right.large{"ng-click": "$ctrl.add_mass()"} % of healthy weight: {{$ctrl.mass | number}}
+      <smilemeter value="$ctrl.mass" />
+      %i.material-icons.prefix.yellow border_inner
+      %button.right{"ng-click": "$ctrl.add_gC()"} white text pink-3 bg BG rising: {{$ctrl.gC | number}}
+      %button.right{"ng-click": "$ctrl.add_gC()"} gC: {{$ctrl.gC | number}}
+  .row
+    .col.s12.orange
+  .row
+    .col.s12.red
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
+      %i.material-icons.prefix.black{style: "color: white"} sentiment_neutral
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+  .row
+    %cell.grey{style: "color: red"} FSM2: Symptomatic Daegory
+    %cell.white{style: "color: black"}
+      %i.material-icons.prefix.pink.lighten-3{style: "color: black"} child_care
+    %cell.white{style: "color: black"} variable: "daegory" @ > 100
+    %cell.white
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} blur_circular
+      %cell.white{style: "color: red"}
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_dissatisfied
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} sentiment_neutral
+      %i.material-icons.prefix.grey{style: "color: white"} sentiment_satisfied
+      %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood
+      %i.material-icons.prefix.white{style: "color: black"} sentiment_very_satisfied
+  .row
+    .col.s12.purple
+  .row
+    .col.s12.blue
+      %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+      %i.material-icons.prefix.blue share
+
+    .col.s4
+      %cell.grey{style: "color: blue"} FSM3: Disocvered Diabetic Daeg ::
+      %cell.white{style: "color: black"}
+        %i.material-icons.prefix.blue.lighten-3{style: "color: black"} child_care
+      %cell.white{style: "color: black"} init variable: "daegory" @ > 200
+      %cell.white
+        %i.material-icons.prefix.pink.lighten-3{style: "color: black"} blur_circular
+      %cell
+        %i.material-icons.prefix.blue{style: "color: white"} share
+      %cell.white{style: "color: black"}
+        411 button available @
+        %i.material-icons.prefix.grey.lighten-2{style: "color: black"} mood_bad
+      %cell
+        %i.material-icons.prefix.blue.lighten-2{style: "color: red"} whatshot
+        %br
+      %cell.white{style: "color: black"}
+        911 button available @
+        %i.material-icons.prefix.white{style: "color: black"} sentiment_very_dissatisfied
+      %cell
+        %i.material-icons.prefix.blue.lighten-4
+        airline_seat_flat
+      %cell.white{style: "color: black"} COMA event
+      %cell.white{style: "color: black"} better: rng GAME OVER @ coma
+
+  .row
+    .col.s12.green
+  .row
+    .col.s12.white
+  .row
+    .col.s12.black
+    .col.s2
+      %i.material-icons.prefix.yellow{style: "black"} timer_3s
+    .col.s2
+      %i.material-icons.prefix.orange{style: "black"} tonality
+    .col.s2
+      %i.material-icons.prefix.red{style: "black"} flight_land
+      %i.material-icons.prefix.red{style: "black"} flight_takeoff
+    .col.s2
+      %i.material-icons.prefix.purple{style: "black"} timeline
+    .col.s2
+      %i.material-icons.prefix.blue{style: "black"} compare_arrows
+    .col.s2
+      %i.material-icons.prefix.green{style: "black"} compare
+  .row
+    .col.s12.grey
+    .col.12
+      %cell.grey{style: "color: yellow.darken-3"} FSM4: New Diabetic Huni :: +pplz
+      %cell.grey{style: "color: yellow.darken-3"} restart clock + add insulin (days)
+      %cell.grey{style: "color: yellow.darken-3"} FSM4: New Diabetic Huni :: +pplz
+
+    .col.12
+      %cell.grey{style: "color: red.lighten-3"} FSM5: At Home Diabetic Daeg
+  .row
+    .col.s12.pink
+  .row
+    .col.s12.cyan
+  .row
+    .col.s12.brown
+  .row
+    .col.s1
+      %i.material-icons.prefix.yellow.accent-4{style: "color: white"} 3d_rotation
+    .col.s1
+      %i.material-icons.prefix.orange{style: "color: white"} wb_sunny
+    .col.s1
+      %i.material-icons.prefix.red{style: "color: white"} flare
+    .col.s1
+      %i.material-icons.prefix.purple{style: "color: white"} linear_scale
+    .col.s1
+      %i.material-icons.prefix.blue{style: "color: white"} polymer
+    .col.s1
+      %i.material-icons.prefix.green{style: "color: white"} color_lens
+      %i.material-icons.prefix.green{style: "color: white"} crop_rotate
+      %i.material-icons.prefix.green{style: "color: white"} exposure
+      %i.material-icons.prefix.green{style: "color: white"} public
+      %i.material-icons.prefix.green{style: "color: white"} wallpaper
+      %i.material-icons.prefix.green{style: "color: white"} panorama
+    .col.s2
+      %i.material-icons.prefix.white{style: "color: black"} all_inclusive
+      %i.material-icons.prefix.white{style: "color: black"} invert_colors
+      %i.material-icons.prefix.white{style: "color: black"} palette
+      %i.material-icons.prefix.white{style: "color: black"} public
+    .col.s2
+      %i.material-icons.prefix.black{style: "color: white"} copyright
+      %i.material-icons.prefix.black{style: "color: white"} check_box
+      %i.material-icons.prefix.black{style: "color: white"} check_circle
+      %i.material-icons.prefix.black{style: "color: white"} done_all
+      %i.material-icons.prefix.black{style: "color: white"} looks
+      %i.material-icons.prefix.black{style: "color: white"} monetization_on
+      %i.material-icons.prefix.black{style: "color: white"} multiline_chart
+      %i.material-icons.prefix.black{style: "color: white"} pie_chart
+      %i.material-icons.prefix.black{style: "color: white"} pie_chart_outlined
+    .col.s2
+      %i.material-icons.prefix.grey{style: "color: white"} visibility
+      %i.material-icons.prefix.grey{style: "color: white"} face
+      %i.material-icons.prefix.grey{style: "color: white"} local_dining
+      %i.material-icons.prefix.grey{style: "color: white"} grain
+      %i.material-icons.prefix.grey{style: "color: white"} kitchen
+      %i.material-icons.prefix.grey{style: "color: white"} remove_red_eye
+  .row
+    .col.12
+      %cell.grey{style: "color: red.lighten-3"} FSM6
+  .row
+    .col.s6
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} cake
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} fingerprint
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} filter_vintage
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} attach_file
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} flag
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} room_service
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star_border
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} star_half
+      %i.material-icons.prefix.pink.lighten-3{style: "color: white"} stars
+    .col.s6
+      %i.material-icons.prefix.cyan{style: "color: white"} cached
+      %i.material-icons.prefix.cyan{style: "color: white"} widgets
+      %i.material-icons.prefix.cyan{style: "color: white"} games
+      %i.material-icons.prefix.cyan{style: "color: white"} watch
+      %i.material-icons.prefix.cyan{style: "color: white"} spa
+      %i.material-icons.prefix.cyan{style: "color: white"} forward_5
+      %i.material-icons.prefix.cyan{style: "color: white"} forward_10
+      %i.material-icons.prefix.cyan{style: "color: white"} developer_board
+      %i.material-icons.prefix.cyan{style: "color: white"} ac_unit
+  .row
+    .col.12
+      %cell.grey{style: "color: grey"} FSM7
+  .row
+    .col.s12
+      %cell.brown.darken-4{style: "color: white"}
+        game proper.
+        %br
+      %cell
+        %i.material-icons.prefix.white{style: "color: black"} gesture
+        %i.material-icons.prefix.white{style: "color: black"} child_care
+        %i.material-icons.prefix.white{style: "color: black"} perm_identity
+        %i.material-icons.prefix.white{style: "color: black"} accessibility
+        %i.material-icons.prefix.white{style: "color: black"} person
+        %i.material-icons.prefix.white{style: "color: black"} person_outline
+        %i.material-icons.prefix.white{style: "color: black"} error
