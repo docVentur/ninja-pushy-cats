@@ -1,29 +1,446 @@
 .container
+  .row.pink
+    .col.s1
+      %i.material-icons.prefix.black.large{style: "color: white"} airline_seat_flat
+    .col.s1
+      %i.material-icons.prefix.grey.large{style: "color: grey"} error
+    .col.s1
+      %i.material-icons.prefix.grey.large{style: "color: white"} sentiment_very_dissatisfied
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: grey"} sentiment_dissatisfied
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: grey"} sentiment_neutral
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: grey"} blur_on
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: pink"} blur_on
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: pink"} sentiment_neutral
+    .col.s1
+      %i.material-icons.prefix.pink.lighten-3.large{style: "color: pink"} sentiment_satisfied
+    .col.s1
+      %i.material-icons.prefix.grey.large{style: "color: white"} sentiment_very_satisfied
+    .col.s1
+      %i.material-icons.prefix.grey.large{style: "color: grey"} error
+    .col.s1
+      %i.material-icons.prefix.black.large{style: "color: white"} airline_seat_flat
+
+.container
+  .row
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.yellow.large.button{style: "color: black"} 3d_rotation
+      3d_rotation
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.orange.large.button{style: "color: black"} texture
+      texture
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.red.large.button{style: "color: black"} surround_sound
+      surround_sound
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.purple.large.button{style: "color: black"} toc
+      toc
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.blue.large.button{style: "color: black"} group_work
+      group_work
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.green.large.button{style: "color: black"} find_replace
+      find_replace
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.large.button{style: "color: white"} invert_colors
+      invert_colors
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.large.button{style: "color: black"} open_with
+      open_with
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.grey.large.button{style: "color: grey"} playlist_add
+      playlist_add
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.large.button{style: "color: pink"} fingerprint
+      fingerprint
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.large.button{style: "color: cyan"} settings
+      settings
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.large.brown.button{style: "color: black"} portrait
+      portrait
+  .row
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.yellow.tiny.button{style: "color: black"} 3d_rotation
+      3d_rotation
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.orange.tiny.button{style: "color: black"} texture
+      texture
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.red.tiny.button{style: "color: black"} surround_sound
+      surround_sound
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.purple.tiny.button{style: "color: black"} toc
+      toc
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.blue.tiny.button{style: "color: black"} group_work
+      group_work
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.green.tiny.button{style: "color: black"} find_replace
+      find_replace
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.tiny.button{style: "color: white"} invert_colors
+      invert_colors
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.tiny.button{style: "color: black"} open_with
+      open_with
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.grey.tiny.button{style: "color: grey"} playlist_add
+      playlist_add
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.tiny.button{style: "color: pink"} fingerprint
+      fingerprint
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.tiny.button{style: "color: cyan"} settings
+      settings
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.tiny.brown.button{style: "color: black"} portrait
+      portrait
+
+
+
+
+
+
+
+
+
+
+.container
   .row
     .col.s1
-      %i.material-icons.prefix.black.medium{style: "color: white"} airline_seat_flat
+      %i.material-icons.prefix.black.medium.button{style: "color: yellow"} accessibility
     .col.s1
-      %i.material-icons.prefix.grey.medium{style: "color: grey"} error
+      %i.material-icons.prefix.pink.lighten-2.medium.button{style: "color: orange"} accessibility
     .col.s1
-      %i.material-icons.prefix.grey.medium{style: "color: white"} sentiment_very_dissatisfied
+      %i.material-icons.prefix.black.medium.button{style: "color: red"} accessibility
     .col.s1
-      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: grey"} sentiment_dissatisfied
+      %i.material-icons.prefix.pink.lighten-2.medium.button{style: "color: purple"} accessibility
     .col.s1
-      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: grey"} sentiment_neutral
+      %i.material-icons.prefix.black.medium.button{style: "color: blue"} accessibility
     .col.s1
-      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: grey"} blur_on
+      %i.material-icons.prefix.pink.lighten-2.medium.button{style: "color: green"} accessibility
+
+  .row
     .col.s1
-      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: pink"} blur_on
+      %i.material-icons.prefix.yellow.small.button{style: "color: black"} 3d_rotation
     .col.s1
-      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: pink"} sentiment_neutral
+      %i.material-icons.prefix.yellow.small.button{style: "color: black"} 3d_rotation
     .col.s1
-      %i.material-icons.prefix.pink.lighten-3.medium{style: "color: pink"} sentiment_satisfied
+      %i.material-icons.prefix.yellow.small.button{style: "color: black"} 3d_rotation
     .col.s1
-      %i.material-icons.prefix.grey.medium{style: "color: white"} sentiment_very_satisfied
+      %i.material-icons.prefix.yellow.small.button{style: "color: black"} 3d_rotation
     .col.s1
-      %i.material-icons.prefix.grey.medium{style: "color: grey"} error
+      %i.material-icons.prefix.yellow.small.button{style: "color: black"} 3d_rotation
     .col.s1
-      %i.material-icons.prefix.black.medium{style: "color: white"} airline_seat_flat
+      %i.material-icons.prefix.yellow.small.button{style: "color: black"} 3d_rotation                  
+  .row
+    .col.s1
+      %i.material-icons.prefix.orange.small.button{style: "color: black"} texture
+  .row
+    .col.s1{style: "height: 33px"}
+      %i.material-icons.prefix.red.small.button{style: "color: black"} surround_sound
+  .row
+    .col.s1{style: "height: 33px"}
+      %i.material-icons.prefix.purple.small.button{style: "color: black"} toc
+  .row
+    .col.s1{style: "height: 33px"}
+      %i.material-icons.prefix.blue.small.button{style: "color: black"} group_work
+  .row
+    .col.s1{style: "height: 33px"}
+      %i.material-icons.prefix.green.small.button{style: "color: black"} find_replace
+  .row
+    .col.s1{style: "height: 33px"}
+      %i.material-icons.prefix.small.button{style: "color: white"} invert_colors
+  .row
+    .col.s1{style: "height: 33px"}
+      %i.material-icons.prefix.small.button{style: "color: black"} open_with
+  .row
+    .col.s1{style: "height: 33px"}
+      %i.material-icons.prefix.grey.small.button{style: "color: grey"} playlist_add
+  .row
+    .col.s1{style: "height: 33px"}
+      %i.material-icons.prefix.small.button{style: "color: pink"} fingerprint
+  .row
+    .col.s1{style: "height: 33px"}
+      %i.material-icons.prefix.small.button{style: "color: cyan"} settings
+  .row
+    .col.s1{style: "height: 33px"}
+      %i.material-icons.prefix.small.brown.button{style: "color: black"} portrait
+  .row
+    .col.s12
+      %hr
+
+
+
+
+
+
+  .row
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.yellow.tiny.button{style: "color: black"} 3d_rotation
+      3d_rotation
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.orange.tiny.button{style: "color: black"} texture
+      texture
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.red.tiny.button{style: "color: black"} surround_sound
+      surround_sound
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.purple.tiny.button{style: "color: black"} toc
+      toc
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.blue.tiny.button{style: "color: black"} group_work
+      group_work
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.green.tiny.button{style: "color: black"} find_replace
+      find_replace
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.tiny.button{style: "color: white"} invert_colors
+      invert_colors
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.tiny.button{style: "color: black"} open_with
+      open_with
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.grey.tiny.button{style: "color: grey"} playlist_add
+      playlist_add
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.tiny.button{style: "color: pink"} fingerprint
+      fingerprint
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.tiny.button{style: "color: cyan"} settings
+      settings
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.tiny.brown.button{style: "color: black"} portrait
+      portrait
+
+
+  .row
+    .col.s2{style: "height: 100px"}
+      %i.material-icons.prefix.yellow.large.button{style: "color: black"} 3d_rotation
+      3d_rotation
+    .col.s2{style: "height: 100px"}
+      %i.material-icons.prefix.orange.large.button{style: "color: black"} texture
+      texture
+    .col.s2{style: "height: 100px"}
+      %i.material-icons.prefix.red.large.button{style: "color: black"} surround_sound
+      surround_sound
+    .col.s2{style: "height: 100px"}
+      %i.material-icons.prefix.purple.large.button{style: "color: black"} toc
+      toc
+    .col.s2{style: "height: 100px"}
+      %i.material-icons.prefix.blue.large.button{style: "color: black"} group_work
+      group_work
+    .col.s2{style: "height: 100px"}
+      %i.material-icons.prefix.green.large.button{style: "color: black"} find_replace
+      find_replace
+
+
+  .row
+    .col.s6
+      %i.material-icons.prefix.large.button{style: "color: white"} invert_colors
+      invert_colors
+
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.button{style: "color: white"} 3d_rotation
+      3d_rotation
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.medium.button{style: "color: white"} texture
+      texture
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.medium.button{style: "color: white"} surround_sound
+      surround_sound
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.medium.button{style: "color: white"} toc
+      toc
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.medium.button{style: "color: white"} group_work
+      group_work
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.medium.button{style: "color: white"} find_replace
+      find_replace
+  .row
+    .col.s6
+      %i.material-icons.prefix.large.button{style: "color: black"} open_with
+      open_with
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.button{style: "color: black"} timer_3
+      timer_3
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.button{style: "color: black"} straighten
+      straighten
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.button{style: "color: black"} settings_brightness
+      settings_brightness
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.button{style: "color: black"} devices_other
+      devices_other
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.button{style: "color: black"} library_music
+      library_music
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.button{style: "color: black"} tonality
+      tonality
+  .row
+    .col.s6
+      %i.material-icons.prefix.grey.large.button{style: "color: grey"} playlist_add
+      playlist_add
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.button{style: "color: grey"} local_dining
+      local_dining
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.button{style: "color: grey"} style
+      style
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.button{style: "color: grey"} satellite
+      satellite
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.button{style: "color: grey"} language
+      language
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.button{style: "color: grey"} polymer
+      polymer
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.button{style: "color: grey"} local_florist
+      local_florist
+  .row
+    .col.s12
+      %hr
+
+  .row
+    .col.s1
+      %i.material-icons.prefix.large.button{style: "color: pink"} fingerprint
+      fingerprint
+    .col.s9
+    .col.s1
+      %i.material-icons.prefix.medium.button{style: "color: pink"} picture_in_picture
+      picture_in_picture
+    .col.s1
+      %i.material-icons.prefix.medium.button{style: "color: pink"} picture_in_picture_alt
+      picture_in_picture_alt
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.prefix.medium.button{style: "color: white"} question_answer
+      question_answer
+    .col.s1
+      %i.material-icons.prefix.grey.medium.button{style: "color: pink"} play_for_work
+      play_for_work
+    .col.s1
+      %i.material-icons.prefix.medium.button{style: "color: black"} gavel
+      gavel
+    .col.s2
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.yellow.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.lighten-2.small.button{style: "color: pink"} local_dining
+      local_dining
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.orange.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.lighten-2.small.button{style: "color: pink"} style
+      style
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.red.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.lighten-2.small.button{style: "color: pink"} satellite
+      satellite
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.purple.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.lighten-2.small.button{style: "color: pink"} language
+      language
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.blue.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.lighten-2.small.button{style: "color: pink"} polymer
+      polymer
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.green.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.lighten-2.small.button{style: "color: pink"} local_florist
+      local_florist
+
+  .row
+    .col.s1
+      %i.material-icons.prefix.large.button{style: "color: cyan"} settings
+      settings
+    .col.s9
+    .col.s1
+      %i.material-icons.prefix.medium.button{style: "color: cyan"} schedule
+      schedule
+    .col.s1
+      %i.material-icons.prefix.medium.button{style: "color: cyan"} queue
+      queue
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.prefix.medium.button{style: "color: white"} opacity
+      opacity
+    .col.s1
+      %i.material-icons.prefix.grey.medium.button{style: "color: pink"} line_style
+      line_style
+    .col.s1
+      %i.material-icons.prefix.medium.button{style: "color: black"} line_weight
+      line_weight
+    .col.s2
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.yellow{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.darken-4.button{style: "color: yellow"} local_dining
+      local_dining
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.orange{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.darken-4.button{style: "color: orange"} style
+      style
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.red{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.darken-4.button{style: "color: red"} satellite
+      satellite
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.purple{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.darken-4.button{style: "color: purple"} language
+      language
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.blue{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.darken-4.button{style: "color: blue"} polymer
+      polymer
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.green{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.darken-4.button{style: "color: green"} local_florist
+      local_florist
+
+
+  .row
+    .col.s1
+      %i.material-icons.prefix.large.brown.button{style: "color: black"} portrait
+      portrait
+    .col.s9
+    .col.s1
+      %i.material-icons.prefix.medium.brown.button{style: "color: black"} print
+      print
+    .col.s1
+      %i.material-icons.prefix.medium.brown.button{style: "color: black"} publish
+      publish
+
+
+
 
 .container{id: "daegorys_feelings"}
   .row
