@@ -1,3 +1,15 @@
+<hr>
+<v-hand></v-hand>
+<hr>
+
+<v-card value="5"></v-card>
+<v-card value="23"></v-card>
+<ul>
+  <li ng-repeat="number in [].constructor(52) track by $index">
+    <v-card value="{{$index}}"></v-card>
+  </li>
+</ul>
+
 .container
   .row.brown
     .col.s12
@@ -129,8 +141,9 @@
 
   .row
     .col.s1{style: "height: 100px"}
-      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.button{style: "color: white"} 3d_rotation
+      %button.btn.waves-effect.waves-light{"ng-click": "$ctrl.add_mass()"}
+        ALLO
+        %i.material-icons.right 3d_rotation
       3d_rotation
     .col.s1{style: "height: 100px"}
       %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
@@ -333,8 +346,9 @@
     .col.s1
       %i.material-icons.prefix.yellow.small.button{style: "color: black"} 3d_rotation
     .col.s1{style: "height: 100px"}
-      %button.waves-effect.waves-light.btn.yellow{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
-        %i.material-icons.prefix.yellow.accent-2.small.button{style: "color: black"} 3d_rotation
+      %button.waves-effect.waves-light.btn.yellow{"ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.yellow.accent-2.small.button.black-text
+          3d_rotation
       3d_rotation
     .col.s1{style: "height: 100px"}
       %button.waves-effect.waves-light.btn.yellow{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
@@ -383,6 +397,7 @@
       %button.waves-effect.waves-light.btn.orange.lighten-1{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
         %i.material-icons.prefix.green.lighten-1.small.button{style: "color: white"} texture
       texture
+
   .row
     .col.s1{style: "height: 33px"}
       %i.material-icons.prefix.red.small.button{style: "color: black"} surround_sound
@@ -935,7 +950,7 @@
 
 
 <feelings-indicater value="4"></feelings-indicater>
-
+.container
   .row
     .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
       I.AM Daegory Gene in {{$ctrl.daegory.__machina__.daegory.state}}
@@ -954,6 +969,7 @@
 
 <screen-tsugu ng-if="$ctrl.daegory.__machina__.daegory.state=='tsugu'" daegory="$ctrl.daegory" />
 
+.container
   .row
     .col.s2
       .button.btn.white{"ng-click": "$ctrl.tick_it()"} &gt;3

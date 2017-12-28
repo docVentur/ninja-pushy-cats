@@ -13,3 +13,6 @@ require './screenDaegoryGenki/screenDaegoryGenki.coffee'
 require './screenTsugu/screenTsugu.coffee'
 require './RIP/RIP.coffee'
 require './feelingsIndicator/feelingsIndicator.coffee'
+
+require './card/card.coffee'
+require './hand/hand.coffee'

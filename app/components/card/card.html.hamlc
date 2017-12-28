@@ -1,0 +1,12 @@
+%span.black-text{"ng-if": "$ctrl.suit == 'spades'"}
+  &spades;
+  {{ $ctrl.card }}
+%span.red-text{"ng-if": "$ctrl.suit == 'hearts'"}
+  &hearts;
+  {{ $ctrl.card }}
+%span.black-text{"ng-if": "$ctrl.suit == 'clubs'"}
+  &clubs;
+  {{ $ctrl.card }}
+%span.red-text{"ng-if": "$ctrl.suit == 'diams'"}
+  &diams;
+  {{ $ctrl.card }}
