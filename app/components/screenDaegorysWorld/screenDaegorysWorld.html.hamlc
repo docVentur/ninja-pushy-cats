@@ -2,10 +2,9 @@
 <v-hand></v-hand>
 <hr>
 
-<v-card value="5"></v-card>
-<v-card value="23"></v-card>
+
 <ul>
-  <li ng-repeat="number in [].constructor(52) track by $index">
+  <li ng-repeat="number in [].constructor(90) track by $index" style="display: inline-block">
     <v-card value="{{$index}}"></v-card>
   </li>
 </ul>
@@ -346,12 +345,12 @@
     .col.s1
       %i.material-icons.prefix.yellow.small.button{style: "color: black"} 3d_rotation
     .col.s1{style: "height: 100px"}
-      %button.waves-effect.waves-light.btn.yellow{"ng-click": "$ctrl.add_mass()"}
+      %button.btn.yellow{"ng-click": "$ctrl.add_mass()"}
         %i.material-icons.yellow.accent-2.small.button.black-text
           3d_rotation
       3d_rotation
     .col.s1{style: "height: 100px"}
-      %button.waves-effect.waves-light.btn.yellow{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+      %button.btn.waves-effect.waves-light.yellow{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
         %i.material-icons.prefix.orange.accent-2.small.button{style: "color: white"} 3d_rotation
       3d_rotation
     .col.s1{style: "height: 100px"}

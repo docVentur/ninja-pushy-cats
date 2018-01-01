@@ -8,11 +8,11 @@ app.component 'vHand', {
   controller: ->
     @cards = []
 
-    @cards.push Math.floor(Math.random() * 52)
-    @cards.push Math.floor(Math.random() * 52)
-    @cards.push Math.floor(Math.random() * 52)
-    @cards.push Math.floor(Math.random() * 52)
-    @cards.push Math.floor(Math.random() * 52)
-    
+    @cards.push Math.floor(Math.random() * 78)
+    @cards.push Math.floor(Math.random() * 78)
+    @cards.push Math.floor(Math.random() * 78)
+    @cards.push Math.floor(Math.random() * 78)
+    @cards.push Math.floor(Math.random() * 78)
+
     @
 }
