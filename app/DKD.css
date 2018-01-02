@@ -1,75 +1,73 @@
-.kami {
-  border-radius: 3px;
-  background-color: pink;
-  border: 3px solid pink;
+.box {
   color: black;
+  border: 1px solid white;
+  width: 1500px;
+
   text-align: center;
   vertical-align: middle;
-  font-size: 8px;
-  padding: 5px;
-  width: 33px;
-  height: 33px;
-  top: 0px;
-  right: 0px;
-  cursor: pointer;
-  margin: 1px;
-  display: inline-block;
-  opacity: 100;
+}
 
+.box i{
+  font-size: 3rem;
+}
 
+.samuneiru {
+  background-color: brown;
+  width: 5px;
+  height: 50px;
+  padding: 3;
+  border: 1px solid white;
+}
 
+.samuneiru i{
+  font-size: 2rem;
+}
 
+.kami {
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+.kami i{
+  font-size: 3rem;
+  vertical-align: middle;
+}
+
+.ace {
+  border: 1px solid white;
+  background-color: pink;
+  border-radius: 1px;
+  vertical-align: middle;
+  padding: 3;
+}
+
+.ace i{
+  font-size: 2rem;
+  height: 2rem;
+  vertical-align: middle;
 }
 
 .button {
-  border-radius: 0px;
-  background-color: pink;
-  border: 0px solid pink;
+  border-radius: 3px;
+  background-color: ;
+  border: 1px solid pink;
   color: black;
-  text-align: top;
-  font-size: 8px;
-  padding: 0px;
-  width: 20px;
-  transition: all 0s;
+  text-align: center;
+  transition: all 3s;
   cursor: pointer;
-  margin: 0px;
+  vertical-align: middle;
 
 }
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: top;
-  transition: 0s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -0px;
-  transition: 0s;
-}
-
-.button:hover span {
-  padding-right: 0px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
 
 .card {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0px;
-    border: 3px solid pink;
-
+  display: inline-block;
+  width: 10px;
+  height: 100px;
+  border: 3px solid pink;
+  font-size: 3px;
+  font-family: 'Roboto';
+  font-style: 'italic';
+  vertical-align: middle;
 }
 
 body {
@@ -82,8 +80,6 @@ blockquote:before {
   content: open-quote;
   font-size: 8em;
   line-height: .1 em;
-  margin-right: -.1 em;
-  vertical-align: -0.0 em;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
@@ -91,6 +87,7 @@ blockquote:before {
 @import url(https://fonts.googleapis.com/css?family=Alex+Brush);
 @import url(https://fonts.googleapis.com/css?family=Bellefair);
 @import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Calligraffitti);
 @import url(https://fonts.googleapis.com/css?family=Bilbo);
 @import url(https://fonts.googleapis.com/css?family=Mrs+Sheppards);

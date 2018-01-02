@@ -1,18 +1,18 @@
-.kami.grey.lighten-1.black-text{"ng-if": "$ctrl.suit == 'spades'"}
+.kami.grey.lighten-2.black-text{"ng-if": "$ctrl.suit == 'spades'"}
   &spades;
   {{ $ctrl.card }}
-.kami.grey.white-text{"ng-if": "$ctrl.suit == 'hearts'"}
+.kami.grey.lighten-1.pink-text{"ng-if": "$ctrl.suit == 'hearts'"}
   &hearts;
   {{ $ctrl.card }}
-.kami.grey.darken-1.black-text{"ng-if": "$ctrl.suit == 'clubs'"}
+.kami.grey.black-text{"ng-if": "$ctrl.suit == 'clubs'"}
   &clubs;
   {{ $ctrl.card }}
-.kami.grey.darken-2.white-text{"ng-if": "$ctrl.suit == 'diams'"}
+.kami.grey.darken-1.pink-text{"ng-if": "$ctrl.suit == 'diams'"}
   &diams;
   {{ $ctrl.card }}
-.kami.grey.darken-3.black-text{"ng-if": "$ctrl.suit == 'yin yang'"}
+.kami.grey.darken-2.black-text{"ng-if": "$ctrl.suit == 'yin yang'"}
   &#9775;
   {{ $ctrl.card }}
-.kami.grey.darken-4.white-text{"ng-if": "$ctrl.suit == 'peace symbol'"}
+.kami.grey.darken-3.pink-text{"ng-if": "$ctrl.suit == 'peace symbol'"}
   &#9774;
   {{ $ctrl.card }}
