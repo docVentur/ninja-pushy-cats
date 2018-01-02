@@ -29,10 +29,13 @@ app.component 'soritia', {
     @points[11]= 10
     @points[12]= 10
 
+    @hit_me = ->
+      vm.hand.push vm.deck.pop()
+
     @calculate_speed=->
       vm.score = 0
-    for card in vm.hand
-      vm.score = vm.score + vm.points[card]
+      for card in vm.hand
+        vm.score = vm.score + vm.points[card]
 
     @
 }
