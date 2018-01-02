@@ -16,3 +16,4 @@ require './feelingsIndicator/feelingsIndicator.coffee'
 
 require './card/card.coffee'
 require './hand/hand.coffee'
+require './soritia/soritia.coffee'

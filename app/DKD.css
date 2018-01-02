@@ -24,28 +24,23 @@
 }
 
 .kami {
-  vertical-align: middle;
-  border: 1px solid black;
+  width: 50px;
+  border: 1px solid pink;
+  border-radius: 33px;
 }
 
 .kami i{
-  font-size: 3rem;
+  font-size: 2rem;
   vertical-align: middle;
+
 }
 
 .ace {
-  border: 1px solid white;
+  border: 1px solid pink;
+  margin: 0 auto;
   background-color: pink;
-  border-radius: 1px;
-  vertical-align: middle;
-  padding: 3;
 }
 
-.ace i{
-  font-size: 2rem;
-  height: 2rem;
-  vertical-align: middle;
-}
 
 .button {
   border-radius: 3px;
@@ -71,7 +66,8 @@
 }
 
 body {
-  background-color: grey
+  background-color: grey;
+  font-family: 'Permanent Marker';
 
 }
 
@@ -124,8 +120,9 @@ h6 {
 }
 
 p {
-  font-family: 'Calligraffitti';
-
+  font-family: 'Roboto';
+  font-size: 1em;
+  padding: 3px;
 }
 
 .bliss-font {

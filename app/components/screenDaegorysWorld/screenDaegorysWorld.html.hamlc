@@ -1,3 +1,494 @@
+<soritia></soritia>
+%p
+%hr
+
+.container.box
+  .row
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &spades;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &spades;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &spades;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &spades;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &spades;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &spades;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &spades;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &spades;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &spades;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &spades;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &spades;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &spades;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &hearts;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &hearts;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &hearts;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &hearts;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &hearts;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &hearts;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &hearts;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &hearts;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &hearts;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &hearts;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &hearts;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &hearts;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &clubs;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &clubs;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &clubs;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &clubs;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &clubs;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &clubs;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &clubs;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &clubs;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &clubs;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &clubs;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &clubs;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &clubs;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &diams;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &diams;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &diams;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &diams;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &diams;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &diams;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &diams;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &diams;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &diams;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &diams;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &diams;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &diams;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &#9775;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &#9775;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &#9775;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &#9775;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &#9775;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &#9775;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &#9775;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &#9775;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &#9775;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &#9775;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &#9775;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9775;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &#9774;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &#9774;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &#9774;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &#9774;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &#9774;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &#9774;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &#9774;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &#9774;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &#9774;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &#9774;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &#9774;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9774;
+      %i.material-icons.tiny.brown-text portrait
+
+
+.container.box
+  .row{"ng-repeat": "suit in [0, 1, 2, 3, 4, 5]"}
+    .col.s1{"ng-repeat": "card in [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]", style: "display: inline-block;"}
+      <v-card value="{{suit * 13 + card}}"></v-card>
+
+
+%hr
+%hr
+
+.box
+  .row
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &spades;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &spades;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &spades;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &spades;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &spades;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &spades;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &spades;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &spades;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &spades;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &spades;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &spades;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &spades;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &hearts;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &hearts;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &hearts;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &hearts;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &hearts;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &hearts;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &hearts;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &hearts;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &hearts;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &hearts;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &hearts;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &hearts;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &clubs;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &clubs;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &clubs;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &clubs;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &clubs;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &clubs;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &clubs;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &clubs;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &clubs;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &clubs;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &clubs;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &clubs;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &diams;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &diams;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &diams;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &diams;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &diams;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &diams;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &diams;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &diams;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &diams;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &diams;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &diams;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &diams;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &#9775;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &#9775;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &#9775;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &#9775;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &#9775;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &#9775;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &#9775;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &#9775;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &#9775;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &#9775;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &#9775;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9775;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &#9774;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &#9774;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &#9774;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &#9774;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &#9774;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &#9774;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &#9774;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &#9774;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &#9774;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &#9774;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &#9774;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9774;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &#9812;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &#9818;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &#9818;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &#9818;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &#9818;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &#9818;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &#9818;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &#9818;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &#9818;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &#9818;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &#9818;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9818;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &#9813;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &#9819;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &#9819;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &#9819;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &#9819;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &#9819;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &#9819;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &#9819;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &#9819;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &#9819;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &#9819;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9819;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &#9814;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &#9820;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &#9820;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &#9820;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &#9820;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &#9820;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &#9820;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &#9820;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &#9820;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &#9820;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &#9820;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9820;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &#9815;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &#9821;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &#9821;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &#9821;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &#9821;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &#9821;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &#9821;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &#9821;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &#9821;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &#9821;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &#9821;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9821;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &#9816;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &#9822;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &#9822;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &#9822;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &#9822;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &#9822;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &#9822;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &#9822;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &#9822;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &#9822;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &#9822;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9822;
+      %i.material-icons.tiny.brown-text portrait
+  .row
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &#9817;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &#9823;
+      %i.material-icons.tiny.orange-text texture
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &#9823;
+      %i.material-icons.tiny.red-text surround_sound
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &#9823;
+      %i.material-icons.tiny.purple-text toc
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &#9823;
+      %i.material-icons.tiny.blue-text group_work
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &#9823;
+      %i.material-icons.tiny.green-text find_replace
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &#9823;
+      %i.material-icons.tiny.white-text invert_colors
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &#9823;
+      %i.material-icons.tiny.black-text open_with
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &#9823;
+      %i.material-icons.tiny.grey-text playlist_add
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &#9823;
+      %i.material-icons.tiny.pink-text fingerprint
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &#9823;
+      %i.material-icons.tiny.cyan-text settings
+    .kami.col.s1.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9823;
+      %i.material-icons.tiny.brown-text portrait
+
+
+
+
+
+%h1 I.AM Daegory Gene Ventur
+%hr
+%div
+  %div{"ng-repeat": "suit in [0, 1, 2, 3, 4, 5]"}
+    %div{"ng-repeat": "card in [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]", style: "display: inline-block;"}
+      <v-card value="{{suit * 13 + card}}"></v-card>
+%hr
+%hr
+%hr
+.container
+  .row{"ng-repeat": "suit in [0, 1, 2, 3, 4, 5]"}
+    .col.s1.ace{"ng-repeat": "card in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]", style: "width: 100px;"}
+      <v-card value="{{suit * 13 + card}}"></v-card>
+
+.container
+  .row{"ng-repeat": "suit in [0, 1, 2, 3, 4, 5]"}
+    .col.s1.ace{"ng-repeat": "card in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]", style: "width: 75px;"}
+      <v-card value="{{suit * 13 + card}}"></v-card>
+
 .container.box{style: "height = 6rem"}
   .row
     .col.s12
@@ -496,304 +987,339 @@
     .col.s12
       %h6 daegorys_12x12
   .row
-    .col.s1.kami.ace{style: "ng-class": "$ctrl.lookup_rank_shade()"}
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[0]"}
       %i.material-icons.brown-text portrait
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[1]"}
       %i.material-icons.brown-text portrait
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[2]"}
       %i.material-icons.brown-text portrait
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[3]"}
       %i.material-icons.brown-text portrait
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[4]"}
       %i.material-icons.brown-text portrait
+
+
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[5]"}
       %i.material-icons.brown-text portrait
+
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[6]"}
       %i.material-icons.brown-text portrait
+
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[7]"}
       %i.material-icons.brown-text portrait
+
+
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[8]"}
       %i.material-icons.brown-text portrait
+
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[9]"}
       %i.material-icons.brown-text portrait
+
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[10]"}
       %i.material-icons.brown-text portrait
+
   .row
-    .col.s1.kami.ace
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.yellow.black-text 3d_rotation
-    .col.s1.kami.ace
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.orange.black-text texture
-    .col.s1.kami.ace
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.red.black-text surround_sound
-    .col.s1.kami.ace
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.purple.black-text toc
-    .col.s1.kami.ace
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.blue.black-text group_work
-    .col.s1.kami.ace
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.green.black-text find_replace
-    .col.s1.kami.ace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.white-text invert_colors
-    .col.s1.kami.ace
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.black-text open_with
-    .col.s1.kami.ace
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.grey-text playlist_add
-    .col.s1.kami.ace
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.pink-text fingerprint
-    .col.s1.kami.ace
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[11]"}
       %i.material-icons.cyan-text settings
-    .col.s1.kami.ace
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[11]"}
+      %i.material-icons.brown-text portrait
+
+  .row
+    .col.s1.yellow{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.yellow.black-text 3d_rotation
+    .col.s1.orange{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.orange.black-text texture
+    .col.s1.red{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.red.black-text surround_sound
+    .col.s1.purple{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.purple.black-text toc
+    .col.s1.blue{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.blue.black-text group_work
+    .col.s1.green{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.green.black-text find_replace
+    .col.s1.white{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.white-text invert_colors
+    .col.s1.black{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.black-text open_with
+    .col.s1.grey{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.grey-text playlist_add
+    .col.s1.pink{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.pink-text fingerprint
+    .col.s1.cyan{"ng-class": "$ctrl.lookup_rank_shade[12]"}
+      %i.material-icons.cyan-text settings
+    .col.s1.brown{"ng-class": "$ctrl.lookup_rank_shade[12]"}
       %i.material-icons.brown-text portrait
 
 
