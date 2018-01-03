@@ -10,7 +10,6 @@ app.component 'screenDaegoryBliss', {
   },
   controller: (DaegoryFSM, $stateParams, moment, $interval) ->
     vm = @
-    @mass = 100
 
     @add_mass = (amount) ->
       console.log("handling a blissful tick")

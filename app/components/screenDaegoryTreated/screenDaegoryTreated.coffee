@@ -12,11 +12,10 @@ app.component 'screenDaegoryTreated', {
     vm = @
 
     @add_mass = (amount) ->
+      console.log("handling a treated_diabetic tick")
       DaegoryFSM.tick(vm.daegory)
       vm.mass = vm.mass + amount
       vm.feeling = vm.feeling + amount
-      Materialize.toast 'RIP Daegory Gene', 3333
-
-
+      Materialize.toast 'Daegory is treated!', 3333
     @
 }

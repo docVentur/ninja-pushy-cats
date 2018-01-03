@@ -1,7 +1,25 @@
-.container.box
+<z-deck></z-deck>
+
+.container{id: "daegorys_feeding"}
   .row
-    .col.s5
+    .col.s1
+      %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
+        accessibility
+    .col.s11
+      %h1 I.AM Daegory Gene Ventur
+  .row
+    .col.s1
+    .col.s1.kami{"ng-click": "$ctrl.add_mass()"}
+      %i.material-icons.waves-effect.waves-accent.btn.yellow.black-text border_inner
+    .col.s1.kami
+      ="{{ $ctrl.mass }} %"
+    .col.s8
+      %h6 I.AM {{$ctrl.daegory.__machina__.Mass.state}}
+
+.container{id: "daegorys_feeling"}
+  .row
     .col.s2
+    .col.s1.center
       .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx6'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx6'}"}
         %i.material-icons.prefix.black-text airline_seat_flat
       .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx5'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx5'}"}
@@ -26,21 +44,52 @@
         %i.material-icons.prefix.grey-text error
       .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx6'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx6'}"}
         %i.material-icons.prefix.black-text airline_seat_flat
+    .col.s1
+    .col.s8
+      %h6 I.AM feeling {{$ctrl.daegory.__machina__.feelings.state}}
+
+.container{id: "daegorys_fellowshipping"}
+  .row
+    .col.s3
+    .col.s1.kami{"ng-click": "$ctrl.add_minion()"}
+      %i.material-icons.waves-effect.waves-dark.btn.blue.black-text share
+    .col.s1.kami
+      ="{{ $ctrl.minion }} minions"
+    .col.s1
+    .col.s6
+      %h6 I have {{$ctrl.daegory.__machina__.minions.state}} minions
+
+.container{id: "daegorys_treatment"}
+  .row
+    .col.s4
+    .col.s1
+    .col.s1
+    .col.s6
+      %h6 I.AM LUCKY.
+
+.container{id: "daegorys_transition"}
+  .row
     .col.s5
+    .col.s1
+    .col.s1
+    .col.s5
+      %h6 I.AM LEARNING.
 
-.container{id: "daegorys_feelings"}
+.container{id: "genki_diabetic"}
   .row
-    .col.s12
-      %h1 I.AM Daegory Gene Ventur
-    .col.s12
-      %h2 I.AM {{$ctrl.daegory.__machina__.Mass.state}}
-    .col.s12
-      %h3 I.AM feeling {{$ctrl.daegory.__machina__.feelings.state}}
+    .col.s6
+    .col.s1
+    .col.s1
+    .col.s4
+      %h6 I.AM GENKI
 
+.container.brown{id: "tsugu"}
   .row
-    .col.s12
-      %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
-        accessibility
+    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
+      %i.material-icons.tiny.pink-text publish
+  .row
+    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[0]"} A &spades;
+      %i.material-icons.tiny.black-text 3d_rotation
 
 .container.box
   .row

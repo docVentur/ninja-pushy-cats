@@ -1,0 +1,5 @@
+%div
+  %h2 zDeck
+    %ul
+      %li{"ng-repeat": "card in $ctrl.deck", style: "display: inline-block"}
+        <z-card card="$ctrl.cards[card]"></z-card>

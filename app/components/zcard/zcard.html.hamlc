@@ -1,0 +1,4 @@
+.kami.yellow.pink-text
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny.black-text= "{{ $ctrl.card.symbol }}"
+  ="{{$ctrl.card.suit}}"
