@@ -5,12 +5,13 @@ app = angular.module 'GG'
 
 app.component 'screenDaegorysWorld', {
   template: require('./screenDaegorysWorld.html.hamlc'),
-  controller: (DaegoryFSM, MassFSM, $stateParams, moment, $interval) ->
+  controller: (DaegoryFSM, MassFSM, FeelingsFSM, $stateParams, moment, $interval) ->
     vm = @
     @daegory = DaegoryFSM.init_daegory()
     MassFSM.init_Mass @daegory, 23
+    FeelingsFSM.init_Feelings @daegory, 9
     console.log @daegory
-    
+
     @suits= ['spades', 'hearts', 'clubs', 'diams', 'yin yang', 'peace symbol']
     @lookup_suit= {spades: "S", hearts: "H", clubs: "C", diams: "D", "yin yang": "Y", "peace symbol": "Z"}
     @lookup_suit_rank = {S: "1", H: "2", C: "3", D: "4", Y: "5", Z: "6"}

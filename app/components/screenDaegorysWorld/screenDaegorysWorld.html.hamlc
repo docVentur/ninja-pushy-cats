@@ -1,3 +1,33 @@
+.container.box
+  .row
+    .col.s5
+    .col.s2
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx6'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx6'}"}
+        %i.material-icons.prefix.black-text airline_seat_flat
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx5'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx5'}"}
+        %i.material-icons.prefix.grey-text error
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx4'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx4'}"}
+        %i.material-icons.prefix.white-text sentiment_very_dissatisfied
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx3'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx3'}"}
+        %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_dissatisfied
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx2'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx2'}"}
+        %i.material-icons.prefix.pink.lighten-3.grey-text blur_on
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negative'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negative'}"}
+        %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_neutral
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'positive'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'positive'}"}
+        %i.material-icons.prefix.pink.lighten-3.pink-text sentiment_neutral
+      .kami.pulse{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx2'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx2'}"}
+        %i.material-icons.prefix.pink.lighten-3.pink-text blur_on
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx3'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx3'}"}
+        %i.material-icons.prefix.pink.lighten-3.pink-text sentiment_satisfied
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx4'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx4'}"}
+        %i.material-icons.prefix.white-text sentiment_very_satisfied
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx5'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx5'}"}
+        %i.material-icons.prefix.grey-text error
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx6'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx6'}"}
+        %i.material-icons.prefix.black-text airline_seat_flat
+    .col.s5
+
 .container{id: "daegorys_feelings"}
   .row
     .col.s12
@@ -5,61 +35,61 @@
     .col.s12
       %h2 I.AM {{$ctrl.daegory.__machina__.Mass.state}}
     .col.s12
-      %h3 I.AM   
+      %h3 I.AM feeling {{$ctrl.daegory.__machina__.feelings.state}}
+
   .row
     .col.s12
       %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
         accessibility
-<feelings-indicater value="4"></feelings-indicater>
 
 .container.box
   .row
     .col.s1
-      .kami
-        %i.material-icons.prefix.black.white-text airline_seat_flat
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx6'}"}
+        %i.material-icons.prefix.black-text airline_seat_flat
     .col.s1
-      .kami
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx5'}"}
         %i.material-icons.prefix.grey-text error
     .col.s1
-      .kami
-        %i.material-icons.prefix.grey.white-text sentiment_very_dissatisfied
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx4'}"}
+        %i.material-icons.prefix.white-text sentiment_very_dissatisfied
     .col.s1
-      .kami
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx3'}"}
         %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_dissatisfied
     .col.s1
-      .kami
-        %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_neutral
-    .col.s1
-      .kami
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx2'}"}
         %i.material-icons.prefix.pink.lighten-3.grey-text blur_on
     .col.s1
-      .kami
-        %i.material-icons.prefix.pink.lighten-3.pink-text.pulse blur_on
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negative'}"}
+        %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_neutral
     .col.s1
-      .kami
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'positive'}"}
         %i.material-icons.prefix.pink.lighten-3.pink-text sentiment_neutral
     .col.s1
-      .kami
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx2'}"}
+        %i.material-icons.prefix.pink.lighten-3.pink-text blur_on
+    .col.s1
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx3'}"}
         %i.material-icons.prefix.pink.lighten-3.pink-text sentiment_satisfied
     .col.s1
-      .kami
-        %i.material-icons.prefix.grey.white-text sentiment_very_satisfied
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx4'}"}
+        %i.material-icons.prefix.white-text sentiment_very_satisfied
     .col.s1
-      .kami
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx5'}"}
         %i.material-icons.prefix.grey-text error
     .col.s1
-      .kami
-        %i.material-icons.prefix.black.white-text airline_seat_flat
+      .kami{"ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx6'}"}
+        %i.material-icons.prefix.black-text airline_seat_flat
 
 
 
 .container.box{style: "height = 6rem"}
   .row
     .col.s12
-      %h6 daegorys_3 :: box : kami
+      %h6 daegorys_3 :: .box : .kami
   .row
     .col.s2.kami{"ng-click": "$ctrl.add_mass()"}
-      %i.material-icons.waves-effect.waves-accent.btn.yellow.black-text.pulse border_inner
+      %i.material-icons.waves-effect.waves-accent.btn.yellow.black-text border_inner
     .col.s2.kami
       ="{{ $ctrl.mass }} %"
     .col.s2.kami{"ng-click": "$ctrl.add_feeling()"}
@@ -67,11 +97,41 @@
     .col.s2.kami
       ="{{ $ctrl.feeling }} feelings"
     .col.s2.kami{"ng-click": "$ctrl.add_minion()"}
-      %i.material-icons.waves-effect.waves-dark.btn.blue.black-text.pulse share
+      %i.material-icons.waves-effect.waves-dark.btn.blue.black-text share
     .col.s2.kami
       ="{{ $ctrl.minion }} tomodachi"
+  .row
+    .col.s5
+    .col.s2
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx6'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx6'}"}
+        %i.material-icons.prefix.black-text airline_seat_flat
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx5'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx5'}"}
+        %i.material-icons.prefix.grey-text error
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx4'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx4'}"}
+        %i.material-icons.prefix.white-text sentiment_very_dissatisfied
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx3'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx3'}"}
+        %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_dissatisfied
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx2'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx2'}"}
+        %i.material-icons.prefix.pink.lighten-3.grey-text blur_on
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negative'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negative'}"}
+        %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_neutral
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'positive'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'positive'}"}
+        %i.material-icons.prefix.pink.lighten-3.pink-text sentiment_neutral
+      .kami.pulse{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx2'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx2'}"}
+        %i.material-icons.prefix.pink.lighten-3.pink-text blur_on
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx3'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx3'}"}
+        %i.material-icons.prefix.pink.lighten-3.pink-text sentiment_satisfied
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx4'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx4'}"}
+        %i.material-icons.prefix.white-text sentiment_very_satisfied
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx5'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx5'}"}
+        %i.material-icons.prefix.grey-text error
+      .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx6'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx6'}"}
+        %i.material-icons.prefix.black-text airline_seat_flat
+    .col.s5
 
-.container
+  .row
+    .col.s12.kami
+.container.box
   .row
     .col.s12{"ng-class": "$ctrl.font_class_for_state()"}
       I.AM Daegory Gene in {{$ctrl.daegory.__machina__.daegory.state}}
@@ -90,7 +150,7 @@
 
 <screen-tsugu ng-if="$ctrl.daegory.__machina__.daegory.state=='tsugu'" daegory="$ctrl.daegory" />
 
-.container
+.container.box
   .row
     .col.s2
       .button.btn.white{"ng-click": "$ctrl.tick_it()"} &gt;3
@@ -105,7 +165,7 @@
 %hr
 %hr
 
-.container
+.container.box
   .row
     <screen-daegory-bliss daegory="$ctrl.daegory" />
   .row
