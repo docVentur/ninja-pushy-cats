@@ -11,6 +11,12 @@ app.component 'screenDaegoryTreated', {
   controller: (DaegoryFSM, $stateParams, moment, $interval) ->
     vm = @
 
+    @add_mass = (amount) ->
+      DaegoryFSM.tick(vm.daegory)
+      vm.mass = vm.mass + amount
+      vm.feeling = vm.feeling + amount
+      Materialize.toast 'RIP Daegory Gene', 3333
+
 
     @
 }
