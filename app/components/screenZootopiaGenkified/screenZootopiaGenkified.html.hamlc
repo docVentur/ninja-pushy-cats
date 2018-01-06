@@ -4,110 +4,112 @@
 
 .box
 
-  .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"}
-      %i.material-icons.tiny.pink-text accessibility
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text publish
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
-      %i.material-icons.tiny.pink-text print
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} ACE
-      %i.material-icons.tiny.pink-text portrait
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} K
-      %i.material-icons.tiny.yellow-text 3d_rotation
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Q
-      %i.material-icons.tiny.orange-text texture
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} J
-      %i.material-icons.tiny.red-text surround_sound
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} 10
-      %i.material-icons.tiny.purple-text toc
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} 9
-      %i.material-icons.tiny.blue-text group_work
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} 8
-      %i.material-icons.tiny.green-text find_replace
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} 7
-      %i.material-icons.tiny.white-text invert_colors
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} 6
-      %i.material-icons.tiny.black-text open_with
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} 5
-      %i.material-icons.tiny.grey-text playlist_add
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} 4
-      %i.material-icons.tiny.pink-text fingerprint
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} 3
-      %i.material-icons.tiny.cyan-text settings
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} 2
-      %i.material-icons.tiny.brown-text portrait
-  .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Y
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
+  .row
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"}
+      zoo
+    .zoo.box.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
+      %i.material-icons.tiny publish
+    .zoo.jkr.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
+      %i.material-icons.tiny print
+    .zoo.ace.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} ACE
+      %i.material-icons.tiny portrait
+    .zoo.box.jkr.ace.kami.col.yellow-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Leodore Lionheart
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .zoo.box.jkr.ace.kami.col.orange-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Officer Judy Hopps
+      %i.material-icons.tiny.orange-text texture
+    .zoo.box.jkr.ace.kami.col.red-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Octavia Spencer
+      %i.material-icons.tiny.red-text surround_sound
+    .zoo.box.jkr.ace.kami.col.purple-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Duke Weaselton
+      %i.material-icons.tiny.purple-text toc
+    .zoo.box.jkr.ace.kami.col.blue-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Gazelle
+      %i.material-icons.tiny.blue-text group_work
+    .zoo.box.jkr.ace.kami.col.green-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Flash
+      %i.material-icons.tiny.green-text find_replace
+    .zoo.box.jkr.ace.kami.col.white-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Jenny Slate
+      %i.material-icons.tiny.white-text invert_colors
+    .zoo.box.jkr.ace.kami.col.black-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Nick
+      %i.material-icons.tiny.black-text open_with
+    .zoo.box.jkr.ace.kami.col.grey-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Officer Benjamin Clawhauser
+      %i.material-icons.tiny.grey-text playlist_add
+    .zoo.box.jkr.ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Bonnie Hopps
+      %i.material-icons.tiny.pink-text fingerprint
+    .zoo.box.jkr.ace.kami.col.cyan-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Chief
+      %i.material-icons.tiny.cyan-text settings
+    .zoo.box.jkr.ace.kami.col.brown-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Tommy Chong
+      %i.material-icons.tiny.brown-text portrait
+
+
+  .row
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} Y
+
+    .zoo.box.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} Howler Flowers
+      %i.material-icons.tiny.yellow-text border_inner
+    .zoo.box.jkr.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text border_inner
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
-      %i.material-icons.tiny.pink-text border_inner
-    .kami.col.yellow.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
+    .zoo.box.jkr.ace.col.yellow.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
       %i.material-icons.tiny.black-text border_inner
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &spades;
       %i.material-icons.tiny.yellow-text 3d_rotation
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &spades;
       %i.material-icons.tiny.orange-text texture
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &spades;
       %i.material-icons.tiny.red-text surround_sound
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &spades;
       %i.material-icons.tiny.purple-text toc
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &spades;
       %i.material-icons.tiny.blue-text group_work
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &spades;
       %i.material-icons.tiny.green-text find_replace
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &spades;
       %i.material-icons.tiny.white-text invert_colors
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &spades;
       %i.material-icons.tiny.black-text open_with
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &spades;
       %i.material-icons.tiny.grey-text playlist_add
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &spades;
       %i.material-icons.tiny.pink-text fingerprint
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &spades;
       %i.material-icons.tiny.cyan-text settings
-    .kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &spades;
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &spades;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} O
-
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text texture
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
-      %i.material-icons.tiny.pink-text texture
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} O
+    .zoo.box.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} Try-er
+      %i.material-icons.tiny.orange-text texture
+    .zoo.box.jkr.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
+      %i.material-icons.tiny texture
+    .zoo.box.jkr.ace.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
       %i.material-icons.tiny.black-text texture
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &hearts;
+    .zoo.box.jkr.ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &hearts;
       %i.material-icons.tiny.yellow-text 3d_rotation
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &hearts;
+    .zoo.box.jkr.ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &hearts;
       %i.material-icons.tiny.orange-text texture
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &hearts;
+    .zoo.box.jkr.ace.kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &hearts;
       %i.material-icons.tiny.red-text surround_sound
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &hearts;
+    .zoo.box.jkr.ace.kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &hearts;
       %i.material-icons.tiny.purple-text toc
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &hearts;
+    .zoo.box.jkr.ace.kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &hearts;
       %i.material-icons.tiny.blue-text group_work
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &hearts;
+    .zoo.box.jkr.ace.kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &hearts;
       %i.material-icons.tiny.green-text find_replace
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &hearts;
+    .zoo.box.jkr.ace.kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &hearts;
       %i.material-icons.tiny.white-text invert_colors
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &hearts;
+    .zoo.box.jkr.ace.kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &hearts;
       %i.material-icons.tiny.black-text open_with
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &hearts;
+    .zoo.box.jkr.ace.kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &hearts;
       %i.material-icons.tiny.grey-text playlist_add
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &hearts;
+    .zoo.box.jkr.ace.kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &hearts;
       %i.material-icons.tiny.pink-text fingerprint
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &hearts;
+    .zoo.box.jkr.ace.kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &hearts;
       %i.material-icons.tiny.cyan-text settings
-    .kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &hearts;
+    .zoo.box.jkr.ace.kami.col.orange.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &hearts;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} R
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} R
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text blur_on
+    .zoo.ace.kami.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} missing person
+      %i.material-icons.tiny.red-text blur_on
     .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text blur_on
     .kami.col.red.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
@@ -137,10 +139,10 @@
     .kami.col.red{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &clubs;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} P
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} P
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text toc
+    .zoo.ace.kami.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} academy/procedures
+      %i.material-icons.tiny.purple-text toc
     .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text toc
     .kami.col.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
@@ -170,10 +172,10 @@
     .kami.col.purple.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &diams;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} B
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} B
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text share
+    .zoo.ace.kami.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} police
+      %i.material-icons.tiny.blue-text share
     .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text share
     .kami.col.blue.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
@@ -203,10 +205,10 @@
     .kami.col.blue{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9775;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} G
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} G
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text find_replace
+    .zoo.ace.kami.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} well fed
+      %i.material-icons.tiny.green-text find_replace
     .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text find_replace
     .kami.col.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
@@ -236,10 +238,10 @@
     .kami.col.green.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9774;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} W
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} W
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text invert_colors
+    .zoo.ace.kami.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} sheeps clothing
+      %i.material-icons.tiny.white-text invert_colors
     .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text invert_colors
     .kami.col.white.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
@@ -269,10 +271,10 @@
     .kami.col.white{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9818;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} L
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} L
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text line_weight
+    .zoo.ace.kami.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} tax evasion
+      %i.material-icons.tiny.black-text line_weight
     .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text line_weight
     .kami.col.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
@@ -302,10 +304,10 @@
     .kami.col.black.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9819;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} E
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} E
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text play_for_work
+    .zoo.ace.kami.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
+      %i.material-icons.tiny.grey-text play_for_work
     .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text play_for_work
     .kami.col.grey.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
@@ -335,9 +337,9 @@
     .kami.col.grey{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9820;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} I
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} I
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
+    .zoo.ace.kami.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} carrot farmer hired fox
       %i.material-icons.tiny.pink-text fingerprint
     .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text fingerprint
@@ -368,10 +370,10 @@
     .kami.col.pink.pink-text{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9821;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} C
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} C
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text settings
+    .zoo.ace.kami.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} parking tickets
+      %i.material-icons.tiny.cyan-text settings
     .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text settings
     .kami.col.cyan.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
@@ -401,10 +403,10 @@
     .kami.col.cyan{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &#9822;
       %i.material-icons.tiny.brown-text portrait
   .row
-    .ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} N
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} N
 
-    .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
-      %i.material-icons.tiny.pink-text portrait
+    .zoo.ace.kami.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} awards
+      %i.material-icons.tiny.brown-text portrait
     .kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
       %i.material-icons.tiny.pink-text portrait
     .kami.col.brown.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A

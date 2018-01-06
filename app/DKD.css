@@ -1,17 +1,72 @@
+.zoo {
+  border: 1px solid yellow;
+  margin: 10px;
+  font-size: 1rem;
+  font-family: 'Share Tech Mono';
+  color: #ffff00;
+  background-color: #8d6e63;
+  width: 180px;
+
+}
+
 .box {
-  color: black;
-  border: 1px solid white;
-  width: 2400px;
-  padding: 10px;
-
-
   text-align: center;
   vertical-align: middle;
+  border: 1px solid brown;
 }
 
 .box i{
-  font-size: 3rem;
+
 }
+
+.jkr {
+  border-radius: 25px;
+  border: 1px solid cyan;
+}
+
+
+.ace {
+  border-radius: 50px;
+  border: 1px solid pink;
+  margin: 10 auto;
+  background-color: pink;
+}
+
+.kami {
+  border-radius: 100px;
+  border: 1px solid yellow;
+
+}
+
+.kami i{
+  font-size: 1rem;
+  vertical-align: middle;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .samuneiru {
   background-color: brown;
@@ -25,23 +80,6 @@
   font-size: 2rem;
 }
 
-.kami {
-  width: 135px;
-  border: 1px solid pink;
-  border-radius: 50px;
-}
-
-.kami i{
-  font-size: 2.1rem;
-  vertical-align: middle;
-
-}
-
-.ace {
-  border: 1px solid pink;
-  margin: 0 auto;
-  background-color: pink;
-}
 
 
 .button {
@@ -69,7 +107,6 @@
 
 body {
   background-color: grey;
-  font-family: 'Permanent Marker';
 
 }
 
@@ -90,41 +127,42 @@ blockquote:before {
 @import url(https://fonts.googleapis.com/css?family=Bilbo);
 @import url(https://fonts.googleapis.com/css?family=Mrs+Sheppards);
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Montez);
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
 h1 {
   font-family: 'Concert One';
-
+  font-size: 6em;
 }
 
 h2 {
   font-family: 'Permanent Marker';
-
+  font-size: 5em;
 }
 
 h3 {
   font-family: 'Mrs Sheppards';
-
+  font-size: 4em;
 }
 
 h4 {
   font-family: 'Bellefair';
-
+  font-size: 3em;
 }
 
 h5 {
   font-family: 'Calligraffitti';
-
+  font-size: 2em;
 }
 
 h6 {
   font-family: 'Abel';
-
+  font-size: 1em;
 }
 
 p {
   font-family: 'Roboto';
-  font-size: 2em;
-  padding: 1px;
+  font-size: 1em;
 }
 
 .bliss-font {
