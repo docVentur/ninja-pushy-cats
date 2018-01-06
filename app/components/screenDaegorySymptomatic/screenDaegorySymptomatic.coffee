@@ -11,11 +11,11 @@ app.component 'screenDaegorySymptomatic', {
   controller: (DaegoryFSM, $stateParams, moment, $interval) ->
     vm = @
 
-    @add_mass = (-1) ->
+    @add_mass = (amount) ->
       console.log("handling a symptomatic_diabetic tick")
       DaegoryFSM.tick(vm.daegory)
-      vm.mass = vm.mass + -1
-      vm.feeling = vm.feeling + -5
+      vm.mass = vm.mass - amount
+      vm.feeling = vm.feeling - amount
       Materialize.toast 'Fed!!!', 3333
     @
 }
