@@ -1,8 +1,8 @@
 .zoo {
   border: 1px solid yellow;
-  margin: 10px;
+  margin: 1px;
   font-size: 1rem;
-  font-family: 'Share Tech Mono';
+  font-family: 'VT323';
   color: #ffff00;
   background-color: #8d6e63;
   width: 180px;
@@ -28,13 +28,14 @@
 .ace {
   border-radius: 50px;
   border: 1px solid pink;
-  margin: 10 auto;
+  margin: 1 auto;
   background-color: pink;
 }
 
 .kami {
   border-radius: 100px;
   border: 1px solid yellow;
+  width: 180px;
 
 }
 
@@ -129,7 +130,8 @@ blockquote:before {
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(https://fonts.googleapis.com/css?family=Montez);
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
-
+@import url(https://fonts.googleapis.com/css?family=Peter+Hull);
+@import url(https://fonts.googleapis.com/css?family=VT323);
 h1 {
   font-family: 'Concert One';
   font-size: 6em;

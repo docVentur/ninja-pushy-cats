@@ -8,4 +8,15 @@ app.component 'zCard', {
   bindings: {
     card: "<"
   },
+  controller: ($sce) ->
+    vm = @
+
+    @html5Entities = (value) ->
+      value.replace /[\u00A0-\u9999<>\&\'\"]/gim, (i) ->
+        "&##{ i.charCodeAt(0) };"
+
+    @trustAsHtml = (value) ->
+      $sce.trustAsHtml value
+
+    @
 }
