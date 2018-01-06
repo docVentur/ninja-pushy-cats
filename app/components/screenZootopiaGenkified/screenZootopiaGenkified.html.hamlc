@@ -1,79 +1,162 @@
-%h1 screenZootopiaGenkified
+%h1 H1 screenZootopiaGenkified
+%h2 H2 screenZootopiaGenkified
+%h3 H3 screenZootopiaGenkified
+%h4 H4 screenZootopiaGenkified
+%h5 H5 screenZootopiaGenkified
+%h6 H6 screenZootopiaGenkified
+%p p screenZootopiaGenkified
 
 %div
-  .zoo{"ng-class": "$ctrl.lookup_rank_shade[0]"}
-    zoo
-  .zoo.box{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} BOX
-    %i.material-icons.tiny publish
-  .zoo.jkr{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} JKR
-    %i.material-icons.tiny print
-  .zoo.ace{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} ACE
-    %i.material-icons.tiny portrait
-  .zoo.box.jkr.ace.kami.yellow-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Leodore Lionheart
-    %i.material-icons.tiny.yellow-text 3d_rotation
-  .zoo.box.jkr.ace.kami.orange-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Officer Judy Hopps
-    %i.material-icons.tiny.orange-text texture
-  .zoo.box.jkr.ace.kami.red-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Octavia Spencer
-    %i.material-icons.tiny.red-text surround_sound
-  .zoo.box.jkr.ace.kami.purple-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Duke Weaselton
-    %i.material-icons.tiny.purple-text toc
-  .zoo.box.jkr.ace.kami.blue-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Gazelle
-    %i.material-icons.tiny.blue-text group_work
-  .zoo.box.jkr.ace.kami.green-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Flash
-    %i.material-icons.tiny.green-text find_replace
-  .zoo.box.jkr.ace.kami.white-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Jenny Slate
-    %i.material-icons.tiny.white-text invert_colors
-  .zoo.box.jkr.ace.kami.black-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Nick
-    %i.material-icons.tiny.black-text open_with
-  .zoo.box.jkr.ace.kami.grey-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Officer Benjamin Clawhauser
-    %i.material-icons.tiny.grey-text playlist_add
-  .zoo.box.jkr.ace.kami.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Bonnie Hopps
-    %i.material-icons.tiny.pink-text fingerprint
-  .zoo.box.jkr.ace.kami.cyan-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Chief
-    %i.material-icons.tiny.cyan-text settings
-  .zoo.box.jkr.ace.kami.brown-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Tommy Chong
-    %i.material-icons.tiny.brown-text portrait
-
-
-.box
-
-
-  .row
-    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"}
+  %div.zoo{style: "display: inline-block"}
+    .zoo{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"}
       zoo
-    .zoo.box.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} BOX
+    .zoo.box{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} BOX
       %i.material-icons.tiny publish
-    .zoo.jkr.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
+    .zoo.jkr.thin-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} JKR
       %i.material-icons.tiny print
-    .zoo.ace.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} ACE
+    .zoo.ace.jkr{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} ACE
       %i.material-icons.tiny portrait
-    .zoo.box.jkr.ace.kami.col.yellow-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Leodore Lionheart
+  %div.box{style: "display: inline-block"}
+    .zoo.kami.thin-text.yellow-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Leodore Lionheart
       %i.material-icons.tiny.yellow-text 3d_rotation
-    .zoo.box.jkr.ace.kami.col.orange-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Officer Judy Hopps
+    .zoo.kami.thin-text.orange-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Officer Judy Hopps
       %i.material-icons.tiny.orange-text texture
-    .zoo.box.jkr.ace.kami.col.red-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Octavia Spencer
+    .zoo.kami.thin-text.red-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Octavia Spencer
       %i.material-icons.tiny.red-text surround_sound
-    .zoo.box.jkr.ace.kami.col.purple-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Duke Weaselton
+    .zoo.kami.thin-text.purple-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Duke Weaselton
       %i.material-icons.tiny.purple-text toc
-    .zoo.box.jkr.ace.kami.col.blue-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Gazelle
+    .zoo.kami.thin-text.blue-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Gazelle
       %i.material-icons.tiny.blue-text group_work
-    .zoo.box.jkr.ace.kami.col.green-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Flash
+    .zoo.kami.thin-text.green-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Flash
       %i.material-icons.tiny.green-text find_replace
-    .zoo.box.jkr.ace.kami.col.white-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Jenny Slate
+    .zoo.kami.thin-text.white-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Jenny Slate
       %i.material-icons.tiny.white-text invert_colors
-    .zoo.box.jkr.ace.kami.col.black-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Nick
+    .zoo.kami.thin-text.black-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Nick
       %i.material-icons.tiny.black-text open_with
-    .zoo.box.jkr.ace.kami.col.grey-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Officer Benjamin Clawhauser
+    .zoo.kami.thin-text.grey-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Officer Benjamin Clawhauser
       %i.material-icons.tiny.grey-text playlist_add
-    .zoo.box.jkr.ace.kami.col.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Bonnie Hopps
+    .zoo.kami.thin-text.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Bonnie Hopps
       %i.material-icons.tiny.pink-text fingerprint
-    .zoo.box.jkr.ace.kami.col.cyan-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Chief
+    .zoo.kami.thin-text.cyan-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Chief
       %i.material-icons.tiny.cyan-text settings
-    .zoo.box.jkr.ace.kami.col.brown-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} Tommy Chong
+    .zoo.kami.thin-text.brown-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Tommy Chong
+      %i.material-icons.tiny.brown-text portrait
+%div
+  %div.zoo{style: "display: inline-block"}
+    .zoo{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"}
+      zoo
+    .zoo.box{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} BOX
+      %i.material-icons.tiny publish
+    .zoo.jkr.thin-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} JKR
+      %i.material-icons.tiny print
+    .zoo.ace.jkr{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} ACE
+      %i.material-icons.tiny portrait
+  %div.box{style: "display: inline-block"}
+    .zoo.kami.thin-text.yellow-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Leodore Lionheart
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .zoo.kami.thin-text.orange-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Officer Judy Hopps
+      %i.material-icons.tiny.orange-text texture
+    .zoo.kami.thin-text.red-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Octavia Spencer
+      %i.material-icons.tiny.red-text surround_sound
+    .zoo.kami.thin-text.purple-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Duke Weaselton
+      %i.material-icons.tiny.purple-text toc
+    .zoo.kami.thin-text.blue-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Gazelle
+      %i.material-icons.tiny.blue-text group_work
+    .zoo.kami.thin-text.green-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Flash
+      %i.material-icons.tiny.green-text find_replace
+    .zoo.kami.thin-text.white-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Jenny Slate
+      %i.material-icons.tiny.white-text invert_colors
+    .zoo.kami.thin-text.black-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Nick
+      %i.material-icons.tiny.black-text open_with
+    .zoo.kami.thin-text.grey-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Officer Benjamin Clawhauser
+      %i.material-icons.tiny.grey-text playlist_add
+    .zoo.kami.thin-text.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Bonnie Hopps
+      %i.material-icons.tiny.pink-text fingerprint
+    .zoo.kami.thin-text.cyan-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Chief
+      %i.material-icons.tiny.cyan-text settings
+    .zoo.kami.thin-text.brown-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Tommy Chong
+      %i.material-icons.tiny.brown-text portrait
+
+%div
+  %div.zoo{style: "display: inline-block"}
+    .zoo{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"}
+      zoo
+    .zoo.box{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} BOX
+      %i.material-icons.tiny publish
+    .zoo.jkr.thin-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} JKR
+      %i.material-icons.tiny print
+    .zoo.ace.jkr{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} ACE
+      %i.material-icons.tiny portrait
+  %div.box{style: "display: inline-block"}
+    .zoo.kami.thin-text.yellow-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Leodore Lionheart
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .zoo.kami.thin-text.orange-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Officer Judy Hopps
+      %i.material-icons.tiny.orange-text texture
+    .zoo.kami.thin-text.red-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Octavia Spencer
+      %i.material-icons.tiny.red-text surround_sound
+    .zoo.kami.thin-text.purple-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Duke Weaselton
+      %i.material-icons.tiny.purple-text toc
+    .zoo.kami.thin-text.blue-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Gazelle
+      %i.material-icons.tiny.blue-text group_work
+    .zoo.kami.thin-text.green-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Flash
+      %i.material-icons.tiny.green-text find_replace
+    .zoo.kami.thin-text.white-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Jenny Slate
+      %i.material-icons.tiny.white-text invert_colors
+    .zoo.kami.thin-text.black-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Nick
+      %i.material-icons.tiny.black-text open_with
+    .zoo.kami.thin-text.grey-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Officer Benjamin Clawhauser
+      %i.material-icons.tiny.grey-text playlist_add
+    .zoo.kami.thin-text.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Bonnie Hopps
+      %i.material-icons.tiny.pink-text fingerprint
+    .zoo.kami.thin-text.cyan-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Chief
+      %i.material-icons.tiny.cyan-text settings
+    .zoo.kami.thin-text.brown-text{"ng-class": "$ctrl.lookup_rank_shade[0]", style: "display: inline-block"} Tommy Chong
       %i.material-icons.tiny.brown-text portrait
 
 
+%div.box
   .row
+
+
+    .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} Y
+
+    .zoo.box.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} Howler Flowers
+      %i.material-icons.tiny.yellow-text border_inner
+    .zoo.box.jkr.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} JKR
+      %i.material-icons.tiny.pink-text border_inner
+    .zoo.box.jkr.ace.col.yellow.pink-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
+      %i.material-icons.tiny.black-text border_inner
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[1]"} K &spades;
+      %i.material-icons.tiny.yellow-text 3d_rotation
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[2]"} Q &spades;
+      %i.material-icons.tiny.orange-text texture
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[3]"} J &spades;
+      %i.material-icons.tiny.red-text surround_sound
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[4]"} 10 &spades;
+      %i.material-icons.tiny.purple-text toc
+    .zoo.box.jkr.ace.kami.col.yellow.darken-5{"ng-class": "$ctrl.lookup_rank_shade[5]"} 9 &spades;
+      %i.material-icons.tiny.blue-text group_work
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[6]"} 8 &spades;
+      %i.material-icons.tiny.green-text find_replace
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[7]"} 7 &spades;
+      %i.material-icons.tiny.white-text invert_colors
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[8]"} 6 &spades;
+      %i.material-icons.tiny.black-text open_with
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[9]"} 5 &spades;
+      %i.material-icons.tiny.grey-text playlist_add
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[10]"} 4 &spades;
+      %i.material-icons.tiny.pink-text fingerprint
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[11]"} 3 &spades;
+      %i.material-icons.tiny.cyan-text settings
+    .zoo.box.jkr.ace.kami.col.yellow{"ng-class": "$ctrl.lookup_rank_shade[12]"} 2 &spades;
+      %i.material-icons.tiny.brown-text portrait
+
+  .row
+    t00 far
+  .row
+  .row
+
+
     .zoo.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} Y
 
     .zoo.box.col{"ng-class": "$ctrl.lookup_rank_shade[0]"} Howler Flowers

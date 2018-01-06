@@ -29,9 +29,20 @@ app.component 'zDeck', {
     @get_card = (x, y) ->
       return vm.cards[(y * vm.ranks.length) + x]
 
+
     for s in [0...@suits.length]
       for r in [0...@ranks.length]
-        @cards.push {suit: @suits[s], rank: @ranks[r], "rank-shade": "#{@suit_colors[s]} #{@suit_text_colors[s]}-text #{@rank_shades[r]}", symbol: "border_inner", color: "black", "background-color": "pink", "symbol-color": "white", "suit-symbol": @suit_symbols[s], "suit-color": "black-text"}
+        @cards.push {
+          suit: @suits[s],
+          rank: @ranks[r],
+          "rank-shade": "#{@suit_colors[s]} #{@suit_text_colors[s]}-text #{@rank_shades[r]}",
+          symbol: "border_inner",
+          color: "black",
+          "background-color": "pink",
+          "symbol-color": "white",
+          "suit-symbol": @suit_symbols[s],
+          "suit-color": "black-text"
+        }
         @deck.push (s*@ranks.length) + r
 
     for s in [0...@suits.length]
@@ -52,6 +63,14 @@ app.component 'zDeck', {
     console.log @cards
 
     @deck = _.shuffle @deck
+
+    @hand = []
+
+    for i in [0..7]
+      @hand.push @deck.pop()
+
+    @hit_me = ->
+      vm.hand.push vm.deck.pop()
 
     @
 }

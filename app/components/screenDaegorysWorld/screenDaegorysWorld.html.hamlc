@@ -1,3 +1,5 @@
+<screen-zootopia-genkified />
+
 %h1 screenDaegorysWorld
 
 .container{id: "daegorys_feeding"}

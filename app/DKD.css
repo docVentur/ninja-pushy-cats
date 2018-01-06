@@ -1,17 +1,44 @@
 .zoo {
-  border: 1px solid yellow;
+  border: 1px solid purple;
   margin: 1px;
   font-size: 1rem;
   font-family: 'VT323';
   color: #ffff00;
   background-color: #8d6e63;
-  width: 180px;
+
+
+}
+
+.jkr {
+  border-radius: 5px;
+  border: 1px solid cyan;
+}
+
+.ace {
+  border-radius: 25px;
+  border: 1px solid pink;
+  margin: 1 auto;
+  background-color: pink;
+  color: brown;
+}
+
+.kami {
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 55px;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.kami i{
+  font-size: 1rem;
 
 }
 
 .box {
-  text-align: center;
-  vertical-align: middle;
+  color: brown;
   border: 1px solid brown;
 }
 
@@ -19,34 +46,10 @@
 
 }
 
-.jkr {
-  border-radius: 25px;
-  border: 1px solid cyan;
+.thin-text {
+  font-family: 'Pragati Narrow';
+  font-size: .8rem;
 }
-
-
-.ace {
-  border-radius: 50px;
-  border: 1px solid pink;
-  margin: 1 auto;
-  background-color: pink;
-}
-
-.kami {
-  border-radius: 100px;
-  border: 1px solid yellow;
-  width: 180px;
-
-}
-
-.kami i{
-  font-size: 1rem;
-  vertical-align: middle;
-
-}
-
-
-
 
 
 
@@ -130,35 +133,36 @@ blockquote:before {
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(https://fonts.googleapis.com/css?family=Montez);
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
-@import url(https://fonts.googleapis.com/css?family=Peter+Hull);
 @import url(https://fonts.googleapis.com/css?family=VT323);
+@import url(https://fonts.googleapis.com/css?family=Pragati+Narrow);
+
 h1 {
   font-family: 'Concert One';
   font-size: 6em;
 }
 
 h2 {
-  font-family: 'Permanent Marker';
+  font-family: 'Concert One';
   font-size: 5em;
 }
 
 h3 {
-  font-family: 'Mrs Sheppards';
+  font-family: 'Concert One';
   font-size: 4em;
 }
 
 h4 {
-  font-family: 'Bellefair';
+  font-family: 'Concert One';
   font-size: 3em;
 }
 
 h5 {
-  font-family: 'Calligraffitti';
+  font-family: 'Concert One';
   font-size: 2em;
 }
 
 h6 {
-  font-family: 'Abel';
+  font-family: 'Concert One';
   font-size: 1em;
 }
 
