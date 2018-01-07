@@ -1,3 +1,5 @@
+<z-card card="$ctrl.cards[0]"></z-card>
+
 %div
   %h2 zHand
     %ul
@@ -20,7 +22,7 @@
       %li{"ng-repeat": "card in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]", style: "display: inline-block"}
         <z-card card="$ctrl.cards[card]"></z-card>
       %li{"ng-repeat": "card in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]", style: "display: inline-block"}
-        <z-card card="$ctrl.cards[card]"></z-card>        
+        <z-card card="$ctrl.cards[card]"></z-card>
   %h2 zCards
     %ul
       %li{"ng-repeat": "card in $ctrl.cards", style: "display: inline-block"}

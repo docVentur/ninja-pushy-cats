@@ -5,31 +5,39 @@
   font-family: 'VT323';
   color: #ffff00;
   background-color: #8d6e63;
+}
 
-
+.zoo.alt {
+  color: pink;
 }
 
 .jkr {
   border-radius: 5px;
   border: 1px solid cyan;
+  color: black;
+  padding: 5px;
 }
+
+.alt {
+  color: red;
+}
+
 
 .ace {
   border-radius: 25px;
   border: 1px solid pink;
-  margin: 1 auto;
-  background-color: pink;
-  color: brown;
+  padding: 10px;
+  color: pink;
 }
 
 .kami {
   border-radius: 5px;
   border: 1px solid black;
-  width: 55px;
+  width: 65px;
   padding: 5px;
   text-align: center;
   vertical-align: middle;
-
+  color: black;
 }
 
 .kami i{
@@ -46,12 +54,31 @@
 
 }
 
+.boxed {
+  width: 250px;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.aceboxed {
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
 .thin-text {
   font-family: 'Pragati Narrow';
   font-size: .8rem;
 }
 
+.thick-text {
+  font-family: 'Asset';
+  font-size: 2rem;
 
+}
 
 
 
@@ -121,53 +148,119 @@ blockquote:before {
   line-height: .1 em;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Concert+One);
-@import url(https://fonts.googleapis.com/css?family=Alex+Brush);
-@import url(https://fonts.googleapis.com/css?family=Bellefair);
+
+
+/* per use sorted alpha */
 @import url(https://fonts.googleapis.com/css?family=Abel);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+@import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+@import url(https://fonts.googleapis.com/css?family=Asset);
+@import url(https://fonts.googleapis.com/css?family=Bellefair);
 @import url(https://fonts.googleapis.com/css?family=Bilbo);
-@import url(https://fonts.googleapis.com/css?family=Mrs+Sheppards);
-@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+@import url(https://fonts.googleapis.com/css?family=Concert+One);
 @import url(https://fonts.googleapis.com/css?family=Montez);
+@import url(https://fonts.googleapis.com/css?family=Mrs+Sheppards);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Pragati+Narrow);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 @import url(https://fonts.googleapis.com/css?family=VT323);
-@import url(https://fonts.googleapis.com/css?family=Pragati+Narrow);
+
+
+/*
+"Featured Collection: Superfamilies" by g00gle
+*/
+@import url(https://fonts.googleapis.com/css?family=Alegreya);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+/*
+"Featured Collection: 2016: Fonts Refresh" by g00gle
+*/
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+@import url(https://fonts.googleapis.com/css?family=VT323);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+
+/*
+"Featured Collection: Five Fresh Headline and Body Text Pairings" by g00gle
+*/
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);
+@import url(https://fonts.googleapis.com/css?family=Proza+Libre);
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Trirong);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+@import url(https://fonts.googleapis.com/css?family=Taviraj);
+@import url(https://fonts.googleapis.com/css?family=Eczar);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Basic);
+
+
+/*
+"Featured Collection: Headline-Worthy Serifs" by g00gle
+*/
+@import url(https://fonts.googleapis.com/css?family=Scope+One);
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+@import url(https://fonts.googleapis.com/css?family=Sanchez);
+@import url(https://fonts.googleapis.com/css?family=Copse);
+@import url(https://fonts.googleapis.com/css?family=Cutive);
+@import url(https://fonts.googleapis.com/css?family=Trocchi);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Vesper+Libre);
+
+
+
+
+
 
 h1 {
-  font-family: 'Concert One';
+  font-family: 'Quattrocento Sans';
   font-size: 6em;
 }
 
 h2 {
-  font-family: 'Concert One';
+  font-family: 'Merriweather';
   font-size: 5em;
 }
 
 h3 {
-  font-family: 'Concert One';
+  font-family: 'Merriweather Sans';
   font-size: 4em;
 }
 
 h4 {
-  font-family: 'Concert One';
+  font-family: 'Nunito Sans';
   font-size: 3em;
 }
 
 h5 {
-  font-family: 'Concert One';
+  font-family: 'Quattrocento';
   font-size: 2em;
 }
 
 h6 {
-  font-family: 'Concert One';
+  font-family: 'Concert Mono';
   font-size: 1em;
 }
 
 p {
-  font-family: 'Roboto';
+  font-family: 'Roboto Slab';
   font-size: 1em;
 }
 
@@ -197,4 +290,103 @@ p {
 
 .daegorys-world-2-font {
   font-family: 'Permanent Marker';
+}
+
+
+.y {
+  background-color: yellow;
+}
+
+.o {
+  background-color: orange;
+}
+
+.r {
+  background-color: red;
+}
+
+.p {
+  background-color: purple;
+}
+
+.b {
+  background-color: blue;
+}
+
+.g {
+  background-color: green;
+}
+
+.w {
+  background-color: white;
+}
+
+.l {
+  background-color: black;
+}
+
+.e {
+  background-color: grey;
+}
+
+.i {
+  background-color: pink;
+}
+
+.c {
+  background-color: cyan;
+}
+
+.n {
+  background-color: brown;
+}
+
+
+
+.y-t {
+  color: yellow;
+}
+
+.o-t {
+  color: orange;
+}
+
+.r-t {
+  color: red;
+}
+
+.p-t {
+  color: purple;
+}
+
+.b-t {
+  color: blue;
+}
+
+.g-t {
+  color: green;
+}
+
+.w-t {
+  color: white;
+}
+
+.l-t {
+  color: black;
+}
+
+.e-t {
+  color: grey;
+}
+
+.i-t {
+  color: pink;
+}
+
+.c-t {
+  color: cyan;
+}
+
+.n-t {
+  color: brown;
 }
