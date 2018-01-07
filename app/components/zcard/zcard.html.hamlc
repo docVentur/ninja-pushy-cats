@@ -1,4 +1,4 @@
-.zoo.box.jkr.ace.kami{"ng-class": "$ctrl.card['rank-shade']"}
+.zoo.kami{"ng-class": "$ctrl.card['rank-shade']"}
   ="{{ $ctrl.card.rank }}"
-  %i.material-icons.tiny.black-text= "{{ $ctrl.card.symbol }}"
+  %i.material-icons.tiny.white-text= "{{ $ctrl.card.symbol }}"
   %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}

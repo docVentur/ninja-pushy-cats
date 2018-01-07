@@ -11,13 +11,13 @@ app.service 'zDeckService', ->
 
   @get_deck = ->
     _.map vm.cards, (c, i) -> i
-  
+
   @suits = ['spades', 'hearts', 'clubs', 'diams', 'yin yang', 'peace symbol']
-  @suit_colors = ['green', 'blue', 'red', 'yellow', 'orange', 'purple']
-  @suit_text_colors = ['yellow', 'white', 'green', 'black', 'black', 'green']
+  @suit_colors = ['yellow', 'orange', 'red', 'purple', 'blue', 'green']
+  @suit_text_colors = ['black', 'white', 'black', 'white', 'black', 'white']
 
   @suit_symbols = ['&spades;', '&hearts;', '&clubs;', '&diams;', '&#9775;', '&#9774;']
-  @ranks = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K']
+  @ranks = ['A', 'K', 'Q', 'J', 10, 9, 8, 7, 6, 5, 4, 3, 2]
   @rank_shades = ["accent-2", "lighten-5", "accent-1", "lighten-3", "accent-2", "lighten-1", "", "darken-3", "darken-4", "accent-1", "accent-2", "accent-3", "accent-4"]
 
   @num_cards = @suits.length * @ranks.length
@@ -44,14 +44,12 @@ app.service 'zDeckService', ->
 
   for r in [0...@ranks.length]
     card = @get_card r, 1
-    card['suit-color'] = "red-text"
+    card['suit-color'] = "white-text"
 
     card = @get_card r, 3
-    card['suit-color'] = "red-text"
+    card['suit-color'] = "white-text"
 
     card = @get_card r, 5
-    card['suit-color'] = "red-text"
+    card['suit-color'] = "white-text"
 
   @
-
-
