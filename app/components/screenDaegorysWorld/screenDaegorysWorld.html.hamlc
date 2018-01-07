@@ -1,3 +1,10 @@
+<z-card card="$ctrl.cards[0]"></z-card>
+
+%hr
+%hr
+%hr
+
+
 <screen-zootopia-genkified />
 
 %h1 screenDaegorysWorld

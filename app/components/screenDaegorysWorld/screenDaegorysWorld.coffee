@@ -5,7 +5,7 @@ app = angular.module 'GG'
 
 app.component 'screenDaegorysWorld', {
   template: require('./screenDaegorysWorld.html.hamlc'),
-  controller: (DaegoryFSM, MassFSM, FeelingsFSM, $stateParams, moment, $interval) ->
+  controller: (DaegoryFSM, MassFSM, FeelingsFSM, $stateParams, moment, $interval, zDeckService) ->
     vm = @
     @daegory = DaegoryFSM.init_daegory()
     @minion = 1
@@ -49,6 +49,7 @@ app.component 'screenDaegorysWorld', {
       return 'rip-font' if @daegory.__machina__.daegory.state=='rip'
       return 'tsugu-font' if @daegory.__machina__.daegory.state=='tsugu'
 
+    @cards = zDeckService.cards
 
 
     @
