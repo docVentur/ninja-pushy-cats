@@ -14,7 +14,6 @@
 .jkr {
   border-radius: 5px;
   border: 1px solid cyan;
-  color: black;
   padding: 5px;
 }
 
@@ -26,7 +25,7 @@
 .ace {
   border-radius: 25px;
   border: 1px solid pink;
-  padding: 10px;
+  padding: 5px;
   color: pink;
 }
 
@@ -66,7 +65,7 @@
   width: 100px;
   text-align: center;
   vertical-align: middle;
-
+  padding: 5px;
 }
 
 .thin-text {
@@ -230,12 +229,12 @@ blockquote:before {
 
 
 h1 {
-  font-family: 'Quattrocento Sans';
+  font-family: 'Trocchi';
   font-size: 6em;
 }
 
 h2 {
-  font-family: 'Merriweather';
+  font-family: 'Bitter';
   font-size: 5em;
 }
 
@@ -255,12 +254,12 @@ h5 {
 }
 
 h6 {
-  font-family: 'Concert Mono';
+  font-family: 'Roboto Slab';
   font-size: 1em;
 }
 
 p {
-  font-family: 'Roboto Slab';
+  font-family: 'Scope One';
   font-size: 1em;
 }
 

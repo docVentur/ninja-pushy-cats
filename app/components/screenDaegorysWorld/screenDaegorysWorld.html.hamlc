@@ -1,3 +1,8 @@
+<screen-zootopia-genkified />
+
+
+-# how do I make z-deck look like z-card? #ss skyped
+
 <z-card card="$ctrl.cards[0]"></z-card>
 <z-card card="$ctrl.cards[13]"></z-card>
 <z-card card="$ctrl.cards[26]"></z-card>
@@ -6,15 +11,15 @@
 <z-card card="$ctrl.cards[65]"></z-card>
 <z-card card="$ctrl.cards[78]"></z-card>
 <z-card card="$ctrl.cards[90]"></z-card>
-  %h2 zCards
-    %ul
-      %li{"ng-repeat": "card in $ctrl.cards", style: "display: inline-block"}
-        <z-card card="card"></z-card>
+%h2 zCards
+  %ul
+    %li{"ng-repeat": "card in $ctrl.cards", style: "display: inline-block"}
+      <z-card card="card"></z-card>
 
-
 %hr
 %hr
 %hr
+<z-card card="card"></z-card>
 <z-hand></z-hand>
 <z-deck></z-deck>
 <z-range></z-range>

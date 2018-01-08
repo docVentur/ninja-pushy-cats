@@ -1,4 +1,75 @@
-.zoo.kami{"ng-class": "$ctrl.card['rank-shade']"}
+z00.ace.aceboxed
+.zoo.ace.aceboxed{"ng-class": "$ctrl.card['rank-shade']"}
   ="{{ $ctrl.card.rank }}"
-  %i.material-icons.tiny.white-text= "{{ $ctrl.card.symbol }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+z00
+.zoo{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+z00.thin-text.aceboxed
+.zoo.thin-text.aceboxed{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+z00.thick-text
+.zoo.thick-text{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+jkr
+.jkr{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+jkr.alt.aceboxed
+.jkr.alt.aceboxed{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+
+kami
+.kami{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+ace
+.ace{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+ace.aceboxed
+.ace.aceboxed{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+box
+.box{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+box.boxed
+.box.boxed{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
+  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
+
+
+
+
+
+.kami.ace.jrk.box.aceboxed{"ng-class": "$ctrl.card['rank-shade']"}
+  ="{{ $ctrl.card.rank }}"
+  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
   %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}
