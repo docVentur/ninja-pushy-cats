@@ -1,3 +1,34 @@
+.box.container
+  .row
+    .col.s12.brown
+  .row
+    .col.s2
+      spades
+    .col.s2
+      hearts
+    .col.s2
+      clubs
+    .col.s2
+      diamonds
+    .col.s2
+      yin_yang
+    .col.s2
+      peace_sign
+  .row
+    .col.s2
+      0-12
+    .col.s2
+      13-26
+    .col.s2
+      27-40
+    .col.s2
+      41-54
+    .col.s2
+      55-68
+    .col.s2
+      69-72
+
+<ai-log />
 <screen-zootopia-genkified />
 
 
@@ -12,13 +43,14 @@
 <z-card card="$ctrl.cards[78]"></z-card>
 <z-card card="$ctrl.cards[90]"></z-card>
 %h2 zCards
-  %ul
-    %li{"ng-repeat": "card in $ctrl.cards", style: "display: inline-block"}
-      <z-card card="card"></z-card>
+%ul
+  %li{"ng-repeat": "card in $ctrl.cards", style: "display: inline-block"}
+    <z-card card="card"></z-card>
 
 %hr
 %hr
 %hr
+And Now, SEE THIS
 <z-card card="card"></z-card>
 <z-hand></z-hand>
 <z-deck></z-deck>

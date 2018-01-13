@@ -1,0 +1,63 @@
+
+.box{:style => "width: 1000px;"}
+  %tr
+    %th
+      %h6 last 2 days
+    %th
+      %h6 last 2 weeks
+    %th
+      %h6 form
+  %tr
+    %th{:style => "display:none"}
+      %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+      %input{:name => "authenticity_token", :type => "hidden", :value => "QXkOpKD8u2jauHwQxm5lR0mIZI5DIkFvUkwEr8ItkBQ="}/
+    .control-group.select.optional.log_entry_log_type
+      %label.select.optional.control-label{:for => "log_entry_log_type_id"} Log type
+      .controls
+        %select#log_entry_log_type_id.select.optional{:name => "log_entry[log_type_id]"}
+          %option{:value => ""}
+          %option{:value => "1"} BG
+          %option{:value => "17"} BLACK
+          %option{:value => "11"} BLUE
+          %option{:value => "21"} BROWN
+          %option{:value => "20"} CYAN
+          %option{:value => "15"} GREEN
+          %option{:value => "18"} GREY
+          %option{:value => "9"} LIPSCHITZ
+          %option{:value => "13"} ORANGE
+          %option{:value => "19"} PINK
+          %option{:value => "7"} PROBLEM
+          %option{:value => "14"} PURPLE
+          %option{:value => "10"} RED
+          %option{:value => "6"} Realm of the Mad God
+          %option{:value => "5"} Rxs
+          %option{:value => "12"} VBG
+          %option{:value => "16"} WHITE
+          %option{:value => "8"} YELLOW
+          %option{:value => "2"} gC
+          %option{:value => "3"} uH
+          %option{:value => "22"} uL
+          %option{:value => "4"} uLong
+    .control-group.string.optional.log_entry_value
+      %label.string.optional.control-label{:for => "log_entry_value"} Value
+      .controls
+        %input#log_entry_value.string.optional{:name => "log_entry[value]", :type => "text"}/
+    %input.btn.btn.btn-default{:name => "commit", :type => "submit", :value => "Create Log entry"}/
+  %h4
+    1/12
+  %table.table.table-striped
+    %tr
+      %th
+        .zoo Time
+      %th
+        .zoo Type
+      %th
+        .zoo What
+      %th
+        .zoo Who
+    %tr
+      %td Fri 01/12 01:24pm
+      %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
+      %td
+        .kami we re-do the frontend for it using angular.js and have it reload the recent log entries 'live'
+      %td
