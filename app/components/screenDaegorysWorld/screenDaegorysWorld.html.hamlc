@@ -1,3 +1,5 @@
+<z-card card="$ctrl.ace_of_spades"></z-card>
+
 .box.container
   .row
     .col.s12.brown

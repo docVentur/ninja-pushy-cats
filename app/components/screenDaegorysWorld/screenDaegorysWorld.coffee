@@ -15,6 +15,8 @@ app.component 'screenDaegorysWorld', {
 
     @cards = zDeckService.cards
 
+    @ace_of_spades = zDeckService.get_card 0, 0
+
     @add_mass = () ->
       @mass = @mass + 1
     @add_feeling = () ->
