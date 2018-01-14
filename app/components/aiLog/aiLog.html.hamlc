@@ -1,584 +1,86 @@
+.ice
+  .row
+    .ace{style: "display: inline-block"}
+      %i.material-icons.prefix.pink.lighten-3.medium.pulse{style: "color: pink"} accessibility
+    .ace{style: "display: inline-block"} log_type
+    .box{style: "display: inline-block"}
+      %select.pi.btn log_type
+        %option{value: "{{log_type.id}}", "ng-repeat":"log_type in $ctrl.log_types track by $index"}="{{log_type.name}}"
+    .ace{style: "display: inline-block"} log_value
+    .ice{style: "display: inline-block"}
+      TEXT INPUT :: how do i make this default longer?
+    .pi{style: "display: inline-block"}
+      last 2 days
+    .pi{style: "display: inline-block"}
+      last 2 weeks
+  .row
+    .col.s8
+      What
+      .ice
+        %div{"ng-repeat": "log_entry in $ctrl.log_entries track by $index"}
+          <ai-log-entry entry="log_entry"></ai-log-entry>
+    .col.s1
+      Date
+    .col.s1
+      Time
+    .col.s1
+      Who
+    .col.s1
+      Type
+      .pi
+        %div{"ng-repeat": "log_type in $ctrl.log_types track by $index"}
+          <ai-log-type entry="log_type"></ai-log-types>
+      .pi
+        %div{"ng-repeat": "log_entry in $ctrl.log_entries track by $index"}
+          <ai-log-entry entry="log_entry"></ai-log-entry>
 
+
+.ice
+  .row
+    .col.s2
+      %i.material-icons.prefix.pink.lighten-3.medium.pulse{style: "color: pink"} accessibility
+    .pi.col.s5
+      last 2 days Quicksand
+    .pi.col.s5
+      last 2 weeks
+  .row
+    .col.s1
+      .ace log_type
+    .col.s1
+      %select.kami.btn log_type
+        %option{value: "{{log_type.id}}", "ng-repeat":"log_type in $ctrl.log_types track by $index"}="{{log_type.name}}"
+    .col.s1
+      .ace log_value
+    .ice.col.s9
+      TEXT INPUT
+  .row
+    .ace{style: "display: inline-block"} log_type
+    .box{style: "display: inline-block"}
+      %select.kami.btn
+        %option{value: "{{log_type.id}}", "ng-repeat":"log_type in $ctrl.log_types track by $index"}="{{log_type.name}}"
+    .ace{style: "display: inline-block"} log_value
+    .ice{style: "display: inline-block"} TEXT INPUT
+  .row
+    .col.s1
+      Date
+    .col.s1
+      Time
+    .col.s1
+      Who
+    .col.s1
+      Type
+      .pi
+        %div{"ng-repeat": "log_type in $ctrl.log_types track by $index"}
+          <ai-log-type entry="log_type"></ai-log-types>
+      .pi
+        %div{"ng-repeat": "log_entry in $ctrl.log_entries track by $index"}
+          <ai-log-entry entry="log_entry"></ai-log-entry>
+    .col.s8
+      What
+      .ice
+        %div{"ng-repeat": "log_entry in $ctrl.log_entries track by $index"}
+          <ai-log-entry entry="log_entry"></ai-log-entry>
 .box
-  %tr
-    %th
-      %h6 last 2 days
-    %th
-      %h6 last 2 weeks
-    %th
-      %h6 form
-  %tr
-    %th{:style => "display:none"}
-      %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-      %input{:name => "authenticity_token", :type => "hidden", :value => "QXkOpKD8u2jauHwQxm5lR0mIZI5DIkFvUkwEr8ItkBQ="}/
-    .control-group.select.optional.log_entry_log_type
-      %label.select.optional.control-label{:for => "log_entry_log_type_id"} Log type
-      .controls
-        %select#log_entry_log_type_id.select.optional{:name => "log_entry[log_type_id]"}
-          %option{:value => ""}
-          %option{:value => "1"} BG
-          %option{:value => "17"} BLACK
-          %option{:value => "11"} BLUE
-          %option{:value => "21"} BROWN
-          %option{:value => "20"} CYAN
-          %option{:value => "15"} GREEN
-          %option{:value => "18"} GREY
-          %option{:value => "9"} LIPSCHITZ
-          %option{:value => "13"} ORANGE
-          %option{:value => "19"} PINK
-          %option{:value => "7"} PROBLEM
-          %option{:value => "14"} PURPLE
-          %option{:value => "10"} RED
-          %option{:value => "6"} Realm of the Mad God
-          %option{:value => "5"} Rxs
-          %option{:value => "12"} VBG
-          %option{:value => "16"} WHITE
-          %option{:value => "8"} YELLOW
-          %option{:value => "2"} gC
-          %option{:value => "3"} uH
-          %option{:value => "22"} uL
-          %option{:value => "4"} uLong
-    .control-group.string.optional.log_entry_value
-      %label.string.optional.control-label{:for => "log_entry_value"} Value
-      .controls
-        %input#log_entry_value.string.optional{:name => "log_entry[value]", :type => "text"}/
-    %input.btn.btn.btn-default{:name => "commit", :type => "submit", :value => "Create Log entry"}/
-  %h4
-    1/12
-  %table.table.table-striped
-    %tr
-      %th
-        .zoo Time
-      %th
-        .zoo Type
-      %th
-        .zoo What
-      %th
-        .zoo Who
-    %tr
-      %td Fri 01/12 01:24pm
-      %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
-      %td
-        .kami we re-do the frontend for it using angular.js and have it reload the recent log entries 'live'
-      %td
-#- make a log entry, log input, < aiLog (container) ,
-
-#-
-!!!
-%html
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %title Loggerwood
-    %meta{:content => "Loggerwood", :name => "description"}/
-    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"}
-    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-animate.min.js"}
-    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"}
-    %script{:src => "http://www.google.com/jsapi", :type => "text/javascript"}
-    %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css", :rel => "stylesheet"}/
-    %link{:href => "/assets/axe.css", :rel => "stylesheet"}/
-    %script{"data-turbolinks-track" => "true", :src => "/assets/application-6313a23f6f306fe7b08c908cfd2abb43.js"}
-    %meta{:content => "authenticity_token", :name => "csrf-param"}/
-    %meta{:content => "QXkOpKD8u2jauHwQxm5lR0mIZI5DIkFvUkwEr8ItkBQ=", :name => "csrf-token"}/
-    :javascript
-      $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip({
-      placement : 'left'
-      });
-      });
-  %body
-    %header
-      %nav.navbar.navbar-default
-        .container
-          .navbar-header
-            %ul.nav.navbar-nav
-              %li
-                %a{:href => "/axe/menu"} menu
-    %main{:role => "main"}
-      .container{:style => "width: 1000px;"}
-        last 2 days
-        %a{:href => "/axe/index/last_2_weeks"} last 2 weeks
-        %form#new_log_entry.simple_form.new_log_entry{"accept-charset" => "UTF-8", :action => "/log_entries", :method => "post", :novalidate => "novalidate"}
-          %div{:style => "display:none"}
-            %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-            %input{:name => "authenticity_token", :type => "hidden", :value => "QXkOpKD8u2jauHwQxm5lR0mIZI5DIkFvUkwEr8ItkBQ="}/
-          .control-group.select.optional.log_entry_log_type
-            %label.select.optional.control-label{:for => "log_entry_log_type_id"} Log type
-            .controls
-              %select#log_entry_log_type_id.select.optional{:name => "log_entry[log_type_id]"}
-                %option{:value => ""}
-                %option{:value => "1"} BG
-                %option{:value => "17"} BLACK
-                %option{:value => "11"} BLUE
-                %option{:value => "21"} BROWN
-                %option{:value => "20"} CYAN
-                %option{:value => "15"} GREEN
-                %option{:value => "18"} GREY
-                %option{:value => "9"} LIPSCHITZ
-                %option{:value => "13"} ORANGE
-                %option{:value => "19"} PINK
-                %option{:value => "7"} PROBLEM
-                %option{:value => "14"} PURPLE
-                %option{:value => "10"} RED
-                %option{:value => "6"} Realm of the Mad God
-                %option{:value => "5"} Rxs
-                %option{:value => "12"} VBG
-                %option{:value => "16"} WHITE
-                %option{:value => "8"} YELLOW
-                %option{:value => "2"} gC
-                %option{:value => "3"} uH
-                %option{:value => "22"} uL
-                %option{:value => "4"} uLong
-          .control-group.string.optional.log_entry_value
-            %label.string.optional.control-label{:for => "log_entry_value"} Value
-            .controls
-              %input#log_entry_value.string.optional{:name => "log_entry[value]", :type => "text"}/
-          %input.btn.btn.btn-default{:name => "commit", :type => "submit", :value => "Create Log entry"}/
-        %h4
-          1/12
-        %table.table.table-striped
-          %tr
-            %th Time
-            %th Type
-            %th What
-            %th Who
-          %tr
-            %td Fri 01/12 01:24pm
-            %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
-            %td we re-do the frontend for it using angular.js and have it reload the recent log entries 'live'
-            %td
-          %tr
-            %td Fri 01/12 11:48am
-            %td{:style => "color: #000000; background-color: #f44336;"} RED
-            %td lipschitz spade
-            %td
-          %tr
-            %td Fri 01/12 10:40am
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td cold oats
-            %td
-          %tr
-            %td Fri 01/12 10:32am
-            %td{:style => "color: #000000; background-color: #2196f3;"} BLUE
-            %td ai.log
-            %td
-          %tr
-            %td Fri 01/12 10:32am
-            %td{:style => "color: #000000; background-color: #f44336;"} RED
-            %td 2d00: create "neutral" red. color is obvious. replace text w 3 char
-            %td
-          %tr
-            %td Fri 01/12 10:27am
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td PPD @ 8
-            %td
-          %tr
-            %td Fri 01/12 10:27am
-            %td{:style => "color: #ffffff; background-color: #f50057;"} LIPSCHITZ
-            %td
-            %td
-          %tr
-            %td Thu 01/11 02:22pm
-            %td{:style => "color: #000000; background-color: #4caf50;"} GREEN
-            %td 2m00: do i like view from Js chair yet? tidy and boxes.
-            %td
-          %tr
-            %td Thu 01/11 02:20pm
-            %td{:style => "color: #000000; background-color: #2196f3;"} BLUE
-            %td ai.log. 2d00: reddit. tabled til green done.
-            %td
-          %tr
-            %td Thu 01/11 02:20pm
-            %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
-            %td ssi/budget stuff done in am. need 3ring binder or other done location for paper notes.
-            %td
-          %tr
-            %td Thu 01/11 02:19pm
-            %td{:style => "color: #000000; background-color: #f44336;"} RED
-            %td girl problems = good programming time.
-            %td
-          %tr
-            %td Thu 01/11 02:18pm
-            %td{:style => "color: #000000; background-color: #ff9800;"} ORANGE
-            %td all dishes clean. laundry in dryer.
-            %td
-          %tr
-            %td Thu 01/11 02:18pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} YELLOW
-            %td waiting for email w ph#. table ssi til monday
-            %td
-          %tr
-            %td Thu 01/11 02:16pm
-            %td{:style => "color: #ffffff; background-color: #f50057;"} LIPSCHITZ
-            %td 0.
-            %td
-          %tr
-            %td Thu 01/11 02:02pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td PPD
-            %td
-          %tr
-            %td Thu 01/11 02:02pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td PT
-            %td
-          %tr
-            %td Thu 01/11 12:56pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td cheesey rice and broc w tuna
-            %td
-          %tr
-            %td Thu 01/11 11:15am
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td @9:30
-            %td
-          %tr
-            %td Thu 01/11 10:49am
-            %td{:style => "color: #ffffff; background-color: #f50057;"} LIPSCHITZ
-            %td girl probs. sn00zing day til 12.
-            %td
-          %tr
-            %td Thu 01/11 10:48am
-            %td{:style => "color: #ffffff; background-color: #000000;"} BLACK
-            %td mtg over.
-            %td
-          %tr
-            %td Wed 01/10 05:42pm
-            %td{:style => "color: #000000; background-color: #00bcd4;"} CYAN
-            %td clothes in BR
-            %td
-          %tr
-            %td Wed 01/10 05:09pm
-            %td{:style => "color: ; background-color: ;"} PROBLEM
-            %td i remember hating auto-refresh. what's 'better'?
-            %td
-          %tr
-            %td Wed 01/10 05:09pm
-            %td{:style => "color: ; background-color: ;"} PROBLEM
-            %td this should auto-refresh so i don't have to f5
-            %td
-          %tr
-            %td Wed 01/10 05:07pm
-            %td{:style => "color: #000000; background-color: #4caf50;"} GREEN
-            %td 2d00: .pi, syssy, bed
-            %td
-          %tr
-            %td Wed 01/10 05:06pm
-            %td{:style => "color: #000000; background-color: #2196f3;"} BLUE
-            %td ai.LOG. ai.REDDIT. ai.FB
-            %td
-          %tr
-            %td Wed 01/10 05:05pm
-            %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
-            %td (-1)ai.suramar
-            %td
-          %tr
-            %td Wed 01/10 05:05pm
-            %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
-            %td ai-n't suramar
-            %td
-          %tr
-            %td Wed 01/10 05:04pm
-            %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
-            %td ain't suramar
-            %td
-          %tr
-            %td Wed 01/10 05:04pm
-            %td{:style => "color: #000000; background-color: #f44336;"} RED
-            %td
-            %td
-          %tr
-            %td Wed 01/10 05:04pm
-            %td{:style => "color: #000000; background-color: #ff9800;"} ORANGE
-            %td
-            %td
-          %tr
-            %td Wed 01/10 05:04pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td @4:30
-            %td
-          %tr
-            %td Wed 01/10 04:59pm
-            %td{:style => "color: #000000; background-color: #9e9e9e;"} GREY
-            %td ready
-            %td
-          %tr
-            %td Wed 01/10 04:28pm
-            %td{:style => "color: #ffffff; background-color: #f50057;"} LIPSCHITZ
-            %td cut palm. 00p5i
-            %td
-          %tr
-            %td Wed 01/10 03:40pm
-            %td{:style => "color: #000000; background-color: #4caf50;"} GREEN
-            %td 2d00: +.pi &amp; cardboard
-            %td
-          %tr
-            %td Wed 01/10 03:40pm
-            %td{:style => "color: #000000; background-color: #2196f3;"} BLUE
-            %td ai.reddit
-            %td
-          %tr
-            %td Wed 01/10 03:39pm
-            %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
-            %td aiyellOW!
-            %td
-          %tr
-            %td Wed 01/10 03:39pm
-            %td{:style => "color: #000000; background-color: #f44336;"} RED
-            %td
-            %td
-          %tr
-            %td Wed 01/10 02:55pm
-            %td{:style => "color: #000000; background-color: #ff9800;"} ORANGE
-            %td all dishes clean. garbage out. 2d00: cardboard
-            %td
-          %tr
-            %td Wed 01/10 02:54pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td
-            %td
-          %tr
-            %td Wed 01/10 02:54pm
-            %td{:style => "color: #000000; background-color: #2196f3;"} BLUE
-            %td
-            %td
-          %tr
-            %td Wed 01/10 12:31pm
-            %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
-            %td syssy
-            %td
-          %tr
-            %td Wed 01/10 11:46am
-            %td{:style => "color: #000000; background-color: #f44336;"} RED
-            %td ai
-            %td
-          %tr
-            %td Wed 01/10 11:35am
-            %td{:style => "color: #000000; background-color: #ff9800;"} Rxs
-            %td 2+1 AT; 1 clar; out of steroid
-            %td
-          %tr
-            %td Wed 01/10 11:32am
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} uLong
-            %td 20 +10 short. (need to create more tags)
-            %td
-          %tr
-            %td Wed 01/10 11:29am
-            %td{:style => "color: #000000; background-color: #f48fb1;"} VBG
-            %td 179
-            %td
-          %tr
-            %td Wed 01/10 11:22am
-            %td{:style => "color: #ffffff; background-color: #f50057;"} LIPSCHITZ
-            %td aiC
-            %td
-          %tr
-            %td Wed 01/10 11:07am
-            %td{:style => "color: #000000; background-color: #ff9800;"} ORANGE
-            %td showered
-            %td
-          %tr
-            %td Wed 01/10 11:07am
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td oatmeal x 1
-            %td
-          %tr
-            %td Wed 01/10 10:05am
-            %td{:style => "color: #000000; background-color: #2196f3;"} BLUE
-            %td
-            %td
-          %tr
-            %td Wed 01/10 10:05am
-            %td{:style => "color: #000000; background-color: #f44336;"} RED
-            %td
-            %td
-          %tr
-            %td Wed 01/10 10:04am
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td
-            %td
-          %tr
-            %td Mon 01/08 11:15am
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} YELLOW
-            %td bananas x2
-            %td
-          %tr
-            %td Mon 01/08 11:08am
-            %td{:style => "color: #000000; background-color: #2196f3;"} BLUE
-            %td ai.LOG
-            %td
-          %tr
-            %td Mon 01/08 11:08am
-            %td{:style => "color: #000000; background-color: #f44336;"} RED
-            %td amazon order for pens
-            %td
-          %tr
-            %td Mon 01/08 11:07am
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td bananas x2 @9am x2 now
-            %td
-          %tr
-            %td Mon 01/08 11:06am
-            %td{:style => "color: #ffffff; background-color: #f50057;"} LIPSCHITZ
-            %td aiC
-            %td
-          %tr
-            %td Sun 01/07 09:09am
-            %td{:style => "color: #000000; background-color: #ff9800;"} ORANGE
-            %td showered
-            %td
-          %tr
-            %td Sun 01/07 09:08am
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td @midnight pasta/beef/cheese
-            %td
-          %tr
-            %td Sat 01/06 06:50pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td cheesey rice and broc
-            %td
-          %tr
-            %td Sat 01/06 04:56pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td raisins
-            %td
-          %tr
-            %td Sat 01/06 04:54pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td PB
-            %td
-          %tr
-            %td Sat 01/06 12:58pm
-            %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
-            %td 2d00: +.zoo
-            %td
-          %tr
-            %td Sat 01/06 12:57pm
-            %td{:style => "color: #000000; background-color: #f44336;"} RED
-            %td contacts in (did i put the R one in backwards?); bed made; clean table. zen-enough
-            %td
-          %tr
-            %td Sat 01/06 12:56pm
-            %td{:style => "color: #000000; background-color: #ff9800;"} Rxs
-            %td
-            %td
-          %tr
-            %td Sat 01/06 12:55pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} gC
-            %td Premier Protein x 2 = 10gC
-            %td
-          %tr
-            %td Sat 01/06 12:50pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} uLong
-            %td 16 (end of pen. short 4)
-            %td
-          %tr
-            %td Sat 01/06 12:49pm
-            %td{:style => "color: #000000; background-color: #f48fb1;"} VBG
-            %td 137
-            %td
-          %tr
-            %td Sat 01/06 12:49pm
-            %td{:style => "color: #ffffff; background-color: #f50057;"} LIPSCHITZ
-            %td
-            %td
-          %tr
-            %td Fri 01/05 09:22am
-            %td{:style => "color: #000000; background-color: #f48fb1;"} VBG
-            %td 135
-            %td
-          %tr
-            %td Thu 01/04 05:43pm
-            %td{:style => "color: #000000; background-color: #795548;"} BROWN
-            %td these colors match G_G: DKD
-            %td
-          %tr
-            %td Thu 01/04 05:42pm
-            %td{:style => "color: #000000; background-color: #00bcd4;"} CYAN
-            %td
-            %td
-          %tr
-            %td Thu 01/04 05:41pm
-            %td{:style => "color: #000000; background-color: #e91e63;"} PINK
-            %td
-            %td
-          %tr
-            %td Thu 01/04 05:41pm
-            %td{:style => "color: #000000; background-color: #9e9e9e;"} GREY
-            %td
-            %td
-          %tr
-            %td Thu 01/04 05:38pm
-            %td{:style => "color: #ffffff; background-color: #000000;"} BLACK
-            %td
-            %td
-          %tr
-            %td Thu 01/04 05:38pm
-            %td{:style => "color: ; background-color: ;"} WHITE
-            %td
-            %td
-          %tr
-            %td Thu 01/04 05:04pm
-            %td{:style => "color: #000000; background-color: #ff9800;"} Rxs
-            %td Veronica onboarded Albuterol
-            %td
-          %tr
-            %td Thu 01/04 04:59pm
-            %td{:style => "color: #000000; background-color: #4caf50;"} GREEN
-            %td all garbage out; all cans out; rat cage clean, walls washed, laundry x2, closet cleared, bathroom.
-            %td
-          %tr
-            %td Thu 01/04 04:18pm
-            %td{:style => "color: #000000; background-color: #2196f3;"} BLUE
-            %td https://www.reddit.com/user/docVentur/comments/7o72q2/syssy_got_her_black_dot/
-            %td
-          %tr
-            %td Thu 01/04 03:10pm
-            %td{:style => "color: #000000; background-color: #2196f3;"} BLUE
-            %td reddit .2d00
-            %td
-          %tr
-            %td Thu 01/04 03:09pm
-            %td{:style => "color: #000000; background-color: #9c27b0;"} PURPLE
-            %td PDX.edu sn00zed to SPR
-            %td
-          %tr
-            %td Thu 01/04 03:07pm
-            %td{:style => "color: #000000; background-color: #f44336;"} RED
-            %td g00d communication enables g00d teamwork. time spent in ai.gdkp.org for zen.
-            %td
-          %tr
-            %td Thu 01/04 03:06pm
-            %td{:style => "color: #000000; background-color: #ff9800;"} ORANGE
-            %td black dot on sys
-            %td
-          %tr
-            %td Thu 01/04 02:49pm
-            %td{:style => "color: #000000; background-color: #f48fb1;"} VBG
-            %td 119
-            %td
-          %tr
-            %td Thu 01/04 02:35pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} YELLOW
-            %td BGB 119; VuL 10
-            %td
-          %tr
-            %td Thu 01/04 02:26pm
-            %td{:style => "color: #000000; background-color: #2196f3;"} BLUE
-            %td establishing communication with the natives &lt;3
-            %td
-          %tr
-            %td Thu 01/04 02:21pm
-            %td{:style => "color: #000000; background-color: #ffeb3b;"} YELLOW
-            %td tl;dw :: sudo-ing
-            %td
-          %tr
-            %td Thu 01/04 02:17pm
-            %td{:style => "color: #ffffff; background-color: #f50057;"} LIPSCHITZ
-            %td
-            %td
-          %tr
-            %td Thu 01/04 02:04pm
-            %td{:style => "color: #000000; background-color: #ff9800;"} Rxs
-            %td Veronica onboarded Albuterol
-            %td
+  .row
+    %select.btn
+      %option{value: "{{log_type.id}}", "ng-repeat":"log_type in $ctrl.log_types track by $index"}="{{log_type.name}}"

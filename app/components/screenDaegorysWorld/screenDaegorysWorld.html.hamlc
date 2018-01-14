@@ -1,35 +1,4 @@
 <z-card card="$ctrl.ace_of_spades"></z-card>
-
-.box.container
-  .row
-    .col.s12.brown
-  .row
-    .col.s2
-      spades
-    .col.s2
-      hearts
-    .col.s2
-      clubs
-    .col.s2
-      diamonds
-    .col.s2
-      yin_yang
-    .col.s2
-      peace_sign
-  .row
-    .col.s2
-      0-12
-    .col.s2
-      13-26
-    .col.s2
-      27-40
-    .col.s2
-      41-54
-    .col.s2
-      55-68
-    .col.s2
-      69-72
-
 <ai-log />
 <screen-zootopia-genkified />
 

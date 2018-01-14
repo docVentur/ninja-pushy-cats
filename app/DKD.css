@@ -1,9 +1,15 @@
 .ice {
+  font-family: 'Sedgwick Ave Display';
+  font-size: 1em;
   border: 10px solid white;
+  padding: 5px;
+  vertical-align: middle;
 }
 
 .pi {
   border: 5px solid cyan;
+  font-family: 'Quicksand';
+  text-align: center;  
 }
 
 .zoo {
@@ -165,12 +171,14 @@ blockquote:before {
 @import url(https://fonts.googleapis.com/css?family=Bilbo);
 @import url(https://fonts.googleapis.com/css?family=Calligraffitti);
 @import url(https://fonts.googleapis.com/css?family=Concert+One);
+@import url(https://fonts.googleapis.com/css?family=Macondo);
 @import url(https://fonts.googleapis.com/css?family=Montez);
 @import url(https://fonts.googleapis.com/css?family=Mrs+Sheppards);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(https://fonts.googleapis.com/css?family=Pragati+Narrow);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display);
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
