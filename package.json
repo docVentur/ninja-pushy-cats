@@ -47,6 +47,7 @@
     "angular-materialize": "^0.2.2",
     "angular-moment": "^1.0.1",
     "angular-pouchdb": "5.0.0",
+    "angular-resource": "^1.6.1",
     "expose-loader": "^0.7.3",
     "lodash": "^4.17.2",
     "machina": "^2.0.0",

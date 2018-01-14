@@ -1,1 +1,1 @@
-%div="{{$ctrl.entry.log_value}}"
+%div="{{$ctrl.entry.value}}"

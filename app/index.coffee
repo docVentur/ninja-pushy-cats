@@ -7,6 +7,8 @@ pdb = require 'angular-pouchdb'
 angularMaterialize = require 'angular-materialize'
 require 'angular-moment'
 
+require "angular-resource"
+
 
 require('materialize-css/bin/materialize.css')
 require('materialize-css/bin/materialize.js')
@@ -15,6 +17,7 @@ require('./DKD.css')
 
 app = angular.module 'GG', [
   'ui.router',
+  'ngResource',
   'ngAnimate',
   angularMaterialize,
   'angularMoment'
