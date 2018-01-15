@@ -8,12 +8,4 @@ app.component 'aiLogEntry', {
   bindings: {
     entry: "<"
   },
-  controller: () ->
-    vm = @
-    console.log @entry
-
-
-
-    @
-
 }

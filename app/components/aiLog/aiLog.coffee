@@ -5,12 +5,8 @@ app = angular.module 'GG'
 
 app.component 'aiLog', {
   template: require('./aiLog.html.hamlc'),
-  controller: (zDeckService, $http) ->
+  controller: ($http) ->
     vm = @
-
-    console.log @ai
-
-    @cards = zDeckService.cards
 
     @log_types=[
       {id:1, name: "Y", description: "yellow", bgcolor: "YELLOW", textcolor: "BLACK"},
@@ -48,21 +44,6 @@ app.component 'aiLog', {
       {id:15, name: "BOX", description: "", style: ""},
     ]
 
-    @fake_log_entries=[
-      {id:1, log_date: "01/13/18 at 5:11 PM", log_type: 1, log_value: "100"},
-      {id:2, log_date: "01/13/18 at 5:11 PM", log_type: 2, log_value: "99"},
-      {id:3, log_date: "01/13/18 at 5:11 PM", log_type: 3, log_value: "251"},
-      {id:4, log_date: "01/13/18 at 5:11 PM", log_type: 4, log_value: "74"},
-      {id:5, log_date: "01/13/18 at 5:11 PM", log_type: 5, log_value: "81"},
-      {id:6, log_date: "01/13/18 at 5:11 PM", log_type: 6, log_value: "152"},
-      {id:7, log_date: "01/13/18 at 5:11 PM", log_type: 7, log_value: "110"},
-      {id:8, log_date: "01/13/18 at 5:11 PM", log_type: 8, log_value: "95"},
-      {id:9, log_date: "01/13/18 at 5:11 PM", log_type: 9, log_value: "105"},
-      {id:10, log_date: "01/13/18 at 5:11 PM", log_type: 10, log_value: "97"},
-      {id:11, log_date: "01/13/18 at 5:11 PM", log_type: 11, log_value: "99"},
-      {id:12, log_date: "01/13/18 at 5:11 PM", log_type: 12, log_value: "101"},
-      {id:13, log_date: "01/13/18 at 5:11 PM", log_type: 13, log_value: "100"},
-    ]
 
     @log_entries = []
 

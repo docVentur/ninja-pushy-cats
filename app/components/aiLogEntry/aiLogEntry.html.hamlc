@@ -1,1 +1,1 @@
-%div="{{$ctrl.entry.value}}"
+%td="heh {{$ctrl.entry.value}}"
