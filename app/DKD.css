@@ -9,7 +9,7 @@
 .pi {
   border: 5px solid cyan;
   font-family: 'Quicksand';
-  text-align: center;  
+  text-align: center;
 }
 
 .zoo {
@@ -19,6 +19,10 @@
   font-family: 'VT323';
   color: #ffff00;
   background-color: #8d6e63;
+}
+
+.wiz {
+  display: inline-block;
 }
 
 .zoo.alt {
@@ -84,7 +88,7 @@
 
 .thin-text {
   font-family: 'Pragati Narrow';
-  font-size: .8rem;
+  font-size: .5rem;
 }
 
 .thick-text {
