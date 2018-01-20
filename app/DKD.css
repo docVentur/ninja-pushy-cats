@@ -1,6 +1,28 @@
+.em{
+
+}
+
+.strong{
+
+}
+
+.ul{
+
+}
+
+.ol{
+
+}
+
+.li{
+
+}
+
+
+
 .ice {
   font-family: 'Sedgwick Ave Display';
-  font-size: 1em;
+  font-size: 1rem;
   border: 10px solid white;
   padding: 5px;
   vertical-align: middle;
@@ -10,6 +32,7 @@
   border: 5px solid cyan;
   font-family: 'Quicksand';
   text-align: center;
+  font-size: 1rem;
 }
 
 .zoo {

@@ -1,1 +1,427 @@
+.container
+  .row
+    .col.s2.yellow.lighten-3
+      dashboard
+    .col.s7.pink.lighten-3
+      work space
+    .col.s3.blue.lighten-3
+      log
+
+
+.container
+  .row
+    .col.s2.yellow.lighten-3
+      dashboard
+    .col.s7.pink.lighten-3
+      .row
+        .col.s12
+          %ul.tabs.pi
+            %li.tab
+              %a.yellow.lighten-4.yellow-text.thin-text{:href => "#yellow"} Y
+            %li.tab
+              %a.orange.lighten-4.orange-text.thin-text{:href => "#orange"} O
+            %li.tab
+              %a.red.lighten-4.red.thin-text{:href => "#red"} R
+            %li.tab
+              %a.purple.lighten-4.purple.thin-text{:href => "#purple"} P
+            %li.tab
+              %a.blue.lighten-4.blue-text.thin-text{:href => "#blue"} B
+            %li.tab
+              %a.green.lighten-4.green-text.thin-text{:href => "#green"} G
+            %li.tab
+              %a.blue-grey.lighten-5.white-text.thin-text{:href => "#white"} W
+            %li.tab
+              %a.grey.darken-2.black-text.thin-text{:href => "#black"} L
+            %li.tab
+              %a.grey.lighten-1.grey-text.thin-text{:href => "#grey"} E
+            %li.tab
+              %a.pink.lighten-4.pink-text.thin-text{:href => "#pink"} I
+            %li.tab
+              %a.cyan.lighten-4.cyan-text.thin-text{:href => "#cyan"} C
+            %li.tab
+              %a.brown.lighten-4.brown-text.thin-text{:href => "#brown"} N
+    .col.s3.blue.lighten-3
+      log
+
+
+
+
+
+
+
+
+
+  .row
+    .col.s2
+      %ul
+        %li.w-t .ice
+        %li.c-t .pi
+        %li.y-t .zoo
+      %ol
+        %li.yellow-text Y
+        %li.orange-text O
+        %li.red-text R
+        %li.purple-text P
+        %li.blue-text B
+        %li.green-text G
+        %li.white-text W
+        %li.blue-text B
+        %li.grey-text E
+        %li.pink-text I
+        %li.cyan-text C
+        %li.brown-text N
+    .col.s7
+      %ul
+        %li.ice ai.opine
+        %li.pi Jokers to Aces
+        %li.zoo 12 Reasons Why Not
+        %li.y-t aiyellow
+        %li.o-t WhetGenkiness
+        %li.r-t Hysterical Aunt's Guide to Zen
+        %li.p-t ARTucation
+        %li.b-t Eons of Dung: Dungeons
+        %li.g-t AiDrumpf
+        %li.w-t GOD-sama
+        %li.l-t Polar Bears and Penguins
+        %li.l.e-t Diabeties
+        %li.i-t Lipschitz
+        %li.c-t GG LLC
+        %li.n-t Genki-ya
+    .col.s3
+      ai.log
+
+
+.ice.container
+  .row
+    .col.s4
+      .ice Growing Genkiness
+    .col.s4
+      .pi Don't Kill Daegory Gene
+    .col.s4
+      .zoo Grandma Cinderella
+
+.ice.container
+  .row
+    .col.s1.yellow.y-t
+      Y
+    .col.s1.orange.o-t
+      O
+    .col.s1.red.r-t
+      R
+    .col.s1.purple.p-t
+      P
+    .col.s1.blue.b-t
+      B
+    .col.s1.green.g-t
+      G
+    .col.s1.white.w-t
+      W
+    .col.s1.black.l-t
+      L
+    .col.s1.grey.e-t
+      E
+    .col.s1.pink.i-t
+      I
+    .col.s1.cyan.c-t
+      C
+    .col.s1.brown.n-t
+      N
+
+  .row
+    .col.s12
+      %ul.tabs.pi
+        %li.tab.col.s1
+          %a.yellow-text{:href => "#yellow"} Y
+        %li.tab.col.s1
+          %a.orange-text{:href => "#orange"} O
+        %li.tab.col.s1
+          %a.red-text{:href => "#red"} R
+        %li.tab.col.s1
+          %a.purple-text{:href => "#purple"} P
+        %li.tab.col.s1
+          %a.blue-text{:href => "#blue"} B
+        %li.tab.col.s1
+          %a.green-text{:href => "#green"} G
+        %li.tab.col.s1
+          %a.white-text{:href => "#white"} W
+        %li.tab.col.s1
+          %a.black-text{:href => "#black"} L
+        %li.tab.col.s1
+          %a.grey-text{:href => "#grey"} E
+        %li.tab.col.s1
+          %a.pink-text{:href => "#pink"} I
+        %li.tab.col.s1
+          %a.cyan-text{:href => "#cyan"} C
+        %li.tab.col.s1
+          %a.brown-text{:href => "#brown"} N
+.pi.container
+  .row
+    .col.s1.y.yellow-text
+      Y
+    .col.s1.o.orange-text
+      O
+    .col.s1.r.red-text
+      R
+    .col.s1.p.purple-text
+      P
+    .col.s1.b.blue-text
+      B
+    .col.s1.g.green-text
+      G
+    .col.s1.w.white-text
+      W
+    .col.s1.l.black-text
+      L
+    .col.s1.e.grey-text
+      E
+    .col.s1.i.pink-text
+      I
+    .col.s1.c.cyan-text
+      C
+    .col.s1.n.brown-text
+      N
+.container
+  .row
+    .col.s2.box
+      1 dashboard
+    .col.s7.box
+      2 work space
+    .col.s3.box
+      3 log
+
+
+
+
+%hr
+MOVE TO DOCUMENTATION
+%hr
+.container
+  .row
+    .col.s12
+      %p .container w .yellow & .yellow-text v .y & .y-t
+
+  .row
+    .col.s12
+      %p yellow.y-t
+  .row
+    .col.s1.yellow.y-t
+      Y
+    .col.s1.orange.o-t
+      O
+    .col.s1.red.r-t
+      R
+    .col.s1.purple.p-t
+      P
+    .col.s1.blue.b-t
+      B
+    .col.s1.green.g-t
+      G
+    .col.s1.white.w-t
+      W
+    .col.s1.black.l-t
+      L
+    .col.s1.grey.e-t
+      E
+    .col.s1.pink.i-t
+      I
+    .col.s1.cyan.c-t
+      C
+    .col.s1.brown.n-t
+      N
+
+  .row
+    .col.s12
+      %p yellow.yellow-text
+
+
+  .row
+    .col.s1.yellow.yellow-text
+      Y
+    .col.s1.orange.orange-text
+      O
+    .col.s1.red.red-text
+      R
+    .col.s1.purple.purple-text
+      P
+    .col.s1.blue.blue-text
+      B
+    .col.s1.green.green-text
+      G
+    .col.s1.white.white-text
+      W
+    .col.s1.black.black-text
+      L
+    .col.s1.grey.grey-text
+      E
+    .col.s1.pink.pink-text
+      I
+    .col.s1.cyan.cyan-text
+      C
+    .col.s1.brown.brown-text
+      N
+
+
+  .row
+    .col.s12
+      %p y.yellow-text
+
+  .row
+    .col.s1.y.yellow-text
+      Y
+    .col.s1.o.orange-text
+      O
+    .col.s1.r.red-text
+      R
+    .col.s1.p.purple-text
+      P
+    .col.s1.b.blue-text
+      B
+    .col.s1.g.green-text
+      G
+    .col.s1.w.white-text
+      W
+    .col.s1.l.black-text
+      L
+    .col.s1.e.grey-text
+      E
+    .col.s1.i.pink-text
+      I
+    .col.s1.c.cyan-text
+      C
+    .col.s1.n.brown-text
+      N
+
+  .row
+    .col.s12
+      %p y.y-t
+
+  .row
+    .col.s1.y.y-t
+      Y
+    .col.s1.o.o-t
+      O
+    .col.s1.r.r-t
+      R
+    .col.s1.p.p-t
+      P
+    .col.s1.b.b-t
+      B
+    .col.s1.g.g-t
+      G
+    .col.s1.w.w-t
+      W
+    .col.s1.l.l-t
+      L
+    .col.s1.e.e-t
+      E
+    .col.s1.i.i-t
+      I
+    .col.s1.c.c-t
+      C
+    .col.s1.n.n-t
+      N
+
+
+%hr
+MOVE TO DOCUMENTATION
+%hr
+
+
+
+
+
+
+
+
+
+
+
+
+.pi.container
+  .ice.pi.wiz
+    %ol
+      %li Y
+      %li O
+      %li R
+      %li P
+      %li B
+      %li G
+      %li W
+      %li B
+      %li E
+      %li I
+      %li C
+      %li N
+  .ice.pi.wiz
+    %ul
+      %li.ice ai.opine
+      %li.pi Jokers to Aces
+      %li.zoo 12 Reasons Why Not
+      %li.y-t aiyellow
+      %li.o-t WhetGenkiness
+      %li.r-t Hysterical Aunt's Guide to Zen
+      %li.p-t ARTucation
+      %li.b-t Eons of Dung: Dungeons
+      %li.g-t AiDrumpf
+      %li.w-t GOD-sama
+      %li.l-t Polar Bears and Penguins
+      %li.l.e-t Diabeties
+      %li.i-t Lipschitz
+      %li.c-t GG LLC
+      %li.n-t Genki-ya
+.container
+  .row
+    %ul
+      %li.pink.i.i-t Snickering Hysterical Ant
+      %li .ice box
+      %li .pi jkr
+      %li .zoo ace
+
+    #test1.col.s12 Test 1
+    #test2.col.s12 Test 2
+    #test3.col.s12 Test 3
+    #test4.col.s12 Test 4
+
+
+.container
+  .ice.wiz
+    %ol
+      %li yellow genkiness
+      %li orange genkiness
+      %li red genkiness
+      %li purple genkiness
+      %li blue genkiness
+      %li green genkiness
+      %li white genkiness
+      %li black genkiness
+      %li grey genkiness
+      %li pink genkiness
+      %li cyan genkiness
+      %li brown genkiness
+  .ice.pi.wiz
+    %ul
+      %li.ice ai.opine
+      %li.pi Jokers to Aces
+      %li.zoo 12 Reasons Why Not
+      %li.y-t aiyellow
+      %li.o-t WhetGenkiness
+      %li.r-t Hysterical Aunt's Guide to Zen
+      %li.p-t ARTucation
+      %li.b-t Eons of Dung: Dungeons
+      %li.g-t AiDrumpf
+      %li.w-t GOD-sama
+      %li.l-t Polar Bears and Penguins
+      %li.l.e-t Diabeties
+      %li.i-t Lipschitz
+      %li.c-t GG LLC
+      %li.n-t Genki-ya
+
+
+
+
+
+
+
+
+
 <screen-zootopia-genkified />
