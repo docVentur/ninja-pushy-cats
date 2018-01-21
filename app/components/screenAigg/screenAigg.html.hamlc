@@ -1,0 +1,68 @@
+.container.white
+  .row
+  .row.yellow.lighten-4{style: "margin-bottom: 0px;"}
+    .col.s2.yellow.lighten-5.center
+      .ice.pink.lighten-2.white-text
+        lipschitz
+        .ace.center ai.c
+    .col.s10.yellow.lighten-5.center
+      .row
+        %ul.tabs.yellow.lighten-5
+          %li.tab
+            %a.yellow.lighten-4.yellow-text.thin-text{"ui-sref": "aiTabY"} Y
+          %li.tab
+            %a.orange.lighten-4.orange-text.thin-text{"ui-sref": "aiTabO"} O
+          %li.tab
+            %a.red.lighten-4.red.thin-text{"ui-sref": "aiTabR"} R
+          %li.tab
+            %a.purple.lighten-4.purple.thin-text{"ui-sref": "aiTabP"} P
+          %li.tab
+            %a.blue.lighten-4.blue-text.thin-text{"ui-sref": "aiTabB"} B
+          %li.tab
+            %a.green.lighten-4.green-text.thin-text{"ui-sref": "aiTabG"} G
+          %li.tab
+            %a.blue-grey.lighten-5.white-text.thin-text{"ui-sref": "aiTabW"} W
+          %li.tab
+            %a.grey.darken-2.black-text.thin-text{"ui-sref": "aiTabL"} L
+          %li.tab
+            %a.grey.lighten-1.grey-text.thin-text{"ui-sref": "aiTabE"} E
+          %li.tab
+            %a.pink.lighten-4.pink-text.thin-text{"ui-sref": "aiTabI"} I
+          %li.tab
+            %a.cyan.lighten-4.cyan-text.thin-text{"ui-sref": "aiTabC"} C
+          %li.tab
+            %a.brown.lighten-4.brown-text.thin-text{"ui-sref": "aiTabN"} N
+
+  .row.red.lighten-3.center{style: "margin-bottom: 0px; height: 650px;"}
+    .col.s2.yellow.lighten-5
+      .ice.yellow.lighten-2{style: "height: 200px"}
+        torikomu
+        %hr
+        %a.zoo{:href => "https://www.facebook.com/Genkiness/"} @genkiness
+        %a.ace.center{:href => "http://ai.gdkp.org/"} ai.log
+        .kami day/te
+        .kami.right.thin-text timestamp
+      .ice.red.lighten-2{style: "height: 200px"}
+        kaizen
+        %hr
+        %a.zoo{:href => "https://www.facebook.com/growinggenkiness/"} @growinggenkiness
+        %a.ace{:href => "https://www.facebook.com/VVentur"} ai.fb
+        .kami day/te
+        .kami.right.thin-text timestamp
+      .ice.blue.lighten-2{style: "height: 200px"}
+        gg
+        %hr
+        %a.zoo{:href => "https://www.facebook.com/GrandmaCinderella/"} @grandmacinderella
+        %a.ace{:href => "https://www.reddit.com/user/docVentur/"} ai.reddit
+        .kami day/te
+        .kami.right.thin-text timestamp
+    .col.s4
+      <ui-view></ui-view>
+    .col.s6.blue.lighten-5
+      .zoo.blue.lighten-3 log
+      .zoo.thin-text{style: "overflow: scroll; height: 667px"}
+        <ai-log></ai-log>
+  .row.blue.lighten-4{style: "margin-bottom: 0px"}
+    m00
+  .row
+    00

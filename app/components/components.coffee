@@ -1,3 +1,6 @@
+require './screenAigg/screenAigg.coffee'
+require './screenAigg/screenAigg.html.hamlc'
+
 require './screenDaegorysWorld/screenDaegorysWorld.coffee'
 
 require './screenDaegoryBliss/screenDaegoryBliss.coffee'

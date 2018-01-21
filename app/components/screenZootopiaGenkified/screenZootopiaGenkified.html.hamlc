@@ -1,4 +1,16 @@
+.black.white-text
+  00
 .container
+  .ice
+    %h1 H1 screenZootopiaGenkified
+    %h2 H2 screenZootopiaGenkified
+    %h3 H3 screenZootopiaGenkified
+    %h4 H4 screenZootopiaGenkified
+    %h5 H5 screenZootopiaGenkified
+    %h6 H6 screenZootopiaGenkified
+    %p p screenZootopiaGenkified
+
+.ice
   .row
     .col.s2
       .ice{"ng-class": "$ctrl.lookup_rank_shade[0]"}
@@ -37,15 +49,7 @@
             %i.material-icons.tiny.c-t settings
           .zoo.kami.thin-text.n-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Tommy Chong
             %i.material-icons.tiny.n-t portrait
-  .row
-    .col.s12
-      <ai-log></ai-log>
-
-.ice
-  %h1 H1 screenZootopiaGenkified
-  %h2 H2 screenZootopiaGenkified
-  %h3 H3 screenZootopiaGenkified
-  %h4 H4 screenZootopiaGenkified
-  %h5 H5 screenZootopiaGenkified
-  %h6 H6 screenZootopiaGenkified
-  %p p screenZootopiaGenkified
+  .row.black.white-text
+    00
+.black.white-text
+  00

@@ -1,4 +1,36 @@
-%h1 
-I am some text content on the  component
+.blue.lighten-4
+  %hr
+  .yellow.lighten-4
+    %a{:href => "https://www.facebook.com/Blue-genkiness-1972615316331654/"} FB: blue genkiness
+  %hr
+  .red.lighten-4
+    %a{:href => "https://www.facebook.com/Eons-of-Dung-Dungeons-171180943495892/"} FB: Eons of Dung: Dungeons
+  %hr
+  .blue.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  %hr
+  .orange.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  .purple.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  .green.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  %hr
+  .white.lighten-4
+    m00
+  .grey.lighten-2
+    m00
+  .grey.lighten-4
+    m00
+  %hr
+  .pink.lighten-4
+    m00
+  .cyan.lighten-4
+    m00
+  %hr
+  .brown.lighten-4
+    m00
+  %hr
 
-find me in 5.B.html.hamlc
+.zoo.blue-text
+  find me in 5.B.html.hamlc
