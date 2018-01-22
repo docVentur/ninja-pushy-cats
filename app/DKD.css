@@ -96,7 +96,7 @@
 }
 
 .boxed {
-  width: 250px;
+  width: 900px;
   padding: 5px;
   text-align: center;
   vertical-align: middle;
@@ -205,6 +205,7 @@ blockquote:before {
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(https://fonts.googleapis.com/css?family=Pragati+Narrow);
+@import url(https://fonts.googleapis.com/css?family=Risque);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display);
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
@@ -298,7 +299,7 @@ h5 {
 }
 
 h6 {
-  font-family: 'Roboto Slab';
+  font-family: 'Risque';
   font-size: 1em;
 }
 

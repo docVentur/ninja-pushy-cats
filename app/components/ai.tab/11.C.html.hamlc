@@ -26,7 +26,7 @@
   .pink.lighten-4
     m00
   .cyan.lighten-4
-    m00
+    =".fireworks.idle.screen"
   %hr
   .brown.lighten-4
     m00

@@ -1,3 +1,5 @@
+.pink.i-t
+  00 00 00
 .black.white-text
   00
 .container
@@ -49,7 +51,7 @@
             %i.material-icons.tiny.c-t settings
           .zoo.kami.thin-text.n-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Tommy Chong
             %i.material-icons.tiny.n-t portrait
-  .row.black.white-text
-    00
 .black.white-text
   00
+.pink.i-t
+  00 00 00
