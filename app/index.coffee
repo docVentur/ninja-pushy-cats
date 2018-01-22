@@ -10,9 +10,8 @@ require 'angular-moment'
 require "angular-resource"
 
 
-require('./DKD.css')
+
 require './DKD.css'
-require "./DKD.css"
 
 
 
@@ -33,16 +32,16 @@ require './components/components.coffee'
 
 app.constant 'moment', require 'moment-timezone'
 
-app.config ($stateProvider) ->
-  $stateProvider.state {name: 'aiTabY', url: '/aiTabY', component: 'aiTabY'}
-  $stateProvider.state {name: 'aiTabO', url: '/aiTabO', component: 'aiTabO'}
-  $stateProvider.state {name: 'aiTabR', url: '/aiTabR', component: 'aiTabR'}
-  $stateProvider.state {name: 'aiTabP', url: '/aiTabP', component: 'aiTabP'}
-  $stateProvider.state {name: 'aiTabB', url: '/aiTabB', component: 'aiTabB'}
-  $stateProvider.state {name: 'aiTabG', url: '/aiTabG', component: 'aiTabG'}
-  $stateProvider.state {name: 'aiTabW', url: '/aiTabW', component: 'aiTabW'}
-  $stateProvider.state {name: 'aiTabL', url: '/aiTabL', component: 'aiTabL'}
-  $stateProvider.state {name: 'aiTabE', url: '/aiTabE', component: 'aiTabE'}
-  $stateProvider.state {name: 'aiTabI', url: '/aiTabI', component: 'aiTabI'}
-  $stateProvider.state {name: 'aiTabC', url: '/aiTabC', component: 'aiTabC'}
-  $stateProvider.state {name: 'aiTabN', url: '/aiTabN', component: 'aiTabN'}
+app.run ($rootScope) ->
+  $rootScope.$on("$stateChangeError", console.log.bind(console))
+
+app.config ($stateProvider, $urlRouterProvider) ->
+  #$stateProvider.state('screenAigg', {url: '/aigg', abstract: true, template: '<ui-view/>'} )
+  #$stateProvider.state {name: 'screenAigg', url: '/aigg', component: 'screenAigg'}
+
+  $stateProvider.state {name: 'screenAigg', url: '', component: 'screenAigg'}
+  $stateProvider.state {name: 'screenAigg.tab', url: '/{tabId}', component: 'screenAigg'}
+  $stateProvider.state {name: 'screenZootopiaGenkified', url: '/screenZootopiaGenkified', component: 'screenZootopiaGenkified'}
+  $stateProvider.state {name: 'screenDaegorysWorld', url: '/screenDaegorysWorld', component: 'screenDaegorysWorld'}
+
+  $urlRouterProvider.when('/', '/aigg');

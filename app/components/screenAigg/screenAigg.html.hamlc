@@ -17,7 +17,7 @@
       .row
         %ul.tabs.yellow.lighten-5
           %li.tab
-            %a.yellow.lighten-4.yellow-text.thin-text{"ui-sref": "aiTabY"} Y
+            %a.yellow.lighten-4.yellow-text.thin-text{"ui-sref": "screenAigg.tab({ tabId: 'Y' })"} Y
           %li.tab
             %a.orange.lighten-4.orange-text.thin-text{"ui-sref": "aiTabO"} O
           %li.tab
