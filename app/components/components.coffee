@@ -9,6 +9,7 @@ require './screenDaegorySymptomatic/screenDaegorySymptomatic.coffee'
 
 require './screenDaegoryDiscovered/screenDaegoryDiscovered.coffee'
 
+require './screenMain/screenMain.coffee'
 
 require './screenDaegoryTreated/screenDaegoryTreated.coffee'
 

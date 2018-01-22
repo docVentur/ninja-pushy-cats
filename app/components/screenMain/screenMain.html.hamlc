@@ -1,0 +1,26 @@
+.ace{"ng-if": "$ctrl.screens.aigg"}
+  %ace{"ng-click": "$ctrl.toggle_screen('aigg')"} AIGG -
+  <screen-aigg></screen-aigg>
+  <z-card card="$ctrl.cards[0]"></z-card>
+.ace{"ng-if": "!$ctrl.screens.aigg"}
+  %ace{"ng-click": "$ctrl.toggle_screen('aigg')"} AIGG +
+  <z-card card="$ctrl.cards[0]"></z-card>
+
+
+.ace{"ng-if": "$ctrl.screens.zootopiaGenkified"}
+  %ace{"ng-click": "$ctrl.toggle_screen('zootopiaGenkified')"} ZooG -
+  <screen-zootopia-genkified></screen-zootopia-genkified>
+  <z-card card="$ctrl.cards[26]"></z-card>
+.ace{"ng-if": "!$ctrl.screens.zootopiaGenkified"}
+  %ace{"ng-click": "$ctrl.toggle_screen('zootopiaGenkified')"} ZooG +
+  <z-card card="$ctrl.cards[26]"></z-card>
+
+
+
+.ace{"ng-if": "$ctrl.screens.daegorysWorld"}
+  %ace{"ng-click": "$ctrl.toggle_screen('daegorysWorld')"} DW -
+  <screen-daegorys-world></screen-daegorys-world>
+  <z-card card="$ctrl.cards[52]"></z-card>
+.ace{"ng-if": "!$ctrl.screens.daegorysWorld"}
+  %ace{"ng-click": "$ctrl.toggle_screen('daegorysWorld')"} DW +
+  <z-card card="$ctrl.cards[52]"></z-card>

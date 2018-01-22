@@ -17,7 +17,7 @@
       .row
         %ul.tabs.yellow.lighten-5
           %li.tab
-            %a.yellow.lighten-4.yellow-text.thin-text{"ui-sref": "screenAigg.tab({ tabId: 'Y' })"} Y
+            %a.yellow.lighten-4.yellow-text.thin-text{"ui-sref": "aiTabY"} Y
           %li.tab
             %a.orange.lighten-4.orange-text.thin-text{"ui-sref": "aiTabO"} O
           %li.tab
@@ -67,7 +67,8 @@
     .col.s4
       <ui-view></ui-view>
     .col.s6.blue.lighten-5
-      .zoo.blue.lighten-3 log
+      .zoo.blue.lighten-3
+        log
       .zoo.thin-text{style: "overflow: scroll; height: 667px"}
         <ai-log></ai-log>
   .row.blue.lighten-4{style: "margin-bottom: 0px"}

@@ -29,6 +29,7 @@
   vertical-align: middle;
 }
 
+
 .pi {
   border: 5px solid cyan;
   font-family: 'Quicksand';
@@ -95,20 +96,6 @@
 
 }
 
-.boxed {
-  width: 900px;
-  padding: 5px;
-  text-align: center;
-  vertical-align: middle;
-
-}
-
-.aceboxed {
-  width: 100px;
-  text-align: center;
-  vertical-align: middle;
-  padding: 5px;
-}
 
 .thin-text {
   font-family: 'Pragati Narrow';
@@ -433,4 +420,26 @@ p {
 
 .n-t {
   color: brown;
+}
+
+.boxed {
+  width: 900px;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.aceboxed {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.monoboxed {
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+
 }
