@@ -1,12 +1,12 @@
-%h1 screenDaegoryBliss
+.h1 screenDaegoryBliss
 
 .bliss-font BLISS
 .container
-  .row
-    .col.s3{style: "height: 100px"}
-      %i.material-icons.prefix.yellow.large{style: "color: red","ng-click": "$ctrl.add_mass()"} border_inner
-    .col.s3{style: "height: 100px"}
+  .row{style: "height: 100px"}
+    .col.s3
+      %i.material-icons.prefix.yellow.small{style: "color: red","ng-click": "$ctrl.add_mass()"} border_inner
+    .col.s3
       %i.material-icons.prefix.pink.tiny.pulse{style: "color: pink"} blur_on
-    .col.s6{style: "height: 100px"}
+    .col.s6
       .bliss-font Feed Daegory Gene
 .bliss-font BLISS

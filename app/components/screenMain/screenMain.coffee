@@ -8,7 +8,7 @@ app.component 'screenMain', {
   controller: (DaegoryFSM, MassFSM, FeelingsFSM, $stateParams, moment, $interval, zDeckService) ->
     vm = @
 
-    @screens = {'aigg': false, 'daegorysWorld': false, 'zootopiaGenkified': false}
+    @screens = {'aigg': false, 'zootopiaGenkified': false, 'daegorysWorld': true,}
 
     @toggle_screen = (screen) =>
       @screens[screen] = !@screens[screen]

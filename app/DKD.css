@@ -147,7 +147,7 @@
 }
 
 .samuneiru i{
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 
@@ -183,7 +183,7 @@ body {
 blockquote:before {
   color: brown;
   content: open-quote;
-  font-size: 8em;
+  font-size: 1em;
   line-height: .1 em;
 }
 
@@ -274,27 +274,27 @@ blockquote:before {
 
 h1 {
   font-family: 'Trocchi';
-  font-size: 6em;
+  font-size: 1em;
 }
 
 h2 {
   font-family: 'Bitter';
-  font-size: 5em;
+  font-size: 1em;
 }
 
 h3 {
   font-family: 'Merriweather Sans';
-  font-size: 4em;
+  font-size: 1em;
 }
 
 h4 {
   font-family: 'Nunito Sans';
-  font-size: 3em;
+  font-size: 1em;
 }
 
 h5 {
   font-family: 'Quattrocento';
-  font-size: 2em;
+  font-size: 1em;
 }
 
 h6 {
@@ -455,6 +455,7 @@ p {
 
 .monoboxed {
   width: 200px;
+  height: 200px;
   padding: 5px;
   text-align: center;
   vertical-align: middle;
