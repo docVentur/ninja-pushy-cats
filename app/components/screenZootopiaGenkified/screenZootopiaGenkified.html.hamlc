@@ -23,34 +23,33 @@
         %i.material-icons.tiny print
     .col.s10
       .zoo
-        .pi
-          .zoo.ace.thick-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
-            %i.material-icons.tiny portrait
-        .pi.zoo
-          .zoo.kami.thin-text.y-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Leodore Lionheart
-            %i.material-icons.tiny.y-t 3d_rotation
-          .zoo.kami.thin-text.o-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Officer Judy Hopps
-            %i.material-icons.tiny.o-t texture
-          .zoo.kami.thin-text.r-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Octavia Spencer
-            %i.material-icons.tiny.r-t surround_sound
-          .zoo.kami.thin-text.p-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Duke Weaselton
-            %i.material-icons.tiny.p-t toc
-          .zoo.kami.thin-text.b-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Gazelle
-            %i.material-icons.tiny.b-t group_work
-          .zoo.kami.thin-text.g-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Flash
-            %i.material-icons.tiny.g-t find_replace
-          .zoo.kami.thin-text.w-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Jenny Slate
-            %i.material-icons.tiny.w-t invert_colors
-          .zoo.kami.thin-text.l-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Nick
-            %i.material-icons.tiny.l-t open_with
-          .zoo.kami.thin-text.e-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Officer Benjamin Clawhauser
-            %i.material-icons.tiny.e-t playlist_add
-          .zoo.kami.thin-text.i-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Bonnie Hopps
-            %i.material-icons.tiny.i-t fingerprint
-          .zoo.kami.thin-text.c-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Chief
-            %i.material-icons.tiny.c-t settings
-          .zoo.kami.thin-text.n-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Tommy Chong
-            %i.material-icons.tiny.n-t portrait
+        .ace.center.thick-text{"ng-class": "$ctrl.lookup_rank_shade[0]"} A
+          %i.material-icons.tiny portrait
+      .pi.zoo
+        .zoo.kami.thin-text.y-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Leodore Lionheart
+          %i.material-icons.tiny.y-t 3d_rotation
+        .zoo.kami.thin-text.o-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Officer Judy Hopps
+          %i.material-icons.tiny.o-t texture
+        .zoo.kami.thin-text.r-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Octavia Spencer
+          %i.material-icons.tiny.r-t surround_sound
+        .zoo.kami.thin-text.p-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Duke Weaselton
+          %i.material-icons.tiny.p-t toc
+        .zoo.kami.thin-text.b-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Gazelle
+          %i.material-icons.tiny.b-t group_work
+        .zoo.kami.thin-text.g-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Flash
+          %i.material-icons.tiny.g-t find_replace
+        .zoo.kami.thin-text.w-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Jenny Slate
+          %i.material-icons.tiny.w-t invert_colors
+        .zoo.kami.thin-text.l-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Nick
+          %i.material-icons.tiny.l-t open_with
+        .zoo.kami.thin-text.e-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Officer Benjamin Clawhauser
+          %i.material-icons.tiny.e-t playlist_add
+        .zoo.kami.thin-text.i-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Bonnie Hopps
+          %i.material-icons.tiny.i-t fingerprint
+        .zoo.kami.thin-text.c-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Chief
+          %i.material-icons.tiny.c-t settings
+        .zoo.kami.thin-text.n-t.wiz{"ng-class": "$ctrl.lookup_rank_shade[0]"} Tommy Chong
+          %i.material-icons.tiny.n-t portrait
 .black.white-text
   00
 .pink.i-t

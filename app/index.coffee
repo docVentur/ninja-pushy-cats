@@ -49,4 +49,4 @@ app.config ($stateProvider, $urlRouterProvider) ->
   $stateProvider.state {name: 'aiTabC', url: '/aiTabC', component: 'aiTabC'}
   $stateProvider.state {name: 'aiTabN', url: '/aiTabN', component: 'aiTabN'}
 
-  $urlRouterProvider.when('', '/aiTabY');
+#  $urlRouterProvider.when('', '/aiTabY');

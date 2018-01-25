@@ -33,9 +33,13 @@
 .pi {
   border: 5px solid cyan;
   font-family: 'Quicksand';
-  text-align: center;
   font-size: 1rem;
 }
+
+.pi i{
+  text-align: center;
+}
+
 
 .zoo {
   border: 1px solid yellow;
@@ -60,10 +64,17 @@
   padding: 5px;
 }
 
+.yami {
+  color: black;
+}
+
+.hikrai {
+  color: white;
+}
+
 .alt {
   color: red;
 }
-
 
 .ace {
   border-radius: 25px;
@@ -196,6 +207,7 @@ blockquote:before {
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display);
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
 
@@ -294,6 +306,11 @@ p {
   font-family: 'Scope One';
   font-size: 1em;
 }
+
+.andy-font {
+  font-family: 'Special Elite';
+}
+
 
 .bliss-font {
   font-family: 'Bilbo';
@@ -437,7 +454,7 @@ p {
 }
 
 .monoboxed {
-  width: 150px;
+  width: 200px;
   padding: 5px;
   text-align: center;
   vertical-align: middle;

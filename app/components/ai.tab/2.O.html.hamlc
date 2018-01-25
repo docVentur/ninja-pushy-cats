@@ -10,7 +10,7 @@
     %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
   %hr
   .orange.lighten-4
-    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+    %a{:href => "http://bloodrizer.ru/games/kittens/#"} http://bloodrizer.ru/games/kittens/#
   .purple.lighten-4
     %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
   .green.lighten-4

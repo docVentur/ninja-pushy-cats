@@ -1,26 +1,72 @@
-.ace{"ng-if": "$ctrl.screens.aigg"}
-  %ace{"ng-click": "$ctrl.toggle_screen('aigg')"} AIGG -
-  <screen-aigg></screen-aigg>
-  <z-card card="$ctrl.cards[0]"></z-card>
-.ace{"ng-if": "!$ctrl.screens.aigg"}
-  %ace{"ng-click": "$ctrl.toggle_screen('aigg')"} AIGG +
-  <z-card card="$ctrl.cards[0]"></z-card>
+.ice
+  .row
+    .col.s1
+      %i.material-icons.medium.pink.lighten-3.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
+        accessibility
+        %h6.center I.AM
+    .col.s1
+      %a.ace.andy-font{:href => "http://localhost:8080"} localhost:8080
+.pi
+  .ace{"ng-if": "$ctrl.screens.aigg"}
+    %ace{"ng-click": "$ctrl.toggle_screen('aigg')"} AIGG -
+    <screen-aigg></screen-aigg>
+    .ace.wiz
+      <z-card card="$ctrl.cards[0]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[13]"></z-card>
 
+  .ace{"ng-if": "!$ctrl.screens.aigg"}
+    .ace.wiz
+      <z-card card="$ctrl.cards[0]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[13]"></z-card>
+    %ace{"ng-click": "$ctrl.toggle_screen('aigg')"} AIGG +
 
-.ace{"ng-if": "$ctrl.screens.zootopiaGenkified"}
-  %ace{"ng-click": "$ctrl.toggle_screen('zootopiaGenkified')"} ZooG -
-  <screen-zootopia-genkified></screen-zootopia-genkified>
-  <z-card card="$ctrl.cards[26]"></z-card>
-.ace{"ng-if": "!$ctrl.screens.zootopiaGenkified"}
-  %ace{"ng-click": "$ctrl.toggle_screen('zootopiaGenkified')"} ZooG +
-  <z-card card="$ctrl.cards[26]"></z-card>
+  .ace{"ng-if": "$ctrl.screens.zootopiaGenkified"}
+    %ace{"ng-click": "$ctrl.toggle_screen('zootopiaGenkified')"} ZooG -
+    <screen-zootopia-genkified></screen-zootopia-genkified>
+    .ace.wiz
+      <z-card card="$ctrl.cards[26]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[39]"></z-card>
+  .ace{"ng-if": "!$ctrl.screens.zootopiaGenkified"}
+    .ace.wiz
+      <z-card card="$ctrl.cards[26]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[39]"></z-card>
+    %ace{"ng-click": "$ctrl.toggle_screen('zootopiaGenkified')"} ZooG +
 
+  .ace{"ng-if": "$ctrl.screens.daegorysWorld"}
+    %ace{"ng-click": "$ctrl.toggle_screen('daegorysWorld')"} DW -
+    <screen-daegorys-world></screen-daegorys-world>
+    .ace.wiz
+      <z-card card="$ctrl.cards[52]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[65]"></z-card>
 
+  .ace{"ng-if": "!$ctrl.screens.daegorysWorld"}
+    .ace.wiz
+      <z-card card="$ctrl.cards[52]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[65]"></z-card>
+    %ace{"ng-click": "$ctrl.toggle_screen('daegorysWorld')"} DW +
 
-.ace{"ng-if": "$ctrl.screens.daegorysWorld"}
-  %ace{"ng-click": "$ctrl.toggle_screen('daegorysWorld')"} DW -
-  <screen-daegorys-world></screen-daegorys-world>
-  <z-card card="$ctrl.cards[52]"></z-card>
-.ace{"ng-if": "!$ctrl.screens.daegorysWorld"}
-  %ace{"ng-click": "$ctrl.toggle_screen('daegorysWorld')"} DW +
-  <z-card card="$ctrl.cards[52]"></z-card>
+.andy-font
+  ggpa Andy's Field Guide to Lichenology
+
+.zoo
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[78]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[91]"></z-card>
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[104]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[117]"></z-card>
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[130]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[143]"></z-card>

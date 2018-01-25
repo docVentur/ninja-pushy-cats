@@ -12,15 +12,26 @@ app.service 'zDeckService', ->
   @get_deck = ->
     _.map vm.cards, (c, i) -> i
 
-  @suits = ['spades', 'hearts', 'clubs', 'diams', 'yin yang', 'peace symbol']
-  @suit_colors = ['yellow', 'orange', 'red', 'purple', 'blue', 'green']
-  @suit_text_colors = ['black', 'red', 'black', 'red', 'black', 'red']
 
-  @suit_symbols = ['&spades;', '&hearts;', '&clubs;', '&diams;', '&#9775;', '&#9774;']
+
+  @suit_colors = ['yellow', 'orange', 'red', 'purple', 'blue', 'green', 'white', 'black', 'grey', 'pink', 'cyan', 'brown']
+  @suit_text_colors = ['black', 'white', 'black', 'white', 'black', 'white', 'black', 'white', 'black', 'white', 'black', 'white']
+
+
+
+  @suits = ['&spades;', '&hearts;', '&clubs;', '&diams;', '&#9775;', '&#9774;', '&#9818;', '&#9819;', '&#9820;', '&#9821;', '&#9822;', '&#9823;']
+  @suit_symbols = ['&spades;', '&hearts;', '&clubs;', '&diams;', '&#9775;', '&#9774;', '&#9818;', '&#9819;', '&#9820;', '&#9821;', '&#9822;', '&#9823;']
+
+
+
   @ranks = ['A', 'K', 'Q', 'J', 10, 9, 8, 7, 6, 5, 4, 3, 2]
-  @rank_shades = ["accent-2", "lighten-5", "accent-1", "lighten-3", "accent-2", "lighten-1", "", "darken-3", "darken-4", "accent-1", "accent-2", "accent-3", "accent-4"]
+  @rank_shades = ["", "lighten-5", "lighten-4", "lighten-3", "lighten-2", "lighten-1", "", "darken-3", "darken-4", "accent-1", "accent-2", "accent-3", "accent-4"]
+
+
+
   @rank_icon = ["border_inner", "texture", "surround_sound", "toc", "share", "invert_colors", "open_with", "play_for_work", "fingerprint", "settings", "portrait"]
-  @rank_colors = ["yellow", "orange", "red", "purple", "blue", "green", "white", "grey", "pink", "cyan", "brown"]
+  @rank_colors = ["yellow", "orange", "red", "purple", "blue", "green", "white", "black", "grey", "pink", "cyan", "brown"]
+
   @num_cards = @suits.length * @ranks.length
 
   @cards = []
@@ -41,7 +52,7 @@ app.service 'zDeckService', ->
 
   for s in [0...@suits.length]
     card = @get_card 0, s
-    card.symbol = "blur_on"
+    card.symbol = "accessibility"
 
     card = @get_card 1, s
     card.symbol = "border_inner"
@@ -81,12 +92,22 @@ app.service 'zDeckService', ->
 
   for r in [0...@ranks.length]
     card = @get_card r, 1
-    card['suit-color'] = "purple-text"
+    card['suit-color'] = "white-text"
 
     card = @get_card r, 3
     card['suit-color'] = "white-text"
 
     card = @get_card r, 5
     card['suit-color'] = "white-text"
+
+    card = @get_card r, 7
+    card['suit-color'] = "white-text"
+
+    card = @get_card r, 9
+    card['suit-color'] = "white-text"
+
+    card = @get_card r, 11
+    card['suit-color'] = "white-text"
+
 
   @

@@ -26,7 +26,11 @@
   .pink.lighten-4
     m00
   .cyan.lighten-4
-    m00
+    NY Times
+    NPR
+    CNN
+    PBS
+    Atlantic
   %hr
   .brown.lighten-4
     m00
@@ -34,3 +38,6 @@
 
 .zoo.black-text
   find me in 8.L.html.hamlc
+
+
+%h6 craigslist; linkedin; indeed; monster; career builder

@@ -14,7 +14,7 @@
   .purple.lighten-4
     %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
   .green.lighten-4
-    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+    %a{:href => "https://commons.wikimedia.org/wiki/Lichen"} https://commons.wikimedia.org/wiki/Lichen
   %hr
   .white.lighten-4
     m00
