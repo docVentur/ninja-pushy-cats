@@ -47,6 +47,11 @@ app.component 'screenDaegorysWorld', {
     @cards = zDeckService.cards
 
 
+    @resources = {}
+
+    @add_resource = (resource) ->
+      vm.resources[resource] = (vm.resources[resource] or 0) + 1
+
     @
 
 }

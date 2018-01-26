@@ -1,3 +1,6 @@
+
+require './editor/buildings.coffee'
+
 require './screenAigg/screenAigg.coffee'
 require './screenAigg/screenAigg.html.hamlc'
 

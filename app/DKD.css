@@ -272,38 +272,38 @@ blockquote:before {
 
 
 
-h1 {
+.h1 {
   font-family: 'Trocchi';
   font-size: 1em;
 }
 
-h2 {
+.h2 {
   font-family: 'Bitter';
   font-size: 1em;
 }
 
-h3 {
+.h3 {
   font-family: 'Merriweather Sans';
   font-size: 1em;
 }
 
-h4 {
+.h4 {
   font-family: 'Nunito Sans';
   font-size: 1em;
 }
 
-h5 {
+.h5 {
   font-family: 'Quattrocento';
   font-size: 1em;
 }
 
-h6 {
+.h6 {
   font-family: 'Risque';
   font-size: 1em;
 }
 
 p {
-  font-family: 'Scope One';
+  font-family: 'Roboto';
   font-size: 1em;
 }
 
@@ -454,10 +454,11 @@ p {
 }
 
 .monoboxed {
-  width: 200px;
-  height: 200px;
+  width: 600px;
+  height: 400px;
+  overflow: scroll;
   padding: 5px;
   text-align: center;
   vertical-align: middle;
-
+  display: inline-block;
 }

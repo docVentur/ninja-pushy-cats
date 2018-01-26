@@ -1,0 +1,83 @@
+%nav.pink.lighten-4{:role => "navigation"}
+  .nav-wrapper.container
+    %a#logo-container.brand-logo{:href => "#"} G_G
+    %ul.right.hide-on-med-and-down
+      %li{"ng-class": "{ active: $ctrl.mode == 'game' }"}
+        %a{"ng-click": "$ctrl.set_mode('game')"} game
+      %li{"ng-class": "{ active: $ctrl.mode == 'buildings' }"}
+        %a{"ng-click": "$ctrl.set_mode('buildings')"} buildings
+      %li{"ng-class": "{ active: $ctrl.mode == 'resources' }"}
+        %a{"ng-click": "$ctrl.set_mode('resources')"} resources
+    %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
+      %i.material-icons menu
+
+.container{"ng-if": "$ctrl.mode == 'resources'"}
+  %input{"ng-model": "$ctrl.new_resource_name"}
+  %btn.ace{"ng-click": "$ctrl.add_resource()"} Add Resource
+
+  %ul
+    %li{"ng-repeat": "resource in $ctrl.resources"}
+      = "{{ resource.name }}"
+
+
+.container{"ng-if": "$ctrl.mode =='buildings'"}
+  .row
+    .col.s12
+      %input{"ng-model": "$ctrl.new_building_name"}
+      %button.btn{"ng-click": "$ctrl.add_building()"} Add Building
+  .row{"ng-repeat-start": "building in $ctrl.buildings"}
+    .col.s12
+    = "{{ building.name }}"
+    .h2 costs
+    %ul
+      %li{"ng-repeat": "cost in building.costs"}
+        = "{{ cost.name }} x{{ cost.amount }}"
+  .row
+    .col.s4
+      .input-field
+        %input{"ng-model": "$ctrl.add_cost_amount", "type": "number"}
+    .col.s6
+      .input-field
+        %select.browser-default{"ng-model": "$ctrl.add_cost_resource"}
+          %option{"ng-repeat": "resource in $ctrl.resources", "value": "{{resource.name}}"}= "{{resource.name}}"
+    .col.s2
+      %button.btn{"ng-click": "$ctrl.add_building_cost(building)"} Add Cost
+  .row{"ng-repeat-end": ""}
+    .col.s12
+      .h2 produces
+
+.container{"ng-if": "$ctrl.mode =='game'"}
+  .row
+    .col.s12
+      .h1 GAME
+      %button{"ng-click": "$ctrl.reset_game()"} Reset Game
+      %ul
+        %li{"ng-repeat": "resource in $ctrl.resources"}
+          = "{{ resource.name }} - {{ $ctrl.game.resources[resource.name]}}"
+      .h2
+        resources
+      %ul
+        %li{"ng-repeat": "resource in $ctrl.resources"}
+          %button.btn{"ng-click": "$ctrl.game_add_resource(resource.name)"}= "{{ resource.name }}"
+      .h3
+        buildings
+      %ul
+        %li{"ng-repeat": "building in $ctrl.buildings"}
+          = "{{ $ctrl.game.buildings[building.name] }}"
+          %button.btn{"ng-click": "$ctrl.game_buy_building(building.name)", "ng-if": "$ctrl.game_can_buy_building(building.name)"}= "{{ building.name }}"
+%hr
+%hr
+%hr
+%hr
+
+resources
+%pre
+  = "{{ $ctrl.resources }}"
+%hr
+buildings
+%pre
+  = "{{ $ctrl.buildings }}"
+%hr
+game
+%pre
+  = "{{ $ctrl.game}}"

@@ -6,7 +6,7 @@
         %h6.center I.AM
     .col.s1
       %a.ace.andy-font{:href => "http://localhost:8080"} localhost:8080
-.pi
+.ice
   .ace{"ng-if": "$ctrl.screens.aigg"}
     %ace{"ng-click": "$ctrl.toggle_screen('aigg')"} AIGG -
     <screen-aigg></screen-aigg>
@@ -51,10 +51,10 @@
       <z-card card="$ctrl.cards[65]"></z-card>
     %ace{"ng-click": "$ctrl.toggle_screen('daegorysWorld')"} DW +
 
-.andy-font
+.ice.andy-font
   ggpa Andy's Field Guide to Lichenology
 
-.zoo
+.ice
   .ace
     .ace.wiz
       <z-card card="$ctrl.cards[78]"></z-card>

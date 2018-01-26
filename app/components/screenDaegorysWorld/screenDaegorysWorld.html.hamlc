@@ -1,9 +1,485 @@
 .pink.i-t
-  00 00 00
+  00 00 00 screenDaegorysWorld
 .grey.white-text
   00
 .grey.black-text
   00
+
+.ice
+  .row
+    .col.s3
+      %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
+        accessibility
+    .col.s9
+      .h1 I.AM Daegory Gene Ventur
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+.ice
+  .h1 primary
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[0]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[26]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[52]"></z-card>
+  .pi
+    .ace
+      .ace.aceboxed
+        BMI <z-card card="$ctrl.cards[0]"></z-card>
+      .ace.aceboxed
+        feelings <z-card card="$ctrl.cards[26]"></z-card>
+      .ace.aceboxed
+        minions <z-card card="$ctrl.cards[52]"></z-card>
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+.ice
+  .h2 secondary
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[0]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[13]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[26]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[39]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[52]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[65]"></z-card>
+  .ace
+    .ace
+      <z-card card="$ctrl.cards[0]"></z-card>
+    .ace
+      <z-card card="$ctrl.cards[13]"></z-card>
+    .ace
+      <z-card card="$ctrl.cards[26]"></z-card>
+    .ace
+      <z-card card="$ctrl.cards[39]"></z-card>
+    .ace
+      <z-card card="$ctrl.cards[52]"></z-card>
+    .ace
+      <z-card card="$ctrl.cards[65]"></z-card>
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+.ice
+  .h3 tertiary
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[78]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[91]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[104]"></z-card>
+
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+.ice
+  .h4 quad
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[117]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[130]"></z-card>
+
+
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+
+.ice
+  .h5 quint
+  .ace
+    .ace
+      <z-card card="$ctrl.cards[143]"></z-card>
+
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+
+
+.ice
+  .h6 sex
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[0]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[13]"></z-card>
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[26]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[39]"></z-card>
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[52]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[65]"></z-card>
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[78]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[91]"></z-card>
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[104]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[117]"></z-card>
+  .ace
+    .ace.wiz
+      <z-card card="$ctrl.cards[130]"></z-card>
+    .ace.wiz
+      <z-card card="$ctrl.cards[143]"></z-card>
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+.ice
+  %p genkiness
+  .ace.wiz
+    <z-card card="$ctrl.cards[0]" ng-click="$ctrl.add_resource('yellow')"></z-card>
+    = "{{ $ctrl.resources['yellow'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[13]" ng-click="$ctrl.add_resource('orange')"></z-card>
+    = "{{ $ctrl.resources['orange'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[26]" ng-click="$ctrl.add_resource('red')"></z-card>
+    = "{{ $ctrl.resources['red'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[39]" ng-click="$ctrl.add_resource('purple')"></z-card>
+    = "{{ $ctrl.resources['purple'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[52]" ng-click="$ctrl.add_resource('blue')"></z-card>
+    = "{{ $ctrl.resources['blue'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[65]" ng-click="$ctrl.add_resource('green')"></z-card>
+    = "{{ $ctrl.resources['green'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[78]" ng-click="$ctrl.add_resource('white')"></z-card>
+    = "{{ $ctrl.resources['white'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[91]" ng-click="$ctrl.add_resource('black')"></z-card>
+    = "{{ $ctrl.resources['black'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[104]" ng-click="$ctrl.add_resource('grey')"></z-card>
+    = "{{ $ctrl.resources['grey'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[117]" ng-click="$ctrl.add_resource('pink')"></z-card>
+    = "{{ $ctrl.resources['pink'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[130]" ng-click="$ctrl.add_resource('cyan')"></z-card>
+    = "{{ $ctrl.resources['cyan'] }}"
+  .ace.wiz
+    <z-card card="$ctrl.cards[143]" ng-click="$ctrl.add_resource('brown')"></z-card>
+    = "{{ $ctrl.resources['brown'] }}"
+
+
+
+
+
+
+
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+
+
+
+
+
+
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+
+
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+
+.ice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container
+  .div
+    .row
+      .col.s1
+      .col.s1.kami{"ng-click": "$ctrl.add_mass()"} {{$ctrl.mass | number}}
+        %i.material-icons.waves-effect.waves-accent.btn.yellow.black-text border_inner
+      .col.s1.kami
+        ="{{ $ctrl.daegory.mass }} BMI"
+      .col.s8
+        %h6 I.AM {{$ctrl.daegory.__machina__.Mass.state}}
+
+  .container{id: "daegorys_feeling"}
+    .row
+      .col.s2
+      .col.s1.center
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx6'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx6'}"}
+          %i.material-icons.prefix.black-text airline_seat_flat
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx5'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx5'}"}
+          %i.material-icons.prefix.grey-text error
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx4'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx4'}"}
+          %i.material-icons.prefix.white-text sentiment_very_dissatisfied
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx3'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx3'}"}
+          %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_dissatisfied
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx2'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx2'}"}
+          %i.material-icons.prefix.pink.lighten-3.grey-text blur_on
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negative'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negative'}"}
+          %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_neutral
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'positive'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'positive'}"}
+          %i.material-icons.prefix.pink.lighten-3.pink-text sentiment_neutral
+        .kami.pulse{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx2'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx2'}"}
+          %i.material-icons.prefix.pink.lighten-3.pink-text blur_on
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx3'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx3'}"}
+          %i.material-icons.prefix.pink.lighten-3.pink-text sentiment_satisfied
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx4'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx4'}"}
+          %i.material-icons.prefix.white-text sentiment_very_satisfied
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx5'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx5'}"}
+          %i.material-icons.prefix.grey-text error
+        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx6'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx6'}"}
+          %i.material-icons.prefix.black-text airline_seat_flat
+      .col.s1
+      .col.s8
+        %h6 I.AM feeling {{$ctrl.daegory.__machina__.feelings.state}}
+
+  .container{id: "daegorys_fellowshipping"}
+    .row
+      .col.s3
+      .col.s1.kami{"ng-click": "$ctrl.add_minion()"}
+        %i.material-icons.waves-effect.waves-dark.btn.blue.black-text share
+      .col.s1.kami
+        ="{{ $ctrl.minion | number:12 }} minions"
+      .col.s1
+      .col.s6
+        %h6 I have {{$ctrl.daegory.__machina__.minions.state}} minions
+
+  .container{id: "daegorys_treatment"}
+    .row
+      .col.s4
+      .col.s1
+      .col.s1
+      .col.s6
+        %h6 I.AM LUCKY.
+
+  .container{id: "daegorys_transition"}
+    .row
+      .col.s5
+      .col.s1
+      .col.s1
+      .col.s5
+        %h6 I.AM LEARNING.
+
+  .container{id: "genki_diabetic"}
+    .row
+      .col.s6
+      .col.s1
+      .col.s1
+      .col.s4
+        %h6 I.AM GENKI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .ice
   bliss
@@ -91,90 +567,8 @@
   <z-range></z-range>
 
 
-.monoboxed
-  .container{id: "daegorys_feeding"}
-    .row
-      .col.s1
-        %i.material-icons.prefix.pink.large.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
-          accessibility
-      .col.s11
-        %h1 I.AM Daegory Gene Ventur
+.ice.monoboxed
 
-    .row
-      .col.s1
-      .col.s1.kami{"ng-click": "$ctrl.add_mass()"} {{$ctrl.mass | number}}
-        %i.material-icons.waves-effect.waves-accent.btn.yellow.black-text border_inner
-      .col.s1.kami
-        ="{{ $ctrl.daegory.mass }} BMI"
-      .col.s8
-        %h6 I.AM {{$ctrl.daegory.__machina__.Mass.state}}
-
-  .container{id: "daegorys_feeling"}
-    .row
-      .col.s2
-      .col.s1.center
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx6'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx6'}"}
-          %i.material-icons.prefix.black-text airline_seat_flat
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx5'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx5'}"}
-          %i.material-icons.prefix.grey-text error
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx4'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx4'}"}
-          %i.material-icons.prefix.white-text sentiment_very_dissatisfied
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx3'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx3'}"}
-          %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_dissatisfied
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negx2'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negx2'}"}
-          %i.material-icons.prefix.pink.lighten-3.grey-text blur_on
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'negative'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'negative'}"}
-          %i.material-icons.prefix.pink.lighten-3.grey-text sentiment_neutral
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'positive'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'positive'}"}
-          %i.material-icons.prefix.pink.lighten-3.pink-text sentiment_neutral
-        .kami.pulse{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx2'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx2'}"}
-          %i.material-icons.prefix.pink.lighten-3.pink-text blur_on
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx3'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx3'}"}
-          %i.material-icons.prefix.pink.lighten-3.pink-text sentiment_satisfied
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx4'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx4'}"}
-          %i.material-icons.prefix.white-text sentiment_very_satisfied
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx5'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx5'}"}
-          %i.material-icons.prefix.grey-text error
-        .kami{"ng-if":" $ctrl.daegory.__machina__.feelings.state == 'posx6'", "ng-class": "{ace: $ctrl.daegory.__machina__.feelings.state == 'posx6'}"}
-          %i.material-icons.prefix.black-text airline_seat_flat
-      .col.s1
-      .col.s8
-        %h6 I.AM feeling {{$ctrl.daegory.__machina__.feelings.state}}
-
-  .container{id: "daegorys_fellowshipping"}
-    .row
-      .col.s3
-      .col.s1.kami{"ng-click": "$ctrl.add_minion()"}
-        %i.material-icons.waves-effect.waves-dark.btn.blue.black-text share
-      .col.s1.kami
-        ="{{ $ctrl.minion | number:12 }} minions"
-      .col.s1
-      .col.s6
-        %h6 I have {{$ctrl.daegory.__machina__.minions.state}} minions
-
-  .container{id: "daegorys_treatment"}
-    .row
-      .col.s4
-      .col.s1
-      .col.s1
-      .col.s6
-        %h6 I.AM LUCKY.
-
-  .container{id: "daegorys_transition"}
-    .row
-      .col.s5
-      .col.s1
-      .col.s1
-      .col.s5
-        %h6 I.AM LEARNING.
-
-  .container{id: "genki_diabetic"}
-    .row
-      .col.s6
-      .col.s1
-      .col.s1
-      .col.s4
-        %h6 I.AM GENKI
 
   .container.brown{id: "tsugu"}
     .row
