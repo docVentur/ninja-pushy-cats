@@ -17,16 +17,16 @@
     %a{:href => "https://commons.wikimedia.org/wiki/Lichen"} https://commons.wikimedia.org/wiki/Lichen
   %hr
   .white.lighten-4
-    m00
+    m00 http://materializecss.com/icons.html
   .grey.lighten-2
-    m00
+    m00 https://www.materialpalette.com/lime/teal
   .grey.lighten-4
-    m00
+    m00 http://www.colorzilla.com/
   %hr
   .pink.lighten-4
-    m00
+    m00 http://colorhunt.co/
   .cyan.lighten-4
-    m00
+    m00 http://flatuicolors.com/
   %hr
   .brown.lighten-4
     m00
