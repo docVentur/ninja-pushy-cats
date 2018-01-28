@@ -330,27 +330,27 @@ blockquote:before {
 
 .h1 {
   font-family: 'Trocchi';
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .h2 {
   font-family: 'Bitter';
-  font-size: 1em;
+  font-size: 1.4em;
 }
 
 .h3 {
-  font-family: 'Merriweather Sans';
-  font-size: 1em;
+  font-family: 'Nunito Sans';
+  font-size: 1.3em;
 }
 
 .h4 {
-  font-family: 'Nunito Sans';
-  font-size: 1em;
+  font-family: 'Quattrocento';
+  font-size: 1.2em;
 }
 
 .h5 {
-  font-family: 'Quattrocento';
-  font-size: 1em;
+  font-family: 'Merriweather Sans';
+  font-size: 1.1em;
 }
 
 .h6 {

@@ -3,8 +3,8 @@ _ = require 'lodash'
 
 app = angular.module 'GG'
 
-app.component 'aigg', {
-  template: require('./ai.html.hamlc'),
+app.component 'ai.playingcards', {
+  template: require('./ai.playingcards.html.hamlc'),
 
   controller: (DaegoryFSM, MassFSM, FeelingsFSM, $stateParams, moment, $interval, zDeckService) ->
     vm = @

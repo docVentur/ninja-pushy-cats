@@ -1,7 +1,7 @@
-.ice.zoo-font{style: "height: 40px"}
+.ice.zoo-font{style: "height: 50px"}
   .row
     .col.s1
-      %i.material-icons.tiny.pink.lighten-3.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
+      %i.material-icons.tiny.pink.lighten-3.center.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
         accessibility
         %h6.center I.AM
     .col.s2
@@ -14,6 +14,8 @@
       <z-card card="$ctrl.cards[0]"></z-card>
     .ace.wiz
       <z-card card="$ctrl.cards[13]"></z-card>
+      link ai.playingcards.html.hamlc
+      <ai.playingcards></ai.playingcards>
 
   .ace{"ng-if": "!$ctrl.screens.aigg"}
     .ace.wiz
