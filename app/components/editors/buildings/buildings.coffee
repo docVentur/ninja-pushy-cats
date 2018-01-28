@@ -15,11 +15,20 @@ app.component 'editorBuildings', {
   controller: ($http) ->
     vm = @
 
+    @materialUpdate = (building, material, type) =>
+      console.log "got update for "
+      console.log building
+      console.log material
+      console.log type
+
+    @materialRemove = () =>
+      false
+
     @new_resource_name = ''
-    @resources = []
+    @resources = [{"name":"Catnip"},{"name":"Wood"}]
 
     @new_building_name = ''
-    @buildings = []
+    @buildings = [{"name":"House","costs":[{"name":"Wood","amount":5}],"produces":[],"consumes":[]}]
 
     @new_building_cost = 0
     @new_building_produces = 0

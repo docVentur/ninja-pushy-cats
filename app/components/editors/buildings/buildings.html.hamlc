@@ -1,7 +1,7 @@
 .yamzoo
   %nav.lime.lighten-2{:role => "navigation"}
     .nav-wrapper.container
-      %a#logo-container.brand-logo.teal-text.andy-font{:href => "#"} G_G
+      %a#logo-container.brand-logo.teal-text.andy-font{:href => "#"} G_G + GG Gg gG gg
       %ul.right.hide-on-med-and-down
         %li{"ng-class": "{ active: $ctrl.mode == 'game' }"}
           %a.l-t.andy-font{"ng-click": "$ctrl.set_mode('game')"} game
@@ -21,7 +21,7 @@
         = "{{ resource.name }}"
 
 
-  .yamice.container{"ng-if": "$ctrl.mode =='buildings'"}
+  .yamice.container.andy-font{"ng-if": "$ctrl.mode =='buildings'"}
     .row
       .col.s12
         %input{"ng-model": "$ctrl.new_building_name"}
@@ -33,6 +33,7 @@
       %ul
         %li{"ng-repeat": "cost in building.costs"}
           = "{{ cost.name }} x{{ cost.amount }}"
+          <editor-materials material="cost" building="building" type="'cost'" resources="$ctrl.resources"></editor-materials>
 
     .row
       .col.s4
@@ -43,7 +44,7 @@
           %select.browser-default{"ng-model": "$ctrl.add_cost_resource"}
             %option{"ng-repeat": "resource in $ctrl.resources", "value": "{{resource.name}}"}= "{{resource.name}}"
       .col.s2
-        %btn.yamace.lime.l-t.andy-font{"ng-click": "$ctrl.add_building_cost(building)"} Add Cost
+        %btn.yamace.red.l-t.andy-font{"ng-click": "$ctrl.add_production_cost(building)"} Add production
     .row{"ng-repeat-end": ""}
       .col.s12
         .h2 produces
@@ -56,23 +57,10 @@
           %select.browser-default{"ng-model": "$ctrl.add_cost_resource"}
             %option{"ng-repeat": "resource in $ctrl.resources", "value": "{{resource.name}}"}= "{{resource.name}}"
       .col.s2
-        %btn.yamace.lime.l-t.andy-font{"ng-click": "$ctrl.add_production_cost(building)"} Add production
+        %btn.yamace.blue.l-t.andy-font{"ng-click": "$ctrl.add_building_cost(building)"} Add consume
     .row{"ng-repeat-end": ""}
       .col.s12
-        .h2 produces
-    .row
-      .col.s4
-        .input-field.lime.black-text.andy-font
-          %input{"ng-model": "$ctrl.add_cost_amount", "type": "number"}
-      .col.s6
-        .input-field.lime.black-text.andy-font
-          %select.browser-default{"ng-model": "$ctrl.add_cost_resource"}
-            %option{"ng-repeat": "resource in $ctrl.resources", "value": "{{resource.name}}"}= "{{resource.name}}"
-      .col.s2
-        %btn.yamace.lime.l-t.andy-font{"ng-click": "$ctrl.add_building_cost(building)"} Add consume
-    .row{"ng-repeat-end": ""}
-      .col.s12
-        .h2 consumes
+        .h2 casdfasdfasdfasdfsdonsumes
 
 
 
@@ -96,57 +84,37 @@
           %li{"ng-repeat": "building in $ctrl.buildings"}
             = "{{ $ctrl.game.buildings[building.name] }}"
             %btn.yamace.lime.lighten-4.black-text.andy-font{"ng-click": "$ctrl.game_buy_building(building.name)", "ng-if": "$ctrl.game_can_buy_building(building.name)"}= "{{ building.name }}"
-  %hr.lime
-  %hr.lime
-  %hr.lime
-  .yamace.aceboxed.wiz
-    .yamace
-      .yamace.yellow.accent-2
-  .yamace.aceboxed.wiz
-    .yamace
-      .yamace.pink.accent.2
-  .yamace.aceboxed.wiz
-    .yamace
-      .yamace.blue.accent-2
-  %hr.lime
-  %hr.lime
-  %hr.lime
-
 
   .yamice
-    .yamace.aceboxed.lime.l-t.andy-font
+    .yamace.aceboxed.lime.l-t.andy-font.wiz
       resources
-    .yamace.l-t.andy-font
+    .yamace.aceboxed.wiz
+      .yamace.teal
+        .yamace.white
+          .yamace.yellow.accent-2
+    .yamace.lime.darken-4.lime-text.andy-font
       %pre
         = "{{ $ctrl.resources }}"
   .yamice
-    .yamace.aceboxed.lime.l-t.andy-font
+    .yamace.aceboxed.lime.l-t.andy-font.wiz
       buildings
-    .yamace.l-t.andy-font
+    .yamace.aceboxed.wiz
+      .yamace.teal
+        .yamace.white
+          .yamace.red.accent-2
+
+    .yamace.lime.darken-4.lime-text.andy-font
       %pre
         = "{{ $ctrl.buildings }}"
 
   .yamice
-    .yamace.aceboxed.lime.l-t.andy-font
+    .yamace.aceboxed.lime.l-t.andy-font.wiz
       game
-    .yamace.lime.darken-4.lime-text.andy-font
+    .yamace.aceboxed.wiz
+      .yamace.teal
+        .yamace.white
+          .yamace.blue.accent-2
+
+    .yamace.lime.darken-4.black-text.andy-font
       %pre
         = "{{ $ctrl.game}}"
-
-
-
-  %hr
-  %hr
-  %hr
-  .yamace.aceboxed.wiz
-    .yamace
-      .yamace.yellow.lighten-4
-  .yamace.aceboxed.wiz
-    .yamace
-      .yamace.pink.lighten-4
-  .yamace.aceboxed.wiz
-    .yamace
-      .yamace.blue.lighten-4
-  %hr
-  %hr
-  %hr

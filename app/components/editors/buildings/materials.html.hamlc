@@ -1,0 +1,15 @@
+:: Heyo new component here for {{ $ctrl.type }}
+%br
+= "{{$ctrl.material}}"
+.row
+  .col.s4
+    .yamace.input-field.lime.black-text.andy-font
+      %input{"ng-model": "$ctrl.material.amount", "type": "number"}
+  .col.s6
+    .yamace.input-field.lime.black-text.andy-font
+      %select.browser-default{"ng-model": "$ctrl.material.name"}
+        %option{"ng-repeat": "resource in $ctrl.resources", "value": "{{resource.name}}"}= "{{resource.name}}"
+  .col.s2
+    %btn.yamace.lime.l-t.andy-font{"ng-click": "$ctrl.add_building_cost(building)"} Add Cost
+
+new component end
