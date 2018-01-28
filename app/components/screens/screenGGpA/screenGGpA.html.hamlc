@@ -1,0 +1,4 @@
+.h1 screenGGpA
+
+.h2 insert ggpa.html.hamlc
+  <ggpa></ggpa>

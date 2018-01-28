@@ -1,0 +1,41 @@
+
+.yamice.andy-font.lime-text{style: "height: 25px"}
+  ggpa Andy's Field Guide to Lichenology
+
+
+
+.yamice.zoo-font{style: "height: 75px"}
+  .row
+    .col.s1
+      %i.material-icons.small.lime.pulse{style: "color: black", "ng-class": "$ctrl.class_for_state()"}
+        arrow_drop_up
+        %h6.center FIN.
+    .col.s2
+      %a.yamace.andy-font{:href => "http://localhost:8080"} GG Gg gG gg
+
+
+.yamice.andy-font
+  .yamace
+    .yamace.wiz
+      <z-card card="$ctrl.cards[78]"></z-card>
+    .yamace.wiz
+      <z-card card="$ctrl.cards[91]"></z-card>
+  .yamace
+    .yamace.wiz
+      <z-card card="$ctrl.cards[104]"></z-card>
+    .yamace.wiz
+      <z-card card="$ctrl.cards[117]"></z-card>
+  .yamace{"ng-if": "$ctrl.screens['editorBuildings']"}
+    %yamace{"ng-click": "$ctrl.toggle_screen('editorBuildings')"} GgR -
+    <editor-buildings></editor-buildings>
+    .yamace.wiz
+      <z-card card="$ctrl.cards[130]"></z-card>
+    .yamace.wiz
+      <z-card card="$ctrl.cards[143]"></z-card>
+
+  .yamace{"ng-if": "!$ctrl.screens['editorBuildings']"}
+    .yamace.wiz
+      <z-card card="$ctrl.cards[130]"></z-card>
+    .yamace.wiz
+      <z-card card="$ctrl.cards[143]"></z-card>
+    %yamace{"ng-click": "$ctrl.toggle_screen('editorBuildings')"} GgR +

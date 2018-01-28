@@ -3,12 +3,12 @@ _ = require 'lodash'
 
 app = angular.module 'GG'
 
-app.component 'screenMain', {
-  template: require('./screenMain.html.hamlc'),
+app.component 'screenGGpA', {
+  template: require('./screenGGpA.html.hamlc'),
   controller: (DaegoryFSM, MassFSM, FeelingsFSM, $stateParams, moment, $interval, zDeckService) ->
     vm = @
 
-    @screens = {'aigg': false, 'zootopiaGenkified': false, 'daegorysWorld': false, 'editorBuildings': true}
+    @screens = {'editorBuildings': true}
 
     @toggle_screen = (screen) =>
       @screens[screen] = !@screens[screen]
