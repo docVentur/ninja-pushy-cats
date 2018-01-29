@@ -14,7 +14,7 @@
 
   .yamice.container{"ng-if": "$ctrl.mode == 'resources'"}
     %input{"ng-model": "$ctrl.new_resource_name"}
-    %btn.yamace.lime.l-t.andy-font{"ng-click": "$ctrl.add_resource()"} Add Resource
+    %button.btn{"ng-click": "$ctrl.add_resource()"} Add Resource
 
     %ul
       %li{"ng-repeat": "resource in $ctrl.resources"}
@@ -58,7 +58,7 @@
     .row
       .col.s12
         .h1 GAME
-        %btn.yamace.lime.lighten-4.black-text.andy-font{"ng-click": "$ctrl.reset_game()"} Reset Game
+        %button.btn{"ng-click": "$ctrl.reset_game()"} Reset Game
         %ul
           %li{"ng-repeat": "resource in $ctrl.resources"}
             = "{{ resource.name }} - {{ $ctrl.game.resources[resource.name]}}"
@@ -66,13 +66,13 @@
           resources
         %ul
           %li{"ng-repeat": "resource in $ctrl.resources"}
-            %btn.yamace.lime.lighten-4.black-text.andy-font{"ng-click": "$ctrl.game_add_resource(resource.name)"}= "{{ resource.name }}"
+            %button.btn{"ng-click": "$ctrl.game_add_resource(resource.name)"}= "{{ resource.name }}"
         .h3
           buildings
         %ul
           %li{"ng-repeat": "building in $ctrl.buildings"}
             = "{{ $ctrl.game.buildings[building.name] }}"
-            %btn.yamace.lime.lighten-4.black-text.andy-font{"ng-click": "$ctrl.game_buy_building(building.name)", "ng-if": "$ctrl.game_can_buy_building(building.name)"}= "{{ building.name }}"
+            %button.btn{"ng-click": "$ctrl.game_buy_building(building.name)", "ng-if": "$ctrl.game_can_buy_building(building.name)"}= "{{ building.name }}"
 
   .yamice
     .yamace.aceboxed.lime.l-t.andy-font.wiz
