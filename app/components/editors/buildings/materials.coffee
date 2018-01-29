@@ -17,15 +17,24 @@ app.component 'editorMaterials', {
     building: '<',
     resources: '<',
     type: '=',
-    materialUpdate: '&',
-    materialRemove: '&'
+    onUpdate: '&',
+    onDelete: '&'
   },
   controller: ($http) ->
     vm = @
 
+    @delete = () =>
+      @onDelete {building: @building, material_name: @material_name, type: @type}
+    
+    @update = () =>
+      @onUpdate {building: @building, material_name: @material_name, type: @type, amount: @amount}
+      if @material.name == ""
+        @material_name = @material.name
+        @amount = @material.amount
+
     @$onInit = ->
-      console.log @material
-      console.log @building
+      @material_name = @material.name
+      @amount = @material.amount
 
     @
 }

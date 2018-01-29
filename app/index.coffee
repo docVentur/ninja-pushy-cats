@@ -5,15 +5,8 @@ ngAnimate = require 'angular-animate'
 db = require 'angular-pouchdb'
 angularMaterialize = require 'angular-materialize'
 
-
 require 'angular-moment'
 require "angular-resource"
-
-
-
-require './DKD.css'
-
-
 
 require 'expose-loader?PouchDB!pouchdb'
 

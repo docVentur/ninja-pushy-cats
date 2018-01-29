@@ -27,37 +27,26 @@
         %input{"ng-model": "$ctrl.new_building_name"}
         %btn.yamace.lime.l-t.andy-font{"ng-click": "$ctrl.add_building()"} Add Building
     .row{"ng-repeat-start": "building in $ctrl.buildings"}
-      .col.s12
+      .col.s12.card
       = "{{ building.name }}"
-      .h2 costs
-      %ul
-        %li{"ng-repeat": "cost in building.costs"}
-          = "{{ cost.name }} x{{ cost.amount }}"
-          <editor-materials material="cost" building="building" type="'cost'" resources="$ctrl.resources"></editor-materials>
-
-    .row
       .col.s4
-        .input-field.lime.black-text.andy-font
-          %input{"ng-model": "$ctrl.add_cost_amount", "type": "number"}
-      .col.s6
-        .input-field.lime.black-text.andy-font
-          %select.browser-default{"ng-model": "$ctrl.add_cost_resource"}
-            %option{"ng-repeat": "resource in $ctrl.resources", "value": "{{resource.name}}"}= "{{resource.name}}"
-      .col.s2
-        %btn.yamace.red.l-t.andy-font{"ng-click": "$ctrl.add_production_cost(building)"} Add production
-    .row{"ng-repeat-end": ""}
-      .col.s12
+        .h2 costs
+        <editor-materials material="{name: '', amount: 0}" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+        %ul
+          %li{"ng-repeat": "cost in building.costs"}
+            <editor-materials material="cost" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+      .col.s4
         .h2 produces
-    .row
+        <editor-materials material="{name: '', amount: 0}" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+        %ul
+          %li{"ng-repeat": "cost in building.produces"}
+            <editor-materials material="cost" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
       .col.s4
-        .input-field.lime.black-text.andy-font
-          %input{"ng-model": "$ctrl.add_cost_amount", "type": "number"}
-      .col.s6
-        .input-field.lime.black-text.andy-font
-          %select.browser-default{"ng-model": "$ctrl.add_cost_resource"}
-            %option{"ng-repeat": "resource in $ctrl.resources", "value": "{{resource.name}}"}= "{{resource.name}}"
-      .col.s2
-        %btn.yamace.blue.l-t.andy-font{"ng-click": "$ctrl.add_building_cost(building)"} Add consume
+        .h2 consumes
+        <editor-materials material="{name: '', amount: 0}" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+        %ul
+          %li{"ng-repeat": "cost in building.consumes"}
+            <editor-materials material="cost" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
     .row{"ng-repeat-end": ""}
       .col.s12
         .h2 casdfasdfasdfasdfsdonsumes

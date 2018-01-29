@@ -15,48 +15,39 @@ app.component 'editorBuildings', {
   controller: ($http) ->
     vm = @
 
-    @materialUpdate = (building, material, type) =>
+    @updateMaterial = (building, material_name, type, amount) =>
       console.log "got update for "
+      console.log building
+      console.log material_name
+      console.log type
+      console.log amount
+      idx = _.findIndex building[type], (a) -> a.name == material_name
+      if idx >= 0
+        building[type][idx].amount = amount
+      else
+        building[type].push {name: material_name, amount: amount}
+
+    @deleteMaterial = (building, material_name, type) =>
+      console.log "got delete for "
       console.log building
       console.log material
       console.log type
+      idx = _.findIndex building[type] (a) -> a.name == material_name
+      if idx >= 0
+        building[type].splice idx, 1
 
-    @materialRemove = () =>
-      false
-
-    @new_resource_name = ''
     @resources = [{"name":"Catnip"},{"name":"Wood"}]
 
-    @new_building_name = ''
     @buildings = [{"name":"House","costs":[{"name":"Wood","amount":5}],"produces":[],"consumes":[]}]
-
-    @new_building_cost = 0
-    @new_building_produces = 0
-
-    @add_cost_resource = 0
-    @add_cost_amount = 0
 
     @mode = 'resources'
 
     @set_mode = (mode) ->
       @mode = mode
 
-    @add_resource = () =>
-      @resources.push {name: @new_resource_name}
-      @new_resource_name = ''
-
-    @add_building = () =>
-      @buildings.push {name: @new_building_name, costs: [], produces: [], consumes: []}
-
-    @add_building_cost = (building) =>
-      building.costs.push {name: @add_cost_resource, amount: @add_cost_amount}
-
     @reset_game = () =>
       console.log @
       @game = {resources: {}, buildings: {}}
-
-    @game_add_resource = (name) =>
-      @game.resources[name] = (@game.resources[name] or 0) + 1
 
     @game_can_buy_building = (name) =>
       for building in @buildings

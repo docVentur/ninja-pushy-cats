@@ -5,7 +5,6 @@ require './screens/screenGGpA/screenGGpA.coffee'
 require './ggpa/ggpa.coffee'
 require './editors/buildings/buildings.coffee'
 require './editors/buildings/materials.coffee'
-require './editors/buildings/products.coffee'
 
 require './screens/screenTsugu/screenTsugu.coffee'
 require './tsugu/tsugu.coffee'
