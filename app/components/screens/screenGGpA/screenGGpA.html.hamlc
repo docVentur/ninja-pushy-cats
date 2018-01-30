@@ -1,4 +1,14 @@
-.h1 screenGGpA
+today I want you to build out an elaborate set of resources + buildings
+I'd rather you do something unique, but if all you can do is copy kittens game that's fine too
+use the interface, then copy the data structure out into a email or wiki for 'this is what I did'
 
-.h2 insert ggpa.html.hamlc
-  <ggpa></ggpa>
+%h6 resources
+[{"name":"Catnip"},{"name":"Wood"}]
+%h6 buildings
+[{"name":"House","costs":[{"name":"Wood","amount":5}],"produces":[],"consumes":[]}]
+%h6 game
+{"resources":{},"buildings":{}}
+
+
+
+<ggpa></ggpa>

@@ -1,7 +1,7 @@
 .yamzoo
   %nav.lime.lighten-2{:role => "navigation"}
     .nav-wrapper.container
-      %a#logo-container.brand-logo.teal-text.andy-font{:href => "#"} G_G + GG Gg gG gg
+      %a#logo-container.brand-logo.teal-text.andy-font{:href => "#"} (G+G)(g+g)= Gg + Gg + Gg + Gg
       %ul.right.hide-on-med-and-down
         %li{"ng-class": "{ active: $ctrl.mode == 'game' }"}
           %a.l-t.andy-font{"ng-click": "$ctrl.set_mode('game')"} game
@@ -14,7 +14,7 @@
 
   .yamice.container{"ng-if": "$ctrl.mode == 'resources'"}
     %input{"ng-model": "$ctrl.new_resource_name"}
-    %button.btn{"ng-click": "$ctrl.add_resource()"} Add Resource
+      %button.btn{"ng-click": "$ctrl.add_resource()"} Add Resource
 
     %ul
       %li{"ng-repeat": "resource in $ctrl.resources"}
@@ -26,22 +26,25 @@
       .col.s12
         %input{"ng-model": "$ctrl.new_building_name"}
         %btn.yamace.lime.l-t.andy-font{"ng-click": "$ctrl.add_building()"} Add Building
+
+  .yamice.container.andy-font.card{"ng-if": "$ctrl.mode =='buildings'"}
     .row{"ng-repeat-start": "building in $ctrl.buildings"}
-      .col.s12.card
-      = "{{ building.name }}"
-      .col.s4
+      .col.s12
+        = "{{ building.name }}"
+    .row
+      .col.s4.card
         .h2 costs
         <editor-materials material="{name: '', amount: 0}" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul
           %li{"ng-repeat": "cost in building.costs"}
             <editor-materials material="cost" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-      .col.s4
+      .col.s4.card
         .h2 produces
         <editor-materials material="{name: '', amount: 0}" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul
           %li{"ng-repeat": "cost in building.produces"}
             <editor-materials material="cost" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-      .col.s4
+      .col.s4.card
         .h2 consumes
         <editor-materials material="{name: '', amount: 0}" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul

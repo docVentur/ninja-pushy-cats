@@ -1,8 +1,5 @@
-
 .yamice.andy-font.lime-text{style: "height: 25px"}
   ggpa Andy's Field Guide to Lichenology
-
-
 
 .yamice.zoo-font{style: "height: 75px"}
   .row
@@ -11,8 +8,7 @@
         arrow_drop_up
         %h6.center FIN.
     .col.s2
-      %a.yamace.andy-font{:href => "http://localhost:8080"} GG Gg gG gg
-
+      %a.yamace.andy-font{:href => "http://localhost:8080"} gg
 
 .yamice.andy-font
   .yamace

@@ -1,3 +1,31 @@
+.ice.wiz
+  screenAigg
+  %a{:href => "http://ailog.gdkp.org"} ai.log
+
+.yamice.wiz
+  screenAigg
+  %a{:href => "https://www.w3schools.com/html/default.asp"} make me screenGGpA/gg.html.hamlc
+
+
+
+.container
+  .row
+    .col.s2.yellow.lighten-4
+      .h1 1 :: GG :: Growing Genkiness
+    .col.s2.orange.lighten-4
+      .h2 2 :: gg :: great grand
+    .col.s2.red.lighten-4
+      .h3 3 :: (G+G)(g+g)=Gg Gg Gg Gg
+    .col.s2.purple.lighten-4
+      .h4 4 :: (G+g)(G+g)=GG Gg gG gg
+    .col.s2.blue.lighten-4
+      .h5 5 :: 成長の激しさ Seichō no hageshi-sa
+    .col.s2.green.lighten-4
+      .h6 6 :: 成長していく優雅さ Seichō shite iku yūga-sa
+  .row
+    %p tsugu :: elegance forming :: lichen: ascomycete-basidiomycete-algae trios
+
+
 .ice.zoo-font{style: "height: 50px"}
   .row
     .col.s1
