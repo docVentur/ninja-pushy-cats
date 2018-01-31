@@ -1,0 +1,16 @@
+.container
+  .row
+    .col.s3
+    .col.s6
+      .card{style: "height: 400px"}
+        .center{style: "font-size: 400px; line-height: 1.0"}
+          %a{"ui-sref": "screenAigg"}
+            GG
+      .card{style: "height: 400px"}
+        .center{style: "font-size: 400px; line-height: 1.0"}
+          %a{"ui-sref": "editorBuildings"}
+            gg
+      .card{style: "height: 400px"}
+        .center{style: "font-size: 400px; line-height: 1.0"}
+          Gg
+    .col.3

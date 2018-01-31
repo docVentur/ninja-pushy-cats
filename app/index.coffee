@@ -26,7 +26,7 @@ require './components/components.coffee'
 app.constant 'moment', require 'moment-timezone'
 
 app.run ($rootScope) ->
-  $rootScope.$on("$stateChangeError", console.log.bind(console))
+  $rootScope.$on "$stateChangeError", console.log.bind console
 
 app.config ($stateProvider, $urlRouterProvider) ->
   $stateProvider.state {name: 'aiTabY', url: '/aiTabY', component: 'aiTabY'}
@@ -42,4 +42,8 @@ app.config ($stateProvider, $urlRouterProvider) ->
   $stateProvider.state {name: 'aiTabC', url: '/aiTabC', component: 'aiTabC'}
   $stateProvider.state {name: 'aiTabN', url: '/aiTabN', component: 'aiTabN'}
 
-#  $urlRouterProvider.when('', '/aiTabY');
+  $stateProvider.state {name: 'screenAigg', url: '/aigg', component: 'screenAigg'}
+  $stateProvider.state {name: 'frontPage', url: '/index', component: 'frontPage'}
+  $stateProvider.state {name: 'editorBuildings', url: '/editorBuildings', component: 'editorBuildings'}
+
+  $urlRouterProvider.when '', '/index'
