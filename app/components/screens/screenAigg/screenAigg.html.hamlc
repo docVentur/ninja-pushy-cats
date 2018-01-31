@@ -28,29 +28,29 @@
       .row
         %ul.tabs.yellow.lighten-5
           %li.tab
-            %a.yellow.lighten-4.yellow-text.thin-text{"ui-sref": "aiTabY"} Y
+            %a.yellow.lighten-4.yellow-text.thin-text{"ui-sref": "screenAigg.aiTabY"} Y
           %li.tab
-            %a.orange.lighten-4.orange-text.thin-text{"ui-sref": "aiTabO"} O
+            %a.orange.lighten-4.orange-text.thin-text{"ui-sref": "screenAigg.aiTabO"} O
           %li.tab
-            %a.red.lighten-4.red.thin-text{"ui-sref": "aiTabR"} R
+            %a.red.lighten-4.red.thin-text{"ui-sref": "screenAigg.aiTabR"} R
           %li.tab
-            %a.purple.lighten-4.purple.thin-text{"ui-sref": "aiTabP"} P
+            %a.purple.lighten-4.purple.thin-text{"ui-sref": "screenAigg.aiTabP"} P
           %li.tab
-            %a.blue.lighten-4.blue-text.thin-text{"ui-sref": "aiTabB"} B
+            %a.blue.lighten-4.blue-text.thin-text{"ui-sref": "screenAigg.aiTabB"} B
           %li.tab
-            %a.green.lighten-4.green-text.thin-text{"ui-sref": "aiTabG"} G
+            %a.green.lighten-4.green-text.thin-text{"ui-sref": "screenAigg.aiTabG"} G
           %li.tab
-            %a.blue-grey.lighten-5.white-text.thin-text{"ui-sref": "aiTabW"} W
+            %a.blue-grey.lighten-5.white-text.thin-text{"ui-sref": "screenAigg.aiTabW"} W
           %li.tab
-            %a.grey.darken-2.black-text.thin-text{"ui-sref": "aiTabL"} L
+            %a.grey.darken-2.black-text.thin-text{"ui-sref": "screenAigg.aiTabL"} L
           %li.tab
-            %a.grey.lighten-1.grey-text.thin-text{"ui-sref": "aiTabE"} E
+            %a.grey.lighten-1.grey-text.thin-text{"ui-sref": "screenAigg.aiTabE"} E
           %li.tab
-            %a.pink.lighten-4.pink-text.thin-text{"ui-sref": "aiTabI"} I
+            %a.pink.lighten-4.pink-text.thin-text{"ui-sref": "screenAigg.aiTabI"} I
           %li.tab
-            %a.cyan.lighten-4.cyan-text.thin-text{"ui-sref": "aiTabC"} C
+            %a.cyan.lighten-4.cyan-text.thin-text{"ui-sref": "screenAigg.aiTabC"} C
           %li.tab
-            %a.brown.lighten-4.brown-text.thin-text{"ui-sref": "aiTabN"} N
+            %a.brown.lighten-4.brown-text.thin-text{"ui-sref": "screenAigg.aiTabN"} N
 
   .row.red.lighten-3.center{style: "margin-bottom: 0px; height: 650px;"}
     .col.s2.yellow.lighten-5

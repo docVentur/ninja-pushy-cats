@@ -20,6 +20,7 @@ app = angular.module 'GG', [
   angularMaterialize,
   'angularMoment'
 ]
+
 require './services/services.coffee'
 require './components/components.coffee'
 
@@ -29,21 +30,21 @@ app.run ($rootScope) ->
   $rootScope.$on "$stateChangeError", console.log.bind console
 
 app.config ($stateProvider, $urlRouterProvider) ->
-  $stateProvider.state {name: 'aiTabY', url: '/aiTabY', component: 'aiTabY'}
-  $stateProvider.state {name: 'aiTabO', url: '/aiTabO', component: 'aiTabO'}
-  $stateProvider.state {name: 'aiTabR', url: '/aiTabR', component: 'aiTabR'}
-  $stateProvider.state {name: 'aiTabP', url: '/aiTabP', component: 'aiTabP'}
-  $stateProvider.state {name: 'aiTabB', url: '/aiTabB', component: 'aiTabB'}
-  $stateProvider.state {name: 'aiTabG', url: '/aiTabG', component: 'aiTabG'}
-  $stateProvider.state {name: 'aiTabW', url: '/aiTabW', component: 'aiTabW'}
-  $stateProvider.state {name: 'aiTabL', url: '/aiTabL', component: 'aiTabL'}
-  $stateProvider.state {name: 'aiTabE', url: '/aiTabE', component: 'aiTabE'}
-  $stateProvider.state {name: 'aiTabI', url: '/aiTabI', component: 'aiTabI'}
-  $stateProvider.state {name: 'aiTabC', url: '/aiTabC', component: 'aiTabC'}
-  $stateProvider.state {name: 'aiTabN', url: '/aiTabN', component: 'aiTabN'}
+  $stateProvider.state {name: 'screenAigg.aiTabY', url: '/aiTabY', component: 'aiTabY'}
+  $stateProvider.state {name: 'screenAigg.aiTabO', url: '/aiTabO', component: 'aiTabO'}
+  $stateProvider.state {name: 'screenAigg.aiTabR', url: '/aiTabR', component: 'aiTabR'}
+  $stateProvider.state {name: 'screenAigg.aiTabP', url: '/aiTabP', component: 'aiTabP'}
+  $stateProvider.state {name: 'screenAigg.aiTabB', url: '/aiTabB', component: 'aiTabB'}
+  $stateProvider.state {name: 'screenAigg.aiTabG', url: '/aiTabG', component: 'aiTabG'}
+  $stateProvider.state {name: 'screenAigg.aiTabW', url: '/aiTabW', component: 'aiTabW'}
+  $stateProvider.state {name: 'screenAigg.aiTabL', url: '/aiTabL', component: 'aiTabL'}
+  $stateProvider.state {name: 'screenAigg.aiTabE', url: '/aiTabE', component: 'aiTabE'}
+  $stateProvider.state {name: 'screenAigg.aiTabI', url: '/aiTabI', component: 'aiTabI'}
+  $stateProvider.state {name: 'screenAigg.aiTabC', url: '/aiTabC', component: 'aiTabC'}
+  $stateProvider.state {name: 'screenAigg.aiTabN', url: '/aiTabN', component: 'aiTabN'}
 
-  $stateProvider.state {name: 'screenAigg', url: '/aigg', component: 'screenAigg'}
   $stateProvider.state {name: 'frontPage', url: '/index', component: 'frontPage'}
+  $stateProvider.state {name: 'screenAigg', url: '/aigg', component: 'screenAigg'}
   $stateProvider.state {name: 'editorBuildings', url: '/editorBuildings', component: 'editorBuildings'}
 
   $urlRouterProvider.when '', '/index'
