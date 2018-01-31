@@ -47,6 +47,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 
   $stateProvider.state {name: 'frontPage', url: '/index', component: 'frontPage'}
   $stateProvider.state {name: 'screenAigg', url: '/aigg', component: 'screenAigg'}
+  $stateProvider.state {name: 'screenTsugu', url: '/tsugu', component: 'screenTsugu'}  
   $stateProvider.state {name: 'editorBuildings', url: '/editorBuildings', component: 'editorBuildings'}
 
   $urlRouterProvider.when '', '/index'

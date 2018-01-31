@@ -1,16 +1,17 @@
-.container
+.container.grey
   .row
     .col.s3
     .col.s6
-      .card{style: "height: 400px"}
-        .center{style: "font-size: 400px; line-height: 1.0"}
-          %a{"ui-sref": "screenAigg"}
+      .card.yellow.lighten-3{style: "height: 400px"}
+        .center{style: "font-size: 333px; line-height: 1.0"}
+          %a.white-text{"ui-sref": "screenAigg"}
             GG
-      .card{style: "height: 400px"}
-        .center{style: "font-size: 400px; line-height: 1.0"}
-          %a{"ui-sref": "editorBuildings"}
+      .card.red.lighten-3{style: "height: 400px"}
+        .center{style: "font-size: 333px; line-height: 1.0"}
+          %a.black-text{"ui-sref": "editorBuildings"}
             gg
-      .card{style: "height: 400px"}
-        .center{style: "font-size: 400px; line-height: 1.0"}
-          Gg
-    .col.3
+      .card.blue.lighten-3{style: "height: 400px"}
+        .center{style: "font-size: 333px; line-height: 1.0"}
+          %a.grey-text{"ui-sref": "screenTsugu"}
+            Gg
+    .col.s3

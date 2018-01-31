@@ -1,24 +1,11 @@
 .ice
-  %a{"ui-sref": "localhost:8080"} 8080
-    %i.material-icons.medium.pink.lighten-3.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
-      accessibility
-
-%a.ace{:href => "http://localhost:8080"} localhost:8080
-%i.material-icons.medium.pink.lighten-3.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
-  accessibility
-%h6.center I.AM
-
-
+  %a.ace{:href => "http://localhost:8080"} localhost:8080
+  %i.material-icons.medium.pink.lighten-3.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
+    accessibility
+  %h6.center I.AM
 .dynamic-color.pink.i-t
   00 00 00
 .ice
-  %a{"ui-sref": "http://localhost:8080"} 8080
-    %a.ace{:href => "http://localhost:8080"} localhost:8080
-      %i.material-icons.medium.pink.lighten-3.pulse{style: "color: white", "ng-class": "$ctrl.class_for_state()"}
-        accessibility
-        %h6.center I.AM
-
-.container
   .row.yellow.lighten-4{style: "margin-bottom: 0px; height: 50px;"}
     .col.s2.yellow.lighten-5.center
       .ice.pink.lighten-2.white-text

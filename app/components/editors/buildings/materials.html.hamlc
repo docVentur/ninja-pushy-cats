@@ -1,8 +1,7 @@
-.input-field.lime.black-text.andy-font
+.input-field.lime.black-text
   %input{"ng-model": "$ctrl.amount", "type": "number"}
 %select.browser-default{"ng-model": "$ctrl.material_name"}
   %option{"ng-repeat": "resource in $ctrl.resources", "value": "{{resource.name}}"}= "{{resource.name}}"
 %button.btn{"ng-click": "$ctrl.update()", "ng-if": "$ctrl.material.name != ''"} Update
 %button.btn{"ng-click": "$ctrl.update()", "ng-if": "$ctrl.material.name == ''"} Add
 %button.btn{"ng-click": "$ctrl.delete()", "ng-if": "$ctrl.material.name != ''"} Delete
-
