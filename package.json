@@ -44,6 +44,7 @@
     "@uirouter/angularjs": "1.0.1",
     "angular": "^1.6.1",
     "angular-animate": "^1.6.1",
+    "angular-css": "^1.0.8",
     "angular-materialize": "^0.2.2",
     "angular-moment": "^1.0.1",
     "angular-pouchdb": "5.0.0",

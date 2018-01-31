@@ -5,6 +5,7 @@ app = angular.module 'GG'
 
 app.component 'screenAigg', {
   template: require('./screenAigg.html.hamlc'),
+  css: require('./DKD.css'),
   controller: (DaegoryFSM, MassFSM, FeelingsFSM, $stateParams, moment, $interval, zDeckService) ->
     vm = @
     @daegory = DaegoryFSM.init_daegory()

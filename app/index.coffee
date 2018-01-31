@@ -6,7 +6,8 @@ db = require 'angular-pouchdb'
 angularMaterialize = require 'angular-materialize'
 
 require 'angular-moment'
-require "angular-resource"
+require 'angular-resource'
+require 'angular-css'
 
 require 'expose-loader?PouchDB!pouchdb'
 
@@ -17,6 +18,7 @@ app = angular.module 'GG', [
   'ui.router',
   'ngResource',
   'ngAnimate',
+  'angularCSS',
   angularMaterialize,
   'angularMoment'
 ]
