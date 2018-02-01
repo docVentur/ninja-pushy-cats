@@ -1,4 +1,152 @@
 .div
+  %h6 Resources:
+  %i.material-icons.medium.yellow-text
+    attachment
+  %i.material-icons.medium.red-text
+    photo
+  %i.material-icons.medium.blue-text
+    map
+
+.div
+  .div
+    %h6 Buildings:
+  .div.grey.lighten-4
+    %i.material-icons.medium.orange-text
+      content_copy
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.yellow-text
+      attachment
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.red-text
+      photo
+  .div.grey.lighten-3
+    %i.material-icons.medium.purple-text
+      developer_board
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.red-text
+      photo
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.blue-text
+      map
+  .div.grey.lighten-2
+    %i.material-icons.medium.green-text
+      business
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.blue-text
+      map
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.yellow-text
+      attachment
+.div
+  .div
+    %h6 Buildings 2:
+  .div.grey.lighten-1
+    %i.material-icons.medium.white-text
+      more_vert
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.yellow-text
+      attachment
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.red-text
+      photo
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.blue-text
+      map
+  .div.grey
+    %i.material-icons.medium.black-text
+      games
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.orange-text
+      content_copy
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.purple-text
+      developer_board
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.green-text
+      business
+
+  .div.grey.darken-1
+    %i.material-icons.medium.grey-text
+      vibration
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.white-text
+      more_vert
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.black-text
+      games
+
+
+.div
+  .div
+    %h6 Buildings 3:
+  .div.grey.darken-2
+    %i.material-icons.medium.pink-text
+      bubble_chart
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.grey-text
+      vibration
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.yellow-text
+      attachment
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.red-text
+      photo
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.blue-text
+      map
+  .div.grey.darken-3
+    %i.material-icons.medium.teal-text
+      add_alert
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.grey-text
+      vibration
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.orange-text
+      content_copy
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.purple-text
+      developer_board
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.green-text
+      business
+
+  .div.grey.darken-4
+    %i.material-icons.medium.brown-text
+      accessibility
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.pink-text
+      bubble_chart
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.teal-text
+      add_alert
+
+
+
+.div
   %h6 div: only buildings
 .div.brown
   %h6 Gg
@@ -47,14 +195,23 @@
         %h6.brown-text produces
         <editor-materials material="{name: '', amount: 0}" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul
-          %li{"ng-repeat": "cost in building.produces"}
-            <editor-materials material="cost" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+          %li{"ng-repeat": "produce in building.produces"}
+            <editor-materials material="produce" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
       .col.s1.blue.lighten-3
         %h6.brown-text consumes
         <editor-materials material="{name: '', amount: 0}" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul
-          %li{"ng-repeat": "cost in building.consumes"}
-            <editor-materials material="cost" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+          %li{"ng-repeat": "consume in building.consumes"}
+            <editor-materials material="consume" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+      .col.s1.grey.lighten-3
+        %h6.brown-text unlocks
+        <editor-materials material="{name: '', amount: 0}" building="building" type="'unlocks'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+        %ul
+          %li{"ng-repeat": "unlock in building.unlocks"}
+            <editor-materials material="unlock" building="building" type="'unlocks'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+
+
+
     .row{"ng-repeat-end": ""}
       .col.s12
         %h6.pink.white-text ng-repeat-end:
@@ -67,6 +224,7 @@
     .row
       .col.s12
         %h1.teal.lime-text GgaMe
+        %h3.lime.teal-text goal: make all three resources auto-produce
         %button.btn.black.lime-text{"ng-click": "$ctrl.reset_game()"} Reset Game
         %ul
           %button.li.lime.teal-text{"ng-repeat": "resource in $ctrl.resources"}
@@ -78,7 +236,7 @@
             %button.btn.teal.lime-text{"ng-click": "$ctrl.game_add_resource(resource.name)"}= "{{ resource.name }}"
         %h6
           buildings
-        %ul
+        %ul.teal-text.lime
           %li{"ng-repeat": "building in $ctrl.buildings"}
             = "{{ $ctrl.game.buildings[building.name] }}"
             %button.btn.teal.black-text{"ng-click": "$ctrl.game_buy_building(building.name)", "ng-if": "$ctrl.game_can_buy_building(building.name)"}= "{{ building.name }}"

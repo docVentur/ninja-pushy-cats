@@ -29,7 +29,7 @@ app.component 'editorBuildings', {
 
     @resources = [{"name":"attachment"},{"name":"photo"},{"name":"map"}]
 
-    @buildings = [{"name":"content_copy","costs":[{"name":"attachment","amount":1};{"name":"photo","amount":1}],"produces":[{"name":"attachment","amount":33}],"consumes":[{"name":"attachment","amount":3}]};{"name":"developer_board","costs":[{"name":"photo","amount":1},{"name":"map","amount":1}],"produces":[{"name":"photo","amount":15}],"consumes":[{"name":"photo","amount":1}]};{"name":"business","costs":[{"name":"map","amount":1},{"name":"attachment","amount":1}],"produces":[{"name":"map","amount":12}],"consumes":[{"name":"attachment","amount":3}]}]
+    @buildings = [{"name":"content_copy","unlocks":[{"name": "more_vert"}]"costs":[{"name":"attachment","amount":1},{"name":"photo","amount":1}],"produces":[{"name":"attachment","amount":33}],"consumes":[{"name":"attachment","amount":3}]},{"name":"developer_board","costs":[{"name":"photo","amount":1},{"name":"map","amount":1}],"produces":[{"name":"photo","amount":15}],"consumes":[{"name":"photo","amount":1}]},{"name":"business","costs":[{"name":"map","amount":1},{"name":"attachment","amount":1}],"produces":[{"name":"map","amount":12}],"consumes":[{"name":"attachment","amount":3}]}]
 
     @mode = 'game'
 
@@ -41,7 +41,7 @@ app.component 'editorBuildings', {
       @new_resource_name = ''
 
     @add_building = () =>
-      @buildings.push {name: @new_building_name, costs: [], produces: [], consumes: []}
+      @buildings.push {name: @new_building_name, costs: [], produces: [], consumes: [], unlocks: []}
       @new_building_name = ''
 
 
