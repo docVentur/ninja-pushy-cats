@@ -1,8 +1,52 @@
-%h1 buildings.html.hamlc
 .div
-%h1 div: only buildings
+  %h6 Resources:
+  %i.material-icons.medium.yellow-text
+    attachment
+  %i.material-icons.medium.red-text
+    photo
+  %i.material-icons.medium.blue-text
+    map
+
+.div
+  .div
+    %h6 Buildings:
+  .div.grey.lighten-1
+    %i.material-icons.medium.orange-text
+      content_copy
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.yellow-text
+      attachment
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.red-text
+      photo
+  .div.grey
+    %i.material-icons.medium.purple-text
+      developer_board
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.red-text
+      photo
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.blue-text
+      map
+  .div.grey.darken-1
+    %i.material-icons.medium.green-text
+      business
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.blue-text
+      map
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.yellow-text
+      attachment
+.div
+  %h6 div: only buildings
 .div.brown
-  %h2 navigation
+  %h6 Gg
   %nav.lime.lighten-2{:role => "navigation"}
     .nav-wrapper.container
       %a#logo-container.brand-logo.lime.teal-text{:href => "#"} (G+G)(g+g)= Gg + Gg + Gg + Gg
@@ -16,75 +60,75 @@
       %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
         %i.material-icons menu
   .div
-    %h2 h2 div: add resource
+    %h6 h2 div: add resource
   .div{"ng-if": "$ctrl.mode == 'resources'"}
     %input{"ng-model": "$ctrl.new_resource_name"}
-      %button.btn.lime.teal-text{"ng-click": "$ctrl.add_resource()"} Add Resource
+      %btn.lime.teal-text{"ng-click": "$ctrl.add_resource()"} Add Resource
     %ul
       %li{"ng-repeat": "resource in $ctrl.resources"}
         = "{{ resource.name }}"
 
   .div
-    %h2 h2 div: add building
+    %h6 h2 div: add building
   .div{"ng-if": "$ctrl.mode =='buildings'"}
     .row
       .col.s12
         %input{"ng-model": "$ctrl.new_building_name"}
         %btn.lime.black-text{"ng-click": "$ctrl.add_building()"} Add Building
   .div
-    %h2 h2 div: building.name
+    %h6 h2 div: building.name
   .div{"ng-if": "$ctrl.mode =='buildings'"}
     .row{"ng-repeat-start": "building in $ctrl.buildings"}
       .col.s12
         = "{{ building.name }}"
     .row
-      .col.s4
-        %h2 costs
+      .col.s1.yellow.lighten-3
+        %h6 costs
         <editor-materials material="{name: '', amount: 0}" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul
           %li{"ng-repeat": "cost in building.costs"}
             <editor-materials material="cost" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-      .col.s4
-        %h2 produces
+      .col.s1.red.lighten-3
+        %h6 produces
         <editor-materials material="{name: '', amount: 0}" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul
           %li{"ng-repeat": "cost in building.produces"}
             <editor-materials material="cost" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-      .col.s4
-        %h2 consumes
+      .col.s1.blue.lighten-3
+        %h6 consumes
         <editor-materials material="{name: '', amount: 0}" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul
           %li{"ng-repeat": "cost in building.consumes"}
             <editor-materials material="cost" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
     .row{"ng-repeat-end": ""}
       .col.s12
-        %h2 casdfasdfasdfasdfsdonsumes  rowng-repeat-end:
+        %h6.pink.white-text ng-repeat-end:
 
 
 
   .div
-    %h2 h2 div: game
-  .div{"ng-if": "$ctrl.mode =='game'"}
+    %h3 h2 div: game
+  .div.grey{"ng-if": "$ctrl.mode =='game'"}
     .row
       .col.s12
-        %h1 GAME
-        %button.btn.lime.teal-text{"ng-click": "$ctrl.reset_game()"} Reset Game
+        %h6 GAME
+        %btn.black.lime-text{"ng-click": "$ctrl.reset_game()"} Reset Game
         %ul
           %li{"ng-repeat": "resource in $ctrl.resources"}
             = "{{ resource.name }} - {{ $ctrl.game.resources[resource.name]}}"
-        %h2
+        %h6
           resources
         %ul
           %li{"ng-repeat": "resource in $ctrl.resources"}
-            %button.btn.lime.teal-text{"ng-click": "$ctrl.game_add_resource(resource.name)"}= "{{ resource.name }}"
-        %h3
+            %button.btn.teal.lime-text{"ng-click": "$ctrl.game_add_resource(resource.name)"}= "{{ resource.name }}"
+        %h6
           buildings
         %ul
           %li{"ng-repeat": "building in $ctrl.buildings"}
             = "{{ $ctrl.game.buildings[building.name] }}"
-            %button.btn.lime.teal-text{"ng-click": "$ctrl.game_buy_building(building.name)", "ng-if": "$ctrl.game_can_buy_building(building.name)"}= "{{ building.name }}"
+            %button.btn.teal.black-text{"ng-click": "$ctrl.game_buy_building(building.name)", "ng-if": "$ctrl.game_can_buy_building(building.name)"}= "{{ building.name }}"
   .div
-    %h2 h2 div: resources
+    %h6 h2 div: resources
   .div
     .div.lime.black-text
       resources
@@ -96,7 +140,7 @@
       %pre
         = "{{ $ctrl.resources }}"
   .div
-    %h2 h2 div: buildings
+    %h6 h2 div: buildings
   .div
     .div.lime.black-text
       buildings
@@ -110,7 +154,7 @@
         = "{{ $ctrl.buildings }}"
 
   .div
-    %h2 h2 div: game
+    %h6 h2 div: game
   .div
     .div.lime.black-text
       game

@@ -27,9 +27,9 @@ app.component 'editorBuildings', {
       if idx >= 0
         building[type].splice idx, 1
 
-    @resources = [{"name":"Catnip"},{"name":"Wood"}]
+    @resources = [{"name":"attachment"},{"name":"photo"},{"name":"map"}]
 
-    @buildings = [{"name":"House","costs":[{"name":"Wood","amount":5}],"produces":[],"consumes":[]}]
+    @buildings = [{"name":"content_copy","costs":[{"name":"attachment","amount":1}],"produces":[{"name":"attachment","amount":3}],"consumes":[{"name":"attachment","amount":1}]};{"name":"developer_board","costs":[{"name":"photo","amount":1}],"produces":[{"name":"photo","amount":5}],"consumes":[{"name":"photo","amount":1}]};{"name":"business","costs":[{"name":"map","amount":1}],"produces":[{"name":"map","amount":5}],"consumes":[{"name":"map","amount":1}]}]
 
     @mode = 'resources'
 
@@ -70,7 +70,7 @@ app.component 'editorBuildings', {
     @building_definition_for_name = (building_name) =>
       for building in @buildings
         return building if building.name == building_name
-    
+
     @game_building_can_produce = (building_name, count) =>
       building = @building_definition_for_name building_name
       for cost in building.consumes

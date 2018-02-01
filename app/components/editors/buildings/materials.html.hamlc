@@ -2,6 +2,6 @@
   %input{"ng-model": "$ctrl.amount", "type": "number"}
 %select.browser-default{"ng-model": "$ctrl.material_name"}
   %option{"ng-repeat": "resource in $ctrl.resources", "value": "{{resource.name}}"}= "{{resource.name}}"
-%button.btn{"ng-click": "$ctrl.update()", "ng-if": "$ctrl.material.name != ''"} Update
-%button.btn{"ng-click": "$ctrl.update()", "ng-if": "$ctrl.material.name == ''"} Add
-%button.btn{"ng-click": "$ctrl.delete()", "ng-if": "$ctrl.material.name != ''"} Delete
+%button.btn.teal.yellow-text{"ng-click": "$ctrl.update()", "ng-if": "$ctrl.material.name != ''"} Update
+%button.btn.teal.red-text{"ng-click": "$ctrl.update()", "ng-if": "$ctrl.material.name == ''"} Add
+%button.btn.teal.black-text{"ng-click": "$ctrl.delete()", "ng-if": "$ctrl.material.name != ''"} Delete
