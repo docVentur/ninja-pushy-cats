@@ -10,8 +10,8 @@ app = angular.module 'GG'
 # game
 # {"resources":{"Catnip":10,"Wood":5},"buildings":{"Farm":1}}
 
-app.component 'editorBuildings', {
-  template: require('./buildings.html.hamlc'),
+app.component 'editorBusyness', {
+  template: require('./busyness.html.hamlc'),
   controller: ($http, $interval) ->
     vm = @
 
@@ -29,7 +29,7 @@ app.component 'editorBuildings', {
 
     @resources = [{"name":"attachment"},{"name":"photo"},{"name":"map"}]
 
-    @buildings = [{"name":"content_copy","costs":[{"name":"attachment","amount":1};{"name":"photo","amount":1}],"produces":[{"name":"attachment","amount":33}],"consumes":[{"name":"attachment","amount":3}]};{"name":"developer_board","costs":[{"name":"photo","amount":1},{"name":"map","amount":1}],"produces":[{"name":"photo","amount":15}],"consumes":[{"name":"photo","amount":1}]};{"name":"business","costs":[{"name":"map","amount":1},{"name":"attachment","amount":1}],"produces":[{"name":"map","amount":12}],"consumes":[{"name":"attachment","amount":3}]}]
+    @buildings = [{"name":"content_copy","costs":[{"name":"attachment","amount":1}],"produces":[{"name":"attachment","amount":30}],"consumes":[{"name":"attachment","amount":1}]};{"name":"developer_board","costs":[{"name":"photo","amount":1}],"produces":[{"name":"photo","amount":5}],"consumes":[{"name":"photo","amount":1}]};{"name":"business","costs":[{"name":"map","amount":1}],"produces":[{"name":"map","amount":5}],"consumes":[{"name":"attachment","amount":10}]}]
 
     @mode = 'game'
 

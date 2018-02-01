@@ -1,4 +1,154 @@
 .div
+  %h6 Resources:
+  %i.material-icons.medium.yellow-text
+    attachment
+  %i.material-icons.medium.red-text
+    photo
+  %i.material-icons.medium.blue-text
+    map
+
+.div
+  .div
+    %h6 Buildings:
+  .div.grey.lighten-4
+    %i.material-icons.medium.orange-text
+      content_copy
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.yellow-text
+      attachment
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.red-text
+      photo
+  .div.grey.lighten-3
+    %i.material-icons.medium.purple-text
+      developer_board
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.red-text
+      photo
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.blue-text
+      map
+  .div.grey.lighten-2
+    %i.material-icons.medium.green-text
+      business
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.blue-text
+      map
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.yellow-text
+      attachment
+.div
+  .div
+    %h6 Buildings 2:
+  .div.grey.lighten-1
+    %i.material-icons.medium.white-text
+      more_vert
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.yellow-text
+      attachment
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.red-text
+      photo
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.blue-text
+      map
+  .div.grey
+    %i.material-icons.medium.black-text
+      games
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.orange-text
+      content_copy
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.purple-text
+      developer_board
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.green-text
+      business
+
+  .div.grey.darken-1
+    %i.material-icons.medium.grey-text
+      vibration
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.white-text
+      more_vert
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.black-text
+      games
+
+
+.div
+  .div
+    %h6 Buildings 3:
+  .div.grey.darken-2
+    %i.material-icons.medium.pink-text
+      bubble_chart
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.grey-text
+      vibration
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.yellow-text
+      attachment
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.red-text
+      photo
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.blue-text
+      map
+  .div.grey.darken-3
+    %i.material-icons.medium.teal-text
+      add_alert
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.grey-text
+      vibration
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.orange-text
+      content_copy
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.purple-text
+      developer_board
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.green-text
+      business
+
+  .div.grey.darken-4
+    %i.material-icons.medium.brown-text
+      accessibility
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.pink-text
+      bubble_chart
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.teal-text
+      add_alert
+
+
+
+
+
+.div
   %h6 div: only buildings
 .div.brown
   %h6 Gg
@@ -70,7 +220,7 @@
         %button.btn.black.lime-text{"ng-click": "$ctrl.reset_game()"} Reset Game
         %ul
           %button.li.lime.teal-text{"ng-repeat": "resource in $ctrl.resources"}
-            = "{{ resource.name }} :: {{ $ctrl.game.resources[resource.name]}}"
+            = "{{ resource.name }} - {{ $ctrl.game.resources[resource.name]}}"
         %h6
           resources
         %ul
