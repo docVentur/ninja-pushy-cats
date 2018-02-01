@@ -10,7 +10,7 @@
 .div
   .div
     %h6 Buildings:
-  .div.grey.lighten-1
+  .div.grey.lighten-4
     %i.material-icons.medium.orange-text
       content_copy
     %i.material-icons.medium.black.white-text
@@ -21,7 +21,7 @@
       border_inner
     %i.material-icons.medium.red-text
       photo
-  .div.grey
+  .div.grey.lighten-3
     %i.material-icons.medium.purple-text
       developer_board
     %i.material-icons.medium.black.white-text
@@ -32,7 +32,7 @@
       border_inner
     %i.material-icons.medium.blue-text
       map
-  .div.grey.darken-1
+  .div.grey.lighten-2
     %i.material-icons.medium.green-text
       business
     %i.material-icons.medium.black.white-text
@@ -43,6 +43,111 @@
       border_inner
     %i.material-icons.medium.yellow-text
       attachment
+.div
+  .div
+    %h6 Buildings 2:
+  .div.grey.lighten-1
+    %i.material-icons.medium.white-text
+      more_vert
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.yellow-text
+      attachment
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.red-text
+      photo
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.blue-text
+      map
+  .div.grey
+    %i.material-icons.medium.black-text
+      games
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.orange-text
+      content_copy
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.purple-text
+      developer_board
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.green-text
+      business
+
+  .div.grey.darken-1
+    %i.material-icons.medium.grey-text
+      vibration
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.white-text
+      more_vert
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.black-text
+      games
+
+
+.div
+  .div
+    %h6 Buildings 3:
+  .div.grey.darken-2
+    %i.material-icons.medium.pink-text
+      bubble_chart
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.grey-text
+      vibration
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.yellow-text
+      attachment
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.red-text
+      photo
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.blue-text
+      map
+  .div.grey.darken-3
+    %i.material-icons.medium.teal-text
+      add_alert
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.grey-text
+      vibration
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.orange-text
+      content_copy
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.purple-text
+      developer_board
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.green-text
+      business
+
+  .div.grey.darken-4
+    %i.material-icons.medium.brown-text
+      accessibility
+    %i.material-icons.medium.black.white-text
+      drag_handle
+    %i.material-icons.medium.pink-text
+      bubble_chart
+    %i.material-icons.medium.yellow.red-text
+      border_inner
+    %i.material-icons.medium.teal-text
+      add_alert
+
+
+
+
+
 .div
   %h6 div: only buildings
 .div.brown
@@ -72,30 +177,30 @@
     %h6 h2 div: add building
   .div{"ng-if": "$ctrl.mode =='buildings'"}
     .row
-      .col.s12
+      .col.s1
         %input{"ng-model": "$ctrl.new_building_name"}
         %btn.lime.black-text{"ng-click": "$ctrl.add_building()"} Add Building
   .div
     %h6 h2 div: building.name
   .div{"ng-if": "$ctrl.mode =='buildings'"}
-    .row{"ng-repeat-start": "building in $ctrl.buildings"}
-      .col.s12
+    .row.card.grey{"ng-repeat-start": "building in $ctrl.buildings"}
+      .col.s4
         = "{{ building.name }}"
     .row
       .col.s1.yellow.lighten-3
-        %h6 costs
+        %h6.brown-text costs
         <editor-materials material="{name: '', amount: 0}" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul
           %li{"ng-repeat": "cost in building.costs"}
             <editor-materials material="cost" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
       .col.s1.red.lighten-3
-        %h6 produces
+        %h6.brown-text produces
         <editor-materials material="{name: '', amount: 0}" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul
           %li{"ng-repeat": "cost in building.produces"}
             <editor-materials material="cost" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
       .col.s1.blue.lighten-3
-        %h6 consumes
+        %h6.brown-text consumes
         <editor-materials material="{name: '', amount: 0}" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
         %ul
           %li{"ng-repeat": "cost in building.consumes"}
@@ -111,10 +216,10 @@
   .div.grey{"ng-if": "$ctrl.mode =='game'"}
     .row
       .col.s12
-        %h6 GAME
-        %btn.black.lime-text{"ng-click": "$ctrl.reset_game()"} Reset Game
+        %h1.teal.lime-text GgaMe
+        %button.btn.black.lime-text{"ng-click": "$ctrl.reset_game()"} Reset Game
         %ul
-          %li{"ng-repeat": "resource in $ctrl.resources"}
+          %button.li.lime.teal-text{"ng-repeat": "resource in $ctrl.resources"}
             = "{{ resource.name }} - {{ $ctrl.game.resources[resource.name]}}"
         %h6
           resources

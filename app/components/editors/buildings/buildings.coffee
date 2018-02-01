@@ -29,9 +29,9 @@ app.component 'editorBuildings', {
 
     @resources = [{"name":"attachment"},{"name":"photo"},{"name":"map"}]
 
-    @buildings = [{"name":"content_copy","costs":[{"name":"attachment","amount":1}],"produces":[{"name":"attachment","amount":3}],"consumes":[{"name":"attachment","amount":1}]};{"name":"developer_board","costs":[{"name":"photo","amount":1}],"produces":[{"name":"photo","amount":5}],"consumes":[{"name":"photo","amount":1}]};{"name":"business","costs":[{"name":"map","amount":1}],"produces":[{"name":"map","amount":5}],"consumes":[{"name":"map","amount":1}]}]
+    @buildings = [{"name":"content_copy","costs":[{"name":"attachment","amount":1}],"produces":[{"name":"attachment","amount":30}],"consumes":[{"name":"attachment","amount":1}]};{"name":"developer_board","costs":[{"name":"photo","amount":1}],"produces":[{"name":"photo","amount":5}],"consumes":[{"name":"photo","amount":1}]};{"name":"business","costs":[{"name":"map","amount":1}],"produces":[{"name":"map","amount":5}],"consumes":[{"name":"attachment","amount":10}]}]
 
-    @mode = 'resources'
+    @mode = 'game'
 
     @new_resource_name = ''
     @new_building_name = ''
