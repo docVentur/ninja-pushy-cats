@@ -10,6 +10,9 @@
       %input{type:"text","ng-model":"$ctrl.new_memory.name"}
       %input{type:"text","ng-model":"$ctrl.new_memory.value"}
       %button.btn{"ng-click":"$ctrl.add_memory()"}
+  .row
+    .col.s12
+      <ui-view></ui-view>
   .row{"ng-repeat":"memory in $ctrl.memories"}
     .col.s6
       ="{{memory.name}}"

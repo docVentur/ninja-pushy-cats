@@ -1,4 +1,5 @@
 require './screens/screenRememory/screenRememory.coffee'
+require './rememory/rememory.coffee'
 
 require './screens/screenAigg/screenAigg.coffee'
 require './ai/ai.coffee'
