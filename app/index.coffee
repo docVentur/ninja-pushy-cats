@@ -17,6 +17,7 @@ require('materialize-css/bin/materialize.js')
 app = angular.module 'GG', [
   'ui.router',
   'ngResource',
+  'pouchdb',
   'ngAnimate',
   'angularCSS',
   angularMaterialize,

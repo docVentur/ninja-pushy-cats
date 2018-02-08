@@ -2,3 +2,16 @@
 %hr
 %hr
 %hr
+.container.teal.lime-text
+  ="{{$ctrl.memories}}"
+.container.lime
+  .row
+    .col.s12
+      %input{type:"text","ng-model":"$ctrl.new_memory.name"}
+      %input{type:"text","ng-model":"$ctrl.new_memory.value"}
+      %button.btn{"ng-click":"$ctrl.add_memory()"}
+  .row{"ng-repeat":"memory in $ctrl.memories"}
+    .col.s6
+      ="{{memory.name}}"
+    .col.s6
+      ="{{memory.value}}"
