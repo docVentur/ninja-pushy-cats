@@ -1,3 +1,139 @@
+
+.div
+  %h6 div: only buildings
+.div.brown
+  %h6 Gg
+  %nav.lime.lighten-2{:role => "navigation"}
+    .nav-wrapper.container
+      %a#logo-container.brand-logo.lime.teal-text{:href => "#"} (G+G)(g+g)= Gg + Gg + Gg + Gg
+      %ul.right.hide-on-med-and-down
+        %li{"ng-class": "{ active: $ctrl.mode == 'game' }"}
+          %a.teal-text{"ng-click": "$ctrl.set_mode('game')"} game
+        %li{"ng-class": "{ active: $ctrl.mode == 'buildings' }"}
+          %a.teal-text{"ng-click": "$ctrl.set_mode('buildings')"} buildings
+        %li{"ng-class": "{ active: $ctrl.mode == 'resources' }"}
+          %a.teal-text{"ng-click": "$ctrl.set_mode('resources')"} resources
+      %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
+        %i.material-icons menu
+  .div
+    %h6 h2 div: add resource
+  .div{"ng-if": "$ctrl.mode == 'resources'"}
+    %input{"ng-model": "$ctrl.new_resource_name"}
+      %btn.lime.teal-text{"ng-click": "$ctrl.add_resource()"} Add Resource
+    %ul
+      %li{"ng-repeat": "resource in $ctrl.resources"}
+        = "{{ resource.name }}"
+
+  .div
+    %h6 h2 div: add building
+  .div{"ng-if": "$ctrl.mode =='buildings'"}
+    .row
+      .col.s1
+        %input{"ng-model": "$ctrl.new_building_name"}
+        %btn.lime.black-text{"ng-click": "$ctrl.add_building()"} Add Building
+  .div
+    %h6 h2 div: building.name
+  .div{"ng-if": "$ctrl.mode =='buildings'"}
+    .row.card.grey{"ng-repeat-start": "building in $ctrl.buildings"}
+      .col.s4
+        = "{{ building.name }}"
+    .row
+      .col.s1.yellow.lighten-3
+        %h6.brown-text costs
+        <editor-materials material="{name: '', amount: 0}" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+        %ul
+          %li{"ng-repeat": "cost in building.costs"}
+            <editor-materials material="cost" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+      .col.s1.red.lighten-3
+        %h6.brown-text produces
+        <editor-materials material="{name: '', amount: 0}" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+        %ul
+          %li{"ng-repeat": "produce in building.produces"}
+            <editor-materials material="produce" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+      .col.s1.blue.lighten-3
+        %h6.brown-text consumes
+        <editor-materials material="{name: '', amount: 0}" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+        %ul
+          %li{"ng-repeat": "consume in building.consumes"}
+            <editor-materials material="consume" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+      .col.s1.grey.lighten-3
+        %h6.brown-text unlocks
+        <editor-materials material="{name: '', amount: 0}" building="building" type="'unlocks'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+        %ul
+          %li{"ng-repeat": "unlock in building.unlocks"}
+            <editor-materials material="unlock" building="building" type="'unlocks'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+
+
+
+    .row{"ng-repeat-end": ""}
+      .col.s12
+        %h6.pink.white-text ng-repeat-end:
+
+
+
+  .div
+    %h3 h2 div: game
+  .div.grey{"ng-if": "$ctrl.mode =='game'"}
+    .row
+      .col.s12
+        %h1.teal.lime-text GgaMe
+        %h3.lime.teal-text goal: make all three resources auto-produce
+        %button.btn.black.lime-text{"ng-click": "$ctrl.reset_game()"} Reset Game
+        %ul
+          %button.li.lime.teal-text{"ng-repeat": "resource in $ctrl.resources"}
+            = "{{ resource.name }} :: {{ $ctrl.game.resources[resource.name]}}"
+        %h6
+          resources
+        %ul
+          %li{"ng-repeat": "resource in $ctrl.resources"}
+            %button.btn.teal.lime-text{"ng-click": "$ctrl.game_add_resource(resource.name)"}= "{{ resource.name }}"
+        %h6
+          buildings
+        %ul.teal-text.lime
+          %li{"ng-repeat": "building in $ctrl.buildings"}
+            = "{{ $ctrl.game.buildings[building.name] }}"
+            %button.btn.teal.black-text{"ng-click": "$ctrl.game_buy_building(building.name)", "ng-if": "$ctrl.game_can_buy_building(building.name)"}= "{{ building.name }}"
+  .div
+    %h6 h2 div: resources
+  .div
+    .div.lime.black-text
+      resources
+    .div
+      .div.teal
+        .div.white
+          .div.yellow.accent-2
+    .div.lime.darken-4.lime-text
+      %pre
+        = "{{ $ctrl.resources }}"
+  .div
+    %h6 h2 div: buildings
+  .div
+    .div.lime.black-text
+      buildings
+    .div
+      .div.teal
+        .div.white
+          .div.red.accent-2
+
+    .div.lime.darken-4.lime-text
+      %pre
+        = "{{ $ctrl.buildings }}"
+
+  .div
+    %h6 h2 div: game
+  .div
+    .div.lime.black-text
+      game
+    .div
+      .div.teal
+        .div.white
+          .div.blue.accent-2
+
+    .div.lime.darken-4.black-text
+      %pre
+        = "{{ $ctrl.game}}"
+
+
 .div
   %h6 Resources:
   %i.material-icons.medium.yellow-text
@@ -143,139 +279,3 @@
       border_inner
     %i.material-icons.medium.teal-text
       add_alert
-
-
-
-.div
-  %h6 div: only buildings
-.div.brown
-  %h6 Gg
-  %nav.lime.lighten-2{:role => "navigation"}
-    .nav-wrapper.container
-      %a#logo-container.brand-logo.lime.teal-text{:href => "#"} (G+G)(g+g)= Gg + Gg + Gg + Gg
-      %ul.right.hide-on-med-and-down
-        %li{"ng-class": "{ active: $ctrl.mode == 'game' }"}
-          %a.teal-text{"ng-click": "$ctrl.set_mode('game')"} game
-        %li{"ng-class": "{ active: $ctrl.mode == 'buildings' }"}
-          %a.teal-text{"ng-click": "$ctrl.set_mode('buildings')"} buildings
-        %li{"ng-class": "{ active: $ctrl.mode == 'resources' }"}
-          %a.teal-text{"ng-click": "$ctrl.set_mode('resources')"} resources
-      %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
-        %i.material-icons menu
-  .div
-    %h6 h2 div: add resource
-  .div{"ng-if": "$ctrl.mode == 'resources'"}
-    %input{"ng-model": "$ctrl.new_resource_name"}
-      %btn.lime.teal-text{"ng-click": "$ctrl.add_resource()"} Add Resource
-    %ul
-      %li{"ng-repeat": "resource in $ctrl.resources"}
-        = "{{ resource.name }}"
-
-  .div
-    %h6 h2 div: add building
-  .div{"ng-if": "$ctrl.mode =='buildings'"}
-    .row
-      .col.s1
-        %input{"ng-model": "$ctrl.new_building_name"}
-        %btn.lime.black-text{"ng-click": "$ctrl.add_building()"} Add Building
-  .div
-    %h6 h2 div: building.name
-  .div{"ng-if": "$ctrl.mode =='buildings'"}
-    .row.card.grey{"ng-repeat-start": "building in $ctrl.buildings"}
-      .col.s4
-        = "{{ building.name }}"
-    .row
-      .col.s1.yellow.lighten-3
-        %h6.brown-text costs
-        <editor-materials material="{name: '', amount: 0}" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-        %ul
-          %li{"ng-repeat": "cost in building.costs"}
-            <editor-materials material="cost" building="building" type="'costs'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-      .col.s1.red.lighten-3
-        %h6.brown-text produces
-        <editor-materials material="{name: '', amount: 0}" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-        %ul
-          %li{"ng-repeat": "produce in building.produces"}
-            <editor-materials material="produce" building="building" type="'produces'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-      .col.s1.blue.lighten-3
-        %h6.brown-text consumes
-        <editor-materials material="{name: '', amount: 0}" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-        %ul
-          %li{"ng-repeat": "consume in building.consumes"}
-            <editor-materials material="consume" building="building" type="'consumes'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-      .col.s1.grey.lighten-3
-        %h6.brown-text unlocks
-        <editor-materials material="{name: '', amount: 0}" building="building" type="'unlocks'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-        %ul
-          %li{"ng-repeat": "unlock in building.unlocks"}
-            <editor-materials material="unlock" building="building" type="'unlocks'" resources="$ctrl.resources" on-delete="$ctrl.deleteMaterial(building, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-
-
-
-    .row{"ng-repeat-end": ""}
-      .col.s12
-        %h6.pink.white-text ng-repeat-end:
-
-
-
-  .div
-    %h3 h2 div: game
-  .div.grey{"ng-if": "$ctrl.mode =='game'"}
-    .row
-      .col.s12
-        %h1.teal.lime-text GgaMe
-        %h3.lime.teal-text goal: make all three resources auto-produce
-        %button.btn.black.lime-text{"ng-click": "$ctrl.reset_game()"} Reset Game
-        %ul
-          %button.li.lime.teal-text{"ng-repeat": "resource in $ctrl.resources"}
-            = "{{ resource.name }} :: {{ $ctrl.game.resources[resource.name]}}"
-        %h6
-          resources
-        %ul
-          %li{"ng-repeat": "resource in $ctrl.resources"}
-            %button.btn.teal.lime-text{"ng-click": "$ctrl.game_add_resource(resource.name)"}= "{{ resource.name }}"
-        %h6
-          buildings
-        %ul.teal-text.lime
-          %li{"ng-repeat": "building in $ctrl.buildings"}
-            = "{{ $ctrl.game.buildings[building.name] }}"
-            %button.btn.teal.black-text{"ng-click": "$ctrl.game_buy_building(building.name)", "ng-if": "$ctrl.game_can_buy_building(building.name)"}= "{{ building.name }}"
-  .div
-    %h6 h2 div: resources
-  .div
-    .div.lime.black-text
-      resources
-    .div
-      .div.teal
-        .div.white
-          .div.yellow.accent-2
-    .div.lime.darken-4.lime-text
-      %pre
-        = "{{ $ctrl.resources }}"
-  .div
-    %h6 h2 div: buildings
-  .div
-    .div.lime.black-text
-      buildings
-    .div
-      .div.teal
-        .div.white
-          .div.red.accent-2
-
-    .div.lime.darken-4.lime-text
-      %pre
-        = "{{ $ctrl.buildings }}"
-
-  .div
-    %h6 h2 div: game
-  .div
-    .div.lime.black-text
-      game
-    .div
-      .div.teal
-        .div.white
-          .div.blue.accent-2
-
-    .div.lime.darken-4.black-text
-      %pre
-        = "{{ $ctrl.game}}"
