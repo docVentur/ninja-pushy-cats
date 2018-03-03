@@ -32,6 +32,12 @@ app.component 'editorggSudo', {
     @gg_sudo =
     [{"name":"o","costs":[{"name":"y","amount":1},{"name":"r","amount":1}],"produces":[{"name":"y","amount":33}],"consumes":[{"name":"y","amount":3}]},{"name":"p","costs":[{"name":"r","amount":1},{"name":"b","amount":1}],"produces":[{"name":"r","amount":15}],"consumes":[{"name":"b","amount":1}]},{"name":"g","costs":[{"name":"b","amount":1},{"name":"y","amount":1}],"produces":[{"name":"b","amount":12}],"consumes":[{"name":"y","amount":3}]}]
 
+    @gg_sudo2 =
+    [{"name":"w","costs":[{"name":"y","amount":1},{"name":"r","amount":1},{"name":"b","amount":1}],"produces":[{"name":"y","amount":33},{"name":"r","amount":33},{"name":"b","amount":33}],"consumes":[{"name":"g","amount":1}]},{"name":"p","costs":[{"name":"r","amount":1},{"name":"b","amount":1}],"produces":[{"name":"r","amount":15}],"consumes":[{"name":"b","amount":1}]},{"name":"g","costs":[{"name":"b","amount":1},{"name":"y","amount":1}],"produces":[{"name":"b","amount":12}],"consumes":[{"name":"y","amount":3}]}]
+
+    @gg_sudo3 =
+    [{"name":"i","costs":[{"name":"y","amount":1},{"name":"r","amount":1}],"produces":[{"name":"y","amount":33}],"consumes":[{"name":"y","amount":3}]},{"name":"p","costs":[{"name":"r","amount":1},{"name":"b","amount":1}],"produces":[{"name":"r","amount":15}],"consumes":[{"name":"b","amount":1}]},{"name":"g","costs":[{"name":"b","amount":1},{"name":"y","amount":1}],"produces":[{"name":"b","amount":12}],"consumes":[{"name":"y","amount":3}]}]
+
     @mode = 'gg_game'
 
     @new_gg_mono_name = ''
