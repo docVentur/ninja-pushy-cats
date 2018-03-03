@@ -10,12 +10,12 @@ app = angular.module 'GG'
 # game
 # {"resources":{"Catnip":10,"Wood":5},"buildings":{"Farm":1}}
 
-app.component 'editorMono', {
-  template: require('./product.html.hamlc'),
+app.component 'editorMaterials', {
+  template: require('./materials.html.hamlc'),
   bindings: {
     material: '<',
-    building: '<',
-    resources: '<',
+    gg_sudo: '<',
+    gg_mono: '<',
     type: '=',
     onUpdate: '&',
     onDelete: '&'
@@ -24,10 +24,10 @@ app.component 'editorMono', {
     vm = @
 
     @delete = () =>
-      @onDelete {building: @building, material_name: @material_name, type: @type}
+      @onDelete {gg_sudo: @gg_sudo, material_name: @material_name, type: @type}
 
     @update = () =>
-      @onUpdate {building: @building, material_name: @material_name, type: @type, amount: @amount}
+      @onUpdate {gg_sudo: @gg_sudo, material_name: @material_name, type: @type, amount: @amount}
       if @material.name == ""
         @material_name = @material.name
         @amount = @material.amount
