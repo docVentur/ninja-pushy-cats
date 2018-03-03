@@ -6,8 +6,8 @@
 
 #require './screens/screenGGpA/screenGGpA.coffee'
 #require './ggpa/ggpa.coffee'
-require './editors/buildings/buildings.coffee'
-require './editors/buildings/materials.coffee'
+#require './editors/buildings/buildings.coffee'
+#require './editors/buildings/materials.coffee'
 require './editors/busyness/gg_sudo.coffee'
 require './editors/busyness/materials.coffee'
 

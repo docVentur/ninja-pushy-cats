@@ -1,5 +1,18 @@
 .div.grey.z-depth-5
-  .div.ice.z-depth-5
+  %nav.grey.lighten-2{:role => "navigation"}
+    .nav-wrapper.container
+      %a#logo-container.brand-logo.grey.pink-text.text-lighten-4{:href => "#"} (G+G)(g+g)= Gg + Gg + Gg + Gg
+      %ul.right.hide-on-med-and-down
+        %li.grey{"ng-class": "{ active: $ctrl.gg_mode == 'gg_mono' }"}
+          %a.teal-text{"ng-click": "$ctrl.set_gg_mode('gg_mono')"} gg_mono
+        %li.grey{"ng-class": "{ active: $ctrl.gg_gg_mode == 'gg_sudo' }"}
+          %a.teal-text{"ng-click": "$ctrl.set_gg_mode('gg_sudo')"} gg_sudo
+        %li.grey{"ng-class": "{ active: $ctrl.gg_mode == 'gg_game' }"}
+          %a.pink-text.text-lighten-3{"ng-click": "$ctrl.set_gg_mode('gg_game')"} gg_game
+      %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
+        %i.material-icons menu
+
+  .div.ice
     .row.z-depth-5
       .col.s1.z-depth-5
         gg_mono
@@ -14,19 +27,19 @@
           map
       .col.s5.ice.pink-text.text-lighten-3.z-depth-5
         %h4 (g+g)(G+G)= gG + gG + gG + gG
-  .div.grey{"ng-if": "$ctrl.mode == 'gg_mono'"}
-    %input{"ng-model": "$ctrl.new_gg_mono_name"}
-      %btn.lime.teal-text{"ng-click": "$ctrl.add_gg_mono()"} Add gg_mono
+  .ice.div.grey{"ng-if": "$ctrl.gg_mode == 'gg_mono'"}
+    %input.white{"ng-model": "$ctrl.new_gg_mono_name"}
+      %button.btn.lime.teal-text{"ng-click": "$ctrl.add_gg_mono()"} Add gg_mono
     %ul
       %li{"ng-repeat": "gg_mono in $ctrl.gg_mono"}
         = "{{ gg_mono.name }}"
 
-  .div
-    .div.pi.z-depth-5
+  .div.pi.z-depth-5
+    .div.z-depth-5
       .row.z-depth-5
         .col.s1.z-depth-5
           gg_sudo
-        .col.s3.grey.lighten-4.pi.z-depth-5
+        .col.s3.z-depth-5
           %i.material-icons.small.orange-text
             content_copy
           %i.material-icons.small.black.white-text
@@ -37,7 +50,7 @@
             border_inner
           %i.material-icons.small.red-text
             photo
-        .col.s3.grey.lighten-3.pi.z-depth-5
+        .col.s3.z-depth-5
           %i.material-icons.small.purple-text
             developer_board
           %i.material-icons.small.black.white-text
@@ -48,7 +61,7 @@
             border_inner
           %i.material-icons.small.blue-text
             map
-        .col.s3.grey.lighten-2.pi.z-depth-5
+        .col.s3.z-depth-5
           %i.material-icons.small.green-text
             business
           %i.material-icons.small.black.white-text
@@ -60,21 +73,23 @@
           %i.material-icons.small.yellow-text
             attachment
 
-  .div{"ng-if": "$ctrl.mode =='gg_sudo'"}
-    .row
-      .col.s1
-        %input{"ng-model": "$ctrl.new_gg_sudo_name"}
-        %btn.lime.black-text{"ng-click": "$ctrl.add_gg_sudo()"} Add gg_sudo
+  .pi.div.z-depth-5{"ng-if": "$ctrl.gg_mode =='gg_sudo'"}
+    .row.z-depth-5
+      .col.s2.z-depth-5
+        %input.white{"ng-model": "$ctrl.new_gg_sudo_name"}
+      .col.s2.z-depth-5
+        %button.btn.lime.black-text{"ng-click": "$ctrl.add_gg_sudo()"}
+          add gg_sudo
 
-  .div{"ng-if": "$ctrl.mode =='gg_sudo'"}
-    .row.card.pink{"ng-repeat-start": "gg_sudo in $ctrl.gg_sudo"}
-      .col.s4
+  .div.z-depth-5{"ng-if": "$ctrl.gg_mode =='gg_sudo'"}
+    .row.card.pink.z-depth-5{"ng-repeat-start": "gg_sudo in $ctrl.gg_sudo"}
+      .col.s4.z-depth-5
         = "{{ gg_sudo.name }}"
-    .row
-      .col.s1.yellow.lighten-3
-        %h6.brown-text costs
+    .row.z-depth-5
+      .col.s1.yellow.lighten-3.z-depth-5
+        %h6.brown-text.z-depth-5 costs
         <editor-materials material="{name: '', amount: 0}" gg_sudo="gg_sudo" type="'costs'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
-        %ul
+        %ul.z-depth-5
           %li{"ng-repeat": "cost in gg_sudo.costs"}
             <editor-materials material="cost" gg_sudo="gg_sudo" type="'costs'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
       .col.s1.red.lighten-3
@@ -102,7 +117,7 @@
   .div.pink
     %h3 gg_game
 
-  .div{"ng-if": "$ctrl.mode =='gg_game'"}
+  .div{"ng-if": "$ctrl.gg_mode =='gg_game'"}
     .row
       .col.s12
         %h5.ice.grey.pink-text.text-lighten-2 goal: make colors auto-produce

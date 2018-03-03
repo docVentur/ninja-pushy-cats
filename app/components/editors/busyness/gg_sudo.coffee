@@ -47,12 +47,14 @@ app.component 'editorggSudo', {
     @add_gg_mono = () =>
       @gg_mono.push {name: @new_gg_mono_name}
       @new_gg_mono_name = ''
+      console.log "i did a gg_mono"
 
-    @add_sudo = () =>
-      @sudo.push {name: @new_sudo_name, cost: [], produces: [], consumes: [], unlocks: []}
-      @new_sudo_name = ''
+    @add_gg_sudo = () =>
+      @gg_sudo.push {name: @new_gg_sudo_name, cost: [], produces: [], consumes: [], unlocks: []}
+      @new_gg_sudo_name = ''
+      console.log "i did a gg_sudo"
 
-    @set_mode = (gg_mode) ->
+    @set_gg_mode = (gg_mode) ->
       @gg_mode = gg_mode
 
     @reset_gg_game = () =>
