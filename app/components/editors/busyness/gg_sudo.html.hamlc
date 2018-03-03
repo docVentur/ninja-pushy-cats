@@ -19,7 +19,7 @@
   .div.ice
     .row
       .col.s1
-        Resources:
+        gg_mono
       .col.s1
         %i.material-icons.medium.yellow-text
           attachment
@@ -29,7 +29,7 @@
       .col.s1
         %i.material-icons.medium.blue-text
           map
-  .div.pink{"ng-if": "$ctrl.mode == 'gg_mono'"}
+  .div.grey{"ng-if": "$ctrl.mode == 'gg_mono'"}
     %input{"ng-model": "$ctrl.new_gg_mono_name"}
       %btn.lime.teal-text{"ng-click": "$ctrl.add_gg_mono()"} Add gg_mono
     %ul
@@ -38,49 +38,48 @@
 
   .div
     .div.pi
-      Buildings:
+      gg_sudo
     .div.grey.lighten-4
-      %i.material-icons.medium.orange-text
+      %i.material-icons.small.orange-text
         content_copy
-      %i.material-icons.medium.black.white-text
+      %i.material-icons.small.black.white-text
         drag_handle
-      %i.material-icons.medium.yellow-text
+      %i.material-icons.small.yellow-text
         attachment
-      %i.material-icons.medium.yellow.red-text
+      %i.material-icons.small.yellow.red-text
         border_inner
-      %i.material-icons.medium.red-text
+      %i.material-icons.small.red-text
         photo
     .div.grey.lighten-3
-      %i.material-icons.medium.purple-text
+      %i.material-icons.small.purple-text
         developer_board
-      %i.material-icons.medium.black.white-text
+      %i.material-icons.small.black.white-text
         drag_handle
-      %i.material-icons.medium.red-text
+      %i.material-icons.small.red-text
         photo
-      %i.material-icons.medium.yellow.red-text
+      %i.material-icons.small.yellow.red-text
         border_inner
-      %i.material-icons.medium.blue-text
+      %i.material-icons.small.blue-text
         map
     .div.grey.lighten-2
-      %i.material-icons.medium.green-text
+      %i.material-icons.small.green-text
         business
-      %i.material-icons.medium.black.white-text
+      %i.material-icons.small.black.white-text
         drag_handle
-      %i.material-icons.medium.blue-text
+      %i.material-icons.small.blue-text
         map
-      %i.material-icons.medium.yellow.red-text
+      %i.material-icons.small.yellow.red-text
         border_inner
-      %i.material-icons.medium.yellow-text
+      %i.material-icons.small.yellow-text
         attachment
 
-  .div.pink{"ng-if": "$ctrl.mode =='gg_sudo'"}
+  .div{"ng-if": "$ctrl.mode =='gg_sudo'"}
     .row
       .col.s1
         %input{"ng-model": "$ctrl.new_gg_sudo_name"}
         %btn.lime.black-text{"ng-click": "$ctrl.add_gg_sudo()"} Add gg_sudo
 
-
-  .div.pink{"ng-if": "$ctrl.mode =='gg_sudo'"}
+  .div{"ng-if": "$ctrl.mode =='gg_sudo'"}
     .row.card.pink{"ng-repeat-start": "gg_sudo in $ctrl.gg_sudo"}
       .col.s4
         = "{{ gg_sudo.name }}"
@@ -118,7 +117,7 @@
   .div.pink
     %h3 gg_game
 
-  .div.pink{"ng-if": "$ctrl.mode =='gg_game'"}
+  .div{"ng-if": "$ctrl.mode =='gg_game'"}
     .row
       .col.s12
         %h1.ice.teal.lime-text GgaMe
@@ -127,198 +126,136 @@
         %ul
           %button.li.lime.teal-text{"ng-repeat": "gg_mono in $ctrl.gg_mono"}
             = "{{ gg_mono.name }} :: {{ $ctrl.gg_game.gg_mono[gg_mono.name]}}"
-        %h6
-          gg_mono
         .div
-          %h6 gg_mono:
-          %i.material-icons.medium.yellow-text
+          %i.material-icons.small.yellow-text
             attachment
-          %i.material-icons.medium.red-text
+          %i.material-icons.small.red-text
             photo
-          %i.material-icons.medium.blue-text
+          %i.material-icons.small.blue-text
             map
         %ul
           %li{"ng-repeat": "gg_mono in $ctrl.gg_mono"}
-            %button.btn.teal.lime-text{"ng-click": "$ctrl.gg_game_add_gg_mono(gg_mono.name)"}= "{{ gg_mono.name }}"
-
-        %h6
-          gg_sudo
+            %button.btn.pink.white-text{"ng-click": "$ctrl.gg_game_add_gg_mono(gg_mono.name)"}= "{{ gg_mono.name }}"
         %ul.teal-text.lime
           %li{"ng-repeat": "gg_sudo in $ctrl.gg_sudo"}
             = "{{ $ctrl.gg_game.gg_sudo[gg_sudo.name] }}"
             %button.btn.teal.black-text{"ng-click": "$ctrl.gg_game_buy_gg_sudo(gg_sudo.name)", "ng-if": "$ctrl.gg_game_can_buy_gg_sudo(gg_sudo.name)"}= "{{ gg_sudo.name }}"
 
 
+  .div
+    .row
+      .col.s1.lime.black-text
+        gg_mono
+      .col.s11.lime.darken-4.lime-text
+        %pre
+          = "{{ $ctrl.gg_mono }}"
 
-  .div.pink
-    %h6 gg_mono
+  .div
+    .row
+      .col.s1.lime.darken-1.black-text
+        gg_sudo
+      .col.s11.lime.darken-4.lime-text
+        %pre
+          = "{{ $ctrl.gg_sudo }}"
 
-  .div.pink
-    .div.lime.black-text
-      resources
-    .div
-      .div.teal
-        .div.white
-          .div.yellow.accent-2
-    .div.lime.darken-4.lime-text
-      %pre
-        = "{{ $ctrl.gg_mono }}"
-
-  .div.pink
-    %h6 gg_sudo
-
-  .div.pink
-    .div.lime.black-text
-      gg_sudo
-    .div
-      .div.teal
-        .div.white
-          .div.red.accent-2
-
-    .div.lime.darken-4.lime-text
-      %pre
-        = "{{ $ctrl.gg_sudo }}"
-
-  .div.pink
-    %h6 gg_game
-
-  .div.pink
-    .div.lime.black-text
-      game
-    .div
-      .div.teal
-        .div.white
-          .div.blue.accent-2
-    .div.lime.darken-4.black-text
-      %pre
-        = "{{ $ctrl.gg_game}}"
+  .div
+    .row
+      .col.s1.lime.darken-2.black-text
+        gg_game
+      .col.s11.lime.darken-4.lime-text
+        %pre
+          = "{{ $ctrl.gg_game}}"
 
 .div
   %h6 Resources:
-  %i.material-icons.medium.yellow-text
+  %i.material-icons.small.yellow-text
     attachment
-  %i.material-icons.medium.red-text
+  %i.material-icons.small.red-text
     photo
-  %i.material-icons.medium.blue-text
+  %i.material-icons.small.blue-text
     map
 
 .div
   .div
     %h6 Buildings:
   .div.grey.lighten-4
-    %i.material-icons.medium.orange-text
+    %i.material-icons.tiny.orange-text
       content_copy
-    %i.material-icons.medium.black.white-text
+    %i.material-icons.tiny.black.white-text
       drag_handle
-    %i.material-icons.medium.yellow-text
+    %i.material-icons.tiny.yellow-text
       attachment
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.red-text
+    %i.material-icons.tiny.red-text
       photo
   .div.grey.lighten-3
-    %i.material-icons.medium.purple-text
+    %i.material-icons.tiny.purple-text
       developer_board
-    %i.material-icons.medium.black.white-text
+    %i.material-icons.tiny.black.white-text
       drag_handle
-    %i.material-icons.medium.red-text
+    %i.material-icons.tiny.red-text
       photo
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.blue-text
+    %i.material-icons.tiny.blue-text
       map
   .div.grey.lighten-2
-    %i.material-icons.medium.green-text
+    %i.material-icons.tiny.green-text
       business
-    %i.material-icons.medium.black.white-text
+    %i.material-icons.tiny.black.white-text
       drag_handle
-    %i.material-icons.medium.blue-text
+    %i.material-icons.tiny.blue-text
       map
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.yellow-text
-      attachment
-.div.pink
-  .div
-    %h6 Buildings:
-  .div.grey.lighten-4
-    %i.material-icons.medium.orange-text
-      content_copy
-    %i.material-icons.medium.black.white-text
-      drag_handle
-    %i.material-icons.medium.yellow-text
-      attachment
-    %i.material-icons.medium.yellow.red-text
-      border_inner
-    %i.material-icons.medium.red-text
-      photo
-  .div.grey.lighten-3
-    %i.material-icons.medium.purple-text
-      developer_board
-    %i.material-icons.medium.black.white-text
-      drag_handle
-    %i.material-icons.medium.red-text
-      photo
-    %i.material-icons.medium.yellow.red-text
-      border_inner
-    %i.material-icons.medium.blue-text
-      map
-  .div.grey.lighten-2
-    %i.material-icons.medium.green-text
-      business
-    %i.material-icons.medium.black.white-text
-      drag_handle
-    %i.material-icons.medium.blue-text
-      map
-    %i.material-icons.medium.yellow.red-text
-      border_inner
-    %i.material-icons.medium.yellow-text
+    %i.material-icons.tiny.yellow-text
       attachment
 
 .div
   .div
     %h6 Buildings 2:
   .div.grey.lighten-1
-    %i.material-icons.medium.white-text
+    %i.material-icons.tiny.white-text
       more_vert
-    %i.material-icons.medium.black.white-text
+    %i.material-icons.tiny.black.white-text
       drag_handle
-    %i.material-icons.medium.yellow-text
+    %i.material-icons.tiny.yellow-text
       attachment
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.red-text
+    %i.material-icons.tiny.red-text
       photo
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.blue-text
+    %i.material-icons.tiny.blue-text
       map
   .div.grey
-    %i.material-icons.medium.black-text
+    %i.material-icons.tiny.black-text
       games
-    %i.material-icons.medium.black.white-text
+    %i.material-icons.tiny.black.white-text
       drag_handle
-    %i.material-icons.medium.orange-text
+    %i.material-icons.tiny.orange-text
       content_copy
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.purple-text
+    %i.material-icons.tiny.purple-text
       developer_board
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.green-text
+    %i.material-icons.tiny.green-text
       business
 
   .div.grey.darken-1
-    %i.material-icons.medium.grey-text
+    %i.material-icons.tiny.grey-text
       vibration
-    %i.material-icons.medium.black.white-text
+    %i.material-icons.tiny.black.white-text
       drag_handle
-    %i.material-icons.medium.white-text
+    %i.material-icons.tiny.white-text
       more_vert
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.black-text
+    %i.material-icons.tiny.black-text
       games
 
 
@@ -326,52 +263,52 @@
   .div
     %h6 Buildings 3:
   .div.grey.darken-2
-    %i.material-icons.medium.pink-text
+    %i.material-icons.tiny.pink-text
       bubble_chart
-    %i.material-icons.medium.black.white-text
+    %i.material-icons.tiny.black.white-text
       drag_handle
-    %i.material-icons.medium.grey-text
+    %i.material-icons.tiny.grey-text
       vibration
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.yellow-text
+    %i.material-icons.tiny.yellow-text
       attachment
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.red-text
+    %i.material-icons.tiny.red-text
       photo
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.blue-text
+    %i.material-icons.tiny.blue-text
       map
   .div.grey.darken-3
-    %i.material-icons.medium.teal-text
+    %i.material-icons.tiny.teal-text
       add_alert
-    %i.material-icons.medium.black.white-text
+    %i.material-icons.tiny.black.white-text
       drag_handle
-    %i.material-icons.medium.grey-text
+    %i.material-icons.tiny.grey-text
       vibration
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.orange-text
+    %i.material-icons.tiny.orange-text
       content_copy
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.purple-text
+    %i.material-icons.tiny.purple-text
       developer_board
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.green-text
+    %i.material-icons.tiny.green-text
       business
 
   .div.grey.darken-4
-    %i.material-icons.medium.brown-text
+    %i.material-icons.tiny.brown-text
       accessibility
-    %i.material-icons.medium.black.white-text
+    %i.material-icons.tiny.black.white-text
       drag_handle
-    %i.material-icons.medium.pink-text
+    %i.material-icons.tiny.pink-text
       bubble_chart
-    %i.material-icons.medium.yellow.red-text
+    %i.material-icons.tiny.yellow.red-text
       border_inner
-    %i.material-icons.medium.teal-text
+    %i.material-icons.tiny.teal-text
       add_alert
