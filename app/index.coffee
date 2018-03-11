@@ -36,8 +36,25 @@ app.run ($rootScope) ->
   $rootScope.$on "$stateChangeError", console.log.bind console
 
 app.config ($stateProvider, $urlRouterProvider) ->
+  npc_resolver = =>
+    return {
+      resources: {
+        yellow: 0
+        orange: 0
+        red: 0
+        purple: 0
+        blue: 0
+        green: 0
+        white: 0
+        black: 0
+        grey: 0
+        pink: 0
+    }}
+
   $stateProvider.state {name: 'layout', template: require('./layout.html.hamlc')}
-  $stateProvider.state {name: 'gameWrapper', url: '/gameWrapper', parent: 'layout', component: 'gameWrapper'}
+  $stateProvider.state {name: 'gameWrapper', url: '/gameWrapper', parent: 'layout', component: 'gameWrapper', resolve: {npc: npc_resolver}}
   $stateProvider.state {name: 'mono', url: '/mono', parent: 'gameWrapper', component: 'mono'}
+  $stateProvider.state {name: 'sudo', url: '/sudo', parent: 'gameWrapper', component: 'sudo'}
+  $stateProvider.state {name: 'dotowo', url: '/dotowo', parent: 'gameWrapper', component: 'dotowo'}
 
   $urlRouterProvider.when '', '/gameWrapper/mono'

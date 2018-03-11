@@ -3,11 +3,13 @@
     %a#logo-container.brand-logo{:href => "#"} Ninja Pushy Cats :: NPCs
     %ul.right
       %li
-        %a.yellow-darken-5{"ui-sref" => "mono"} mono
+        %a.yellow.lighten-5.blue-grey-text{"ui-sref" => "mono"} edit.mono
       %li
-        %a.red-darken-5{"ui-sref" => "sudo"} sudo
+        %a.red.lighten-5.blue-grey-text{"ui-sref" => "sudo"} edit.sudo
       %li
-        %a.blue-darken-5{"ui-sref" => "dotowo"} dotowo
+        %a.blue.lighten-5.blue-grey-text{"ui-sref" => "dotowo"} edit.dotowo
+      %li
+        %a.green.lighten-5.blue-grey-text{"ui-sref" => "game"} play.game
 
 <ui-view></ui-view>
 %footer.page-footer.grey.darken-2

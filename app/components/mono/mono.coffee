@@ -9,54 +9,61 @@ app.component 'mono', {
     npc: "<"
   }
 
-  controller: ($http, $interval, npc_fsm) ->
+  controller: ($http, $interval, npc_fsm, $state) ->
     vm = @
     @r = Math.random()
-    @resources = {
-      yellow: 0
-      orange: 0
-      red: 0
-      purple: 0
-      blue: 0
-      green: 0
-      white: 0
-      black: 0
-      grey: 0
-      pink: 0
-    }
     @add_xp = ->
       console.log "added xp"
       npc_fsm.tick(vm.npc)
     @add_yellow_resource = =>
       console.log "added yellow_resource"
-      @resources.yellow = @resources.yellow + 1
+      @npc.resources.yellow = @npc.resources.yellow + 1
+      @check_if_finished()
     @add_orange_resource = =>
       console.log "added orange_resource"
-      @resources.orange = @resources.orange + 1
+      @npc.resources.orange = @npc.resources.orange + 1
+      @check_if_finished()
     @add_red_resource = =>
       console.log "added red_resource"
-      @resources.red = @resources.red + 1
+      @npc.resources.red = @npc.resources.red + 1
+      @check_if_finished()
     @add_purple_resource = =>
       console.log "added purple_resource"
-      @resources.purple = @resources.purple + 1
+      @npc.resources.purple = @npc.resources.purple + 1
+      @check_if_finished()
     @add_blue_resource = =>
       console.log "added blue_resource"
-      @resources.blue = @resources.blue + 1
+      @npc.resources.blue = @npc.resources.blue + 1
+      @check_if_finished()
     @add_green_resource = =>
       console.log "added green_resource"
-      @resources.green = @resources.green + 1
+      @npc.resources.green = @npc.resources.green + 1
+      @check_if_finished()
     @add_white_resource = =>
       console.log "added white_resource"
-      @resources.white = @resources.white + 1
+      @npc.resources.white = @npc.resources.white + 1
+      @check_if_finished()
     @add_black_resource = =>
       console.log "added black_resource"
-      @resources.black = @resources.black + 1
+      @npc.resources.black = @npc.resources.black + 1
+      @check_if_finished()
     @add_grey_resource = =>
       console.log "added grey_resource"
-      @resources.grey = @resources.grey + 1
+      @npc.resources.grey = @npc.resources.grey + 1
+      @check_if_finished()
     @add_pink_resource = =>
       console.log "added pink_resource"
-      @resources.pink = @resources.pink + 1
+      @npc.resources.pink = @npc.resources.pink + 1
+      @check_if_finished()
+
+    @is_finished = =>
+      for name, count of @npc.resources
+        if count == 0
+          return false
+      return true
+    @check_if_finished = =>
+      if @is_finished()
+        $state.go "sudo"
 
     @
 }

@@ -6,24 +6,12 @@ app = angular.module 'npc'
 app.component 'gameWrapper', {
   template: require('./gameWrapper.html.hamlc'),
   bindings: {
-    npc: "<"
+    game: "<"
   }
 
   controller: ($http, $interval, npc_fsm) ->
     vm = @
     @r = Math.random()
-    @resources = {
-      yellow: 0
-      orange: 0
-      red: 0
-      purple: 0
-      blue: 0
-      green: 0
-      white: 0
-      black: 0
-      grey: 0
-      pink: 0
-    }
     @add_xp = ->
       console.log "added xp"
       npc_fsm.tick(vm.npc)
