@@ -1,4 +1,0 @@
-.zoo.ace.aceboxed{"ng-class": "$ctrl.card['rank-shade']"}
-  ="{{ $ctrl.card.rank }}"
-  %i.material-icons.tiny{"ng-class": "$ctrl.card['suit-color']" }= "{{ $ctrl.card.symbol }}"
-  %span{"ng-class": "$ctrl.card['suit-color']", "ng-bind-html": "$ctrl.trustAsHtml($ctrl.card['suit-symbol'])"}

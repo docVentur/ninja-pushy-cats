@@ -1,2 +1,0 @@
-%div{"ng-repeat": "card in $ctrl.cards track by $index", style: "display: inline-block; width: 50px;"}
-  <v-card value="{{card}}"></v-card>

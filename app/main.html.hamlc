@@ -1,4 +1,0 @@
-.panel.pink
-  this is main
-  = "{{ value }}"
-  and there was a value.

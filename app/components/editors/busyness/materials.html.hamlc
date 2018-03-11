@@ -1,7 +1,0 @@
-.input-field.lime.brown-text
-  %input{"ng-model": "$ctrl.amount", "type": "number"}
-%select.browser-default{"ng-model": "$ctrl.material_name"}
-  %option{"ng-repeat": "resource in $ctrl.gg_mono", "value": "{{gg_mono.name}}"}= "{{gg_mono.name}}"
-%btn.teal.lime-text{"ng-click": "$ctrl.update()", "ng-if": "$ctrl.material.name != ''"} Update
-%btn.lime.teal-text{"ng-click": "$ctrl.update()", "ng-if": "$ctrl.material.name == ''"} Add
-%btn.black.lime-text{"ng-click": "$ctrl.delete()", "ng-if": "$ctrl.material.name != ''"} Delete

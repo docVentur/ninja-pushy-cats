@@ -1,28 +1,20 @@
-%nav.blue-grey.lighten-2{:role => "navigation"}
+%nav.grey{:role => "navigation"}
   .nav-wrapper.container
-    %a#logo-container.brand-logo{:href => "#"} gg_wzr.d
+    %a#logo-container.brand-logo{:href => "#"} Ninja Pushy Cats :: NPCs
     %ul.right
       %li
-        %a.pink.lighten-3.blue-grey-text{"ui-sref" => "gg_game"} gg_game
+        %a.yellow-darken-5{"ui-sref" => "mono"} mono
       %li
-        %a.grey.lighten-2.grey-text{"ui-sref" => "gg_mono"} gg_mono
+        %a.red-darken-5{"ui-sref" => "sudo"} sudo
       %li
-        %a.blue-grey.lighten-1.grey-text{"ui-sref" => "gg_sudo"} gg_sudo
-      %li
-        %a.blue-grey.grey-text{"ui-sref" => "gg_sudo2"} gg_sudo2
-      %li
-        %a.blue-grey.darken-1.grey-text{"ui-sref" => "gg_sudo3"} gg_sudo3
-      %li
-        %a.blue-grey.darken-2.grey-text{"ui-sref" => "materials"} materials
-      %li
-        %a.blue-grey.darken-3.grey-text{"ui-sref" => "tsugu"} tsugu
+        %a.blue-darken-5{"ui-sref" => "dotowo"} dotowo
 
 <ui-view></ui-view>
-%footer.page-footer.blue-grey.darken-2
+%footer.page-footer.grey.darken-2
 .row.grey.z-depth-5
   .col.s2
     .card.z-depth-5
-      .card-content.blue-grey.darken-4.z-depth-5.grey-text
+      .card-content.grey.darken-4.z-depth-5.grey-text
         gg documentation
   .col.s1
   .col.s2
@@ -51,7 +43,7 @@
 .row
   .col.s12
     .footer-copyright
-      .container.blue-grey.darken-3.center
+      .container.grey.darken-3.center
         .row
           .col.s6.center
             made by:

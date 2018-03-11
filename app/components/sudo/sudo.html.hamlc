@@ -1,0 +1,315 @@
+%h1.pink.lighten-4 |suDO|
+
+.container
+  .row
+    %h1.pink-text.text-lighten-3 progress 0%
+    %h4.pink-text.text-lighten-4 gather resources to get to the next finite state machine
+    %h6.pink-text.text-lighten-5 aI need 10 of each resource.
+  .row.yellow.lighten-4
+    .blue-grey-text yellow resources gathered: 0% of 12 avialable
+  .row
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text 1
+
+
+  .row.orange.lighten-4
+    .blue-grey-text orange resources gathered: 0% of 12 avialable
+
+  .row
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+    .col.s1
+      .orange.lighten-4.blue-grey-text 1
+
+
+  .row.red.lighten-4
+    .blue-grey-text red resources gathered: 0% of 12 available
+
+
+  .row
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+    .col.s1
+      .red.lighten-4.blue-grey-text 1
+
+
+  .row.purple.lighten-4
+    .blue-grey-text purple resources
+
+
+  .row
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+    .col.s1
+      .purple.lighten-4.blue-grey-text 1
+
+
+  .row.blue.lighten-4
+    .blue-grey-text blue resources
+
+
+  .row
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+    .col.s1
+      .blue.lighten-4.blue-grey-text 1
+
+
+  .row.green.lighten-4
+    .blue-grey-text green resources
+
+
+  .row
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+    .col.s1
+      .green.lighten-4.blue-grey-text 1
+
+
+
+  .row.white
+    .blue-grey-text white resources
+
+
+  .row
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+    .col.s1
+      .white.blue-grey-text 1
+
+
+
+  .row.black
+    .blue-grey-text black resources
+
+
+  .row
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+    .col.s1
+      .black.blue-grey-text 1
+
+
+
+  .row.grey
+    .blue-grey-text grey resources
+
+  .row
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+    .col.s1
+      .grey.blue-grey-text 1
+
+
+
+  .row.pink.lighten-4
+    .blue-grey-text pink resources
+
+
+  .row
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
+    .col.s1
+      .pink.lighten-4.blue-grey-text 1
