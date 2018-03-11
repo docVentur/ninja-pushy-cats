@@ -114,67 +114,63 @@
           %i.material-icons.tiny.yellow-text
             attachment
         .col.s2.z-depth-5
-          %input.white{"ng-model": "$ctrl.new_gg_sudo_name"}
+          %input.black{"ng-model": "$ctrl.new_gg_sudo_name"}
         .col.s3.z-depth-5
           %button.btn.lime.black-text{"ng-click": "$ctrl.add_gg_sudo()"}
             add gg_sudo
-  .row.zoo
-  .row.zoo
-    .col.s6
-      .div.z-depth-5
-        .holdme{"ng-if": "$ctrl.gg_mode =='gg_sudo'"}
-        .row.card.pink.z-depth-5{"ng-repeat-start": "gg_sudo in $ctrl.gg_sudo"}
-          .col.s4.z-depth-5
-            = "{{ gg_sudo.name }}"
-        .row.z-depth-5
-          .col.s1.yellow.lighten-3.z-depth-5
-            %h6.brown-text.z-depth-5 costs
-            <editor-materials material="{name: '', amount: 0}" gg_sudo="gg_sudo" type="'costs'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
-            %ul.z-depth-5
-              %li{"ng-repeat": "cost in gg_sudo.costs"}
-                <editor-materials material="cost" gg_sudo="gg_sudo" type="'costs'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
-          .col.s1.red.lighten-3.z-depth-5
-            %h6.brown-text produces
-            <editor-materials material="{name: '', amount: 0}" gg_sudo="gg_sudo" type="'produces'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
-            %ul
-              %li{"ng-repeat": "produce in gg_sudo.produces"}
-                <editor-materials material="produce" gg_sudo="gg_sudo" type="'produces'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
-          .col.s1.blue.lighten-3.z-depth-5
-            %h6.brown-text consumes
-            <editor-materials material="{name: '', amount: 0}" gg_sudo="gg_sudo" type="'consumes'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
-            %ul
-              %li{"ng-repeat": "consume in gg_sudo.consumes"}
-                <editor-materials material="consume" gg_sudo="gg_sudo" type="'consumes'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
-          .col.s1.grey.lighten-3.z-depth-5
-            %h6.brown-text unlocks
-            <editor-materials material="{name: '', amount: 0}" gg_sudo="gg_sudo" type="'unlocks'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
-            %ul
-              %li{"ng-repeat": "unlock in gg_sudo.unlocks"}
-                <editor-materials material="unlock" gg_sudo="gg_sudo" type="'unlocks'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
-        .row.z-depth-5{"ng-repeat-end": ""}
-          .col.s12.z-depth-5
-            %h6.pink.white-text ng-repeat-end:
+
+.div
+  .row
+    .col.s3.card-panel.grey{"ng-repeat-start": "gg_sudo in $ctrl.gg_sudo"}
+      = "{{ gg_sudo.name }}"
+      .row.z-depth-5
+        .col.s3.yellow.lighten-3.z-depth-5
+          %h6.brown-text.z-depth-5 initial costs
+          <editor-materials material="{name: '', amount: 0}" gg_sudo="gg_sudo" type="'costs'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
+          %ul.z-depth-5
+            %li{"ng-repeat": "cost in gg_sudo.costs"}
+              <editor-materials material="cost" gg_sudo="gg_sudo" type="'costs'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
+        .col.s3.red.lighten-3.z-depth-5
+          %h6.brown-text.z-depth-5 consumes
+          <editor-materials material="{name: '', amount: 0}" gg_sudo="gg_sudo" type="'consumes'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
+          %ul
+            %li{"ng-repeat": "consume in gg_sudo.consumes"}
+              <editor-materials material="consume" gg_sudo="gg_sudo" type="'consumes'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(building, material_name, type, amount)"></editor-materials>
+        .col.s3.blue.lighten-3.z-depth-5
+          %h6.brown-text.z-depth-5 produces
+          <editor-materials material="{name: '', amount: 0}" gg_sudo="gg_sudo" type="'produces'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
+          %ul
+            %li{"ng-repeat": "produce in gg_sudo.produces"}
+              <editor-materials material="produce" gg_sudo="gg_sudo" type="'produces'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
+        .col.s3.green.lighten-3.z-depth-5
+          %h6.brown-text.z-depth-5 opportunes
+          <editor-materials material="{name: '', amount: 0}" gg_sudo="gg_sudo" type="'unlocks'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
+          %ul
+            %li{"ng-repeat": "unlock in gg_sudo.unlocks"}
+              <editor-materials material="unlock" gg_sudo="gg_sudo" type="'unlocks'" gg_mono="$ctrl.gg_mono" on-delete="$ctrl.deleteMaterial(gg_sudo, material_name, type)" on-update="$ctrl.updateMaterial(gg_sudo, material_name, type, amount)"></editor-materials>
+    .col.s1{"ng-repeat-end": ""}
+
 
 
 .div.black.z-depth-5
   .ice.row
-    .col.s1.blue-grey.darken-1.pink-text.text-lighten-2.z-depth-5
-      gg_mono
+    .col.s1.blue-grey.darken-4.pink-text.text-lighten-2.z-depth-5
+      %h4 gg_mono.json
     .col.s3.blue-grey.darken-2.pink-text.text-lighten-2.z-depth-5
       %pre
         = "{{ $ctrl.gg_mono }}"
-    .col.s1.blue-grey.darken-2.pink-text.text-lighten-2.z-depth-5
-      gg_sudo.json
-    .col.s3.blue-grey.darken-3.pink-text.text-lighten-2.z-depth-5
+    .col.s1.blue-grey.darken-4.pink-text.text-lighten-2.z-depth-5
+      %h4 gg_sudo.json
+    .col.s3.blue-grey.darken-2.pink-text.text-lighten-2.z-depth-5
       %pre
         = "{{ $ctrl.gg_sudo }}"
-    .col.s1.blue-grey.darken-3.pink-text.text-lighten-2.z-depth-5
-      gg_game.json
-    .col.s3.blue-grey.darken-4.pink-text.text-lighten-2.z-depth-5
+    .col.s1.blue-grey.darken-4.pink-text.text-lighten-2.z-depth-5
+      %h4 gg_game.json
+    .col.s3.blue-grey.darken-2.pink-text.text-lighten-2.z-depth-5
       %pre
         = "{{ $ctrl.gg_game}}"
 
-.div.black.z-depth-5
+.ice.div.black.z-depth-5
   .row.z-depth-5
     .col.s3
     .col.s1.blue-grey.lighten-2.z-depth-5
