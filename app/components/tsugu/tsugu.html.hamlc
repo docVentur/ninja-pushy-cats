@@ -3,16 +3,818 @@
 
 .container
   .row
-    %h1.pink-text.text-lighten-3 progress 0%
+    %h1.pink-text.text-lighten-3 progress {{ $ctrl.counter }}%
     %h4.pink-text.text-lighten-4 gather resources to get to the next finite state machine
     %h6.pink-text.text-lighten-5 aI need 10 of each resource.
+
+%table.table
+  %tbody
+    %tr{"ng-repeat": "row in $ctrl.grid"}
+      %td{"ng-repeat": "cell in row"}
+        %i.material-icons.medium.center{"ng-class": "cell.color+'-text'"}
+          = "{{ cell.icon }}"
+
+
+%h1 fine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ice.div
+  .row
+    .col.s1
+      .ice.brown.lighten-3.blue-grey-text.z-depth-5 Yellow: {{$ctrl.npc.resources.yellow}}
+      .pi.cyan.lighten-3.blue-grey-text.z-depth-5 Yellow: {{$ctrl.npc.resources.yellow}}
+      .zoo.pink.lighten-3.blue-grey-text.z-depth-5 Yellow: {{$ctrl.npc.resources.yellow}}
+
+    .col.s1
+      .yellow.lighten-4.blue-grey-text.z-depth-5 Yellow: {{$ctrl.npc.resources.yellow}}
+    .col.s1
+      .orange.lighten-4.blue-grey-text.z-depth-5 Orange: {{$ctrl.npc.resources.orange}}
+    .col.s1
+      .red.lighten-4.blue-grey-text.z-depth-5 Red: {{$ctrl.npc.resources.red}}
+    .col.s1
+      .purple.lighten-4.blue-grey-text.z-depth-5 Purple: {{$ctrl.npc.resources.purple}}
+    .col.s1
+      .blue.lighten-4.blue-grey-text.z-depth-5 Blue: {{$ctrl.npc.resources.blue}}
+    .col.s1
+      .green.lighten-4.blue-grey-text.z-depth-5 Green: {{$ctrl.npc.resources.green}}
+    .col.s1
+      .white.lighten-4.blue-grey-text.z-depth-5 wHite: {{$ctrl.npc.resources.white}}
+    .col.s1
+      .black.blue-grey-text.z-depth-5 bLack: {{$ctrl.npc.resources.black}}
+    .col.s1
+      .grey.blue-grey-text.z-depth-5 grEy: {{$ctrl.npc.resources.grey}}
+    .col.s1
+      .pink.lighten-4.blue-grey-text.z-depth-5 pInk: {{$ctrl.npc.resources.pink}}
+    .col.s1
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container
+  .row
+    .col.s1
+    .col.s1
+      .yellow.lighten-4.blue-grey-text.z-depth-5 Yellow: {{$ctrl.npc.resources.yellow}}
+    .col.s1
+      .orange.lighten-4.blue-grey-text.z-depth-5 Orange: {{$ctrl.npc.resources.orange}}
+    .col.s1
+      .red.lighten-4.blue-grey-text.z-depth-5 Red: {{$ctrl.npc.resources.red}}
+    .col.s1
+      .purple.lighten-4.blue-grey-text.z-depth-5 Purple: {{$ctrl.npc.resources.purple}}
+    .col.s1
+      .blue.lighten-4.blue-grey-text.z-depth-5 Blue: {{$ctrl.npc.resources.blue}}
+    .col.s1
+      .green.lighten-4.blue-grey-text.z-depth-5 Green: {{$ctrl.npc.resources.green}}
+    .col.s1
+      .white.lighten-4.blue-grey-text.z-depth-5 wHite: {{$ctrl.npc.resources.white}}
+    .col.s1
+      .black.blue-grey-text.z-depth-5 bLack: {{$ctrl.npc.resources.black}}
+    .col.s1
+      .grey.blue-grey-text.z-depth-5 grEy: {{$ctrl.npc.resources.grey}}
+    .col.s1
+      .pink.lighten-4.blue-grey-text.z-depth-5 pInk: {{$ctrl.npc.resources.pink}}
+    .col.s1
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+  .row
+    .col.s1
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+    .col.s1
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+    .col.s1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container
   .row.yellow.lighten-4
     .blue-grey-text yellow resources gathered: 0% of 12 avialable
   .row
     .col.s1
       .yellow.lighten-4.blue-grey-text 1
+        %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
     .col.s1
       .yellow.lighten-4.blue-grey-text 1
+        %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+
     .col.s1
       .yellow.lighten-4.blue-grey-text 1
     .col.s1

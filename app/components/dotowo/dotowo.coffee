@@ -19,9 +19,10 @@ app.component 'dotowo', {
       if idx >= 0
         gg_sudo[type].splice idx, 1
 
-    @gg_mono = [{"name":"y"},{"name":"r"},{"name":"b"}]
+    @gg_mono = [{"name":"y", icon:"attachment", color:"yellow"},{"name":"r", icon:"attachment", color:"red"},{"name":"b", icon:"attachment", color:"blue"}]
+    #@gg_mono = [{"name":"y", icon:"attachment", color:"yellow"},{"name":"o", icon:"attachment", color:"orange"},{"name":"r", icon:"attachment", color:"red"},{"name":"p", icon:"attachment", color:"purple"},{"name":"b", icon:"attachment", color:"blue"},{"name":"g", icon:"attachment", color:"green"},{"name":"w", icon:"attachment", color:"white"},{"name":"l", icon:"attachment", color:"black"},{"name":"e", icon:"attachment", color:"grey"},{"name":"i", icon:"attachment", color:"pink"},{"name":"c", icon:"attachment", color:"cyan"},{"name":"n", icon:"attachment", color:"brown"}]
 
-    @gg_mono_icon = [{"icon":"attachment"},{"icon":"photo"},{"icon":"map"}]
+    #@gg_mono_icon = [{"icon":"attachment"},{"icon":"photo"},{"icon":"map"}]
 
     @gg_sudo =
     [{"name":"o","costs":[{"name":"y","amount":1},{"name":"r","amount":1}],"produces":[{"name":"y","amount":33}],"consumes":[{"name":"y","amount":3}]},{"name":"p","costs":[{"name":"r","amount":1},{"name":"b","amount":1}],"produces":[{"name":"r","amount":15}],"consumes":[{"name":"b","amount":1}]},{"name":"g","costs":[{"name":"b","amount":1},{"name":"y","amount":1}],"produces":[{"name":"b","amount":12}],"consumes":[{"name":"y","amount":3}]}]
@@ -35,11 +36,13 @@ app.component 'dotowo', {
     @mode = 'gg_game'
 
     @new_gg_mono_name = ''
+    @new_gg_mono_icon = ''
+    @new_gg_mono_color = ''
 
     @new_gg_sudo_name = ''
 
     @add_gg_mono = () =>
-      @gg_mono.push {name: @new_gg_mono_name}
+      @gg_mono.push {name: @new_gg_mono_name, icon: @new_gg_mono_icon, color: @new_gg_mono_color}
       @new_gg_mono_name = ''
       console.log "i did a gg_mono"
 

@@ -9,7 +9,7 @@
       %li
         %a.blue.lighten-5.blue-grey-text{"ui-sref" => "dotowo"} edit.dotowo
       %li
-        %a.green.lighten-5.blue-grey-text{"ui-sref" => "game"} play.game
+        %a.green.lighten-5.blue-grey-text{"ui-sref" => "tsugu"} tsugu
 
 <ui-view></ui-view>
 %footer.page-footer.grey.darken-2

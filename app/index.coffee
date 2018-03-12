@@ -56,5 +56,6 @@ app.config ($stateProvider, $urlRouterProvider) ->
   $stateProvider.state {name: 'mono', url: '/mono', parent: 'gameWrapper', component: 'mono'}
   $stateProvider.state {name: 'sudo', url: '/sudo', parent: 'gameWrapper', component: 'sudo'}
   $stateProvider.state {name: 'dotowo', url: '/dotowo', parent: 'gameWrapper', component: 'dotowo'}
+  $stateProvider.state {name: 'tsugu', url: '/tsugu', parent: 'gameWrapper', component: 'tsugu'}
 
   $urlRouterProvider.when '', '/gameWrapper/mono'

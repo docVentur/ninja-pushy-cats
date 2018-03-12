@@ -31,6 +31,9 @@
           %ul
             %li{"ng-repeat": "gg_mono in $ctrl.gg_mono"}
               %button.btn.pink.white-text{"ng-click": "$ctrl.gg_game_add_gg_mono(gg_mono.name)"}= "{{ gg_mono.name }}"
+                %i.material-icons.small{"ng-class": "gg_mono.color+'-text'"}
+                  = "{{ gg_mono.icon }}"
+
         .col.s2.blue-grey.lighten-4.center
           %ul.blue-grey-text.pink
             %li{"ng-repeat": "gg_sudo in $ctrl.gg_sudo"}
@@ -58,24 +61,31 @@
   .row.ice.center
     .ice.col.s6
       .div
-        .col.s2
+        .col.s1
           gg_mono
-        .col.s2.z-depth-5
+        .col.s1.z-depth-5
           %i.material-icons.small.yellow-text
             attachment
           %i.material-icons.small.red-text
             photo
           %i.material-icons.small.blue-text
             map
-        .col.s2
+        .col.s1
           %ul
             %li.white-text{"ng-repeat": "gg_mono in $ctrl.gg_mono"}
               = "{{ gg_mono.name }}"
         .col.s2
-          .holdme{"ng-if": "$ctrl.gg_mode == 'gg_mono'"}
-          %input.black{"ng-model": "$ctrl.new_gg_mono_name"}
-        .col.s4
+          %input{type: "text", "ng-model": "$ctrl.new_gg_mono_color"}
+          color
+        .col.s2
+          %input{type: "text", "ng-model": "$ctrl.new_gg_mono_icon"}
+          icon
+        .col.s2
+          %input{type: "text", "ng-model": "$ctrl.new_gg_mono_name"}
+          name
+        .col.s1
           %button.btn.lime.teal-text{"ng-click": "$ctrl.add_gg_mono()"} Add gg_mono
+
     .pi.col.s6
       .div
         .col.s1
