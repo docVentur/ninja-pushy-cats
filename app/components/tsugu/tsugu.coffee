@@ -29,7 +29,8 @@ app.component 'tsugu', {
             @counter = @counter + 1
             return
 
-
+    @grid_user_input = (x,y) =>
+      console.log "user clicked #{x}, #{y}"
     $interval @progress_timer, 3000
 
 
