@@ -11,6 +11,7 @@
   %tbody
     %tr{"ng-repeat": "row in $ctrl.grid"}
       %td{"ng-repeat": "cell in row"}
+        = "{{ cell[$ctrl.current_frame] }}"
         %i.material-icons.medium.center{"ng-class": "cell.color+'-text'", "ng-click": "$ctrl.grid_user_input($parent.$index, $index)"}
           = "{{ cell.icon }}"
 
