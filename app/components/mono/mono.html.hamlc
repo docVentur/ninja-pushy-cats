@@ -9,45 +9,215 @@
       %h1.pink-text.text-lighten-4.z-depth-5.center Take this!
   .row
     .col.s2
-    .col.s3.center
-      %i.material-icons.large.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+    .col.s10
+      %i.material-icons.large.pink-text.text-lighten-4{"ng-click": "$ctrl.add_yellow_resource()"} favorite
 
 
+.container.ice
+  .row.ice
+    .col.s10
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} change_history
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} arrow_drop_up
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} arrow_drop_down
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} chevron_left
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} chevron_right
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} details
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} expand_less
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} expand_more
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} eject
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} filter_list
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} get_app
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} keyboard_arrow_down
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} keyboard_arrow_up
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} keyboard_arrow_left
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} keyboard_arrow_right
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} navigate_before
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} navigate_next
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} network_cell
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} navigation
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} play_arrow
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} send
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} unfold_less
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} unfold_more
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} warning
+
+.container.ice
+  .row.pi
+    .col.s12
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} pause
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} short_text
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} drag_handle
+
+.container.ice
+  .row.zoo
+    .col.s12
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} panorama_fish_eye
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} panorama_fish_eye
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} palette
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} palette
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} pause_circle_outline
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} pause_circle_outline
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} my_location
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} my_location
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} new_releases
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} new_releases
+.ice
+  .row
+    .col.s12.center
+      %i.material-icons.large.pink-text.text-lighten-4{"ng-click": "$ctrl.add_yellow_resource()"} favorite_border
 .container
   .row
     %h4.pink-text.text-lighten-4 gather resources to get to the next finite state machine
     %h6.pink-text.text-lighten-5 aI need 1 of each type of resource to get sudo-ing.
   .row
     .col.s1
-    .col.s1
       .yellow.lighten-4.blue-grey-text.z-depth-5 Yellow: {{$ctrl.npc.resources.yellow}}
       %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
-
+      .h7 attachment
     .col.s1
       .orange.lighten-4.blue-grey-text.z-depth-5 Orange: {{$ctrl.npc.resources.orange}}
-      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_orange_resource()"} attachment
+      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_orange_resource()"} add
+      .h7 add
     .col.s1
       .red.lighten-4.blue-grey-text.z-depth-5 Red: {{$ctrl.npc.resources.red}}
-      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_red_resource()"} attachment
+      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_red_resource()"} photo
+      .h7 photo
     .col.s1
       .purple.lighten-4.blue-grey-text.z-depth-5 Purple: {{$ctrl.npc.resources.purple}}
-      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_purple_resource()"} attachment
+      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      .h7 developer_board
     .col.s1
       .blue.lighten-4.blue-grey-text.z-depth-5 Blue: {{$ctrl.npc.resources.blue}}
-      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_blue_resource()"} attachment
+      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_blue_resource()"} map
+      .h7 map
     .col.s1
       .green.lighten-4.blue-grey-text.z-depth-5 Green: {{$ctrl.npc.resources.green}}
-      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_green_resource()"} attachment
+      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_green_resource()"} business
+      .h7 business
     .col.s1
       .white.lighten-4.blue-grey-text.z-depth-5 wHite: {{$ctrl.npc.resources.white}}
-      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_white_resource()"} attachment
+      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_white_resource()"} apps
+      .h7 apps
     .col.s1
       .black.blue-grey-text.z-depth-5 bLack: {{$ctrl.npc.resources.black}}
-      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_black_resource()"} attachment
+      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_black_resource()"} games
+      .h7 games
     .col.s1
       .grey.blue-grey-text.z-depth-5 grEy: {{$ctrl.npc.resources.grey}}
-      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_grey_resource()"} attachment
+      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_grey_resource()"} more
+      .h7 more
     .col.s1
       .pink.lighten-4.blue-grey-text.z-depth-5 pInk: {{$ctrl.npc.resources.pink}}
-      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_pink_resource()"} attachment
+      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_pink_resource()"} border_clear
+      .h7 border_clear
     .col.s1
+      .cyan.lighten-4.blue-grey-text.z-depth-5 Cyan: {{$ctrl.npc.resources.cyan}}
+      %i.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_pink_resource()"} star_half
+      .h7 star_half
+
+    .col.s1
+      .brown.lighten-4.blue-grey-text.z-depth-5 browN: {{$ctrl.npc.resources.brown}}
+      %i.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_pink_resource()"} accessibility
+      .h7 accessibility
+
+.container
+  .row
+    .col.s1
+      %i.material-icons.medium.yellow-text.center.z-depth-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      .h7 attachment
+      .h8 file
+      .h9 mono
+      .h10 nouns
+      .h11 skinning
+      .h12 rogue
+    .col.s1
+      %i.z-depth-5.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_orange_resource()"} add
+      .h7 add
+      .h8 content
+      .h9 beginning
+      .h10 START HERE
+      .h11 leatherworking
+      .h12 druid
+
+    .col.s1
+      %i.z-depth-5.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_red_resource()"} photo
+      .h7 photo
+      .h8 Images
+      .h9 sudo
+      .h10 verbs
+      .h11 insciption
+      .h12 DK
+
+    .col.s1
+      %i.z-depth-5.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      .h7 developer_board
+      .h8 Hardware
+      .h9 middle
+      .h10 stuff in between the beginning and the end
+      .h11 alchemy
+      .h12 warlock
+    .col.s1
+      %i.z-depth-5.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_blue_resource()"} map
+      .h7 map
+      .h8 Maps
+      .h9 hima
+      .h10 applied to ppl
+      .h11 tailor
+      .h12 shaman
+    .col.s1
+      %i.z-depth-5.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_green_resource()"} business
+      .h7 business
+      .h8 Communication
+      .h9 fin.
+      .h10 END
+      .h11 herbalism
+      .h12 hunter
+    .col.s1
+      %i.z-depth-5.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_white_resource()"} apps
+      .h7 apps
+      .h8 Navigation
+      .h9 gg
+      .h10 growing_genkiness = wellness + a bit better
+      .h11 mining
+      .h12 priest
+    .col.s1
+      %i.z-depth-5.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_black_resource()"} games
+      .h7 games
+      .h8 AV
+      .h9 GG
+      .h10 GREAT GRAND = quantifiable achievements
+      .h11 blacksmithing
+      .h12 DH
+    .col.s1
+      %i.z-depth-5.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_grey_resource()"} more
+      .h7 more
+      .h8 Notification
+      .h9 gG
+      .h10 {(g00d game) Generator}
+      .h11 jewelcrafting
+      .h12 monk
+    .col.s1
+      %i.z-depth-5.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_pink_resource()"} border_clear
+      .h7 border_clear
+      .h8 Editor
+      .h9 koto
+      .h10= "stuff that isn't tangible"
+      .h11 enchanting
+      .h12 paladin
+    .col.s1
+      %i.z-depth-5.material-icons.medium.cyan-text.center{"ng-click": "$ctrl.add_pink_resource()"} star_half
+      .h7 star_half
+      .h8 Toggle/Alert
+      .h9 kitemite
+      .h10= "'look at me' or 'let's dance' or 'seeking comment'"
+      .h11 fishing
+      .h12 mage
+    .col.s1
+
+      %i.z-depth-5.material-icons.medium.brown-text.center{"ng-click": "$ctrl.add_pink_resource()"} accessibility
+      .h7 accessibility
+      .h8 action
+      .h9 saga
+      .h10 long story of heroic achievement / combat log
+      .h11 engineering
+      .h12 warrior

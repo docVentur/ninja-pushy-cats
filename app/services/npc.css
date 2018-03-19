@@ -352,6 +352,44 @@ blockquote:before {
   font-size: 1em;
 }
 
+.h7 {
+  font-family: 'Roboto';
+  font-size: 0.85em;
+  color: white;
+}
+
+.h8 {
+  font-family: 'Roboto';
+  font-size: 0.9em;
+}
+
+.h9 {
+  font-family: 'Roboto';
+  font-size: 0.7em;
+  background-color: black;
+  color: grey;
+}
+
+.h10 {
+  font-family: 'Roboto';
+  font-size: 0.5em;
+  color: pink
+}
+
+.h11 {
+  font-family: 'Roboto';
+  font-size: 0.7em;
+  color: cyan;
+}
+
+.h12 {
+  font-family: 'Roboto';
+  font-size: 0.7em;
+  color: brown;
+}
+
+
+
 p {
   font-family: 'Roboto';
   font-size: 1em;

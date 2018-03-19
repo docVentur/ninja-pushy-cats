@@ -11,9 +11,17 @@
   %tbody
     %tr{"ng-repeat": "row in $ctrl.grid"}
       %td{"ng-repeat": "cell in row"}
-        = "{{ cell[$ctrl.current_frame] }}"
-        %i.material-icons.medium.center{"ng-class": "cell.color+'-text'", "ng-click": "$ctrl.grid_user_input($parent.$index, $index)"}
-          = "{{ cell.icon }}"
+        .div{"ng-if": "cell[$ctrl.current_frame] == 'conductor'", "ng-click": "$ctrl.grid_user_input(cell)"}
+          = "{{ cell[$ctrl.current_frame] }}"
+        .div.pink.pink-text{"ng-if": "cell[$ctrl.current_frame] == 'head'", "ng-click": "$ctrl.grid_user_input(cell)"}
+          = "{{ cell[$ctrl.current_frame] }}"
+        .div.pink.yellow-text{"ng-if": "cell[$ctrl.current_frame] == 'tail'", "ng-click": "$ctrl.grid_user_input(cell)"}
+          = "{{ cell[$ctrl.current_frame] }}"
+
+        .div{"ng-if": "cell[$ctrl.current_frame] == 'empty'"}
+          %i.material-icons.medium.center{"ng-class": "cell.color+'-text'", "ng-click": "$ctrl.grid_user_input(cell)"}
+            = "{{ cell.icon }}"
+
 
 
 %h1 fine

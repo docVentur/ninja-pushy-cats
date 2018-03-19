@@ -17,7 +17,7 @@ app.component 'tsugu', {
     for y in numbers
       row = []
       for x in numbers
-        row.push {icon: "attachment", color: @colors[y], x: x, y: y, frame_a:"", frame_b:""}
+        row.push {icon: "attachment", color: @colors[y], x: x, y: y, frame_a:"empty", frame_b:"empty"}
       @grid.push row
     @counter = 0
     @current_frame = "frame_a"
@@ -31,11 +31,11 @@ app.component 'tsugu', {
 
             @counter = @counter + 1
             return
-    @click_circle = {"": "conductor", "conductor": "head", "head": "tail", "tail": ""}
-    @grid_user_input = (y, x) =>
-      console.log "user clicked #{x}, #{y}"
-      @grid[y][x].color = "teal"
-      @grid[y][x][@next_frame] = @click_circle[@grid[y][x][@next_frame]]
+    @click_circle = {"empty": "conductor", "conductor": "head", "head": "tail", "tail": "empty"}
+    @grid_user_input = (cell) =>
+      console.log "user clicked #{cell.y}, #{cell.x}"
+      @grid[cell.y][cell.x].color = "teal"
+      @grid[cell.y][cell.x][@next_frame] = @click_circle[@grid[cell.y][cell.x][@next_frame]]
     @cell_should_be_electron = (cell) =>
       num_heads = 0
       if @grid[cell.y-1][cell.x-1][@current_frame] == "head"
