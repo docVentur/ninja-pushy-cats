@@ -59,3 +59,5 @@ app.config ($stateProvider, $urlRouterProvider) ->
   $stateProvider.state {name: 'tsugu', url: '/tsugu', parent: 'gameWrapper', component: 'tsugu'}
 
   $urlRouterProvider.when '', '/gameWrapper/mono'
+
+# #::AGD The code for this project is guided by The Art of Game Design: A Book of Lenses by Jesse Schell published by CRC Press 2015

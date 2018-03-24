@@ -1,1 +1,8 @@
+.row
+  .col.s4.center
+    .yellow-text.text-lighten-4 元 growing_genkiness
+  .col.s4.center
+    .red-text.text-lighten-4 GREAT 王 GRAND
+  .col.s4.center
+    .blue-text.text-lighten-4 {([guchi] genki) Games} 口
 <ui-view></ui-view>

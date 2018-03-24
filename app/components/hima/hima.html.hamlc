@@ -1,0 +1,12 @@
+.ice
+  %h1 mai.hima.app: using Ninja-Pushy-Cats-Template
+  %h2 text input field
+  .input-field
+    %input.white{type: "text", "ng-model": "$ctrl.new_component_name", id: "new_component_name"}
+    %label{for: "new_component_name"} new
+  %h3 add record button
+    %button.btn.orange.text-lighten-2.right{"ng-click": "$ctrl.add_component()"} add_subcomponent
+  %h4 submit input to couchdb
+
+  %h5 display all db entries in a UI
+    %h3.cyan-text = "{{ $ctrl.component.name }}"
