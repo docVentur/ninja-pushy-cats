@@ -49,15 +49,26 @@ app.config ($stateProvider, $urlRouterProvider) ->
         black: 0
         grey: 0
         pink: 0
-    }}
+        cyan: 0
+        brown: 0
+      }
+      iteration: 0
+
+  }
 
   $stateProvider.state {name: 'layout', template: require('./layout.html.hamlc')}
   $stateProvider.state {name: 'gameWrapper', url: '/gameWrapper', parent: 'layout', component: 'gameWrapper', resolve: {npc: npc_resolver}}
+  $stateProvider.state {name: 'carot', url: '/screen/carot', parent: 'gameWrapper', component: 'carot'}
+  $stateProvider.state {name: 'pipe', url: '/pipe', parent: 'gameWrapper', component: 'pipe'}
+  $stateProvider.state {name: 'dot', url: '/dot', parent: 'gameWrapper', component: 'dot'}
+  $stateProvider.state {name: 'gdkp', url: '/gdkp', parent: 'gameWrapper', component: 'gdkp'}
+
+
   $stateProvider.state {name: 'mono', url: '/mono', parent: 'gameWrapper', component: 'mono'}
   $stateProvider.state {name: 'sudo', url: '/sudo', parent: 'gameWrapper', component: 'sudo'}
   $stateProvider.state {name: 'dotowo', url: '/dotowo', parent: 'gameWrapper', component: 'dotowo'}
   $stateProvider.state {name: 'tsugu', url: '/tsugu', parent: 'gameWrapper', component: 'tsugu'}
 
-  $urlRouterProvider.when '', '/gameWrapper/mono'
+  $urlRouterProvider.when '', 'gameWrapper'
 
 # #::AGD The code for this project is guided by The Art of Game Design: A Book of Lenses by Jesse Schell published by CRC Press 2015

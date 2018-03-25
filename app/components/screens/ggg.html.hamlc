@@ -1,0 +1,7 @@
+.row
+.row
+  .col.s12.center
+    %button.btn.grey.z-depth-5.green-text.text-lighten-3{"ng-click": "$ctrl.go_next_page()"} ggg
+.row
+  .col.s12.center
+    %button.btn.grey.z-depth-5.yellow-text.text-lighten-3{"ng-click": "mono"} ge^_mono

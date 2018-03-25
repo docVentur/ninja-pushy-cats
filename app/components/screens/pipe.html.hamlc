@@ -1,0 +1,4 @@
+.row
+.row
+  .col.s12.center
+    %button.btn.grey.z-depth-5.red-text.text-lighten-3{"ng-click": "$ctrl.go_next_page()"} | :: pipe

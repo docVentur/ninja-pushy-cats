@@ -14,7 +14,7 @@ app.component 'gameWrapper', {
     @r = Math.random()
     @add_xp = ->
       console.log "added xp"
-      npc_fsm.tick(vm.npc)
+      npc_fsm.tick(@npc)
     @add_yellow_resource = =>
       console.log "added yellow_resource"
       @resources.yellow = @resources.yellow + 1
@@ -45,6 +45,12 @@ app.component 'gameWrapper', {
     @add_pink_resource = =>
       console.log "added pink_resource"
       @resources.pink = @resources.pink + 1
+    @add_cyan_resource = =>
+      console.log "added pink_resource"
+      @resources.cyan = @resources.pink + 1
+    @add_brown_resource = =>
+      console.log "added pink_resource"
+      @resources.brown = @resources.pink + 1
 
     @
 }

@@ -1,3 +1,5 @@
+<ui-view></ui-view>
+%footer.page-footer.grey.darken-4
 .row
   .col.s4.center
     .yellow-text.text-lighten-4 元 growing_genkiness
@@ -5,4 +7,3 @@
     .red-text.text-lighten-4 GREAT 王 GRAND
   .col.s4.center
     .blue-text.text-lighten-4 {([guchi] genki) Games} 口
-<ui-view></ui-view>

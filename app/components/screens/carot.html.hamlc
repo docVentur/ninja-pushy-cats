@@ -1,0 +1,11 @@
+.row
+.row
+  .col.s12.center
+    %button.btn.grey.z-depth-5.yellow-text.text-lighten-3{"ng-click": "$ctrl.go_next_page()"} ^ :: carot
+.row
+  .col.s12.center
+    %button.btn.grey.z-depth-5.yellow-text.text-lighten-3{"ng-if": "$ctrl.npc.iteration > 0", "ng-click": "$ctrl.go_next_page()"} ^ :: carot :: ii
+
+.row
+  .col.s12.center
+    %button.btn.grey.z-depth-5.yellow-text.text-lighten-3{"ng-if": "$ctrl.npc.iteration > 1", "ng-click": "$ctrl.go_next_page()"} ^ :: carot :: iii

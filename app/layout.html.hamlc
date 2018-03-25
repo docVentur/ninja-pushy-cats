@@ -1,42 +1,29 @@
 %nav.grey{:role => "navigation"}
   .nav-wrapper.container
-    %a#logo-container.brand-logo{:href => "#"} Ninja Pushy Cats :: NPCs
+    %a#logo-container.brand-logo{:href => "#"} Ninja-Pushy-Cats :: NPCs
     %ul.right
       %li
-        %a.yellow.lighten-5.blue-grey-text{"ui-sref" => "mono"} edit.mono
+        %a.yellow.lighten-5.blue-grey-text{"ui-sref" => "carot"} ^
       %li
-        %a.red.lighten-5.blue-grey-text{"ui-sref" => "sudo"} edit.sudo
+        %a.red.lighten-5.blue-grey-text{"ui-sref" => "pipe"} ||
       %li
-        %a.blue.lighten-5.blue-grey-text{"ui-sref" => "dotowo"} edit.dotowo
+        %a.blue.lighten-5.blue-grey-text{"ui-sref" => "dot"} ...
       %li
-        %a.green.lighten-5.blue-grey-text{"ui-sref" => "tsugu"} tsugu
+        %a.green.lighten-5.blue-grey-text{"ui-sref" => "ggg"} ggg
+      %li
+        %a.black.lighten-5.blue-grey-text{"ui-sref" => "gdkp"} gdkp
+      %li
+        %a.pink.lighten-4.blue-grey-text{"ui-sref" => "gg_game"} gg_game
+
+
+
 
 <ui-view></ui-view>
 %footer.page-footer.grey.darken-2
-.row.grey.z-depth-5
-  .col.s3.center
-    .grey.darken-4.z-depth-5.grey-text
-      gg documentation
-  .col.s3
-    .grey.darken-1.z-depth-5
-      %h5.white-text .mono
-    %p.orange-text.text-lighten-4 growing genkiness :: GREAT GRAND :: gG
-  .col.s3
-    .grey.darken-2.z-depth-5
-      %h5.white-text .sudo
-    %p.orange-text.text-lighten-4 [ get ] :: ( sudo )  ::  { mono }
-  .col.s3
-    .grey.darken-3.z-depth-5
-      %h5.white-text .dotowo
-    %p.orange-text.text-lighten-4 mono  :: koto  :: hima
 .row
-  .col.s12
-    .footer-copyright
-      .container.grey.darken-3.center
-        .row
-          .col.s6.center
-            made by:
-            %a.orange-text.text-lighten-3{:href => "http://materializecss.com"} Materialize
-          .col.s6.center
-            made better by:
-            %a.orange-text.text-lighten-3{:href => "http://growinggenkiess.me"} gg wzr.d
+  .col.s4.center
+    .yellow-text.text-lighten-4 元 growing_genkiness
+  .col.s4.center
+    .red-text.text-lighten-4 GREAT 王 GRAND
+  .col.s4.center
+    .blue-text.text-lighten-4 {([guchi] genki) Games} 口

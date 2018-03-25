@@ -3,15 +3,10 @@ _ = require 'lodash'
 
 app = angular.module 'npc'
 
-app.component 'hima', {
-  template: require('./hima.html.hamlc'),
-  bindings: {
-    npc: "<"
-  }
+app.service 'himadb', (pouchDB) ->
+  @db = pouchDB 'http://clu:5984/hima'
 
-  controller: ($http, $interval, npc_fsm, $state) ->
-    vm = @
-    @r = Math.random()
+  @
 
 app.service 'himadb', (pouchDB) ->
   @db = pouchDB 'himadb'
@@ -44,9 +39,3 @@ app.service 'himadb', (pouchDB) ->
     @db.put doc, options
 
   @
-
-
-
-
-    @
-}
