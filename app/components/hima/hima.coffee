@@ -9,44 +9,20 @@ app.component 'hima', {
     npc: "<"
   }
 
-  controller: ($http, $interval, npc_fsm, $state) ->
+  controller: ($http, $interval, npc_fsm, $state, himadb) ->
     vm = @
-    @r = Math.random()
-
-app.service 'himadb', (pouchDB) ->
-  @db = pouchDB 'himadb'
-
-#  create_index = (db, index_name, doc_validity) ->
-#    ddoc = { _id: "_design/#{index_name}", views: { by_name: { map: "function (doc) {if (#{doc_validity}) {emit(doc.name);}}" }}}
-#    db.put(ddoc).then -> console.log "Created view: #{index_name}"
-#
-#  create_index @db, "characters", "doc.record_type == 'character'"
-#  create_index @db, "sections", "doc.record_type == 'section'"
-#  create_index @db, "goals", "doc.record_type == 'goal'"
-#
-#  @characters = (callback) ->
-#    @db.query "characters/by_name", {include_docs: true}
-#
-#  @sections = ->
-#    @db.query "sections/by_name", {include_docs: true}
-#
-#  @goals = ->
-#    @db.query "goals/by_name", {include_docs: true}
-
-# "The voyage of discovery is not in seeking new landscapes but in having new eyes." -Marcel Proust via #::AGD
-#
-# "We are in a position something like the ancient alchemists. In the time before Mendeleev discovered the periodic table, showing how all the fundamental elements were interrelated, alchemists relied on a patchwork quilt of rules of thumb about how different chemicals could combine. These were necessarily incomplete, sometimes incorrect, and often semimystical, but by using these rules, the alchemists were able to accomplish surpring things, and their pursuit of the truth eventually led to modern chemistry." -Jesse Schell #::AGD
-
-  @post = (options) ->
-    @db.post options
-
-  @put = (doc, options) ->
-    @db.put doc, options
-
-  @
-
-
-
+    @add_hima_name = ""
+    @himatachi = []
+    @load_himatachi = =>
+      himadb.db.allDocs({include_docs: true})
+        .then (r) =>
+          console.log r
+          @himatachi = _.map r.rows, (c) -> c.doc
+    @load_himatachi()
+    @add_hima = =>
+      himadb.post {name: @new_hima_name}
+      @new_hima_name = ""
+      console.log "added_hima"
 
     @
 }

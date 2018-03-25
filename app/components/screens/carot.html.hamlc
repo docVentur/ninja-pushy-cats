@@ -1,11 +1,16 @@
 .row
 .row
   .col.s12.center
-    %button.btn.grey.z-depth-5.yellow-text.text-lighten-3{"ng-click": "$ctrl.go_next_page()"} ^ :: carot
+    %button.btn.grey.z-depth-5.yellow-text.text-lighten-5{"ng-click": "$ctrl.go_next_page()"}
+      ^ :: carot
 .row
   .col.s12.center
-    %button.btn.grey.z-depth-5.yellow-text.text-lighten-3{"ng-if": "$ctrl.npc.iteration > 0", "ng-click": "$ctrl.go_next_page()"} ^ :: carot :: ii
+    %button.btn.grey.z-depth-5.yellow-text.text-lighten-4{"ng-if": "$ctrl.npc.iteration > 0", "ng-click": "$ctrl.go_next_page()"}
+      %i.material-icons.medium.yellow-text.text-lighten-4{"ui-sref" => "carot"} expand_less
+      :: expand_less
 
 .row
   .col.s12.center
-    %button.btn.grey.z-depth-5.yellow-text.text-lighten-3{"ng-if": "$ctrl.npc.iteration > 1", "ng-click": "$ctrl.go_next_page()"} ^ :: carot :: iii
+    %button.btn.grey.z-depth-5.yellow-text.text-lighten-1{"ng-if": "$ctrl.npc.iteration > 1", "ng-click": "$ctrl.go_next_page()"}
+      %i.material-icons.medium.yellow-text.text-lighten-1{"ui-sref" => "carot"} change_history
+      :: change_history

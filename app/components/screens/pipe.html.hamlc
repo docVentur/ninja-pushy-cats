@@ -1,4 +1,18 @@
-.row
-.row
-  .col.s12.center
-    %button.btn.grey.z-depth-5.red-text.text-lighten-3{"ng-click": "$ctrl.go_next_page()"} | :: pipe
+.container
+
+  .row
+  .row
+    .col.s12.center
+      %button.btn.grey.z-depth-5.red-text.text-lighten-5{"ng-click": "$ctrl.go_next_page()"} | :: pipe
+
+  .row
+    .col.s12.center
+      %button.btn.grey.z-depth-5.red-text.text-lighten-4{"ng-if": "$ctrl.npc.iteration > 1", "ng-click": "$ctrl.go_next_page()"}
+        %i.material-icons.medium.red-text.text-lighten-4{"ui-sref" => "carot"} flip
+        :: flip
+
+  .row
+    .col.s12.center
+      %button.btn.grey.z-depth-5.red-text.text-lighten-3{"ng-if": "$ctrl.npc.iteration > 2", "ng-click": "$ctrl.go_next_page()"}
+        %i.material-icons.medium.red-text.text-lighten-3{"ui-sref" => "carot"} more_vert
+        :: more_vert

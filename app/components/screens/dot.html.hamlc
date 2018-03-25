@@ -1,4 +1,17 @@
-.row
-.row
-  .col.s12.center
-    %button.btn.grey.z-depth-5.blue-text.text-lighten-3{"ng-click": "$ctrl.go_next_page()"} . :: dot
+.container
+  .row
+  .row
+    .col.s12.center
+      %button.btn.grey.z-depth-5.blue-text.text-lighten-5{"ng-click": "$ctrl.go_next_page()"} . :: dot
+
+  .row
+    .col.s12.center
+      %button.btn.grey.z-depth-5.blue-text.text-lighten-4{"ng-if": "$ctrl.npc.iteration > 1", "ng-click": "$ctrl.go_next_page()"}
+        %i.material-icons.medium.blue-text.text-lighten-4{"ui-sref" => "carot"} my_location
+        :: my_location
+
+  .row
+    .col.s12.center
+      %button.btn.grey.z-depth-5.blue-text.text-lighten-3{"ng-if": "$ctrl.npc.iteration > 2", "ng-click": "$ctrl.go_next_page()"}
+        %i.material-icons.medium.blue-text.text-lighten-3{"ui-sref" => "carot"} refresh
+        :: refresh

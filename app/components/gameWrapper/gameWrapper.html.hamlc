@@ -1,9 +1,13 @@
 <ui-view></ui-view>
-%footer.page-footer.grey.darken-4
-.row
-  .col.s4.center
-    .yellow-text.text-lighten-4 元 growing_genkiness
-  .col.s4.center
-    .red-text.text-lighten-4 GREAT 王 GRAND
-  .col.s4.center
-    .blue-text.text-lighten-4 {([guchi] genki) Games} 口
+.div.grey
+  .row
+    .col.s4.center
+      %i.material-icons.small.yellow-text.text-lighten-4{"ui-sref" => "carot"} change_history
+    .col.s4.center
+      %i.material-icons.small.red-text.text-lighten-4{"ui-sref" => "pipe"} more_vert
+      %i.material-icons.small.red-text.text-lighten-3{"ui-sref" => "pipe"} more_vert
+
+    .col.s4.center
+      %i.material-icons.small.blue-text.text-lighten-4{"ui-sref" => "dot"} refresh
+      %i.material-icons.small.blue-text.text-lighten-3{"ui-sref" => "dot"} refresh
+      %i.material-icons.small.blue-text.text-lighten-2{"ui-sref" => "dot"} refresh

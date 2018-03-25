@@ -59,9 +59,11 @@ app.config ($stateProvider, $urlRouterProvider) ->
   $stateProvider.state {name: 'layout', template: require('./layout.html.hamlc')}
   $stateProvider.state {name: 'gameWrapper', url: '/gameWrapper', parent: 'layout', component: 'gameWrapper', resolve: {npc: npc_resolver}}
   $stateProvider.state {name: 'carot', url: '/screen/carot', parent: 'gameWrapper', component: 'carot'}
-  $stateProvider.state {name: 'pipe', url: '/pipe', parent: 'gameWrapper', component: 'pipe'}
-  $stateProvider.state {name: 'dot', url: '/dot', parent: 'gameWrapper', component: 'dot'}
-  $stateProvider.state {name: 'gdkp', url: '/gdkp', parent: 'gameWrapper', component: 'gdkp'}
+  $stateProvider.state {name: 'pipe', url: '/screen/pipe', parent: 'gameWrapper', component: 'pipe'}
+  $stateProvider.state {name: 'dot', url: '/screen/dot', parent: 'gameWrapper', component: 'dot'}
+  $stateProvider.state {name: 'gdkp', url: '/screen/gdkp', parent: 'gameWrapper', component: 'gdkp'}
+
+  $stateProvider.state {name: 'hima', url: '/hima', parent: 'gameWrapper', component: 'hima'}
 
 
   $stateProvider.state {name: 'mono', url: '/mono', parent: 'gameWrapper', component: 'mono'}

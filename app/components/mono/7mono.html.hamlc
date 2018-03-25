@@ -1,3 +1,57 @@
+.container.ice
+  .row.ice
+    .col.s10
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} change_history
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} arrow_drop_up
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} arrow_drop_down
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} chevron_left
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} chevron_right
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} details
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} expand_less
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} expand_more
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} eject
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} filter_list
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} get_app
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} keyboard_arrow_down
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} keyboard_arrow_up
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} keyboard_arrow_left
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} keyboard_arrow_right
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} navigate_before
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} navigate_next
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} network_cell
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} navigation
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} play_arrow
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} send
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} unfold_less
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} unfold_more
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} warning
+
+.container.ice
+  .row.pi
+    .col.s12
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} pause
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} short_text
+      %i.material-icons.small.yellow-text{"ng-click": "$ctrl.add_yellow_resource()"} drag_handle
+
+.container.ice
+  .row.zoo
+    .col.s12
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} panorama_fish_eye
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} panorama_fish_eye
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} palette
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} palette
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} pause_circle_outline
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} pause_circle_outline
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} my_location
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} my_location
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} new_releases
+      %i.material-icons.small.yellow-text.center.center{"ng-click": "$ctrl.add_yellow_resource()"} new_releases
+
+
+
+
+
+
 %h1.pink.lighten-4.grey-text.z-depth-5 ge^.MONO
 
 .container
