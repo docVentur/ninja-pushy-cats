@@ -10,51 +10,23 @@
   .row
     .col.s2
     .col.s10
-      %i.material-icons.large.pink-text.text-lighten-4{"ng-click": "$ctrl.add_yellow_resource()"} favorite
+      %i.material-icons.large.pink-text.text-lighten-4.pulse{"ng-click": "$ctrl.add_ai_resource()"} favorite
 
 
-.container
-  .row
-    %h4.pink-text.text-lighten-4 gather resources to get to the next finite state machine
-    %h6.pink-text.text-lighten-5 aI need 1 of each type of resource to get sudo-ing.
+.container.center
   .row
     .col.s1
-      .yellow.lighten-4.blue-grey-text.z-depth-5 Yellow: {{$ctrl.npc.resources.yellow}}
-      %i.material-icons.medium.yellow-text.center{"ng-click": "$ctrl.add_yellow_resource()"} attachment
-      .h7 attachment
+      %h4.pink-text.text-lighten-3 ge^.ai
+  .row
     .col.s1
-      .orange.lighten-4.blue-grey-text.z-depth-5 Orange: {{$ctrl.npc.resources.orange}}
-      %i.material-icons.medium.orange-text.center{"ng-click": "$ctrl.add_orange_resource()"} add
-      .h7 add
+    .col.s3
+      %h7.pink-text.text-lighten-4 to get to the next finite state machine
+  .row
+    .col.s4
     .col.s1
-      .red.lighten-4.blue-grey-text.z-depth-5 Red: {{$ctrl.npc.resources.red}}
-      %i.material-icons.medium.red-text.center{"ng-click": "$ctrl.add_red_resource()"} photo
-      .h7 photo
+      %h6.pink-text.text-lighten-5 aI.need
+  .row
+    .col.s6
     .col.s1
-      .purple.lighten-4.blue-grey-text.z-depth-5 Purple: {{$ctrl.npc.resources.purple}}
-      %i.material-icons.medium.purple-text.center{"ng-click": "$ctrl.add_purple_resource()"} developer_board
-      .h7 developer_board
-    .col.s1
-      .blue.lighten-4.blue-grey-text.z-depth-5 Blue: {{$ctrl.npc.resources.blue}}
-      %i.material-icons.medium.blue-text.center{"ng-click": "$ctrl.add_blue_resource()"} map
-      .h7 map
-    .col.s1
-      .green.lighten-4.blue-grey-text.z-depth-5 Green: {{$ctrl.npc.resources.green}}
-      %i.material-icons.medium.green-text.center{"ng-click": "$ctrl.add_green_resource()"} business
-      .h7 business
-    .col.s1
-      .white.lighten-4.blue-grey-text.z-depth-5 wHite: {{$ctrl.npc.resources.white}}
-      %i.material-icons.medium.white-text.center{"ng-click": "$ctrl.add_white_resource()"} apps
-      .h7 apps
-    .col.s1
-      .black.blue-grey-text.z-depth-5 bLack: {{$ctrl.npc.resources.black}}
-      %i.material-icons.medium.black-text.center{"ng-click": "$ctrl.add_black_resource()"} games
-      .h7 games
-    .col.s1
-      .grey.blue-grey-text.z-depth-5 grEy: {{$ctrl.npc.resources.grey}}
-      %i.material-icons.medium.grey-text.center{"ng-click": "$ctrl.add_grey_resource()"} more
-      .h7 more
-    .col.s1
-      .pink.lighten-4.blue-grey-text.z-depth-5 pInk: {{$ctrl.npc.resources.pink}}
-      %i.material-icons.medium.pink-text.center{"ng-click": "$ctrl.add_pink_resource()"} border_clear
-      .h7 border_clear
+      %i.material-icons.small.pink-text.text-lighten-4.center{"ng-click": "$ctrl.add_ai_resource()"} favorite
+      .pink.lighten-4.blue-grey-text.z-depth-5 ai: {{$ctrl.npc.resources.ai}}

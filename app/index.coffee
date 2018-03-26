@@ -25,10 +25,12 @@ app = angular.module 'npc', [
   'angularMoment'
 ]
 
+require './directives/directives.coffee'
 require './services/services.coffee'
 require './components/components.coffee'
 require './services/npc.css'
 require './components/gameWrapper/gameWrapper.coffee'
+require './components/ggWrapper/ggWrapper.coffee'
 
 app.constant 'moment', require 'moment-timezone'
 
@@ -39,6 +41,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
   npc_resolver = =>
     return {
       resources: {
+        ai: 0
         yellow: 0
         orange: 0
         red: 0
@@ -57,20 +60,26 @@ app.config ($stateProvider, $urlRouterProvider) ->
   }
 
   $stateProvider.state {name: 'layout', template: require('./layout.html.hamlc')}
-  $stateProvider.state {name: 'gameWrapper', url: '/gameWrapper', parent: 'layout', component: 'gameWrapper', resolve: {npc: npc_resolver}}
+  $stateProvider.state {name: 'ggWrapper', url: '', parent: 'layout', component: 'ggWrapper', resolve: {npc: npc_resolver}}
+  $stateProvider.state {name: 'gameWrapper', url: '', parent: 'ggWrapper', component: 'gameWrapper', resolve: {npc: npc_resolver}}
+
   $stateProvider.state {name: 'carot', url: '/screen/carot', parent: 'gameWrapper', component: 'carot'}
   $stateProvider.state {name: 'pipe', url: '/screen/pipe', parent: 'gameWrapper', component: 'pipe'}
   $stateProvider.state {name: 'dot', url: '/screen/dot', parent: 'gameWrapper', component: 'dot'}
+  $stateProvider.state {name: 'dotmaiowo', url: '/screen/dotmaiowo', parent: 'gameWrapper', component: 'dotmaiowo'}
+
+
+
   $stateProvider.state {name: 'gdkp', url: '/screen/gdkp', parent: 'gameWrapper', component: 'gdkp'}
 
   $stateProvider.state {name: 'hima', url: '/hima', parent: 'gameWrapper', component: 'hima'}
-
+  $stateProvider.state {name: 'himaDetail', url: '/hima/:parent', parent: 'gameWrapper', component: 'hima'}
 
   $stateProvider.state {name: 'mono', url: '/mono', parent: 'gameWrapper', component: 'mono'}
   $stateProvider.state {name: 'sudo', url: '/sudo', parent: 'gameWrapper', component: 'sudo'}
   $stateProvider.state {name: 'dotowo', url: '/dotowo', parent: 'gameWrapper', component: 'dotowo'}
   $stateProvider.state {name: 'tsugu', url: '/tsugu', parent: 'gameWrapper', component: 'tsugu'}
 
-  $urlRouterProvider.when '', 'gameWrapper'
+  $urlRouterProvider.when '', 'ggWrapper'
 
 # #::AGD The code for this project is guided by The Art of Game Design: A Book of Lenses by Jesse Schell published by CRC Press 2015

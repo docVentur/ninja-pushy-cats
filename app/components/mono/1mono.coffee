@@ -1,19 +1,10 @@
-require './0mono.coffee'
-require './1mono.coffee'
-require './2mono.coffee'
-require './3mono.coffee'
-require './4mono.coffee'
-require './5mono.coffee'
-require './6mono.coffee'
-require './7mono.coffee'
-
 angular = require 'angular'
 _ = require 'lodash'
 
 app = angular.module 'npc'
 
-app.component 'mono', {
-  template: require('./mono.html.hamlc'),
+app.component '1mono', {
+  template: require('./1mono.html.hamlc'),
   bindings: {
     npc: "<"
   }
@@ -24,11 +15,6 @@ app.component 'mono', {
     @add_xp = ->
       console.log "added xp"
       npc_fsm.tick(vm.npc)
-    @add_ai_resource = =>
-      console.log "added ai_resource"
-      @npc.resources.ai = @npc.resources.ai + 1
-      @check_if_finished()
-
     @add_yellow_resource = =>
       console.log "added yellow_resource"
       @npc.resources.yellow = @npc.resources.yellow + 1

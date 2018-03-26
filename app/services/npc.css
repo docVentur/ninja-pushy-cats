@@ -353,7 +353,7 @@ blockquote:before {
 }
 
 .h7 {
-  font-family: 'Roboto';
+  font-family: 'VT323';
   font-size: 0.85em;
   color: white;
 }
@@ -384,7 +384,7 @@ blockquote:before {
 
 .h12 {
   font-family: 'Roboto';
-  font-size: 0.7em;
+  font-size: 0.5em;
   color: brown;
 }
 

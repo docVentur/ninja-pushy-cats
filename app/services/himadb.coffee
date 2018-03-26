@@ -4,7 +4,8 @@ _ = require 'lodash'
 app = angular.module 'npc'
 
 app.service 'himadb', (pouchDB) ->
-  @db = new pouchDB 'himadb'
+  #@db = new pouchDB 'himadb'
+  @db = new pouchDB 'http://clu:5984/himadb'
 
 #  create_index = (db, index_name, doc_validity) ->
 #    ddoc = { _id: "_design/#{index_name}", views: { by_name: { map: "function (doc) {if (#{doc_validity}) {emit(doc.name);}}" }}}

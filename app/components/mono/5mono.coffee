@@ -3,8 +3,8 @@ _ = require 'lodash'
 
 app = angular.module 'npc'
 
-app.component 'mono', {
-  template: require('./mono.html.hamlc'),
+app.component '5mono', {
+  template: require('./5mono.html.hamlc'),
   bindings: {
     npc: "<"
   }

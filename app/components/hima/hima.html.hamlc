@@ -1,16 +1,25 @@
 .ice
+  <radial-tidy-tree data="$ctrl.data"></radial-tidy-tree>
+
+.pi
+  %h1 ="{{ $ctrl.parent }} :: $ctrl.parent"
+
+.zoo
+
   %h1 mai.hima.app: using Ninja-Pushy-Cats-Template
   %h2 text input field
   .input-field
     %input.white{type: "text", "ng-model": "$ctrl.new_hima_name", id: "new_hima_name"}
-    %label{for: "add_hima_name"} add_hima_name
+    %label{for: "new_hima_name"} new_hima_name
   %h3 add record button
     %button.btn.orange.text-lighten-2.right{"ng-click": "$ctrl.add_hima()"} add_hima
   %h4 submit input to couchdb
 
   %h5 display all db entries in a UI ul w lis in it
     %ul
-      %li{"ng-repeat": "hima in $ctrl.himatachi"}
+      %li{"ng-repeat": "hima in $ctrl.himatachi", "ui-sref": "himaDetail({parent: hima.name})"}
         ="{{ hima.name }}"
 
     %h3.cyan-text = "{{ $ctrl.hima.name }}"
+
+%button.btn{"ng-click": "$ctrl.destroy_db()"} DESTROY DB
