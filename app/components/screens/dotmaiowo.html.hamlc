@@ -48,4 +48,24 @@
           %button.btn.grey.z-depth-5.blue-text.text-lighten-3{"ng-if": "$ctrl.npc.iteration > 2", "ng-click": "$ctrl.go_next_page()"}
             %i.material-icons.medium.blue-text.text-lighten-3{"ui-sref" => "carot"} refresh
             :: refresh
-        
+.container
+  .div
+    .row.pink-text.text-lighten-4.center
+      .col.s2.yellow-text.text-lighten-3.center
+        .h1 ^
+        .h12.white-text aiyellOW b00k
+      .col.s2.orange-text.text-lighten-3.center
+        .h1 #
+        .h12.white-text playing cards
+      .col.s2.red-text.text-lighten-3.center
+        .h1 ="||"
+        .h12.white-text CATasTrophy circuit fires
+      .col.s2.purple-text.text-lighten-3.center
+        .h1 ="V/"
+        .h12.white-text poker face
+      .col.s2.blue-text.text-lighten-3.center
+        .h1 ="..."
+        .h12.white-text d3.js web.f00t.map
+      .col.s2.green-text.text-lighten-3.center
+        .h1 @@@
+        .h12.white-text sudoku
