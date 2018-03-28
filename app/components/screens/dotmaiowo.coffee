@@ -9,7 +9,7 @@ app.component 'dotmaiowo', {
     npc: "<"
   }
 
-  controller: ($http, $interval, npc_fsm, $state) ->
+  controller: ($state) ->
     vm = @
 
     @go_next_page = =>

@@ -1,0 +1,6 @@
+%h1 kitemiteWrapper
+.div
+  .col.s12.center.grey-text
+    %i.material-icons.tiny.yellow-text.text-lighten-5 looks
+    %h1.pink-text.text-lighten-5 kitemite
+<ui-view></ui-view>

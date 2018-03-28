@@ -1,0 +1,39 @@
+<ui-view></ui-view>
+.row.center
+.row.center
+  .col.s1
+    %i.material-icons.small.yellow-text.center.text-lighten-3{"ui-sref" => "carot"} attachment
+    .h12.white-text mono
+  .col.s1
+    %i.material-icons.small.orange-text.center.text-lighten-3{"ui-sref" => "carot"} add
+    .h12.white-text beginning
+  .col.s1
+    %i.material-icons.small.red-text.center.text-lighten-3{"ui-sref" => "pipe"} photo
+    .h12.white-text sudo
+  .col.s1
+    %i.material-icons.small.purple-text.center.text-lighten-3{"ui-sref" => "carot"} developer_board
+    .h12.white-text middle
+  .col.s1
+    %i.material-icons.small.blue-text.center.text-lighten-3{"ui-sref" => "dot"} map
+    .h12.white-text hima
+  .col.s1
+    %i.material-icons.small.green-text.center.text-lighten-3{"ui-sref" => "carot"} business
+    .h12.white-text fin.
+  .col.s1
+    %i.material-icons.small.white-text.center.text-lighten-3{"ui-sref" => "carot"} apps
+    .h12.white-text gg
+  .col.s1
+    %i.material-icons.small.black-text.center.text-lighten-3{"ui-sref" => "carot"} games
+    .h12.white-text GG
+  .col.s1
+    %i.material-icons.small.grey-text.center{"ui-sref" => "carot"} more
+    .h12.white-text  gG
+  .col.s1
+    %i.material-icons.small.pink-text.center.text-lighten-3{"ui-sref" => "carot"} border_clear
+    .h12.white-text koto
+  .col.s1
+    %i.material-icons.small.teal-text.center.text-lighten-3{"ui-sref" => "hima"} star_half
+    .h12.white-text kitemite
+  .col.s1
+    %i.material-icons.small.brown-text.center.text-lighten-3{"ui-sref" => "mono"} accessibility
+    .h12.white-text saga
