@@ -1,3 +1,14 @@
+%h1 gameWrapper
+%nav.grey.darken-1.z-depth-5{:role => "navigation"}
+  .nav-wrapper.container
+    %a#logo-container.brand-logo{:href => "#"} Ninja-Pushy-Cats :: NPCs
+    %ul.right
+      %li
+        %a.yellow-text.text-lighten-2{"ui-sref" => "carot"} ^
+      %li
+        %a.red-text.text-lighten-2{"ui-sref" => "pipe"} ||
+      %li
+        %a.blue-text.text-lighten-2{"ui-sref" => "dot"} ...
 <ui-view></ui-view>
 .div.grey
   .row
@@ -6,7 +17,6 @@
     .col.s4.center
       %i.material-icons.small.red-text.text-lighten-4{"ui-sref" => "pipe"} more_vert
       %i.material-icons.small.red-text.text-lighten-3{"ui-sref" => "pipe"} more_vert
-
     .col.s4.center
       %i.material-icons.small.blue-text.text-lighten-4{"ui-sref" => "dot"} refresh
       %i.material-icons.small.blue-text.text-lighten-3{"ui-sref" => "dot"} refresh

@@ -6,3 +6,5 @@
 #require './screens/screens.coffee'
 #require './hima/hima.coffee'
 require './kitemiteWrapper/kitemiteWrapper.coffee'
+require './npcWrapper/npcWrapper.coffee'
+require './growing_genkiness/growing_genkiness.coffee'

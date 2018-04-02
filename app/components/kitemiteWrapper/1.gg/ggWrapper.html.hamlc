@@ -1,3 +1,51 @@
+.div
+  .row
+  .row
+    .col.s2
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+    .col.s2
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+    .col.s2
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+    .col.s2
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+    .col.s2
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+    .col.s2
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+
+
+
 <ui-view></ui-view>
 .row.center
 .row.center

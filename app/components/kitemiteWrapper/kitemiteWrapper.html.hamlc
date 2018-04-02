@@ -1,6 +1,13 @@
-%h1 kitemiteWrapper
-.div
-  .col.s12.center.grey-text
-    %i.material-icons.tiny.yellow-text.text-lighten-5 looks
-    %h1.pink-text.text-lighten-5 kitemite
+.row
+  .col.s2.center.grey-text
+    %i.material-icons.small.grey-text.text-darken-2{"ui-sref" => "carot"} change_history
+  .col.s2.center
+    .h3.grey-text.text-darken-2 gg
+  .col.s4.center.grey-text
+    %i.material-icons.tiny.yellow-text.text-lighten-4{"ui-sref" => "npcWrapper"} looks
+    .h12.pink-text.text-lighten-5 kitemite
+  .col.s2.center.grey-text
+    .h3.pink-text.text-lighten-4 gdkp
+  .col.s2.center.grey-text
+    %i.material-icons.small.pink-text.text-lighten-4{"ui-sref" => "carot"} all_out
 <ui-view></ui-view>

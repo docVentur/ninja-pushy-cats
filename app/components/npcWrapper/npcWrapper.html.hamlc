@@ -1,0 +1,21 @@
+%nav.grey.darken-1{:role => "navigation"}
+  .nav-wrapper.container
+    %a#logo-container.brand-logo{:href => "#"} Ninja-Pushy-Cats :: NPCs 
+    %ul.right
+      %li
+        %a.yellow-text.grey.text-lighten-2.grey.darken-2{"ui-sref" => "carot"} ^
+      %li
+        %a.red-text.grey.text-lighten-2.grey.darken-3{"ui-sref" => "pipe"} ||
+      %li
+        %a.blue-text.text-lighten-2.grey.darken-4{"ui-sref" => "dot"} ...
+<ui-view></ui-view>
+.container
+  .row
+  .row
+    .col.s4.center
+      .yellow-text.text-lighten-4 元 growing_genkiness ^
+    .col.s4.center
+      .red-text.text-lighten-4
+        ='| GREAT 王 GRAND |'
+    .col.s4.center
+      .blue-text.text-lighten-4 o {([guchi] genki) Games} 口 o o
