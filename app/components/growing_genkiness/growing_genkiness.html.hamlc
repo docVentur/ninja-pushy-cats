@@ -11,13 +11,16 @@
   .col.s1
     .btn.grey.darken-3.yellow-text.text-lighten-1
       %i.material-icons.small.yellow-text.text-lighten-1 change_history
-    .h12.yellow-text.text-lighten-1 change_history
+    .h12.yellow-text.text-lighten-2 change_history
   .col.s1
+    .btn.grey.darken-3.yellow-text
+      %i.material-icons.small.yellow-text gavel
+    .h12.yellow-text gavel
   .col.s1
     .btn.grey.darken-2.z-depth-5.red-text.text-lighten-5
-      ="|"
+      ="||"
     .h12.red-text.text-lighten-5 pipe
-  .col.s2
+  .col.s1
     .btn.grey.darken-2.z-depth-5
       %i.material-icons.small.red-text.text-lighten-3 flip
     .h12.red-text.text-lighten-3 flip
@@ -26,17 +29,25 @@
       %i.material-icons.small.red-text.text-lighten-1 more_vert
     .h12.red-text.text-lighten-1 more_vert
   .col.s1
+    .btn.grey.darken-2.z-depth-5
+      %i.material-icons.small.red-text mic
+    .h12.red-text mic
+
   .col.s1
-    .button.btn.grey.darken-1.z-depth-5.blue-text.text-lighten-5 .
+    .button.btn.grey.z-depth-5.blue-text.text-lighten-5 ...
     .h12.blue-text.text-lighten-5 dot
   .col.s1
-    .button.btn.grey.darken-1.z-depth-5.blue-text.text-lighten-3
+    .button.btn.grey.z-depth-5.blue-text.text-lighten-3
       %i.material-icons.small.blue-text.text-lighten-3 my_location
     .h12.blue-text.text-lighten-3 my_location
   .col.s1
-    .button.btn.grey.darken-1.z-depth-5
+    .button.btn.grey.z-depth-5
       %i.material-icons.small.blue-text.text-lighten-1 refresh
     .h12.blue-text.text-lighten-1 refresh
+  .col.s1
+    .button.btn.grey.z-depth-5
+      %i.material-icons.small.blue-text games
+    .h12.blue-text games
 .container.ice
   .container
     .container
@@ -65,9 +76,10 @@
 .row
 .row.center
   .col.s1
-    %i.material-icons.small.yellow-text.center.text-lighten-3{"ui-sref" => "carot"} attachment
+    %i.material-icons.small.yellow-text.center.text-lighten-3{"ui-sref" => "ai.log"} attachment
     .h12.white-text mono
-    .h12.pink-text.text-lighten-4 ai.log
+    .h12.pink-text.text-lighten-4{"ui-sref" => "ai.log"} ai.log
+    %a{:href => "http://clu:5984/_utils/database.html?ailogdb"} ai.log
   .col.s1
     %i.material-icons.small.orange-text.center.text-lighten-3{"ui-sref" => "carot"} add
     .h12.white-text beginning

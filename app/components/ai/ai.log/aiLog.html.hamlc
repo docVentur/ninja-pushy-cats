@@ -1,0 +1,4 @@
+.row{"ng-repeat": "log_entry in $ctrl.log_entries track by $index"}{style: "margin-bottom: 0px"}
+  .col.s2{"ng-style": "{'color': log_entry.log_type.textcolor, 'background-color': log_entry.log_type.bgcolor}"}= "{{log_entry.log_type.name}}"
+  .col.s5= "{{log_entry.log_date}}"
+  .col.s5="{{log_entry.value}}"

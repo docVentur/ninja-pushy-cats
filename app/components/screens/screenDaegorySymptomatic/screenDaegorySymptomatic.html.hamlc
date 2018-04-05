@@ -1,0 +1,12 @@
+%h1 screenDaegorySymptomatic
+.symptomatic-diabetic-font symptomatic_diabetic
+.container
+  .row
+    .col.s3{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.yellow.large{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.large.pulse{style: "color: red"} border_inner
+    .col.s3{style: "height: 100px"}
+      <feelings-indicator value="2"></feelings-indicator>
+    .col.s6{style: "height: 100px"}
+      .symptomatic-diabetic-font Daegory starts to feel wonkie
+.symptomatic-diabetic-font symptomatic_diabetic

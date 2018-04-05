@@ -1,0 +1,39 @@
+.yellow.lighten-4
+  %hr
+  .yellow.lighten-4
+    %a{:href => "https://www.facebook.com/Yellow-genkiness-1998116827111121/"} FB: yellow genkiness
+  %hr
+  .red.lighten-4
+    %a{:href => "https://www.facebook.com/aiyellow-1811580052465546/"} FB: ai.yellow
+  %hr
+  .blue.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  %hr
+  .orange.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  .purple.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  .green.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  %hr
+  .white.lighten-4
+    %h6 503.813.2000
+    %h6 Kaiser Permanente
+  .grey.lighten-2
+    m00
+  .grey.lighten-4
+    %h6 503.645.7704
+    %h6 Tanasbourne Village Rite Aid
+    %h6 2021 NW 185th Ave
+  %hr
+  .pink.lighten-4.w-t
+    %a{:href => "https://www.unicef.org/"} https://www.unicef.org/
+  .cyan.lighten-4
+    %a{:href => "https://ridetocare.healthcare/members-riders/schedule-transportation"} 855-321-4899  Ride To Care
+  %hr
+  .brown.lighten-4.w-t
+    m00
+  %hr
+
+.zoo.yellow-text
+  find me in 1.Y.html.hamlc

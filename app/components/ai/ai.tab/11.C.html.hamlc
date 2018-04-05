@@ -1,0 +1,36 @@
+.cyan.lighten-4
+  %hr
+  .yellow.lighten-4
+    %a{:href => "https://www.facebook.com/Cyan-genkiness-140641786622186/"} FB: cyan genkiness
+  %hr
+  .red.lighten-4
+    %a{:href => "https://www.facebook.com/Genki-ya-162827151139300/"} FB: genki-ya
+  %hr
+  .blue.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  %hr
+  .orange.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  .purple.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  .green.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  %hr
+  .white.lighten-4
+    m00
+  .grey.lighten-2
+    m00
+  .grey.lighten-4
+    m00 heroku
+  %hr
+  .pink.lighten-4
+    m00
+  .cyan.lighten-4
+    =".fireworks.idle.screen"
+  %hr
+  .brown.lighten-4
+    m00
+  %hr
+
+.zoo.cyan-text
+  find me in 11.C.html.hamlc

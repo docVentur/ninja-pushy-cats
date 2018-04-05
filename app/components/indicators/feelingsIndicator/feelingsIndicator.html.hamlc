@@ -1,0 +1,16 @@
+
+%i.material-icons.prefix.black.small{"ng-if": "($ctrl.value < -101)", style: "color: white"} airline_seat_flat
+
+%i.material-icons.prefix.black.large{"ng-if": "($ctrl.value < -84) && ($ctrl.value > -100)", style: "color: white"} airline_seat_flat
+%i.material-icons.prefix.grey.large{"ng-if": "($ctrl.value < -67) && ($ctrl.value > -85)", style: "color: grey"} error
+%i.material-icons.prefix.grey.large{"ng-if": "($ctrl.value < -50) && ($ctrl.value > -68)", style: "color: white"} sentiment_very_dissatisfied
+%i.material-icons.prefix.pink.lighten-3.large{"ng-if": "($ctrl.value < -33) && ($ctrl.value > -51)", style: "color: white"} sentiment_dissatisfied
+%i.material-icons.prefix.pink.lighten-3.large{"ng-if": "($ctrl.value < -17) && ($ctrl.value > -34)", style: "color: white"} sentiment_neutral
+%i.material-icons.prefix.pink.lighten-3.large{"ng-if": "($ctrl.value < 0) && ($ctrl.value > -18)", style: "color: white"} blur_on
+
+%i.material-icons.prefix.pink.lighten-3.large.pulse{"ng-if": "($ctrl.value < 18) && ($ctrl.value > 0)", style: "color: pink"} blur_on
+%i.material-icons.prefix.pink.lighten-3.large{"ng-if": "($ctrl.value < 34) && ($ctrl.value > 17)", style: "color: white"} sentiment_neutral
+%i.material-icons.prefix.pink.lighten-3.large{"ng-if": "($ctrl.value < 51) && ($ctrl.value > 33)", style: "color: white"} sentiment_satisfied
+%i.material-icons.prefix.grey.large{"ng-if": "($ctrl.value < 68) && ($ctrl.value > 50)", style: "color: white"} sentiment_very_satisfied
+%i.material-icons.prefix.grey.large{"ng-if": "($ctrl.value < 85) && ($ctrl.value > 67)", style: "color: grey"} error
+%i.material-icons.prefix.black.large{"ng-if": "($ctrl.value < 100) && ($ctrl.value > 84)", style: "color: white"} airline_seat_flat

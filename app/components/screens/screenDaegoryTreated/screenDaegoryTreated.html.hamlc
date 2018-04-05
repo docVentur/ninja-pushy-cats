@@ -1,0 +1,174 @@
+%h1 screenDaegoryTreated
+
+.treated-diabetic-font treated_diabetic
+.container
+  .row
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.yellow.medium.button{style: "color: black"} 3d_rotation
+      3d_rotation
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.orange.medium.button{style: "color: black"} texture
+      texture
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.red.medium.button{style: "color: black"} surround_sound
+      surround_sound
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.purple.medium.button{style: "color: black"} toc
+      toc
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.blue.medium.button{style: "color: black"} group_work
+      group_work
+    .col.s1{style: "height: 100px"}
+      %i.material-icons.prefix.green.medium.button{style: "color: black"} find_replace
+      find_replace
+  .row
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.button{style: "color: white"} 3d_rotation
+      3d_rotation
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.medium.button{style: "color: white"} texture
+      texture
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.medium.button{style: "color: white"} surround_sound
+      surround_sound
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.medium.button{style: "color: white"} toc
+      toc
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.medium.button{style: "color: white"} group_work
+      group_work
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.white{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.medium.button{style: "color: white"} find_replace
+      find_replace
+  .row
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.button{style: "color: black"} timer_3
+      timer_3
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.button{style: "color: black"} straighten
+      straighten
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.button{style: "color: black"} settings_brightness
+      settings_brightness
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.button{style: "color: black"} devices_other
+      devices_other
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.button{style: "color: black"} library_music
+      library_music
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.black{style: "color: black", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.button{style: "color: black"} tonality
+      tonality
+  .row
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.button{style: "color: grey"} local_dining
+      local_dining
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.button{style: "color: grey"} style
+      style
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.button{style: "color: grey"} satellite
+      satellite
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.button{style: "color: grey"} language
+      language
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.button{style: "color: grey"} polymer
+      polymer
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.grey{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.button{style: "color: grey"} local_florist
+      local_florist
+  .row
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.yellow.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.lighten-2.small.button{style: "color: pink"} local_dining
+      local_dining
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.orange.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.lighten-2.small.button{style: "color: pink"} style
+      style
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.red.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.lighten-2.small.button{style: "color: pink"} satellite
+      satellite
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.purple.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.lighten-2.small.button{style: "color: pink"} language
+      language
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.blue.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.lighten-2.small.button{style: "color: pink"} polymer
+      polymer
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.green.lighten-3{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.lighten-2.small.button{style: "color: pink"} local_florist
+      local_florist
+  .row
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.yellow{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.yellow.darken-4.button{style: "color: yellow"} local_dining
+      local_dining
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.orange{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.orange.darken-4.button{style: "color: orange"} style
+      style
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.red{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.red.darken-4.button{style: "color: red"} satellite
+      satellite
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.purple{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.purple.darken-4.button{style: "color: purple"} language
+      language
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.blue{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.blue.darken-4.button{style: "color: blue"} polymer
+      polymer
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.green{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.green.darken-4.button{style: "color: green"} local_florist
+      local_florist
+  .row
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.brown{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.brown.button{style: "color: yellow"} local_dining
+      local_dining
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.brown{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.brown.button{style: "color: orange"} style
+      style
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.brown{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.brown.button{style: "color: red"} satellite
+      satellite
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.brown{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.brown.button{style: "color: purple"} language
+      language
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.brown{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.brown.button{style: "color: blue"} polymer
+      polymer
+    .col.s1{style: "height: 100px"}
+      %button.waves-effect.waves-light.btn.brown{style: "color: grey", "ng-click": "$ctrl.add_mass()"}
+        %i.material-icons.prefix.brown.button{style: "color: green"} local_florist
+      local_florist
+.treated-diabetic-font treated_diabetic

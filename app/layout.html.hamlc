@@ -10,3 +10,15 @@
   .col.s12.center
     %i.material-icons.tiny.grey-text.text-darken-1{"ui-sref" => "pipe"} more_vert
     %i.material-icons.tiny.grey-text.text-darken-1{"ui-sref" => "pipe"} more_vert
+
+
+.row
+  .col.s4.center
+    %i.material-icons.large.yellow-text gavel
+  .col.s4.center
+    %i.material-icons.large.red-text mic
+    %i.material-icons.large.red-text mic
+  .col.s4.center
+    %i.material-icons.large.blue-text add_alert
+    %i.material-icons.large.blue-text add_alert
+    %i.material-icons.large.blue-text add_alert

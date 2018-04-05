@@ -1,0 +1,36 @@
+.orange.lighten-4
+  %hr
+  .yellow.lighten-4
+    %a{:href => "https://www.facebook.com/Orange-genkiness-136151850389698/"} FB: orange genkiness
+  %hr
+  .red.lighten-4
+    %a{:href => "https://www.facebook.com/WhetGenkiness-158008151460100/"} FB: WhetGenkiness
+  %hr
+  .blue.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  %hr
+  .orange.lighten-4
+    %a{:href => "http://bloodrizer.ru/games/kittens/#"} http://bloodrizer.ru/games/kittens/#
+  .purple.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  .green.lighten-4
+    %a{:href => "https://www.w3schools.com/html/default.asp"} HTML tutorial
+  %hr
+  .white.lighten-4
+    m00
+  .grey.lighten-2
+    m00
+  .grey.lighten-4
+    m00
+  %hr
+  .pink.lighten-4
+    m00
+  .cyan.lighten-4
+    m00
+  %hr
+  .brown.lighten-4
+    m00
+  %hr
+
+.zoo.orange-text
+  find me in 2.O.html.hamlc

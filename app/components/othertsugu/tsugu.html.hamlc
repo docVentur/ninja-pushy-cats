@@ -1,0 +1,25 @@
+.zoo
+  screenTsugu
+  <screenTsugu></screenTsugu>
+
+
+
+.tsugice.tsugu-font.teal.black-text{style: "height: 25px"}
+  成長していく優雅さ
+
+  .tsugice.tsugu-font{style: "height: 75px"}
+    .row{style: "height: 25px"}
+      .col.s1
+        %i.material-icons.center.small.teal.lime-text.pulse{style: "ng-class": "$ctrl.class_for_state()"}
+          gesture
+          %h6.center ' = > '
+      .col.s3
+        %a.tsugace{:href => "http://localhost:8080"} ''  =  >  ''
+    .row.tsugice{style: "height: 25px"}
+      .col.tsugace
+
+        %h5 (G+G)(g+g)= Gg + Gg + Gg + Gg
+        %h6 (G+g)(G+g)= GG + Gg + gG + gg
+    .row
+        %h6 = > (gets next)
+        .h6 'G_G + (GG Gg gG gg) = >'

@@ -1,0 +1,12 @@
+.h1 screenDaegoryBliss
+
+.bliss-font BLISS
+.container
+  .row{style: "height: 100px"}
+    .col.s3
+      %i.material-icons.prefix.yellow.small{style: "color: red","ng-click": "$ctrl.add_mass()"} border_inner
+    .col.s3
+      %i.material-icons.prefix.pink.tiny.pulse{style: "color: pink"} blur_on
+    .col.s6
+      .bliss-font Feed Daegory Gene
+.bliss-font BLISS
