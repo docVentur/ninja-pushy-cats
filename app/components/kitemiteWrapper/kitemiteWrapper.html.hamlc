@@ -1,25 +1,36 @@
 .ice.div
-  .row.pink-text.text-lighten-4.center
-    .col.s2.yellow-text.text-lighten-3.center
+  .row
+  .row.center
+    .col.s1.yellow-text.text-lighten-3.center
       .div
         .h1{:href => "http://gg/ai.yellow.b00k"} ^
         .h12.white-text{:href => "http://gg/ai.yellow.b00k/"} aiyellow.b00k
-    .col.s2.orange-text.text-lighten-3.center
+    .col.s1.orange-text.text-lighten-3.center
       .h1 #
       .h12.white-text playing.card-tachi
-    .col.s2.red-text.text-lighten-3.center
+    .col.s1.red-text.text-lighten-3.center
       .h1 ="||"
       .h12.white-text CATasTrophy
-    .col.s2.purple-text.text-lighten-3.center
+    .col.s1.purple-text.text-lighten-3.center
       .h1 ="V/"
       .h12.white-text poke.rface
-    .col.s2.blue-text.text-lighten-3.center
+    .col.s1.blue-text.text-lighten-3.center
       .h1 ="..."
       .h12.white-text web.f00t.map
-    .col.s2.green-text.text-lighten-3.center
+    .col.s1.green-text.text-lighten-3.center
       .h1 @@@
       .h12.white-text sudo-ku
-
+    .col.s3
+      .h12.white-text growing_genkiness
+    .col.s1.grey-text
+      %a.material-icons.grey-text{:href => "/"} looks
+        .h12.grey-text{:href => "/"} /#!/
+    .col.s1
+      %a.material-icons.medium.yellow-text.text-lighten-5{:href => "/"} looks
+        .h6.center.pink-text.text-lighten-5{:href => "/"} kitemite
+    .col.s1.grey-text
+      %a.material-icons.grey-text{:href => "http://gg"} looks
+        .h12.grey-text{:href => "http://gg"} http://gg
 <ui-view></ui-view>
 %button.btn.waves-effect.waves-light{:href => "http://gg/lichenology"}
   Submit

@@ -1,32 +1,26 @@
 .row.center
-  .col.s1.grey-text
-    %a.material-icons.grey-text{:href => "/"} looks
-      .h12.grey-text{:href => "/"} /#!/
-  .col.s1
-    %a.material-icons.medium.yellow-text.text-lighten-5{:href => "/"} looks
-      .h6.center.pink-text.text-lighten-5{:href => "/"} kitemite
-  .col.s1.grey-text
-    %a.material-icons.grey-text{:href => "http://gg"} looks
-      .h12.grey-text{:href => "http://gg"} http://gg
+
+  .col.s1.center
+    %i.material-icons.small.grey-text change_history
+  .col.s1.center
+    .h3.grey-text.text-lighten-1 gg
+  .col.s1.center
+    %i.material-icons.small.pink-text.text-lighten-4 all_out
 
   .col.s2.center
-
+    .h12.grey-text ninja-pushy-cats presents
   .col.s1.center
-    %a.material-icons.tiny.grey-text.text-darken-2{:href => "http://gg/kitemiteWrapper"} change_history
+    %a.material-icons.white-text{:href => "/"} looks
+  .col.s2.center
+    .h12.grey-text gg_gdkp
   .col.s1.center
-    .h3.grey-text.text-darken-2 gg
-  .col.s1.center
-    %a.material-icons.tiny.pink-text.text-lighten-4{:href => "http://gg/gdkp"} all_out
-  .col.s1.center
-
-  .col.s1.center
-    %i.material-icons.small.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} attachment
+    %a.material-icons.small.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} attachment
     .h12.center.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} ai.log
   .col.s1.center
-    %i.material-icons.small.red-text.text-lighten-4{:href => "http://gg/lichenology"} photo
+    %a.material-icons.small.red-text.text-lighten-4{:href => "http://gg/lichenology"} photo
     .h12.center.red-text.text-lighten-4{:href => "http://gg/lichenology"} lichenology
   .col.s1.center
-    %i.material-icons.small.blue-text.text-lighten-4{:href => "http://gg/gdkp"} map
+    %a.material-icons.small.blue-text.text-lighten-4{:href => "http://gg/gdkp"} map
     .h12.center.blue-text.text-lighten-4{:href => "http://gg/gdkp"} gdkp
 <ui-view></ui-view>
 .div
