@@ -1,9 +1,9 @@
 angular = require 'angular'
 _ = require 'lodash'
 
-app = angular.module 'GG'
+app = angular.module 'npc'
 
-app.component 'aigg', {
+app.component 'ai', {
   template: require('./ai.html.hamlc'),
 
   controller: (DaegoryFSM, MassFSM, FeelingsFSM, $stateParams, moment, $interval, zDeckService) ->

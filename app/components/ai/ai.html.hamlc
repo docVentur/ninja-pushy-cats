@@ -1,12 +1,12 @@
 .ice.wiz
-  screenAigg
+  ai
   %a{:href => "http://ailog.gdkp.org"} ai.log
 
 .yamice.wiz
   screenAigg
   %a{:href => "https://www.w3schools.com/html/default.asp"} make me screenGGpA/gg.html.hamlc
 
-
+<ui-view></ui-view>
 
 .container
   .row

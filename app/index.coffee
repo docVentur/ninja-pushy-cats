@@ -32,7 +32,7 @@ require './services/npc.css'
 require './components/kitemiteWrapper/kitemiteWrapper.coffee'
 require './components/npcWrapper/npcWrapper.coffee'
 require './components/growing_genkiness/growing_genkiness.coffee'
-
+require './components/ai/ai.coffee'
 #app.constant 'moment', require 'moment-timezone'
 
 #app.run ($rootScope) ->
@@ -65,6 +65,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
   $stateProvider.state {name: 'npcWrapper', url: '/npcWrapper', parent: 'kitemiteWrapper', component: 'npcWrapper'}
 
   $stateProvider.state {name: 'growingGenkiness', url: '/growingGenkiness', parent: 'npcWrapper', component: 'growingGenkiness'}
+  $stateProvider.state {name: 'aigg', url: '/aigg', parent: 'growingGenkiness', component: 'aigg'}
 
   $urlRouterProvider.when '', '/kitemiteWrapper/npcWrapper/growingGenkiness'
   #$stateProvider.state {name: 'gg', url: 'gg', parent: 'kitemite', component: 'ggWrapper'

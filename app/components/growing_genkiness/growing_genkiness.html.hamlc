@@ -78,8 +78,8 @@
   .col.s1
     %i.material-icons.small.yellow-text.center.text-lighten-3{"ui-sref" => "ai.log"} attachment
     .h12.white-text mono
-    .h12.pink-text.text-lighten-4{"ui-sref" => "ai.log"} ai.log
-    %a{:href => "http://clu:5984/_utils/database.html?ailogdb"} ai.log
+    %a.h4.yellow-text{"ui-sref" => "mono"} ai.log
+    %a.h4.yellow-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
   .col.s1
     %i.material-icons.small.orange-text.center.text-lighten-3{"ui-sref" => "carot"} add
     .h12.white-text beginning
