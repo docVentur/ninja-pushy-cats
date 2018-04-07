@@ -80,6 +80,8 @@
     .h12.white-text mono
     %a.h4.yellow-text{"ui-sref" => "mono"} ai.log
     %a.h4.yellow-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
+    %a.material-icons.large.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} looks
+    .h12.pink-text.text-lighten-5 ai.log
   .col.s1
     %i.material-icons.small.orange-text.center.text-lighten-3{"ui-sref" => "carot"} add
     .h12.white-text beginning

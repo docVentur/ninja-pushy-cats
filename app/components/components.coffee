@@ -8,4 +8,3 @@
 require './kitemiteWrapper/kitemiteWrapper.coffee'
 require './npcWrapper/npcWrapper.coffee'
 require './growing_genkiness/growing_genkiness.coffee'
-require './ai.log/ai.log.coffee'
