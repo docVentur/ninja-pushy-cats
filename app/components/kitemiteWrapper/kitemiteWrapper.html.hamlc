@@ -4,7 +4,7 @@
   .col.s2.center
     .h3.grey-text.text-darken-2 gg
   .col.s4.center.grey-text
-    %i.material-icons.tiny.yellow-text.text-lighten-4{:href => "http://gg"} looks
+    %i.material-icons.large.yellow-text.text-lighten-4{:href => "http://gg"} looks
     .h12.pink-text.text-lighten-5 kitemite
   .col.s2.center.grey-text
     .h3.pink-text.text-lighten-4 gdkp
