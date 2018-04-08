@@ -1,18 +1,20 @@
 .row.center
-
   .col.s1.center
-    %i.material-icons.small.grey-text change_history
+    %i.material-icons.tiny.grey-text change_history
   .col.s1.center
-    .h3.grey-text.text-lighten-1 gg
+    .h5.grey-text gg
   .col.s1.center
-    %i.material-icons.small.pink-text.text-lighten-4 all_out
-
+    %i.material-icons.tiny.grey-text all_out
   .col.s2.center
-    .h12.grey-text ninja-pushy-cats presents
-  .col.s1.center
-    %a.material-icons.white-text{:href => "/"} looks
+    %a.h12.grey-text{:href => "http://growing_genkiness.me/NPC"} ninja-pushy-cats present
   .col.s2.center
-    .h12.grey-text gg_gdkp
+    .div.z-depth-5
+      %a.material-icons.white-text{:href => "/"} looks
+      .h12.white-text kitemite
+  .col.s1.center
+    %a.h12.grey-text{:href => "http://growing_genkiness.me"} gg
+  .col.s1.center
+    %a.h12.grey-text{:href => "http://growing_genkiness.me/gdkp"} _gdkp
   .col.s1.center
     %a.material-icons.small.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} attachment
     .h12.center.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} ai.log
@@ -23,6 +25,18 @@
     %a.material-icons.small.blue-text.text-lighten-4{:href => "http://gg/gdkp"} map
     .h12.center.blue-text.text-lighten-4{:href => "http://gg/gdkp"} gdkp
 <ui-view></ui-view>
+.container
+  .row
+  .row
+    .col.s4.center
+      .yellow-text.text-lighten-4 元 growing_genkiness ^
+    .col.s4.center
+      .red-text.text-lighten-4
+        ='| GREAT 王 GRAND |'
+    .col.s4.center
+      .blue-text.text-lighten-4 o {([guchi] genki) Games} 口 o o
+
+
 .div
   .col.s12.center
     %i.material-icons.medium.grey-text.text-darken-1{"ui-sref" => "carot"} change_history

@@ -1,37 +1,191 @@
-.ice.div
+.div
   .row
-  .row.center
-    .col.s1.yellow-text.text-lighten-3.center
-      .div
-        .h1{:href => "http://gg/ai.yellow.b00k"} ^
-        .h12.white-text{:href => "http://gg/ai.yellow.b00k/"} aiyellow.b00k
-    .col.s1.orange-text.text-lighten-3.center
-      .h1 #
-      .h12.white-text playing.card-tachi
-    .col.s1.red-text.text-lighten-3.center
-      .h1 ="||"
-      .h12.white-text CATasTrophy
-    .col.s1.purple-text.text-lighten-3.center
-      .h1 ="V/"
-      .h12.white-text poke.rface
-    .col.s1.blue-text.text-lighten-3.center
-      .h1 ="..."
-      .h12.white-text web.f00t.map
-    .col.s1.green-text.text-lighten-3.center
-      .h1 @@@
-      .h12.white-text sudo-ku
-    .col.s3
-      .h12.white-text growing_genkiness
-    .col.s1.grey-text
-      %a.material-icons.grey-text{:href => "/"} looks
-        .h12.grey-text{:href => "/"} /#!/
+    .col.s2.yellow-text.text-lighten-3.center
+      .div.z-depth-5
+        %a.h1.yellow-text.text-lighten-3{:href => "http://gg/ai.yellow.b00k"} ^
+        %br/
+        %a.h11.yellow-text.text-lighten-3{:href => "http://gg/ai.yellow.b00k/"} aiyellow.b00k
+        %br/
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
+    .col.s2.orange-text.text-lighten-3.center
+      .div.z-depth-5
+        %a.h1.orange-text.text-lighten-3{:href => "http://gg/playing.card-tachi"} #
+        %br/
+        %a.h11.orange-text.text-lighten-3{:href => "http://gg/playing.card-tachi"} playing.card-tachi
+        %br/
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
+    .col.s2.red-text.text-lighten-3.center
+      .div.z-depth-5
+        %a.h1.red-text.text-lighten-3{:href => "http://gg/CATasTrophy"} ="||"
+        %br/
+        %a.h11.red-text.text-lighten-3{:href => "http://gg/CATasTrophy"} CATasTrophy
+        %br/
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
+    .col.s2.purple-text.text-lighten-3.center
+      .div.z-depth-5
+        %a.h1.purple-text.text-lighten-3{:href => "http://gg/poke.rface"} ="V/"
+        %br/
+        %a.h11.purple-text.text-lighten-3{:href => "http://gg/poke.rface"} poke.rface
+        %br/
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
+    .col.s2.blue-text.text-lighten-3.center
+      .div.z-depth-5
+        %a.h1.blue-text.text-lighten-3{:href => "http://gg/web.f00t.map"} ="..."
+        %br/
+        %a.h11.blue-text.text-lighten-3{:href => "http://gg/web.f00t.map"} web.f00t.map
+        %br/
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
+    .col.s2.green-text.text-lighten-3.center
+      .div.z-depth-5
+        %a.h1.green-text.text-lighten-3{:href => "http://gg/sudo-ku"} @@@
+        %br/
+        %a.h11.green-text.text-lighten-3{:href => "http://gg/sudo-ku"} sudo-ku
+        %br/
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
+.div
+  .row
     .col.s1
-      %a.material-icons.medium.yellow-text.text-lighten-5{:href => "/"} looks
-        .h6.center.pink-text.text-lighten-5{:href => "/"} kitemite
-    .col.s1.grey-text
-      %a.material-icons.grey-text{:href => "http://gg"} looks
-        .h12.grey-text{:href => "http://gg"} http://gg
+      .div.center.z-depth-5
+        %a.material-icons.large.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} looks
+        .h12.white-text mono
+        .h12.yellow-text.text-lighten-5 ai.log
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
+        .h12.grey-text rememory
+        .h12.teal-text couchdb/pouchdb
+    .col.s1
+      .div.center.z-depth-5
+
+        %a.material-icons.small.orange-text.center.text-lighten-3{:href => "http://gg/add_mono"} add
+        .h12.white-text beginning
+        .h12.orange-text.text-lighten-4 add_mono
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?add_monodb"} add_monodb
+        .h12.grey-text svg.cards
+        .h12.teal-text svgs
+    .col.s1
+      .div.center.z-depth-5
+        %a.material-icons.small.red-text.center.text-lighten-3{:href => "http://gg/lichenology"} photo
+        .h12.white-text sudo
+        .h12.red-text.text-lighten-4 lichenology
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?lichenologydb"} lichenologydb
+        .h12.grey-text journalism
+        .h12.teal-text reddit
+    .col.s1
+      .div.center.z-depth-5
+        %a.material-icons.small.purple-text.center.text-lighten-3{:href => "http://gg/poke.db-oard"} developer_board
+        .h12.white-text middle
+        .h12.purple-text.text-lighten-4 poke.db-oard
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?pokedboarddb"} pokedboarddb
+        .h12.grey-text gg_qris
+        .h12.teal-text .gov
+    .col.s1
+      .div.center.z-depth-5
+        %a.material-icons.small.blue-text.center.text-lighten-3{:href => "http://gg/hima-tachi_map"} map
+        .h12.white-text hima
+        .h12.blue-text.text-lighten-4 hima-tachi_map
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?himatachimapdb"} himatachimapdb
+        .h12.grey-text access to help
+        .h12.teal-text status quo
+    .col.s1
+      .div.center.z-depth-5
+        %a.material-icons.small.green-text.center.text-lighten-3{:href => "http://gg/dot.mai.owo"} business
+        .h12.white-text fin.
+        .h12.green-text.text-lighten-4 dot.mai.owo.
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?dotmaiowodb"} dotmaiowodb
+        .h12.grey-text genki-ya
+        .h12.teal-text pr00f of life
+    .col.s1
+      .div.center.z-depth-5
+        %a.material-icons.small.white-text.center.text-lighten-3{:href => "http://gg/tsugu"} apps
+        .h12.white-text gg
+        .h12.white-text.text-lighten-4 tsugu
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?tsugudb"} tsugudb
+        .h12.grey-text botting
+        .h12.teal-text d3bot4bits
+    .col.s1
+      .div.center.z-depth-5
+        %a.material-icons.small.black-text.center.text-lighten-3{:href => "http://gg/7edger"} games
+        .h12.white-text GG
+        .h12.black-text.text-lighten-4 7edger
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?7edgerdb"} 7edgerdb
+        .h12.grey-text resources.acknowledged
+        .h12.teal-text gamification
+    .col.s1
+      .div.center.z-depth-5
+        %a.material-icons.small.grey-text.center{:href => "http://gg/axe"} more
+        .h12.white-text  gG
+        .h12.grey-text axe
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?axedb"} axedb
+        .h12.grey-text resource mgmt
+        .h12.teal-text myplate.gov
+    .col.s1
+      .div.center.z-depth-5
+        %a.material-icons.small.pink-text.center.text-lighten-3{:href => "http://gg/mai.saga"} border_clear
+        .h12.white-text koto
+        .h12.pink-text.text-lighten-4 mai.saga
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?maisagadb"} maisagadb
+        .h12.grey-text life.acknowledged
+        .h12.teal-text s
+    .col.s1
+      .div.center.z-depth-5
+        %a.material-icons.small.teal-text.center.text-lighten-3{:href => "http://gg/pract.ice_habit"} star_half
+        .h12.white-text kitemite
+        .h12.cyan-text.text-lighten-4 pract.ice_habit
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?practicehabitdb"} practicehabitdb
+        .h12.grey-text ping mgmt
+    .col.s1
+      .div.center.z-depth-5
+        %a.material-icons.small.brown-text.center.text-lighten-3{:href => "http://gg/dkdg"} accessibility
+        .h12.white-text saga
+        .h12.brown-text.text-lighten-4 dkdg
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?dkdgdb"} dkdgdb
+        .h12.grey-text diabetes logging gamified
 <ui-view></ui-view>
-%button.btn.waves-effect.waves-light{:href => "http://gg/lichenology"}
-  Submit
-  %i.material-icons.right send
+
+
+-# these should be linked to real time passing ex 6am, 9am, n00n, 3pm, 6pm, 9pm
+
+.zoo
+  .row
+  .row
+    .col.s2.center
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+    .col.s2.center
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+    .col.s2.center
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+    .col.s2.center
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+    .col.s2.center
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
+    .col.s2.center
+      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
+      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
+      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
+      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
+      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
+      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business

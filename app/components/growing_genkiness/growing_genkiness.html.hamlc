@@ -1,5 +1,4 @@
-.row.center
-.row.center
+.row
 .row.center
   .col.s1
     .btn.grey.darken-3.yellow-text.text-lighten-5 ^
@@ -32,7 +31,6 @@
     .btn.grey.darken-2.z-depth-5
       %i.material-icons.small.red-text mic
     .h12.red-text mic
-
   .col.s1
     .button.btn.grey.z-depth-5.blue-text.text-lighten-5 ...
     .h12.blue-text.text-lighten-5 dot
@@ -48,108 +46,4 @@
     .button.btn.grey.z-depth-5
       %i.material-icons.small.blue-text games
     .h12.blue-text games
-
-.row
-.row.center
-  .col.s1
-    %i.material-icons.small.yellow-text.center.text-lighten-3{"ui-sref" => "ai.log"} attachment
-    .h12.white-text mono
-    %a.h4.yellow-text{"ui-sref" => "mono"} ai.log
-    %a.h4.yellow-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
-    %a.material-icons.large.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} looks
-    .h12.pink-text.text-lighten-5 ai.log
-  .col.s1
-    %i.material-icons.small.orange-text.center.text-lighten-3{"ui-sref" => "carot"} add
-    .h12.white-text beginning
-    .h12.pink-text.text-lighten-4 ai.log
-  .col.s1
-    %i.material-icons.small.red-text.center.text-lighten-3{"ui-sref" => "pipe"} photo
-    .h12.white-text sudo
-    .h12.pink-text.text-lighten-4 ai.log
-  .col.s1
-    %i.material-icons.small.purple-text.center.text-lighten-3{"ui-sref" => "carot"} developer_board
-    .h12.white-text middle
-    .h12.pink-text.text-lighten-4 ai.log
-  .col.s1
-    %i.material-icons.small.blue-text.center.text-lighten-3{"ui-sref" => "dot"} map
-    .h12.white-text hima
-    .h12.pink-text.text-lighten-4 ai.log
-  .col.s1
-    %i.material-icons.small.green-text.center.text-lighten-3{"ui-sref" => "carot"} business
-    .h12.white-text fin.
-    .h12.pink-text.text-lighten-4 ai.log
-  .col.s1
-    %i.material-icons.small.white-text.center.text-lighten-3{"ui-sref" => "carot"} apps
-    .h12.white-text gg
-    .h12.pink-text.text-lighten-4 ai.log
-  .col.s1
-    %i.material-icons.small.black-text.center.text-lighten-3{"ui-sref" => "carot"} games
-    .h12.white-text GG
-    .h12.pink-text.text-lighten-4 ai.log
-  .col.s1
-    %i.material-icons.small.grey-text.center{"ui-sref" => "carot"} more
-    .h12.white-text  gG
-    .h12.pink-text.text-lighten-4 ai.log
-  .col.s1
-    %i.material-icons.small.pink-text.center.text-lighten-3{"ui-sref" => "carot"} border_clear
-    .h12.white-text koto
-    .h12.pink-text.text-lighten-4 ai.log
-  .col.s1
-    %i.material-icons.small.teal-text.center.text-lighten-3{"ui-sref" => "hima"} star_half
-    .h12.white-text kitemite
-    .h12.pink-text.text-lighten-4 ai.log
-  .col.s1
-    %i.material-icons.small.brown-text.center.text-lighten-3{"ui-sref" => "mono"} accessibility
-    .h12.white-text saga
-    .h12.pink-text.text-lighten-4 ai.log
-
-
-
 <ui-view></ui-view>
-.row.center
-
--# these should be linked to real time passing ex 6am, 9am, n00n, 3pm, 6pm, 9pm
-.container
-  .row
-    .col.s2.center
-      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
-      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
-      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
-      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
-      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
-      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
-    .col.s2.center
-      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
-      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
-      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
-      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
-      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
-      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
-    .col.s2.center
-      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
-      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
-      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
-      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
-      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
-      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
-    .col.s2.center
-      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
-      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
-      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
-      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
-      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
-      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
-    .col.s2.center
-      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
-      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
-      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
-      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
-      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
-      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
-    .col.s2.center
-      %i.material-icons.tiny.yellow-text.center.text-lighten-5{"ng-click": "$ctrl.add_yellow_resource()"} attachment
-      %i.material-icons.tiny.orange-text.center.text-lighten-5{"ng-click": "$ctrl.add_orange_resource()"} add
-      %i.material-icons.tiny.red-text.center.text-lighten-5{"ng-click": "$ctrl.add_red_resource()"} photo
-      %i.material-icons.tiny.purple-text.center.text-lighten-5{"ng-click": "$ctrl.add_purple_resource()"} developer_board
-      %i.material-icons.tiny.blue-text.center.text-lighten-5{"ng-click": "$ctrl.add_blue_resource()"} map
-      %i.material-icons.tiny.green-text.center.text-lighten-5{"ng-click": "$ctrl.add_green_resource()"} business
