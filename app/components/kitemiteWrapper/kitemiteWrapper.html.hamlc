@@ -2,11 +2,11 @@
   .row
     .col.s2.yellow-text.text-lighten-3.center
       .div.z-depth-5
-        %a.h1.yellow-text.text-lighten-3{:href => "http://gg/aiyellow.b00k"} ^
+        %a.h1.yellow-text.text-lighten-3{:href => "http://gg/ai.yellow.b00ks"} ^
         %br/
-        %a.h11.yellow-text.text-lighten-3{:href => "http://gg/aiyellow.b00k/"} aiyellow.b00k
+        %a.h11.yellow-text.text-lighten-3{:href => "http://gg/ai.yellow.b00ks"} aiyellow.b00ks
         %br/
-        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?aiyellowb00kdb"} aiyellowb00kdb
+        %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?aiyellowb00ksdb"} aiyellowb00kdb
     .col.s2.orange-text.text-lighten-3.center
       .div.z-depth-5
         %a.h1.orange-text.text-lighten-3{:href => "http://gg/playing.card-tachi"} #
