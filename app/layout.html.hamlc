@@ -35,8 +35,6 @@
         ='| GREAT 王 GRAND |'
     .col.s4.center
       .blue-text.text-lighten-4 o {([guchi] genki) Games} 口 o o
-
-
 .div
   .col.s12.center
     %i.material-icons.medium.grey-text.text-darken-1{"ui-sref" => "carot"} change_history

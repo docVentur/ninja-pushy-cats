@@ -9,3 +9,143 @@
       %li
         %a.blue-text.text-lighten-2.grey.darken-4{"ui-sref" => "dot"} ...
 <ui-view></ui-view>
+
+.row
+.row.center
+  .col.s2
+    %a.waves-effect.waves-light.btn.grey.yellow-text.z-depth-5.text-lighten-4.darken-3
+      ="^ carot"
+  .col.s2
+    %a.waves-effect.waves-light.btn.grey.red-text.z-depth-5.text-lighten-4.darken-3
+      ="|| pipe"
+  .col.s3
+    %a.waves-effect.waves-light.btn.grey.blue-text.z-depth-5.text-lighten-4.darken-3
+      ="... dot"
+
+.row.center.white
+  .col.s2
+    %a.waves-effect.waves-light.btn.grey.yellow-text.z-depth-5.text-lighten-4.darken-3
+      ="^ breathe"
+  .col.s2
+    %a.waves-effect.waves-light.btn.grey.red-text.z-depth-5.text-lighten-4.darken-3
+      ="| see |"
+  .col.s3
+    %a.waves-effect.waves-light.btn.grey.blue-text.z-depth-5.text-lighten-4.darken-3
+      =".list.en."
+
+
+.row
+.row.center
+  .col.s1
+  .col.s2
+    %a.waves-effect.waves-light.btn.grey.yellow-text.z-depth-5.text-lighten-3.darken-2
+      %i.material-icons expand_less
+      expand_less 元
+  .col.s2
+    %a.waves-effect.waves-light.btn.grey.red-text.z-depth-5.text-lighten-3.darken-2
+      %i.material-icons flip
+      王 flip 王
+      %i.material-icons flip
+  .col.s3
+    %a.waves-effect.waves-light.btn.grey.blue-text.z-depth-5.text-lighten-3.darken-2
+      %i.material-icons my_location
+      %i.material-icons my_location
+      %i.material-icons my_location
+      ="my_location 口口口"
+
+.row
+.row.center
+  .col.s2
+  .col.s2
+    %a.waves-effect.waves-light.btn.grey.yellow-text.z-depth-5.text-lighten-2.darken-1
+      %i.material-icons change_history
+      change_history
+  .col.s2
+    %a.waves-effect.waves-light.btn.grey.red-text.z-depth-5.text-lighten-2.darken-1
+      %i.material-icons more_vert
+      %i.material-icons more_vert
+      more_vert
+  .col.s3
+    %a.waves-effect.waves-light.btn.grey.blue-text.z-depth-5.text-lighten-2.darken-1
+      %i.material-icons refresh
+      %i.material-icons refresh
+      %i.material-icons refresh
+      refresh
+
+
+.row
+.row.center
+  .col.s3
+  .col.s2
+    %a.waves-effect.waves-light.btn.grey.yellow-text.z-depth-5
+      %i.material-icons.left gavel
+      gavel
+  .col.s2
+    %a.waves-effect.waves-light.btn.grey.red-text.z-depth-5
+      %i.material-icons.left mic
+      %i.material-icons.left mic
+      mic
+  .col.s3
+    %a.waves-effect.waves-light.btn.grey.blue-text.z-depth-5
+      %i.material-icons.left games
+      %i.material-icons.left games
+      %i.material-icons.left games
+      games
+
+
+
+
+
+
+
+.row
+.row.center.pink.lighten-4
+  .col.s1
+    .btn.grey.yellow-text.text-lighten-5 ^
+    .h12.yellow-text.text-lighten-5  carot
+    .h12.black-text.text-lighten-5  ^breathe
+  .col.s1
+    .btn.grey.yellow-text.text-lighten-3
+      %i.material-icons.small.yellow-text.text-lighten-3 expand_less
+    .h12.yellow-text.text-lighten-3 expand_less
+  .col.s1
+    .btn.grey.yellow-text.text-lighten-1
+      %i.material-icons.small.yellow-text.text-lighten-1 change_history
+    .h12.yellow-text.text-lighten-2 change_history
+  .col.s1
+    .btn.grey.yellow-text
+      %i.material-icons.small.yellow-text gavel
+    .h12.yellow-text gavel
+  .col.s1
+    .btn.grey.z-depth-5.red-text.text-lighten-5
+      ="||"
+    .h12.red-text.text-lighten-5 pipe
+    .h12.black-text.text-lighten-5  |see|
+  .col.s1
+    .btn.grey.z-depth-5
+      %i.material-icons.small.red-text.text-lighten-3 flip
+    .h12.red-text.text-lighten-3 flip
+  .col.s1
+    .btn.grey.z-depth-5
+      %i.material-icons.small.red-text.text-lighten-1 more_vert
+    .h12.red-text.text-lighten-1 more_vert
+  .col.s1
+    .btn.grey.z-depth-5
+      %i.material-icons.small.red-text mic
+    .h12.red-text mic
+  .col.s1
+    .button.btn.grey.z-depth-5.blue-text.text-lighten-5 ...
+    .h12.blue-text.text-lighten-5 dot
+    .h12.black-text.text-lighten-5 .list.en.    
+  .col.s1
+    .button.btn.grey.z-depth-5.blue-text.text-lighten-3
+      %i.material-icons.small.blue-text.text-lighten-3 my_location
+    .h12.blue-text.text-lighten-3 my_location
+  .col.s1
+    .button.btn.grey.z-depth-5
+      %i.material-icons.small.blue-text.text-lighten-1 refresh
+    .h12.blue-text.text-lighten-1 refresh
+  .col.s1
+    .button.btn.grey.z-depth-5
+      %i.material-icons.small.blue-text games
+    .h12.blue-text games
