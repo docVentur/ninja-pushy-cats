@@ -45,7 +45,7 @@
   .col.s12.center
     %i.material-icons.tiny.grey-text.text-darken-1{"ui-sref" => "pipe"} more_vert
     %i.material-icons.tiny.grey-text.text-darken-1{"ui-sref" => "pipe"} more_vert
-.div
+.row
   .col.s11
   .col.s1.black
     %a.material-icons.large.pink-text.text-lighten-4{:href => "http://localhost:8080"} accessibility
