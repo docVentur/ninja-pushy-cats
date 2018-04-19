@@ -2,7 +2,7 @@
   .row
     .col.s1
       .div.center.z-depth-5
-        %a.material-icons.large.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} looks
+        %a.material-icons.large.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} attachment
         .h12.white-text mono
         .h12.yellow-text.text-lighten-5 ai.log
         %a.h12.black-text{:href => "http://clu:5984/_utils/database.html?ailogdb"} ailogdb
