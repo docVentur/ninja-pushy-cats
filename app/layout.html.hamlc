@@ -6,7 +6,7 @@
   .col.s1.center
     %i.material-icons.tiny.grey-text all_out
   .col.s2.center
-    %a.h12.grey-text{:href => "http://growing_genkiness.me/NPC"} ninja-pushy-cats present
+    %a.h12.grey-text{:href => "http://growing_genkiness.me"} ninja-pushy-cats present
   .col.s2.center
     .div.z-depth-5
       %a.material-icons.white-text{:href => "/"} looks
