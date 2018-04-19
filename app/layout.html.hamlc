@@ -12,9 +12,9 @@
       %a.material-icons.white-text{:href => "/"} looks
       .h12.white-text kitemite
   .col.s1.center
-    %a.h12.grey-text{:href => "http://growing_genkiness.me"} gg
+    %a.h12.grey-text{:href => "http://growinggenkiness.me"} gg
   .col.s1.center
-    %a.h12.grey-text{:href => "http://growing_genkiness.me/gdkp"} _gdkp
+    %a.h12.grey-text{:href => "http://growinggenkiness.me"} _gdkp
   .col.s1.center
     %a.material-icons.small.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} attachment
     .h12.center.yellow-text.text-lighten-4{:href => "http://gg/ai.log"} ai.log
