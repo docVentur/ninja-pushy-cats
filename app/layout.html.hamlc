@@ -9,7 +9,7 @@
     %i.material-icons.tiny.grey-text{:href => "http://gg/"} all_out
     .h12.grey-text http://gg/
   .col.s2.center
-    %a.h6.grey-text{:href => "http://growinggenkiness.me"} ninja-pushy-cats
+    %a.h6.grey-text{:href => "http://growinggenkiness.me"} ninja-pushy-cats present
   .col.s2.center
     .div.z-depth-5
       %a.material-icons.white-text{:href => "/"} looks
@@ -26,7 +26,16 @@
     .h12.center.red-text.text-lighten-4{:href => "http://gg/lichenology"} lichenology
   .col.s1.center
     %a.material-icons.small.blue-text.text-lighten-4{:href => "http://gg/gdkp"} map
-    .h12.center.blue-text.text-lighten-4{:href => "http://gg/gdkp"} gdkp
+    .h12.center.blue-text.text-lighten-4{:href => "http://gg/gdkp"} _gdkp
+.container
+  .row
+    .col.s4.center
+      .yellow-text.text-lighten-4 元 growing_genkiness ^
+    .col.s4.center
+      .red-text.text-lighten-4
+        ='| GREAT 王 GRAND |'
+    .col.s4.center
+      .blue-text.text-lighten-4 o {([guchi] genki) Games} 口 o o
 <ui-view></ui-view>
 .container
   .row
