@@ -57,8 +57,3 @@
   .col.s12.center
     %a.material-icons.tiny.grey-text.text-darken-1{:href => "http://growinggenkiness.me"} more_vert
     %a.material-icons.tiny.grey-text.text-darken-1{:href => "http://growinggenkiness.me"} more_vert
-.row
-  .col.s11
-  .col.s1.black
-    %a.material-icons.large.pink-text.text-lighten-4{:href => "http://localhost:8080"} accessibility
-    .h12.white-text this is just mai.local server
